@@ -53,6 +53,10 @@ Loads env file from `process.env.LEAD_RADAR_ENV_FILE || ./.env` (tiny parser, no
 
 Single page, clean light styling: header "Lead Radar — find people who need your product, sourced and human-approved"; URL input + Run; stage list with ticks and elapsed time; Product profile card (with source links); "Which model does what & why" panel; Leads table sorted by score A (score A, score B, platform, title→link, reason, quote with ✓ verified / ⚠ unverified); Drafts cards (lead link + quote, draft text, Approve / Edit / Reject, status badge, Copy); Comparison table (model, tokens in/out, cost $, latency, plus agreement row). Banner: "Nothing is ever posted automatically."
 
+## Stretch: target companies (REQ-013, only after the core works, cut-off ~14:50)
+
+`src/steps/companies.js`, called by the pipeline after drafts (or in parallel with drafting): 2–3 Tavily `/search` queries built from `profile.ideal_customer` (e.g. `"<ICP> hiring <role>"`, `"<ICP> startup launches <category>"`, `topic:"news"` for funding), `search_depth:"basic"`, max 8, no include_domains. Then one `PROFILE_MODEL` call → JSON `[{company, signal, reason, url}]` (max 5, url must be one of the given result URLs; drop any other). New NDJSON event `{type:"companies"}`; page section "Target companies (buying signals)". Failure here is non-fatal: show "Target companies unavailable" and continue.
+
 ## Files (Change inventory: all Add)
 
 `package.json` (`"start": "node server.js"`, engines node ≥ 22, no deps), `server.js`, `src/config.js`, `src/nebius.js`, `src/tavily.js`, `src/json.js`, `src/quote.js`, `src/compare.js`, `src/pipeline.js`, `src/steps/{profile,leads,score,draft}.js`, `public/{index.html,app.js,style.css}`, `scripts/compare.js`, `README.md` (replace stub), `DEMO.md` (3-min demo + video script), `DESIGN.md` (created by Solution Designer), `runs/` gitignored (already). Each file < 300 lines.

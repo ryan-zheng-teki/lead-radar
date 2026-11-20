@@ -5,6 +5,7 @@
 | SR | Date | Kind | Status |
 | --- | --- | --- | --- |
 | SR-001 | 2026-11-20 14:15 | Requirements baseline + design | Requirements Approved; design complete (Medium / Low) |
+| SR-002 | 2026-11-20 14:27 | Requirements addition (conditional stretch) + design note | Approved (user delegated the decision) |
 
 ## Revision Entries
 
@@ -21,3 +22,12 @@
 - Handoff: see `handoff.md`.
 - Remaining gaps: user may still change models (D-1) or demo format (D-3).
 - Next action: implementation.
+
+### SR-002 — Conditional stretch: target companies
+
+- Trigger: user asked whether leads should be companies; user: "You decide we need to win show people it works" (~14:25).
+- Prior: SR-001 Approved. Current: Approved with REQ-013 / AC-011 (stretch, conditional), decision D-7.
+- Intended behavior changed: Yes (additive, conditional; core unchanged).
+- Approval: user delegated the decision to the Solution Designer; decision recorded in D-7.
+- Design impact: design-spec "Stretch: target companies" section; classification unchanged (Medium / Low).
+- Next action: implementation engineer informed; core first.
