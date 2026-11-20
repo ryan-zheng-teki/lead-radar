@@ -10,6 +10,8 @@ Hi, I'm Ryan.
 
 I built this today, here at the hackathon, from my phone. AI agents did the work, I steered.
 
+On my phone, I just told a project manager agent what I wanted. It did the planning and handed the work to agent teams. One team built the app, one made the slides, and one made the video.
+
 It's called Lead Radar.
 
 ---
