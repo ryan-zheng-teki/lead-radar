@@ -1,0 +1,12 @@
+# API-08 target-companies failure path (REQ-013 non-fatal) — 2026-11-20T13:44:24Z, code b28dd34
+## (a) Step rejection, real profile shape (ideal_customer '' default from profile.js:43), Tavily unavailable (no keys):
+$ env -u TAVILY_API_KEY -u NEBIUS_API_KEY LEAD_RADAR_ENV_FILE=/nonexistent node probe.mjs src/steps/companies.js
+   probe: findTargetCompanies({name:'X',summary:'s',domain:'x.com',problems:[],ideal_customer:''}).catch(failed)   // failed = pipeline.js:20
+{"error":"no search results for buying signals"}
+   -> pipeline.js emits {type:'companies', companies:[], error:'no search results for buying signals'} and continues to the comparison and done.
+## (b) The page renders that event: see API-08 browser replay below.
+## (b) Browser replay (UI only): the captured langfuse.com stream, with its companies line replaced by
+   {"type":"companies","companies":[],"error":"no search results for buying signals"}, fed to the real page via fetch override:
+   #companies text: "Target companies (buying signals) / Target companies unavailable: no search results for buying signals"
+   last stage: "Done — sourced leads and drafts ready for your review total 29.7 s"; #error hidden; leads 20; drafts 5; comparison shown
+   -> non-fatal: the rest of the page renders normally.

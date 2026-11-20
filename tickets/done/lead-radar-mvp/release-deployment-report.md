@@ -111,3 +111,23 @@ During delivery the ticket worktree held uncommitted, unvalidated changes from t
 - Local ticket branch cleanup result: `Not required` (in use, as above)
 - Remote branch cleanup result: `Not required` (none pushed)
 - Note for the next round: `ticket/lead-radar-mvp` is based on the pre-rewrite history (old SHAs, private email). The next delivery puts the stretch commits (b28dd34 and later) onto `origin/main` b2d110b+ with the no-reply identity, rather than merging the old branch, which would bring the private-email history back.
+
+## Round 2 (DR-002): REQ-013 target companies
+
+- Trigger: API/E2E Pass, API-REV-002 (95%; test-code review not required, direct route), on code b28dd34.
+- Verification, judged from the evidence: `Sufficient`.
+
+| AC | Files Checked | What You Saw | Judgement |
+| --- | --- | --- | --- |
+| AC-011 up to 5 companies, working source, grounded reason, run ≈ 90 s | API-07-companies-source-check.log, API-07-run-langfuse.com.json | 5 companies (MacroCoderz, Sycamore Labs, Potpie AI, Workato, Weaviate); every URL returned HTTP 200, and each page names its company (1–178 mentions); step 7.2 s, $0.0028; total 29.7 s, 20 leads, 5 drafts | Proven |
+| REQ-013 non-fatal | API-08-companies-failure-path.log | the step rejects with `{error}`, the page shows "Target companies unavailable: …", the run reaches Done with leads, drafts and the comparison | Proven (a live Tavily outage was not simulated) |
+| AC-006 keys | API-09-key-check.log | 0 in the run file, the server log and the worktree | Proven |
+| AC-001..005 still hold | API-07 (same run) | 20 leads, 5 drafts, 29.7 s | Proven |
+
+- User check needed: `No`.
+- Integration: built on `origin/main` ff14bd6, the delivered DR-001 state. Code was taken from b28dd34 and is byte-identical to it. The ticket branch was not merged, because it carries the pre-rewrite history with the private email. See delivery-revision-record.md DR-002 for what was excluded: the uncommitted redesign and the SR-003 edits.
+- Post-integration check DE-02: passed (see DR-002).
+- Checks before pushing (RELEASE.md): secret pattern 0; key values 0; file names OK; no private email in files or commits.
+- Release decision: `No release` (RELEASE.md default; push only).
+- Finalization: recorded in the commit that adds this section; `git log origin/main` shows the round-2 commit. The user's checkout is fast-forwarded with `git merge --ff-only origin/main`.
+- Cleanup: temporary clone `/tmp/de-r2` removed after the push. Ticket worktree and branch kept: the SR-003 UI round is active there.

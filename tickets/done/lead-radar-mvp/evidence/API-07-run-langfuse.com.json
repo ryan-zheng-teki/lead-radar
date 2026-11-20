@@ -1,0 +1,622 @@
+{
+  "url": "https://langfuse.com/",
+  "at": "2026-11-20T13:44:32.301Z",
+  "totalMs": 29679,
+  "totalCost": 0.033857899999999996,
+  "profile": {
+    "name": "Langfuse",
+    "summary": "Langfuse is an open-source AI engineering platform for tracing, evaluating, managing prompts, and monitoring LLM applications and agents, with an optional AI Gateway.",
+    "problems": [
+      "Debugging, analyzing, and iterating on AI agent applications",
+      "Tracing LLM and non-LLM calls, including retrieval, embedding, and API calls",
+      "Tracking multi-turn conversations as sessions and tracking users",
+      "Tracking token usage and costs",
+      "Managing prompts and skills",
+      "Running evaluations",
+      "Viewing metrics and analytics dashboards",
+      "Routing AI calls through a gateway with usage and cost tracing",
+      "Reducing vendor lock-in with OpenTelemetry compatibility",
+      "Self-hosting at cloud scale",
+      "Finding a cheaper option than other LLM observability platforms"
+    ],
+    "ideal_customer": "AI engineering teams and developers building LLM applications and agents, including enterprises that need self-hosting, OpenTelemetry compatibility, and scale.",
+    "pain_phrases": [
+      "I can’t see what my LLM app or agent is doing in production.",
+      "How do I debug my AI agent and track token costs without vendor lock-in?",
+      "I need a self-hosted way to monitor and evaluate my LLM calls.",
+      "I’m frustrated by expensive LLM observability tools.",
+      "How can I manage prompts and evaluate my chat agents in one place?"
+    ],
+    "search_queries": [
+      "looking for open source LLM observability tool for AI agents",
+      "how do I trace LLM calls and token costs in production",
+      "frustrated with expensive LLM observability platforms alternatives",
+      "self-hosted LLM tracing and evaluation platform recommendations",
+      "how to debug and evaluate chat agents without vendor lock-in",
+      "best way to manage prompts and monitor LLM application metrics"
+    ],
+    "domain": "langfuse.com",
+    "sources": [
+      "https://langfuse.com/",
+      "https://langfuse.com",
+      "https://langfuse.com/pricing",
+      "https://langfuse.com/docs",
+      "https://langfuse.com/enterprise"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L16",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/devops/comments/1v1by4l/how_are_you_actually_tracking_token_spend_across",
+      "title": "How are you actually tracking token spend across your LLM API calls?",
+      "content": "logs tokens, lets you set per-team budgets, has a dashboard. log model plus prompt and completion tokens. Logging tells you who spent what",
+      "tavilyScore": 0.72594017,
+      "query": "how do I trace LLM calls and token costs in production",
+      "a": {
+        "score": 9,
+        "reason": "Real person explicitly asking how to track token spend across LLM API calls — core Langfuse use case",
+        "quote": "How are you actually tracking token spend across your LLM API calls?",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "reason": "A direct practitioner discussion about tracking token spend, budgets, and usage attribution—an active related need and buying conversation.",
+        "quote": "How are you actually tracking token spend across your LLM API calls?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AgentOverFlow/comments/1m0h6z5/what_are_the_best_alternatives_to_helicone_for",
+      "title": "What Are the Best Alternatives to Helicone for LLM Observability and Monitoring? (2025 Guide) : r/AgentOverFlow",
+      "content": "Title: What Are the Best Alternatives to Helicone for LLM Observability and Monitoring? (2025 Guide) : r/AgentOverFlow\nSkip to main contentWhat Are the Best Alternatives to Helicone for LLM Observability and Monitoring? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. # What Are the Best Alternatives to Helicone for LLM Observability and Monitoring? If you’re looking for powerful alternatives to Helicone for tracking, logging, and evaluating your LLM or AI agent workflows, here are the top platforms to consider:. Maxim AI is an enterprise-grade, end-to-end evaluation and observability platform for LLMs and AI agents. It offers advanced tracing, real-time monitoring, automated and human-in-the-loop evaluations, and customizable alerts. Maxim supports integrations with major frameworks (like OpenAI, LangGraph, and CrewAI), is OpenTelemetry compatible, and features a robust dashboard for deep analytics and continuous improvement. Langfuse is an open-source, self-hostable observability tool for LLM applications. It provides detailed tracing, analytics, and evaluation features, and is compatible with a wide range of frameworks. Lunary is another open-source platform focused on LLM data capture, monitoring, and prompt management. With a clean UI and easy integration, Lunary is a good fit for teams that want quick setup and support for prompt experimentation. Portkey offers LLM observability and prompt management via a proxy-based approach, supporting caching, load balancing, and multi-endpoint management. It delivers tracing, analytics, and evaluation, making it a strong choice for hybrid ML/LLM teams. PromptLayer provides prompt management and analytics, while Langtrace is an OpenTelemetry-based open-source observability solution. | Platform | Open Source | Self-Host | Key Features | Best For |. | Maxim AI | No | Yes | End-to-end evals, tracing, enterprise-ready | Enterprise, agent workflows |. | Langfuse | Yes | Yes | Tracing, analytics, evals, framework-agnostic | Open source, flexibility |. | Arize | No | Yes | ML/LLM observability, analytics | ML/LLM hybrid teams |. While Helicone is a solid entry point for LLM observability, Maxim AI stands out as the most comprehensive and scalable alternative, especially for teams that need advanced evaluation, monitoring, and enterprise features. Explore these platforms to find the best fit for your workflow and observability needs. *   Reddit reReddit: Top posts of 2025 * * *. *   Best of Reddit in Portuguese. *   Best of Reddit in German.",
+      "tavilyScore": 0.7320175,
+      "query": "frustrated with expensive LLM observability platforms alternatives",
+      "a": {
+        "score": 8,
+        "reason": "Reddit thread of users actively seeking Helicone alternatives for LLM observability",
+        "quote": "If you're looking for powerful alternatives to Helicone for tracking, logging, and evaluating your LLM or AI agent workflows",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Alternatives guide is topically relevant, but reads as promotional/listicle content rather than a genuine individual request.",
+        "quote": "If you’re looking for powerful alternatives to Helicone for tracking, logging, and evaluating your LLM or AI agent workflows",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/i-built-my-own-llm-cost-tracking-observability-system-ilse-funkhouser-0jt6c",
+      "title": "I Built My Own LLM Cost Tracking / Observability System Before It Was Cool",
+      "content": "### The Core Idea\n\nEvery time the code makes an LLM call, it emits a tracking event that captures three things: who triggered the call (user ID), what chain of functions led to the call (a full trace of the call path), and how much it cost (token counts + model).\n\nThe tricky part is the \"what.\" In a deeply nested, heavily async Python codebase, you can't just log the function that made the LLM call. You need the full path: endpoint → feature logic → helper → LLM wrapper. That's the only way to attribute costs to the right feature.\n\n### Two Pieces of State, Carried Through the Call Chain [...] ### Two Pieces of State, Carried Through the Call Chain\n\nThe system uses Python's ContextVar; a primitive designed for exactly this kind of thing. ContextVars hold values scoped to the current execution context, meaning they follow async control flow correctly without leaking between concurrent tasks.\n\nI use two of them:\n\nThe stack trace is a list that accumulates the call chain. Each decorated function pushes its name onto the stack on entry and pops it on exit. By the time an LLM call happens at the bottom of the chain, the stack contains the full path that led there.\n\nThe user context is a dict holding the user ID and request metadata. Set once at the top of the request, it rides along through every downstream function call.\n\n### The Decorator Approach [...] The solution is simple: serialize both ContextVars into a plain dict, pass it as an argument to the remote function, and restore it on the other side. The remote process picks up right where the parent left off; trace and all.\n\n### The Trace Output\n\nAt LLM call time, the system snapshots the current stack and produces two arrays:\n\nA metadata trace: clean, human-readable names like \"[VibeCheck.run\\_quick\\_check\", \"Dealbreakers.check\\_experience\", \"Helpers.Invoke\\_Structured\"]\n\nA function trace: parsed from Python's qualname, which is a best-effort backup (it gets mangled by decorator wrapping).",
+      "tavilyScore": 0.76383626,
+      "query": "how do I trace LLM calls and token costs in production",
+      "a": {
+        "score": 7,
+        "reason": "Engineer hand-rolled LLM cost tracing and attribution — exactly the problem Langfuse solves",
+        "quote": "you can't just log the function that made the LLM call. You need the full path",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "reason": "A real builder describes implementing LLM cost attribution and tracing themselves, indicating a strong relevant need though not an explicit buying request.",
+        "quote": "That's the only way to attribute costs to the right feature.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/bsnvision_aiagents-genai-llm-activity-7500250678632669184-vYkd",
+      "title": "#aiagents #genai #llm #observability #opensource #opentelemetry #aiops #enterprisearchitecture #bankingtechnology #digitaltransformation | Balaji Sankaranarayanan",
+      "content": "Latitude – Is AI Observability Ready for Production? I have been looking at a few open-source tools for LLM and AI Agent observability, and one that caught my attention recently is Latitude. We have been talking about observability for years — logs, metrics, traces, APM, infrastructure monitoring, etc. But AI applications bring a different problem. When an AI agent gives a wrong answer, how do you actually find out why it happened? Was it the prompt? Was it the model? Did the agent call the wrong tool? Did the RAG retrieval return poor data? Did a previous conversation influence the response? Or did a recent change introduce the problem? Latitude is one of the open-source projects I would definitely keep an eye on. What are you using today for LLM / AI Agent observability — Langfuse, [...] using today for LLM / AI Agent observability — Langfuse, LangSmith, Phoenix, OpenLIT, Latitude or something else? #AIAgents #GenAI #LLM #Observability #OpenSource #OpenTelemetry #AIOps #EnterpriseArchitecture #BankingTechnology #DigitalTransformation",
+      "tavilyScore": 0.75797355,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 7,
+        "reason": "Practitioner actively evaluating open-source LLM observability tools for production agents",
+        "quote": "I have been looking at a few open-source tools for LLM and AI Agent observability",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "reason": "A practitioner actively evaluating open-source LLM/agent observability tools and articulating the debugging problems Langfuse solves.",
+        "quote": "I have been looking at a few open-source tools for LLM and AI Agent observability",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "dev.to",
+      "url": "https://dev.to/rapidclaw/2026-opentelemetry-for-llm-observability-self-hosted-setup-335o",
+      "title": "[2026] OpenTelemetry for LLM Observability — Self-Hosted Setup - DEV Community",
+      "content": "`[Your LLM Agents]\n|\nv\n[OTel Collector] ← receives traces via OTLP/gRPC\n|\nv\n[Tempo / Jaeger] ← trace storage\n[Prometheus] ← metrics storage\n[Grafana] ← visualization`\n\nIf you've looked at the self-hosted vs managed cost comparison, you know the economics are favorable when you're running fewer than five agents. The managed platforms charge per span or per seat, which adds up quickly even at small scale.\n\n## Setting Up the OTel Collector\n\nThe Collector is the central hub. It receives telemetry from your agents, processes it, and exports to your storage backends. Here's a minimal config for LLM traces: [...] ## Wrapping Up\n\nOpenTelemetry for LLM observability isn't a silver bullet, but it's the most practical foundation I've found for self-hosted setups. The semantic conventions are mature enough to use in production, the Collector is rock-solid, and the cost of running your own Tempo + Grafana stack is a fraction of what you'd pay for a managed platform.\n\nIf you're running a handful of agents and want to actually understand what they're doing, this stack is worth the setup time.\n\n## Top comments (5)\n\npic\nmax_quimby profile image [...] For the self-hosted backend, Grafana Tempo + Loki + Prometheus works cleanly as a trio with the same OTel Collector config you've described here. Tempo's native OTel ingestion means no translation layer, which keeps the ops footprint minimal. The TraceQL query language is worth learning if you're doing frequent debugging — filtering traces by custom span attributes makes root-cause analysis on agent failures dramatically faster.\n\nmax_quimby profile image",
+      "tavilyScore": 0.70069003,
+      "query": "self-hosted LLM tracing and evaluation platform recommendations",
+      "a": {
+        "score": 6,
+        "reason": "Discussion of self-hosted OTel LLM observability driven by managed-platform cost complaints — related need and audience",
+        "quote": "The managed platforms charge per span or per seat, which adds up quickly even at small scale",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Self-hosted OpenTelemetry tutorial discusses managed-platform cost pain, but remains instructional content rather than a direct lead.",
+        "quote": "The managed platforms charge per span or per seat, which adds up quickly even at small scale.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=47205382",
+      "title": "Show HN: AgentLens – Open-source observability for AI agents | Hacker News",
+      "content": "span matching - \\Cost tracking\\ — 27 models priced (GPT-4.1, Claude 4, Gemini 2.0, etc.) - \\Live streaming\\ — watch spans appear in real-time via SSE - \\Alerting\\ — anomaly detection for cost spikes, error rates, latency - \\OTel ingestion\\ — accepts OTLP HTTP JSON, so any OTel-instrumented app works Works with LangChain, CrewAI, AutoGen, LlamaIndex, and Google ADK. Tech: React 19 + FastAPI + SQLite/PostgreSQL. MIT licensed. 231 tests, 100% coverage. ```     docker run -p 3000:3000 tranhoangtu/agentlens-observe:0.6.0     pip install agentlens-observe  ```  Demo GIF and screenshots in the README. GitHub:  Docs:  I'd love feedback on the trace visualization approach and what features matter most for your agent debugging workflow. |     |  |  |  |  |  ---  --- | | |  |  |  |  ---  |  |  | [...] - \\Topology graph\\ — see your agent's tool calls, LLM calls, and sub-agent\nspawns as an interactive DAG\n- \\Time-travel replay\\ — step through an agent run frame-by-frame with a\nscrubber timeline\n- \\Trace comparison\\ — side-by-side diff of two runs with color-coded span\nmatching\n- \\Cost tracking\\ — 27 models priced (GPT-4.1, Claude 4, Gemini 2.0, etc.)\n- \\Live streaming\\ — watch spans appear in real-time via SSE\n- \\Alerting\\ — anomaly detection for cost spikes, error rates, latency\n- \\OTel ingestion\\ — accepts OTLP HTTP JSON, so any OTel-instrumented app works\n\nWorks with LangChain, CrewAI, AutoGen, LlamaIndex, and Google ADK.\n\nTech: React 19 + FastAPI + SQLite/PostgreSQL. MIT licensed. 231 tests, 100% coverage. [...] - \\Topology graph\\ — see your agent's tool calls, LLM calls, and sub-agent\nspawns as an interactive DAG\n- \\Time-travel replay\\ — step through an agent run frame-by-frame with a\nscrubber timeline\n- \\Trace comparison\\ — side-by-side diff of two runs with color-coded span\nmatching\n- \\Cost tracking\\ — 27 models priced (GPT-4.1, Claude 4, Gemini 2.0, etc.)\n- \\Live streaming\\ — watch spans appear in real-time via SSE\n- \\Alerting\\ — anomaly detection for cost spikes, error rates, latency\n- \\OTel ingestion\\ — accepts OTLP HTTP JSON, so any OTel-instrumented app works\n\nWorks with LangChain, CrewAI, AutoGen, LlamaIndex, and Google ADK.\n\nTech: React 19 + FastAPI + SQLite/PostgreSQL. MIT licensed. 231 tests, 100% coverage.",
+      "tavilyScore": 0.83801806,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 5,
+        "reason": "Competitor launch thread where builders of agent observability tools and interested users congregate",
+        "quote": "I'd love feedback on the trace visualization approach and what features matter mos",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Vendor self-promotion for a competing open-source agent observability tool, not a buyer asking for help.",
+        "quote": "I'd love feedback on the trace visualization approach and what features matter mos",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "dev.to",
+      "url": "https://dev.to/openobserve/how-to-monitor-openai-api-costs-and-token-usage-with-opentelemetry-4c5o",
+      "title": "How to Monitor OpenAI API Costs and Token Usage with OpenTelemetry - DEV Community",
+      "content": "The fix is the same fix you use for any production system: emit structured telemetry at the point of the API call and make it queryable. OpenTelemetry gives you a vendor-neutral way to do this, and a growing set of GenAI-specific conventions means the fields you emit today will still be meaningful in two years.\n\nQuick start: Jump to the Python setup or Node.js setup if you just need the code.\n\n## The three signals you actually need to track\n\nFor LLM cost monitoring, three signals carry almost all the value:\n\nEverything else (error rate, finish reason, response model) is useful context for these three. Start with the three and add context as you need it.\n\n## What OpenTelemetry's GenAI semantic conventions give you [...] `-v2`\n`# tracked_llm.py\nimport time\nfrom opentelemetry import trace, metrics\nfrom openai import OpenAI\nfrom pricing import calculate_cost\ntracer = trace.get_tracer(\"llm-cost\")\nmeter = metrics.get_meter(\"llm-cost\")\ncost_histogram = meter.create_histogram(\nname=\"gen_ai.usage.cost_usd\",\ndescription=\"Estimated cost of a single LLM call in USD\",\nunit=\"USD\",\n)\nclient = OpenAI()\ndef tracked_chat(messages, model=\"gpt-4o-mini\", feature=\"unknown\", user_id=\"anon\"):\nwith tracer.start_as_current_span(\"gen_ai.chat\") as span:\nspan.set_attribute(\"gen_ai.provider.name\", \"openai\")\nspan.set_attribute(\"gen_ai.request.model\", model)\nspan.set_attribute(\"feature\", feature)\nspan.set_attribute(\"user_id\", user_id)\nstart = time.perf_counter() [...] You now have cost on the span (for drill-down) and cost as a metric (for aggregation, alerting, and dashboards). Both are labeled with `feature` so you can break them down later.\n\n`feature`\n\n## Attributing cost to users, features, and teams\n\nThis is the section most readers came for. Raw token counts do not answer \"who is spending our money.\" Attribution does.\n\n### Adding attributes on every span\n\nEvery LLM call should carry four attribution dimensions:\n\n`feature`\n`document_summary`\n`chat_reply`\n`rag_answer`\n`user_id`\n`team`\n`environment`\n`prod`\n`staging`\n`dev`\n\nWire them through as keyword arguments on your wrapper:\n\n`result = tracked_chat(\nmessages=[{\"role\": \"user\", \"content\": prompt}],\nmodel=\"gpt-4o\",\nfeature=\"document_summary\",\nuser_id=hashed_user_id,\n)`",
+      "tavilyScore": 0.7953404,
+      "query": "how do I trace LLM calls and token costs in production",
+      "a": {
+        "score": 4,
+        "reason": "Tutorial on tracking LLM costs with OTel; readers have the cost-monitoring need but it's instructional content",
+        "quote": "emit structured telemetry at the point of the API call and make it queryable",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "How-to article addressing OpenAI cost and token monitoring, but no identifiable prospect asking for a product.",
+        "quote": "How to Monitor OpenAI API Costs and Token Usage with OpenTelemetry",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "dev.to",
+      "url": "https://dev.to/vultr/deploying-langfuse-open-source-llm-observability-platform-5741",
+      "title": "Deploying Langfuse – Open-Source LLM Observability Platform - DEV Community",
+      "content": "DEV Community\n\n## DEV Community\n\nCover image for Deploying Langfuse – Open-Source LLM Observability Platform\nVultr profile image\nSanskriti Harmukh\n\nPosted on Aug 12\nwith Aashish Chaurasiya\n•\nOriginally published at docs.vultr.com\n\n# Deploying Langfuse – Open-Source LLM Observability Platform\n\n## The Self-Hosted Stack (92 Part Series)\n\nLangfuse is an open-source observability platform for LLM applications including traces prompts/responses, tracks token usage and cost, and gives you debugging analytics for production AI workflows. This guide deploys it via Docker Compose with PostgreSQL, ClickHouse, Redis, and S3-compatible object storage, secured behind Traefik with Let's Encrypt, then sends a real trace through it. [...] The Langfuse SDK auto-captures the request/response and forwards it as a trace.\n\nIn the UI, go to your project's Traces page — click the trace to see model name, token usage, latency, cost estimate, and the full conversation.\n\n## Next Steps\n\nLangfuse is running with full trace persistence, analytics via ClickHouse, and object-storage-backed exports. From here:\n\nFor the full guide, visit the original article on Vultr Docs.\n\n## The Self-Hosted Stack (92 Part Series)\n\n## Top comments (0)\n\npic\n\nStart Building on the Everywhere Cloud\n\n### More from Vultr\n\nDEV Community — A space to discuss and keep up software development and manage your software career\n\nBuilt on Forem — the open source software that powers DEV and other inclusive communities. [...] ## Send a Test Trace\n\n`$ sudo apt install python3-venv -y\n$ python3 -m venv langfuse-env\n$ source langfuse-env/bin/activate\n$ pip install langfuse openai`\n`$ nano test_langfuse.py`\n`from langfuse.openai import openai\nclient = openai.OpenAI(\napi_key=\"YOUR_LLM_API_KEY\",\nbase_url=\"\n)\nresponse = client.chat.completions.create(\nmodel=\"openai/gpt-oss-120b\",\nmessages=[\n{\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n{\"role\": \"user\", \"content\": \"Explain Langfuse in one sentence.\"}\n],\ntemperature=0.7,\nmax_tokens=100\n)\nprint(response.choices.message.content)`\n\nSwap `base_url` for your actual LLM provider if not using Groq.\n\n`base_url`\n`$ export LANGFUSE_SECRET_KEY=\"YOUR_SECRET_KEY\"\n$ export LANGFUSE_PUBLIC_KEY=\"YOUR_PUBLIC_KEY\"\n$ export LANGFUSE_HOST=\"\n$ python test_langfuse.py`",
+      "tavilyScore": 0.7804952,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 4,
+        "reason": "Deployment guide for Langfuse itself; author already uses the product, not a sales lead",
+        "quote": "This guide deploys it via Docker Compose with PostgreSQL, ClickHouse, Redis",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Vendor-published deployment tutorial for Langfuse, so it is promotional/instructional content rather than a lead.",
+        "quote": "This guide deploys it via Docker Compose with PostgreSQL, ClickHouse, Redis, and S3-compatible object storage",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "Medium",
+      "url": "https://luigi-saetta.medium.com/observability-for-enterprise-ai-agents-an-open-source-solution-bb90eb42a086",
+      "title": "Medium",
+      "content": "## A concrete solution: Langfuse\n\nTo build an observability solution suitable for systems based on LLMs and AI agents, one of the most interesting open-source tools available today is Langfuse. It is a platform designed for tracing, observability, and evaluation (scoring) of LLM-based applications.\n\nIts relevance in the context of this article is very concrete: Langfuse makes it possible to collect and analyze many of the types of information that, as discussed in the first part, are essential for truly observing a GenAI system. These include prompts, outputs, traces, metadata, response times, token usage, tool calls, and possible evaluation scores. [...] # Observability for Enterprise AI Agents: an open-source solution\n\nA practical deep dive into observability for GenAI agents using Langfuse and OCI\n\n## At a glance\n\nFor Enterprise AI Agents, observability cannot be limited to logs, metrics, and traces in the traditional sense. To truly understand how these systems behave, it is also necessary to observe prompts, context, tool calls, token usage, response times, and output quality.\n\nIn this article, I explain why systems based on Generative AI require a different approach to observability, and I present a concrete solution based on Langfuse that can be integrated easily with OCI Enterprise AI Agents thanks to compatibility with the OpenAI Responses API. [...] In this article, I will start with a definition of observability and its role in complex systems. I will then examine the specific characteristics it takes on in the context of Generative AI and Enterprise AI Agents.\n\nIn the second part, I will present a concrete solution based on open-source components and easily implementable on OCI. Through practical examples, I will show what information can be collected and why it is useful for observing and improving an AI agent in production.\n\nThe proposed solution combines the interoperability capabilities offered by OCI Enterprise AI Agents, including compatibility with the OpenAI Responses API, with Langfuse, a widely used open-source platform for collecting, analyzing, and evaluating telemetry from LLM-based applications.",
+      "tavilyScore": 0.8161134,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 3,
+        "reason": "Article recommending Langfuse itself; author is a content writer, not a lead",
+        "quote": "one of the most interesting open-source tools available today is Langfuse",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Educational article recommending Langfuse itself, with no individual prospect expressing a need.",
+        "quote": "To build an observability solution suitable for systems based on LLMs and AI agents",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "Medium",
+      "url": "https://medium.com/@pkumaschow/see-inside-your-local-llm-observability-in-a-homelab-8c6fc16a16cf",
+      "title": "See Inside Your Local LLM: Observability in a Homelab",
+      "content": "## Arize Phoenix\n\nPhoenix is an open-source LLM observability platform from Arize AI. You run it locally via Docker. It accepts OpenTelemetry traces over HTTP (OTLP), stores them, and gives you a web UI at `localhost:6006` where you can browse every span, see LLM inputs and outputs, inspect tool call arguments, and visualize the entire execution tree.\n\nPhoenix was originally designed for production ML monitoring, but it works perfectly for local development — and it’s the best free option I’ve found for this use case.\n\n## Prerequisites\n\nYou’ll need:\n\n   Python 3.11+\n   uv — fast Python package manager (`pip install uv` or check the uv docs)\n   Docker (or Podman with Compose)\n   Ollama installed and running [...] ## Wrapping Up\n\nThe setup takes about 20 minutes:\n\n1.   `docker run` to start Phoenix\n2.   `ollama pull` to get the model\n3.   `uv sync` to install dependencies\n4.   Three lines of instrumentation code\n5.   Open `localhost:6006` and run your agent\n\nWhat you get is genuine visibility into every step of your agent’s reasoning — which tools it called, what it said to them, what the LLM was thinking, and exactly where time was spent.\n\nIf you’re building with local LLMs, this is the observability stack I’d recommend starting with.\n\nThe project:beeai-framework-py-starter — clone it and follow the README. The observability example is `beeai_framework_starter/agent_observe.py`.\n\nArize Phoenix:github.com/Arize-ai/phoenix — open source, actively maintained, no account required for local use. [...] ## BeeAI Framework\n\nBeeAI is an open-source agent framework from IBM. It supports multiple agent types — `ToolCallingAgent` for straightforward tool use, `RequirementAgent` for constrained orchestration where you define rules like \"always call the ThinkTool first\" or \"call DuckDuckGo only after checking weather.\" It also supports multi-agent workflows where specialised agents hand off work to each other.\n\nThe framework is built on Python’s `asyncio` and integrates natively with OpenTelemetry via the OpenInference instrumentation package.\n\n## Arize Phoenix",
+      "tavilyScore": 0.8086723,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 3,
+        "reason": "Tutorial on self-hosting a competitor (Phoenix) for local LLM observability; hobbyist context",
+        "quote": "it's the best free option I've found for this use case",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Practitioner tutorial with a relevant local observability use case, but it already recommends Phoenix and is not a request for help.",
+        "quote": "it’s the best free option I’ve found for this use case",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "Medium",
+      "url": "https://medium.com/data-science-collective/top-llm-observability-platforms-in-2026-2c1c37619766",
+      "title": "Top LLM Observability Platforms in 2026  | Data Science Collective",
+      "content": "The product splits in two.\n\nPhoenix is the free, self-hostable eval and observability tool, built on OpenInference and OpenTelemetry. Read its license before you assume it is open source: Phoenix is Elastic License 2.0, so you can run it internally at no cost but you cannot offer it as a service. Arize AX is the commercial platform: span, trace, and session evals at scale, pre-production testing of prompts and harnesses, and Alyx, an AI engineering agent that runs evals and debugs issues from inside your coding environment (Cursor and Claude Code included). [...] Best for: teams who want tracing, evals, prompt versioning, and monitoring running on their own hardware without a procurement conversation to get started.\n\nDocs: Opik documentation · pricing · source\n\nPricing: free open-source version, free cloud tier with no credit card, paid enterprise tier.\n\n## 2. Braintrust\n\nBraintrust is built for the eval loop and opinionated about it. Run experiments against real datasets, compare prompts and models side by side, score with LLMs or code or humans. There is no open-source build, so unlike Opik and Langfuse you cannot read or fork it. You can still run the data plane in your own cloud on a commercial plan and keep your traces there. [...] That is Comet’s line, and the open-source half of it is the part worth pinning down. The Apache-2.0 build ships the backend too, so you self-host the whole platform. It carries tracing, evaluation, prompt and agent optimization, guardrails, and production monitoring with online evaluation rules. One thing is clearly outside it: Ollie, the agent that analyzes your traces and recommends fixes, needs Enterprise if you self-host. A free cloud tier including Ollie sits alongside, capped at 25k spans a month.",
+      "tavilyScore": 0.7874412,
+      "query": "self-hosted LLM tracing and evaluation platform recommendations",
+      "a": {
+        "score": 3,
+        "reason": "Vendor roundup article; audience of evaluators but no direct ask",
+        "quote": "Best for: teams who want tracing, evals, prompt versioning, and monitoring running on their own hardware",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Listicle comparing LLM observability platforms, not a direct buyer need or discussion.",
+        "quote": "Top LLM Observability Platforms in 2026",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "Medium",
+      "url": "https://codemaker2016.medium.com/your-practical-guide-to-llm-observability-with-langfuse-85644f35a4ca",
+      "title": "Medium",
+      "content": "This is where Langfuse emerges as a critical platform for modern AI engineering. Built as an open-source observability and management solution for LLM applications, Langfuse helps developers gain visibility into model behavior, monitor performance, trace complex workflows, manage prompts with version control, and evaluate output quality at scale. As AI-powered applications continue to grow in complexity, tools like Langfuse are becoming essential for maintaining reliability, controlling costs, and improving user experience. [...] In this article, we will explore how Langfuse addresses the operational challenges of building production-ready LLM systems. Through a hands-on document Q&A application, you’ll learn how to trace LLM interactions for debugging, organize and version prompts effectively, monitor application performance, and implement evaluation strategies that bring structure and confidence to AI development workflows.\n\n## Getting Started\n\n### Table of contents\n\n### What is Langfuse\n\nLangfuse is an open-source observability and evaluation platform designed for applications powered by Large Language Models (LLMs). It helps developers monitor, debug, manage, and improve AI workflows by providing complete visibility into how LLM applications behave in production. [...] As LLM applications become more complex, debugging issues and understanding model behavior can be challenging due to the non-deterministic nature of AI systems. Langfuse addresses this by enabling teams to trace every stage of an LLM interaction — from prompts and intermediate processing steps to final responses — across both simple and multi-step AI workflows.\n\nLangfuse seamlessly integrates with modern AI development ecosystems and supports popular frameworks such as LangChain, LlamaIndex, AutoGen, and CrewAI. It is model-agnostic, allowing developers to work with a wide range of providers including OpenAI, Anthropic, Google Gemini, Mistral, and Hugging Face models without additional complexity.\n\n### Components of Langfuse",
+      "tavilyScore": 0.7789858,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 3,
+        "reason": "Promotional/explainer article about Langfuse; no individual buyer",
+        "quote": "tools like Langfuse are becoming essential for maintaining reliability, controlling costs",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Article promoting and explaining Langfuse rather than a potential customer expressing a problem.",
+        "quote": "In this article, we will explore how Langfuse addresses the operational challenges",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/ai-evals-how-test-monitor-llm-applications-production-pawan-tripathi-wmfje",
+      "title": "AI Evals: How to Test and Monitor LLM Applications in Production",
+      "content": "Tools such as Promptfoo can run evaluations in CI pipelines and generate reports for review.\n\nThis approach helps catch regressions before they reach users.\n\n### Section 9: Production Monitoring and Observability\n\nPassing an evaluation dataset doesn't guarantee that an application will behave perfectly in production.\n\nReal users introduce inputs and situations that developers may never have anticipated. This is why production monitoring matters.\n\nFor LLM applications, monitoring should go beyond basic server metrics. You should track:\n\n### Application Metrics\n\n Request volume.\n Error rates.\n Response latency.\n API availability.\n\n### LLM Metrics\n\n Token consumption.\n Model response time.\n API failures.\n Cost per request.\n\n### Quality Metrics [...] 11.2 Promptfoo\n\nAn open-source option for testing prompts, comparing model outputs, checking assertions, running security evaluations, and integrating tests into CI/CD.\n\n11.3 LangSmith\n\nProvides datasets, experiments, offline and online evaluations, tracing, and feedback workflows for LLM applications and agents.\n\n11.4 Arize Phoenix\n\nAn open-source platform for LLM observability, tracing, evaluation, and debugging. It also supports OpenTelemetry-based instrumentation.\n\n11.5 Ragas\n\nUseful for evaluating RAG applications through metrics such as faithfulness, context precision, and context recall.\n\nThe right choice depends on your architecture, language, deployment environment, budget, and evaluation requirements. [...] Start with a small, carefully reviewed dataset rather than hundreds of random prompts.\n\nA useful starting point is 20–50 representative cases, then expand it as you discover new failure patterns. This is a practical starting suggestion, not a universal benchmark. Include normal scenarios, edge cases, and adversarial inputs.\n\nAlso, keep your dataset versioned. When you change a prompt, model, or retrieval strategy, you should be able to compare the new results against the same test cases.\n\n### Section 6: Evaluating RAG and AI Agents\n\nDifferent AI architectures need different evaluation strategies.\n\n### For RAG Applications\n\nA RAG system has two major responsibilities:\n\n1. Retrieve the right information.\n2. Generate an answer grounded in that information.",
+      "tavilyScore": 0.745954,
+      "query": "best way to manage prompts and monitor LLM application metrics",
+      "a": {
+        "score": 3,
+        "reason": "Educational post on LLM monitoring; readers may include practitioners but no direct ask",
+        "quote": "This is why production monitoring matters.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Educational overview of evaluation and production monitoring, not a person asking for help.",
+        "quote": "Passing an evaluation dataset doesn't guarantee that an application will behave perfectly in production.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "dev.to",
+      "url": "https://dev.to/kuldeep_paul/the-best-tools-for-monitoring-llm-costs-and-usage-in-2025-5f3a",
+      "title": "The Best Tools for Monitoring LLM Costs and Usage in 2025 - DEV Community",
+      "content": "LiteLLM is particularly suitable for teams seeking a lightweight, self-hosted solution focused primarily on routing and cost visibility.\n\n## 3. Langfuse\n\nLangfuse provides an open-source observability platform with deep tracing and integrated cost analytics. It captures usage across different token types and attributes costs to specific steps within complex workflows.\n\nLangfuse is well suited for teams that prioritize debugging and workflow visibility alongside cost tracking.\n\n## 4. Datadog LLM Observability\n\nDatadog extends its monitoring platform with capabilities tailored to AI workloads, correlating LLM costs with broader infrastructure metrics. This is particularly valuable for organizations already standardized on Datadog. [...] ## 1. Bifrost by Maxim AI\n\nBifrost is an open-source AI gateway that treats cost visibility as a first-class capability. By funneling all model traffic through a unified interface, it provides a consolidated view of token usage, latency, and spending across providers.\n\nKey strengths for cost monitoring:\n\nWhen combined with Maxim AI’s broader observability capabilities, Bifrost extends beyond infrastructure monitoring to include quality insights, making it a comprehensive option for teams running production workloads.\n\n## 2. LiteLLM\n\nLiteLLM is a widely adopted open-source proxy that aggregates multiple providers while offering built-in spend tracking. It maintains pricing mappings and surfaces cost data across different usage dimensions. [...] ## How to Choose\n\nSelecting the right solution depends on where you need control and insight. If you want monitoring embedded directly into your gateway with optimization features like caching and policy enforcement, Bifrost offers a tightly integrated approach. If your priority is tracing or experimentation, tools like Langfuse or Weave may be more appropriate. Organizations seeking unified observability across infrastructure and AI may gravitate toward Datadog.\n\nThe most important step is adopting monitoring early. Establishing visibility before scaling helps prevent unexpected costs and ensures your AI systems remain both performant and economically sustainable.\n\n## Top comments (0)\n\npic\n\nTemplates let you quickly answer FAQs or store snippets for re-use.",
+      "tavilyScore": 0.7405498,
+      "query": "how do I trace LLM calls and token costs in production",
+      "a": {
+        "score": 3,
+        "reason": "Listicle of cost-monitoring tools including Langfuse; no individual buyer",
+        "quote": "Langfuse is well suited for teams that prioritize debugging and workflow visibility alongside cost tracking",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Tool roundup/listicle about LLM cost monitoring rather than an active sales opportunity.",
+        "quote": "The Best Tools for Monitoring LLM Costs and Usage in 2025",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/from-guesswork-governance-building-production-grade-prompt-dubey-qi7fc",
+      "title": "From Guesswork to Governance: Building a Production-Grade Prompt Evaluation Framework",
+      "content": "### Best Practices for Prompt Evaluation\n\n- Treat prompts as versioned assets\n- Design representative and diverse test datasets\n- Track metrics over time, not once\n- Gate production releases on evaluation thresholds\n- Optimize prompts before scaling models\n- Monitor cost as a first-class signal\n\n### Final Thoughts\n\nPrompts are code.\n\nAnd like any production code, they require:\n\n- Tests\n- Metrics\n- Monitoring\n- Optimization pipelines\n\nPrompt evaluation is the difference between:\n\n> “It seems to work”\n\nand\n\n> “We know it works—and we can prove why.”\n\nAs GenAI systems scale, governance, reliability, and cost control will matter more than clever prompting. A robust Prompt Evaluation Framework is how teams move from experimentation to engineering discipline. [...] # From Guesswork to Governance: Building a Production-Grade Prompt Evaluation Framework\n\nAs Large Language Models (LLMs) move from experimentation into production-critical systems, one reality becomes unavoidable:\n\nPrompt engineering without evaluation is guesswork.\n\nTeams often invest significant effort in crafting prompts, yet rely on manual trial-and-error, subjective judgment, and anecdotal testing. This approach does not scale—and it fails silently when prompts regress, costs spike, or outputs become unreliable.\n\nTo address this gap, we built a Prompt Evaluation Framework: a systematic, metric-driven, and automated way to test, benchmark, optimize, and monitor prompts with the same rigor we apply to models and code. [...] This post outlines the why, what, and how of prompt evaluation in real-world GenAI systems.\n\n### Why Prompt Evaluation Is No Longer Optional\n\n### 1. Ineffective Prompt Engineering\n\nProblem: Prompt tuning is often manual and non-reproducible. Changes are made without knowing whether quality improved or degraded.\n\nSolution: Automated evaluation with measurable metrics enables objective comparison, regression detection, and confidence in prompt changes.\n\n### 2. Unpredictable LLM Outputs\n\nProblem: Hallucinations, partial reasoning, and inconsistent answers erode trust in AI systems.\n\nSolution: Continuous monitoring using accuracy, relevance, and coherence metrics ensures output stability over time—even as models evolve.\n\n### 3. Output Formatting Failures",
+      "tavilyScore": 0.73048216,
+      "query": "best way to manage prompts and monitor LLM application metrics",
+      "a": {
+        "score": 3,
+        "reason": "Best-practices thought leadership on prompt evaluation; no specific buyer",
+        "quote": "Monitor cost as a first-class signal",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Thought-leadership article on prompt evaluation and governance, with no explicit personal need or tool search.",
+        "quote": "As GenAI systems scale, governance, reliability, and cost control will matter more than clever prompting.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "Medium",
+      "url": "https://medium.com/@robert.broeckelmann/ai-llm-software-security-part-1-263ed2d5e7b0",
+      "title": "AI / LLM Application Software Security: Part 1",
+      "content": "Common tools for traditional application monitoring include:\n\n   Datadog\n   New Relic\n   Grafana\n   Prometheus\n\nTrace Each LLM Call:\n\nTo trace every LLM call, for each request capture:\n\n   User request\n   Prompt template version\n   Retrieved context\n   Model name\n   Model parameters\n   Response\n   Latency\n   Cost\n\nWithout tracing, diagnosing hallucinations becomes nearly impossible. You want visibility into every step.\n\nTools that can provide this include:\n\n   LangSmith\n   Langfuse\n   Helicone\n   Arize Phoenix\n\nMonitor Retrieval Quality (RAG Applications):\n\nMonitor retrieval quality for RAG applications because retrieval failures are often more common than model failures. It is recommended that you track the following: [...] While Segmentation separates information, Sandboxing restricts execution and capabilities.\n\nMonitoring and Red Teaming\n\nThe best way to monitor an LLM application is to treat it as three systems at once:\n\n1.   A traditional software application\n2.   A machine learning system\n3.   A retrieval/agent workflow system\n\nTraditional Application Monitoring:\n\nFor traditional application monitoring, start with the basics, including:\n\n   Request volume\n   Response times\n   Error rates\n   Token usage\n   Cost\n   Rate-limit events\n   Timeouts\n\nOne would often gather the following metrics (though, there are many others):\n\n   Requests/sec\n   P50/P95/P99 latency\n   Input tokens\n   Output tokens\n   Cost per request\n   Error rate\n   Total / layer execution time [...] Output Quality:\n\nYou should also monitor output quality. Traditional monitoring won’t tell you if the LLM’s answers are wrong. So, track the hallucination rate via:\n\n   Human review\n   Automated evaluation\n   Ground-truth datasets\n\nAlso, monitor the refusal rate (how often the LLM declines the opportunity to do what was requested or not answer the question). Too many refusals can indicate:\n\n   Prompt problem\n   Safety policy issue\n   Model degradation\n\nUser Satisfaction:\n\nMonitor user satisfaction by collecting statistics through:\n\n   Thumbs up/down\n   User ratings\n   Regeneration requests\n   Session abandonment\n\nFinancial Monitoring:\n\nWatch your monitor costs. LLM applications can fail financially (that means an unexpected $10K USD bill) before they fail technically. So, track:",
+      "tavilyScore": 0.7148271,
+      "query": "best way to manage prompts and monitor LLM application metrics",
+      "a": {
+        "score": 3,
+        "reason": "Security/observability guide listing tools; informational, no individual need",
+        "quote": "Without tracing, diagnosing hallucinations becomes nearly impossible.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Security guidance article recommending tracing tools, not an individual prospect seeking a solution.",
+        "quote": "Without tracing, diagnosing hallucinations becomes nearly impossible.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "Medium",
+      "url": "https://medium.com/online-inference/llm-observability-tracing-monitoring-and-debugging-ai-applications-in-production-bb4e74529256",
+      "title": "LLM observability: Tracing, monitoring, and debugging AI applications in production",
+      "content": "python rag_observability.py\nThe printed result should include `refund‑policy‑v3`, the 30‑day answer, token estimates, latency values, and a passing groundedness score. Weave also prints a trace link. Open it and inspect:\n\n1.   The `rag_request` parent operation\n2.   The `retrieve` input, output, document IDs, and timing\n3.   The assembled prompt\n4.   The generation result, model identifier, and token estimates\n5.   The groundedness value and threshold\n6.   The prompt‑version, release, and risk‑tier attributes [...] When you replace the stub with a supported provider client, provider instrumentation can capture model calls and available usage metadata inside the same trace. For an OpenTelemetry implementation, preserve the same parent‑child structure using explicit spans and semantic attributes. For MLflow Tracing, replace `@` with `@` and retain the operation names and metadata schema. The objective is consistent instrumentation shape, not a model‑quality benchmark.\n\n## Trade‑offs analysis: accuracy vs latency, cost vs throughput, and flexibility vs determinism\n\nLLM observability is a design trade‑off, not a free add‑on. Instrumentation and evaluation can improve reliability while adding latency, cost, privacy exposure, and operational complexity. [...] Roll out LLM observability in clear phases, starting small and expanding strategically.\n\nStart with one high‑value application where quality, cost, or risk is visible to the business. Do not begin by instrumenting every prototype.\n\nPhase the rollout:\n\n1.   Instrument the end‑to‑end request and its major child spans.\n2.   Add latency, token, cost, and reliability metrics.\n3.   Define two or three task‑specific quality evaluations.\n4.   Review traces for failures and high‑cost outliers.\n5.   Add production sampling and monitors.\n6.   Introduce release gates and governance policies.\n7.   Expand the standard to additional applications.",
+      "tavilyScore": 0.7061904,
+      "query": "how do I trace LLM calls and token costs in production",
+      "a": {
+        "score": 3,
+        "reason": "Tutorial using a competitor (Weave) for RAG observability; instructional content",
+        "quote": "provider instrumentation can capture model calls and available usage metadata inside the same trace",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Technical tutorial on LLM observability using another tool, with no explicit buyer request.",
+        "quote": "LLM observability: Tracing, monitoring, and debugging AI applications in production",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "Medium",
+      "url": "https://medium.com/@zakariabenhadi/a-practical-guide-to-observability-for-llm-applications-logs-traces-and-quality-metrics-c29568ef52eb",
+      "title": "A Practical Guide to Observability for LLM Applications: Logs, Traces, and Quality Metrics",
+      "content": "### 4.1 Retrieval Span\n\nThe retrieval span captures metadata essential to understanding the quality and relevance of retrieved context. This includes vector store identifiers, embedding queries, top-k selection, hit distribution, and a list of retrieved documents or passages. These attributes help diagnose hallucinations attributable to poor retrieval quality.\n\n### 4.2 Prompt Span\n\nPrompt spans record the prompt template version, interpolated variables, rendered token count, and other contextual metadata. Tracking prompt lineage is crucial because minor template changes can produce major behavioural regressions in LLM outputs.\n\n### 4.3 LLM Call Span [...] ### Structured logs\n\nLogs in LLM systems must be machine-readable and schema-consistent. They should encode key information such as prompts (with sensitive components masked), model outputs, configuration parameters like temperature or model version, token usage, and any errors encountered. Structured logs allow downstream OLAP systems to efficiently filter and correlate events at scale.\n\n### Model-Quality Metrics (LLM-QA) [...] ### 6.4 Querying Examples\n\nRobust observability enables operational and behavioural insights such as detecting prompt regressions, correlating retrieval failures with hallucination rates, and identifying anomalous token usage patterns. These analyses support continuous model improvement cycles.\n\n## 7. Limitations and Future Work\n\nDespite progress, LLM evaluations remain partly subjective, especially for open-ended tasks. Factuality scoring is still model-dependent, and multi-agent systems lack standardized observability patterns. Storing complete traces can also increase storage requirements substantially. Future work should explore compression-aware trace schemas, generalized evaluation benchmarks, and cross-agent tracing standards.\n\n## Conclusion",
+      "tavilyScore": 0.684264,
+      "query": "best way to manage prompts and monitor LLM application metrics",
+      "a": {
+        "score": 3,
+        "reason": "Educational guide on LLM observability spans; no individual buyer",
+        "quote": "Tracking prompt lineage is crucial because minor template changes can produce major behavioural regressions",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Educational guide to LLM observability concepts, not a real person explicitly looking for a product.",
+        "quote": "A Practical Guide to Observability for LLM Applications: Logs, Traces, and Quality Metrics",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "Medium",
+      "url": "https://medium.com/online-inference/ai-observability-tools-monitoring-ai-agents-in-production-3ea08bce44c0",
+      "title": "AI observability tools: Monitoring AI agents in production",
+      "content": "### Arize Phoenix and Arize AI\n\nPress enter or click to view image in full size\n\nImage 9\n\nArize Phoenix is an open-source project for LLM tracing, evaluations, datasets, and OpenTelemetry-oriented workflows. Arize AI’s managed platform extends to enterprise-grade monitoring, drift analysis, evaluation pipelines, and governance.\n\nThis split lets teams start with open-source development and move to managed monitoring when volume and compliance requirements grow. Phoenix and AX have different deployment and pricing profiles, so confirm capabilities and limits in each product’s official documentation. The strongest fit is a team that wants agent traces, model observability, and an open-source path that can scale to enterprise operations.\n\n### Langfuse [...] Pick Langfuse if you want a transparent, self-hostable LLM observability layer to instrument today without adopting a broader ML platform.\n   Pick Agenta if you need open-source prompt experimentation, tracing, and human annotation workflows under your control in internal environments.\n   Pick Fiddler or Arize AI for regulated enterprise monitoring and governance. They emphasize explainability, drift, bias, compliance, and auditability.\n   Pick Datadog LLM Observability if your organization already runs APM, logs, metrics, and incidents in Datadog and you want LLM spans and cost signals beside service telemetry. [...] ### Agenta\n\nAgenta is an open-source, self-hostable platform for prompt experimentation, evaluation, tracing, and human annotation. It supports review loops and a prompt playground while giving teams control over deployment in internal environments. This suits organizations that want an open-source evaluation and prompt management workflow they can run themselves.\n\nThe trade-off is that teams needing broad APM integration, enterprise governance, or detailed model training lineage will likely add complementary tools. See the official Agenta documentation for installation, SDKs, and example workflows.\n\n### Fiddler\n\nPress enter or click to view image in full size\n\nImage 11",
+      "tavilyScore": 0.8118252,
+      "query": "looking for open source LLM observability tool for AI agents",
+      "a": {
+        "score": 2,
+        "reason": "Listicle comparing observability vendors; no individual need expressed",
+        "quote": "The strongest fit is a team that wants agent traces, model observability, and an open-source pa",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Vendor/tool overview article about AI observability rather than a real person seeking a solution.",
+        "quote": "The strongest fit is a team that wants agent traces, model observability, and an open-source pa",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "dev.to",
+      "url": "https://dev.to/kuldeep_paul/top-5-llm-evaluation-platforms-for-2026-3g3b",
+      "title": "Top 5 LLM Evaluation Platforms for 2026 - DEV Community",
+      "content": "Arize’s dual approach spans managed SaaS for turnkey monitoring and an open-source path with Phoenix for teams that prefer self-hosted analytics. Phoenix can log every model call, index embeddings, and support async workloads with OpenTelemetry, enabling unified tracing across services, as summarized in KDnuggets’ roundup of open-source LLM evaluation platforms.\n\nStrengths include robust telemetry, model/version lineage, and compatibility with mature MLOps pipelines. Trade-off: the platform’s depth makes it an optimal fit for larger/enterprise environments; smaller teams may find it more than they need for early prototypes.\n\n## Langfuse [...] | Platform | Automated + HITL | Observability depth | Benchmarks/safety | Cost & latency telemetry | Governance/audit | Hosting |\n ---  ---  --- \n| Maxim | Yes (incl. simulation + HITL) | Session/trace/span with agent debugging | Strong, plus continuous dataset curation | Real-time session-level | Enterprise-grade | Cloud + self-hosted |\n| Arize AI | Automated checks; HITL limited | Best-in-class production monitoring | Import/custom checks; drift/bias | Robust production telemetry | Enterprise-grade | SaaS + OSS (Phoenix) |\n| Langfuse | Automated evaluations; basic review | Deep nested tracing, OTel | Custom datasets, prompt versions | Good per-trace metrics | Moderate | Cloud + on-prem | [...] ## How to Choose the Right LLM Evaluation Platform\n\nMatch to your priority:\n\nReliability, observability, governance: Maxim, Arize AI.\n\nDeveloper-first debugging and control: Langfuse, DeepEval.\n\nCost-conscious benchmarking and procurement: Prompts.ai.\n\nPilot with your real traces, prompts, and workflows. Include RAG/agent pipelines, noisy production inputs, and representative datasets.\n\nEvaluate across: integrations (OTel, CI/CD, monitoring), hosting/security, role-based UX (dev, data, compliance), cost model, and scale.\n\nQuick checklist:\n\nDoes it capture full traces and metrics you care about?\n\nCan it run automated + human-in-the-loop evaluations?\n\nWill it fit your CI/CD and observability stack?\n\nAre governance, audit trails, and PII controls sufficient?",
+      "tavilyScore": 0.7518304,
+      "query": "self-hosted LLM tracing and evaluation platform recommendations",
+      "a": {
+        "score": 2,
+        "reason": "Listicle of evaluation platforms; editorial content, no individual need",
+        "quote": "smaller teams may find it more than they need for early prototypes",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Listicle of LLM evaluation platforms, including Langfuse, with no direct prospect need.",
+        "quote": "Top 5 LLM Evaluation Platforms for 2026",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L16",
+      "text": "We log model, prompt tokens, completion tokens, and cost per call, then aggregate by user, feature, and environment. Logging alone tells you who spent what; alerts and hard limits are what prevent surprises. We use Langfuse for tracing and cost dashboards, with budgets enforced in our own gateway. Disclosure: I work on Langfuse.",
+      "usage": {
+        "in": 208,
+        "out": 75
+      },
+      "latencyMs": 2025
+    },
+    {
+      "leadId": "L14",
+      "text": "For tracking, logging, and evaluation, the main split is proxy-based gateways versus tracing platforms. If you need agent traces, prompt management, datasets, and evals in one place, Langfuse is worth testing; disclosure: I work on Langfuse. It is open source and self-hostable. I would compare ingestion overhead, OpenTelemetry support, self-hosting limits, and evaluation workflows against your actual stack before choosing.",
+      "usage": {
+        "in": 451,
+        "out": 92
+      },
+      "latencyMs": 2144
+    },
+    {
+      "leadId": "L9",
+      "text": "The full path point is right, and ContextVar is a good fit for async attribution. One thing worth adding is explicit trace/span IDs and parent-child relationships: a call stack explains the code path, but IDs also connect retries, parallel branches, tool calls, and later user feedback. Langfuse uses that model for cost and observability; disclosure: I work on Langfuse. How do you handle concurrent LLM calls within one request?",
+      "usage": {
+        "in": 445,
+        "out": 96
+      },
+      "latencyMs": 2199
+    },
+    {
+      "leadId": "L10",
+      "text": "Great to see more open-source options emerging for LLM observability. You’ve captured the debugging challenge well—pinpointing whether issues stem from prompts, retrieval, or tool calls is critical. Disclosure: I work on Langfuse. We’ve found that tracing full agent workflows, including intermediate steps, helps teams isolate root causes faster. Curious how Latitude handles multi-step agent traces compared to others you’ve evaluated?",
+      "usage": {
+        "in": 446,
+        "out": 90
+      },
+      "latencyMs": 2510
+    },
+    {
+      "leadId": "L19",
+      "text": "Fair point on per-span pricing adding up, though I'd note some platforms price differently. Worth checking actual costs at your scale. One gap in Tempo + Grafana for LLM work: traces alone don't give you prompt management, eval datasets, or token-level cost tracking. Langfuse covers those and accepts OTLP, self-hostable. Disclosure: I work on Langfuse. Your collector setup is solid either way.",
+      "usage": {
+        "in": 453,
+        "out": 90
+      },
+      "latencyMs": 2415
+    }
+  ],
+  "companies": [
+    {
+      "company": "MacroCoderz",
+      "signal": "hiring",
+      "reason": "Careers page lists remote AI Engineer and AI Agent Developer roles to build production LLM applications, AI agents, and RAG systems.",
+      "url": "https://macrocoderz.com/careers",
+      "title": "MacroCoderz | Careers - Remote AI Jobs and Internships"
+    },
+    {
+      "company": "Sycamore Labs",
+      "signal": "funding",
+      "reason": "Announced a $65 million seed round to build an operating system for autonomous enterprise AI agents with secure deployment, governance, and orchestration.",
+      "url": "https://mlq.ai/news/ex-coatue-partner-raises-65m-seed-for-enterprise-ai-agents/",
+      "title": "Ex-Coatue Partner Raises $65M Seed for Enterprise AI Agents - MLQ.ai"
+    },
+    {
+      "company": "Potpie AI",
+      "signal": "funding",
+      "reason": "Raised a $2.2 million pre-seed round to make AI agents usable inside real-world engineering systems and expand its engineering team.",
+      "url": "https://roboticsandautomationnews.com/2026/03/11/potpie-ai-raises-2-2-million-to-make-ai-agents-usable-inside-real-world-engineering-systems/99483/",
+      "title": "Potpie AI raises $2.2 million to make AI agents usable inside real-world engineering systems - Robotics & Automation News"
+    },
+    {
+      "company": "Workato",
+      "signal": "launch",
+      "reason": "Launched a self-serve platform in Singapore giving developers access to its enterprise-grade engine to build AI agents and MCP servers.",
+      "url": "https://www.prnewswire.com/apac/news-releases/workato-launches-self-serve-platform-in-singapore-opening-enterprise-ai-to-a-broader-community-of-builders-302914795.html",
+      "title": "Workato Launches Self-Serve Platform in Singapore, Opening Enterprise AI to a Broader Community of Builders - PR Newswire"
+    },
+    {
+      "company": "Weaviate",
+      "signal": "launch",
+      "reason": "Launched Agent Skills to empower AI coding agents, with early adopters reporting 3x reductions in debugging time for RAG pipelines and agentic apps.",
+      "url": "https://finance.yahoo.com/news/weaviate-launches-agent-skills-empower-182200099.html",
+      "title": "Weaviate Launches Agent Skills to Empower AI Coding Agents"
+    }
+  ],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3672,
+      "tokensOut": 1292,
+      "cost": 0.0011968,
+      "latencyMs": 5466,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3649,
+      "tokensOut": 1172,
+      "cost": 0.019018,
+      "latencyMs": 8225,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 1.5,
+      "top5Overlap": 3
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3043,
+      "out": 1262,
+      "cost": 0.0024273,
+      "latencyMs": 5562
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3672,
+      "out": 1292,
+      "cost": 0.0011968,
+      "latencyMs": 5466
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3649,
+      "out": 1172,
+      "cost": 0.019018,
+      "latencyMs": 8225
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3190,
+      "out": 1519,
+      "cost": 0.0027798,
+      "latencyMs": 7159
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 2003,
+      "out": 443,
+      "cost": 0.008436,
+      "latencyMs": 2510
+    }
+  ],
+  "scorerError": null
+}

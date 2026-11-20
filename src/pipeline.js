@@ -7,6 +7,7 @@ import { buildProfile } from './steps/profile.js';
 import { findLeads } from './steps/leads.js';
 import { scoreLeads } from './steps/score.js';
 import { draftReplies } from './steps/draft.js';
+import { findTargetCompanies } from './steps/companies.js';
 
 const REFERENCE_DEADLINE_MS = 75_000; // the reference scorer must never hold the demo hostage
 
@@ -52,9 +53,13 @@ export async function runPipeline(url, emit) {
   emit({ type: 'leads', leads, scorerA: primary.model, scorerB: scorerError ? null : config.scorerB, scorerError });
 
   const top = leads.filter((l) => (l.a?.score ?? 0) >= 5).slice(0, config.draftCount).map((l) => ({ ...l, quote: l.a.quote }));
-  stage('drafts', `Drafting ${top.length} openers with ${config.draftModel}`);
+  stage('drafts', `Drafting ${top.length} openers with ${config.draftModel} (and looking for target companies)`);
+  // Stretch step runs alongside drafting; its failure never fails the run.
+  const companiesPromise = findTargetCompanies(profile).catch(failed);
   const drafts = await draftReplies(profile, top);
   emit({ type: 'drafts', drafts, model: config.draftModel });
+  const companiesResult = await companiesPromise;
+  emit({ type: 'companies', companies: companiesResult.companies || [], error: companiesResult.error || null });
 
   if (!scorerError) {
     if (!bDone) stage('reference', `Waiting for reference scores from ${config.scorerB} (for the comparison)`);
@@ -74,6 +79,7 @@ export async function runPipeline(url, emit) {
     { step: 'profile', model: profileCall.model, ...profileCall.usage, cost: cost(profileCall.usage, prices[profileCall.model]), latencyMs: profileCall.latencyMs },
     { step: 'scoring A', model: primary.model, ...primary.usage, cost: cost(primary.usage, prices[primary.model]), latencyMs: primary.latencyMs },
     ...(reference ? [{ step: 'scoring B', model: reference.model, ...reference.usage, cost: cost(reference.usage, prices[reference.model]), latencyMs: reference.latencyMs }] : []),
+    ...(companiesResult.call ? [{ step: 'target companies', model: companiesResult.call.model, ...companiesResult.call.usage, cost: cost(companiesResult.call.usage, prices[companiesResult.call.model]), latencyMs: companiesResult.call.latencyMs }] : []),
     { step: 'drafts', model: config.draftModel, ...draftUsage, cost: cost(draftUsage, prices[config.draftModel]), latencyMs: Math.max(0, ...drafts.map((d) => d.latencyMs)) },
   ];
   const totalCost = steps.every((s) => s.cost !== null) ? steps.reduce((s, x) => s + x.cost, 0) : null;
@@ -82,6 +88,6 @@ export async function runPipeline(url, emit) {
 
   mkdirSync('runs', { recursive: true });
   const runFile = `runs/${new Date().toISOString().replace(/[:.]/g, '-')}-${profile.domain}.json`;
-  writeFileSync(runFile, JSON.stringify({ url, at: new Date().toISOString(), totalMs, totalCost, profile, leads, drafts, comparison, steps, scorerError }, null, 2));
+  writeFileSync(runFile, JSON.stringify({ url, at: new Date().toISOString(), totalMs, totalCost, profile, leads, drafts, companies: companiesResult.companies || [], companiesError: companiesResult.error || null, comparison, steps, scorerError }, null, 2));
   emit({ type: 'done', runFile, totalMs, totalCost, leadCount: leads.length });
 }

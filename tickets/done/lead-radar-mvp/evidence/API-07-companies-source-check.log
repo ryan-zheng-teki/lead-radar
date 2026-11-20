@@ -1,0 +1,13 @@
+# API-07 AC-011 source-URL spot check — 2026-11-20T13:44:44Z; run runs/2026-11-20T13-44-32-301Z-langfuse.com.json (code b28dd34), https://langfuse.com
+totalMs=29679 leads=20 drafts=5 companies=5 companiesError=null
+step profile deepseek-ai/DeepSeek-V4.1-Flash-1017 latencyMs=5562 cost=0.0024273
+step scoring A zai-org/GLM-5.3-Flash latencyMs=5466 cost=0.0011968
+step scoring B moonshotai/Kimi-K3.1-Pro latencyMs=8225 cost=0.019018
+step target companies deepseek-ai/DeepSeek-V4.1-Flash-1017 latencyMs=7159 cost=0.0027798
+step drafts moonshotai/Kimi-K3.1-Pro latencyMs=2510 cost=0.008436
+## For each company: HTTP status of its source URL, and whether the fetched page names the company (case-insensitive)
+MacroCoderz | https://macrocoderz.com/careers | HTTP 200 | name mentions=178
+Sycamore Labs | https://mlq.ai/news/ex-coatue-partner-raises-65m-seed-for-enterprise-ai-agents/ | HTTP 200 | name mentions=1
+Potpie AI | https://roboticsandautomationnews.com/2026/03/11/potpie-ai-raises-2-2-million-to-make-ai-agents-usable-inside-real-world-engineering-systems/99483/ | HTTP 200 | name mentions=9
+Workato | https://www.prnewswire.com/apac/news-releases/workato-launches-self-serve-platform-in-singapore-opening-enterprise-ai-to-a-broader-community-of-builders-302914795.html | HTTP 200 | name mentions=74
+Weaviate | https://finance.yahoo.com/news/weaviate-launches-agent-skills-empower-182200099.html | HTTP 200 | name mentions=68

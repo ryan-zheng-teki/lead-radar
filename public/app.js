@@ -124,6 +124,19 @@ $('#drafts').addEventListener('click', async (e) => {
   drawDrafts();
 });
 
+function renderCompanies(ev) {
+  const el = $('#companies');
+  el.hidden = false;
+  if (ev.error || !ev.companies.length) {
+    el.innerHTML = `<h2>Target companies (buying signals)</h2><p class="muted">Target companies unavailable${ev.error ? `: ${esc(ev.error)}` : ' for this run.'}</p>`;
+    return;
+  }
+  el.innerHTML = `<h2>Target companies (buying signals)</h2>
+    <table><thead><tr><th>Company</th><th>Signal</th><th>Why · source</th></tr></thead><tbody>
+    ${ev.companies.map((c) => `<tr><td><strong>${esc(c.company)}</strong></td><td>${esc(c.signal)}</td><td>${esc(c.reason)}<br><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title || c.url)}</a></td></tr>`).join('')}
+    </tbody></table>`;
+}
+
 function renderComparison(ev) {
   const el = $('#comparison');
   el.hidden = false;
@@ -157,6 +170,7 @@ const handlers = {
   leads: (ev) => renderLeads({ ...ev, pendingB: !ev.scorerError }),
   reference: (ev) => renderLeads({ ...state.leadsEvent, leads: ev.leads, scorerB: ev.scorerB, scorerError: ev.scorerError, pendingB: false }),
   drafts: renderDrafts,
+  companies: renderCompanies,
   comparison: renderComparison,
   done: (ev) => { finishStages(true, ev.totalMs); },
   error: (ev) => { finishStages(false); showError(ev.message); },
@@ -167,7 +181,7 @@ $('#run-form').addEventListener('submit', async (e) => {
   const btn = $('#run-btn');
   btn.disabled = true; btn.textContent = 'Running…';
   $('#stages').innerHTML = ''; $('#error').hidden = true;
-  for (const id of ['profile', 'leads', 'drafts', 'comparison']) { $(`#${id}`).hidden = true; $(`#${id}`).innerHTML = ''; }
+  for (const id of ['profile', 'leads', 'companies', 'drafts', 'comparison']) { $(`#${id}`).hidden = true; $(`#${id}`).innerHTML = ''; }
   try {
     const res = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ url: $('#url').value }) });
     const reader = res.body.getReader();

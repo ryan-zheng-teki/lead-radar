@@ -1,0 +1,17 @@
+# IMP-07 target companies live run
+# Command: curl -sN -X POST localhost:3000/api/run -d {"url":"https://linear.app"}; browser run on https://www.tavily.com
+# Commit: b28dd34 | Env: Linux, Node v22.23.3, live keys | Date: 2026-11-20
+
+company: Promptless | hiring | https://www.ycombinator.com/companies/industry/engineering-product-and-design/san-francisco-bay-area/hiring
+company: Zendesk | launch | https://www.cmswire.com/customer-experience/zendesk-unveils-autonomous-ai-workforce-at-relate-2026
+company: Chordia | launch | https://chordia.ai/newsroom
+company: Customer.io | launch | https://customer.io/learn/announcements/G2-fall-2026
+company: Milo | funding | https://www.businessinsider.com/sc/6-startups-reimagining-the-future-of-customer-engagement-with-ai
+done totalMs 35409
+
+## browser run tavily.com (runs/2026-11-20T13-42-01-331Z-tavily.com.json)
+company: LangChain | funding | https://en.wowtale.net/2026/11/14/235988
+company: Orkes | funding | https://www.businesswire.com/news/home/20260423550324/en/Orkes-Raises-%2460M-as-Developers-Increasingly-Use-Its-Platform-to-Deploy-AI-Confidently-in-Production
+company: Confluent | launch | https://finance.yahoo.com/news/build-ai-agents-observe-reason-150000135.html
+company: Google Cloud | launch | https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform
+companiesError null totalMs 48704

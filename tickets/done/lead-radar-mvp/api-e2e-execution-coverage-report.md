@@ -116,3 +116,25 @@ No repository suite exists, so the "post-repository" column covers the reused im
 - Criteria not proven / user-only: none. The AC-010 timing rehearsal is the presenter's.
 - Next recipient: delivery_engineer
 - Notes: follow-up FU-001 (narrow-width tables, and Copy showing "Copied" on a failed write) is recorded in `follow-ups.md`. It is optional before the freeze: a one-line CSS rule.
+
+---
+
+## Round 2 — IR-002 (SR-002 stretch: REQ-013 / AC-011 target companies) — API-REV-002
+
+- Trigger: implementation_engineer, IR-002, code commit `b28dd34`. Delta: `src/steps/companies.js` (new), `src/pipeline.js`, `public/app.js`, `public/index.html`. Classification is unchanged: Medium + Low, direct route; test-code review `Not Required — direct low-risk route`.
+- Scope: a narrow check of the delta. Round 1 cases API-01..06 still hold for the unchanged core (`git diff b2f085c b28dd34` touches only the four files above); the pipeline change only adds a parallel promise and an event.
+- Environment: worktree code identical to `b28dd34` (`git diff --quiet b28dd34 -- src public server.js` at 13:43Z), `LEAD_RADAR_ENV_FILE=…/lead-radar/.env PORT=3001 node server.js`, agent browser tab (Chromium, 1920 px).
+- Evidence folder: `/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-20/lead-radar-mvp/tickets/done/lead-radar-mvp/evidence/`
+
+| Case ID | Criteria | Surface | Steps | Result | Evidence | Look For | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| API-07 | AC-011, AC-005, AC-001..004 regression | Browser → API → Tavily/Nebius (live) | Page: `https://langfuse.com` (a new company) → Find leads; then `curl -sL` each company's source URL and count mentions of the company name | Pass | `API-07-langfuse-companies-browser.png`, `API-07-run-langfuse.com.json`, `API-07-companies-source-check.log` | `"Drafting 5 openers … (and looking for target companies)"`, `"total 29.7 s"`; `companies=5 companiesError=null`; all 5 rows `HTTP 200` with name mentions 1–178 (MacroCoderz hiring, Sycamore Labs funding, Potpie AI funding, Workato launch, Weaviate launch); the `target companies` step took 7.2 s and $0.0028; leads 20, drafts 5 | Section order on the page: profile, models, drafts, leads, companies, comparison. One request after load (POST /api/run). |
+| API-08 | REQ-013 non-fatal failure | Step probe + browser replay | (a) `findTargetCompanies` with the real profile shape (`ideal_customer: ''`) and no Tavily key, `.catch(failed)` as in pipeline.js; (b) the captured langfuse stream replayed into the page with `{"type":"companies","companies":[],"error":"no search results for buying signals"}` | Pass | `API-08-companies-failure-path.log` | `{"error":"no search results for buying signals"}`; page shows `Target companies unavailable: no search results for buying signals`, the last stage still reads `Done … total 29.7 s`, `#error` stays hidden, and leads 20 / drafts 5 / comparison are shown | The probe proves the step rejects into `{error}`; part (b) proves the UI only. A live Tavily outage was not simulated. |
+| API-09 | AC-006 | Run file, server log, worktree | Count matches of the two key values | Pass | `API-09-key-check.log` | every line `nebius=0 tavily=0`; `0 files` | |
+
+- AC-011 proof: **Proven** by API-07 (live, 5 companies, every source URL real and naming the company) and API-08 (failure is non-fatal). AC-005 still holds: 29.7 s with the step in parallel.
+- Confidence (Round 2, delta scope): requirement proof 96%, directness 96%, integration realism 95% (live; the failure path is shown by a probe and a replay, not a live outage), environment 95%, failure/recovery 92%, UI 95%; durable regression N/A. Overall 95%.
+- Broader validation: `Required` and executed (Browser + Live API).
+- Cleanup: the 3001 server (pid 51704) was stopped and the tab closed; the probe script was deleted after its output was recorded; the server on 3000 was not touched.
+- Shared-worktree observation (not part of IR-002, not validated): at 13:44:59Z, after API-07 ran, someone else's uncommitted change rewrote `public/index.html` (a redesign: `#stages` and `#models-table` were removed, `#progress/#stepper/#kpis/#toast` added). The committed `public/app.js` still references `#stages` 5 times and `#models-table` once, so the working tree as it stands would not render runs correctly. That change is unvalidated. Do not commit it with this ticket unless a matching `app.js` lands and is validated.
+- Result: **Pass** for `b28dd34`.

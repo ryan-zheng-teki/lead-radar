@@ -16,6 +16,7 @@ Finding people worth replying to meant scrolling X, LinkedIn and Reddit by hand,
 3. **Lead search.** Tavily runs those queries in parallel over public posts on Reddit, Hacker News, X, LinkedIn, Indie Hackers, dev.to, Stack Overflow, Quora and Medium. Results are deduplicated and the company's own domain is dropped, leaving the top 20 candidates.
 4. **Scoring.** A small, fast model scores every candidate from 0 to 10, with a one-line reason and a **verbatim quote** from the post. Each quote is checked against the post text and marked **✓ verified** or **⚠ unverified**: a lead never rests on invented evidence. A strong model scores the same candidates in parallel, as a quality reference. It never delays the results: if it is slow or fails, you still get leads and drafts.
 5. **Drafts.** For the top 5 leads that score at least 5, the strongest model writes an opener of 70 words or fewer. It responds to the person's own words, helps first and discloses the affiliation honestly.
+   **Target companies (buying signals).** While the drafts are written, Tavily also searches for companies that match the ideal customer and show a buying signal: hiring, a launch or funding news. The profile model lists up to 5 of them, each with a one-line reason and its source link. A company is shown only if its link is one of the search results. If this step fails, the run goes on without it.
 6. **You review.** For each draft: **Approve**, **Edit** (then save and approve) or **Reject**, then **Copy** the text and open the source link to reply yourself.
 7. **Comparison.** The page shows tokens, cost, latency and agreement for both scorers, plus every model call in the run. Each run is saved to `runs/`.
 
@@ -77,7 +78,7 @@ What the numbers say:
 
 ## Next steps
 
-- **Target companies:** from the profile's ideal customer, search for companies showing buying signals (job posts, launches, funding news) and list them with a source link and a one-line reason, next to the people-level leads.
+- **Target companies:** go beyond the 5 news-based signals: check each company's careers page and enrich it with a contact role. Today's list is only as good as the news results Tavily returns.
 - Make the page work on phones, and add an automated test of the pipeline with recorded API responses.
 
 ## What existed before today
@@ -109,7 +110,7 @@ The stack is Node 22 with no dependencies: `fetch` and `node:http`. One static p
 ```
 server.js              HTTP boundary + composition root (/api/run streams progress events)
 src/pipeline.js        run sequence: profile → leads → scoring A ∥ B → drafts → comparison
-src/steps/*.js         profile, leads, score, draft (one concern each)
+src/steps/*.js         profile, leads, score, draft, companies (one concern each)
 src/nebius.js          the only Nebius caller: thinking controls per model family, JSON retry, live prices
 src/tavily.js          the only Tavily caller
 src/quote.js           verbatim quote check

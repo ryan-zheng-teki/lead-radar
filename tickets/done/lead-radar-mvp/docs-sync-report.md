@@ -46,3 +46,9 @@ None. This is the first build.
 - Result: `Pass`
 - Next delivery action: archive, commit, fast-forward `main`, push to origin.
 - Notes: if the REQ-013 stretch is built after this delivery, it is a new delivery round, and the README "Next steps" line moves into the feature description.
+
+## Round 2 (DR-002)
+
+- `README.md`: updated by the implementation engineer (IR-002) and reviewed by delivery against the validated code: a "Target companies" paragraph under step 5, the Next steps bullet reworded to cover deeper enrichment (the feature now exists), and `companies` added to the `src/steps` line. All of it matches b28dd34 and the API-07 evidence.
+- `DESIGN.md`: no change. The new step follows the existing rule: one concern per file under `src/steps/`, with Tavily and Nebius reached only through their clients.
+- `TESTING.md`, `RELEASE.md`, `DEMO.md`: no change. DEMO.md does not mention companies, and the 3-minute script still holds without them.

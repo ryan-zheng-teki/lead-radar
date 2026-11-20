@@ -1,0 +1,6 @@
+# API-09 key check on IR-002 outputs — 2026-11-20T13:45:02Z; counts only
+API-07-run-langfuse.com.json: nebius=0 tavily=0
+lr-ir002-server.log: nebius=0 tavily=0
+API-07-companies-source-check.log: nebius=0 tavily=0
+API-08-companies-failure-path.log: nebius=0 tavily=0
+worktree incl. untracked (git grep): 0 files

@@ -5,6 +5,7 @@
 | Revision ID | Triggering Role / Report / Round | Related Upstream Revision IDs | Prior Result / Confidence | Current Result / Confidence |
 | --- | --- | --- | --- | --- |
 | API-REV-001 | implementation_engineer / implementation-handoff.md / Round 1 | SR-001, IR-001 | N/A | Pass / 95% |
+| API-REV-002 | implementation_engineer / IR-002 / Round 2 | SR-002, IR-002 | Pass / 95% | Pass / 95% |
 
 ## Revision Entries
 
@@ -28,3 +29,12 @@ None.
 - New or remaining failure IDs: none
 - Recommended owner: delivery_engineer
 - Remaining risks: FU-001 (phone-width table overflow; Copy shows "Copied" on a failed write); Kimi latency (capped); the AC-010 timing rehearsal is the presenter's job
+
+### API-REV-002 — IR-002 target companies (AC-011) delta check
+
+- Trigger: implementation_engineer, IR-002 (commit b28dd34), Round 2
+- Cases added: API-07 (live langfuse.com run and source-URL spot check), API-08 (non-fatal failure: step probe and UI replay), API-09 (key counts). Round 1 cases kept: the core is unchanged.
+- Prior failure resolution: None
+- Canonical artifacts updated: `api-e2e-execution-coverage-report.md` (Round 2 section)
+- Prior result: Pass / 95%. Current: Pass / 95%.
+- Remaining risks: a live Tavily outage during the companies step was not simulated (probe and replay only); an uncommitted, unvalidated `public/index.html` redesign in the shared worktree does not match `app.js`.
