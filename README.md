@@ -20,7 +20,7 @@ Finding people worth replying to meant scrolling X, LinkedIn and Reddit by hand,
 6. **You review.** For each draft: **Approve**, **Edit** (then save and approve) or **Reject**, then **Copy** the text and open the source link to reply yourself.
 7. **Comparison.** The page shows tokens, cost, latency and agreement for both scorers, plus every model call in the run. Each run is saved to `runs/`.
 
-**A full run takes about 30 s and costs about $0.03.** You get 20 sourced, scored leads and 5 drafts ready for review.
+**A full run takes about 30–50 s and costs about $0.03–0.04.** You get 20 sourced, scored leads and 5 drafts ready for review.
 
 ## Which model does what, and why
 
@@ -50,7 +50,9 @@ That is why `src/nebius.js` keeps a per-model-family table of thinking controls,
 
 ## Comparison numbers from real runs
 
-Three companies, run on 2026-11-20 with the final code (latest run per company). Scorers A and B saw exactly the same 20 candidates. Generated with `node scripts/compare.js`:
+**Summary across 17 real runs (snapshot 2026-11-20 15:04):** scorer A (GLM-5.3-Flash) was **about 16–22× cheaper and 2.3–2.6× faster** than scorer B (Kimi-K3.1-Pro). Their scores were **about 1–1.4 points apart** on a 0–10 scale, and they **shared 3.3 of the top 5 leads** on average. A full run takes **about 30–50 s and costs about $0.03–0.04**. One outlier took 87 s, when the slow reference model hit its time limit and was skipped.
+
+*Earlier example* (three companies, run on 2026-11-20 before the lead quality fix, latest run per company; scorers A and B saw exactly the same 20 candidates; generated with `node scripts/compare.js`):
 
 | Company | Leads (A ≥ 7) | Cost A | Cost B | B/A cost | Latency A | Latency B | Verified quotes A / B | Mean abs. score diff | Top-5 overlap | Full run | Full run cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,10 +63,10 @@ Three companies, run on 2026-11-20 with the final code (latest run per company).
 
 What the numbers say:
 
-- **Cost and speed:** the cheap scorer is **about 17× cheaper and about 3× faster** than the strong one (5.1 s against 16.8 s for 20 leads). Scoring 1,000 posts a day would cost **about $0.06 with GLM-5.3-Flash and about $0.95 with Kimi-K3.1-Pro**.
-- **Quality:** on a 0–10 scale the two models differ by about **2 points per lead** on average, and they share **3–4 of their top-5 leads**. Both separate people asking for help from articles and vendor posts in the same way. The gap is almost entirely an **offset**, not disagreement. The strong model is stricter: it gave an average score of 3.4 against 5.3 from the cheap model, and the cheap model scored higher on 53 of the 60 leads and lower on only 1. So with the cheap model, set the bar about 2 points higher (≥ 7 instead of ≥ 5). In practice the cheap model is good enough to *filter* and rank. A human reviews every draft anyway, and the strong model's scores sit next to the cheap model's for every lead.
+- **Cost and speed:** across the 17 runs the cheap scorer is **about 16–22× cheaper and 2.3–2.6× faster** than the strong one (5.1 s against 16.8 s for 20 leads in the earlier example). Scoring 1,000 posts a day would cost **about $0.06 with GLM-5.3-Flash and about $0.95 with Kimi-K3.1-Pro**.
+- **Quality:** on a 0–10 scale the two models differ by about **1–1.4 points per lead** across the 17 runs (about 2 in the earlier example), and they share **3.3 of their top-5 leads** on average. Both separate people asking for help from articles and vendor posts in the same way. The gap is almost entirely an **offset**, not disagreement. The strong model is stricter: it gave an average score of 3.4 against 5.3 from the cheap model, and the cheap model scored higher on 53 of the 60 leads and lower on only 1. So with the cheap model, set the bar about 2 points higher (≥ 7 instead of ≥ 5). In practice the cheap model is good enough to *filter* and rank. A human reviews every draft anyway, and the strong model's scores sit next to the cheap model's for every lead.
 - **Grounding:** all 60 quotes from each scorer were found verbatim in the source text. In earlier runs, a quote that was not found was flagged ⚠ unverified in the UI.
-- **Whole pipeline:** about **31 s and $0.03 per company**. That covers reading the site, the profile, 6 Tavily searches, two scorers and 5 drafts. Leads and drafts show up after about 20 s, because the reference scorer runs in parallel and only fills in the comparison. The old manual way took 30–60 minutes.
+- **Whole pipeline:** about **30–50 s and $0.03–0.04 per company** (one outlier took 87 s, when the slow reference model was skipped). That covers reading the site, the profile, 6 Tavily searches, two scorers and 5 drafts. Leads and drafts show up after about 20 s, because the reference scorer runs in parallel and only fills in the comparison. The old manual way took 30–60 minutes.
 
 ## Limitations (honest)
 

@@ -49,3 +49,11 @@
 - Changed: REQ-002, REQ-003, REQ-013 amended; AC-013..AC-016 added. Intended behavior changed: Yes. Approval: the user's own request.
 - Classification: Small / Low; time box 15:20 Berlin, otherwise dropped (published version stays).
 - Next action: implementation engineer (direct route), together with SR-003.
+
+### SR-005 — AC-016 restated; README numbers aligned with the deck snapshot
+
+- Trigger: code reviewer CRR-001 (Requirement Gap CR-001, AC-016 failed in API-13); project task manager: README/DEMO numbers differ from the deck snapshot (15:04, 17 runs).
+- Changed: AC-016 ≥ 8 → ≥ 5 leads with A ≥ 5 (≤ 90 s). README/DEMO comparison summary uses snapshot ranges. Details: sr-004-lead-quality-fix.md "SR-005 revision".
+- Intended behavior changed: acceptance threshold only (behavior unchanged). Approval: Solution Designer within the user's direction, user informed.
+- FU-003 recorded (discussion-only fill; Quora-as-asking wording). FU-002 (scorer A deadline) from code review noted.
+- Next: implementation engineer → API/E2E re-judgement on existing evidence → delivery; cut-off 15:25.

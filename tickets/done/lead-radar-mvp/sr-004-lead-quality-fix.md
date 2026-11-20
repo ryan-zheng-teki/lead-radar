@@ -43,3 +43,11 @@
 ## Verification
 
 Real runs on autobyteus.com and cal.com (and posthog.com if time allows). Record the AC-013..016 checks in the implementation handoff with the run files; save as evidence `IMP-08-*`. Key-leak check before commit. Commit on top of origin/main with the no-reply identity only.
+
+## SR-005 revision (15:10 Berlin) — AC-016 restated after failure-origin review CRR-001 (Requirement Gap CR-001)
+
+- Evidence (code-review-report.md): score.js implements REQ-003 verbatim; every cal.com lead GLM scored < 5 was a listicle, tutorial or vendor post, and Kimi agrees. With 14 discussion slots, the count of honest ≥ 5 leads varies with Tavily: 9 / 6 / 6 across three runs. "≥ 8" was a Solution Designer threshold set before measurement; it is not achievable without re-inflating scores, which contradicts the user's request.
+- **AC-016 (restated):** a cal.com run yields **≥ 5 leads with model A score ≥ 5**, run ≤ 90 s, all earlier ACs hold. Runs B and C (6 each, 28–30 s) pass; no code change, no rerun needed.
+- Decision owner: Solution Designer (within the user's direction "find out why and fix it"; honest scoring over padding), user informed.
+- Not taken now (no time before the 15:30 freeze): design option 2 (discussion candidates fill all 20 slots) and the C-3 wording tweak. Both are recorded as follow-up FU-003.
+- README/DEMO comparison numbers: replace the older 3-company table's summary with the 15:04 17-run snapshot, written as ranges that both the deck's figures and the Solution Designer's recompute fall in: about 16–22× cheaper, 2.3–2.6× faster, scores about 1–1.4 points apart, 3.3 of the top 5 shared on average; a full run takes about 30–50 s (one outlier at 87 s, when the reference model was slow and got skipped) and costs about $0.03–0.04.

@@ -8,6 +8,7 @@
 | IR-002 | Solution Designer / SR-002 / round 2 | N/A | Requirement change (stretch) | SR-002 | Target companies implemented; validated and delivered |
 | IR-003 | Solution Designer / SR-003 / round 3 | N/A | Requirement change (page-only UI) | SR-003 | UI polish implemented; IMP-08 pass at 1280×720 and 1920×1080 |
 | IR-004 | Solution Designer / SR-004 (sr-004-lead-quality-fix.md) / round 4 | P1–P4 | Requirement change (lead quality) | SR-004 | Implemented; IMP-09: AC-013/014/016 pass, AC-015 judged pass (see entry) |
+| IR-005 | Solution Designer / SR-005 (CR-001 from CRR-001) / round 5 | CR-001 | Requirement change (AC-016 restated; docs only) | SR-005, CRR-001 | README/DEMO numbers updated; no code change |
 
 ## Revision Entries
 
@@ -77,3 +78,13 @@
   - AC-015, autobyteus: one company, Cosmic, signal adopting, source cosmicjs.com/blog "How to build an AI-native team". Cosmic sells a headless CMS, not an agent orchestration platform, so it is not a seller in this category → Pass, but it is a borderline case to check by hand. cal.com: [] → shows the "No clear buyer signals" message.
   - AC-016, cal.com: 9 leads with A ≥ 5 and a run of 87.1 s → Pass, but close to the 90 s limit. The time is the Kimi reference scorer hitting its 75 s deadline while the two runs ran in parallel. Leads and drafts showed earlier.
 - Remaining limitations: Kimi reference latency under load (the 75 s cap holds). There is one near-duplicate article in the autobyteus run: the same title at two different URLs. A name-mention filter also drops genuine posts by people who already know the product.
+
+### IR-005 — SR-005: AC-016 restated, README and DEMO numbers (docs only)
+
+- Trigger: Solution Designer SR-005, which resolves Requirement Gap CR-001 from code review CRR-001. AC-016 now requires at least 5 leads with A ≥ 5 from a cal.com run, within 90 s.
+- Code delta: none. Branch `sr005-release` is built on origin/main 8f6b3fb, with the SR-004 commits cherry-picked (b8f5193 = 9eddc9a, 6a6c6b5 = 346ecaa; no-reply identity).
+- Docs:
+  - README "Comparison numbers": the 17-run snapshot from 15:04 (16–22× cheaper, 2.3–2.6× faster, 1–1.4 points apart, 3.3 of the top 5 shared, 30–50 s, $0.03–0.04, one 87 s outlier). The per-company table is labelled as an earlier example. The cost/speed, quality and whole-pipeline bullets and the headline run line are updated.
+  - DEMO.md: the spoken line and the video caption are updated.
+  - Committed with this round: the Solution Designer's SR-005 edits (sr-004-lead-quality-fix.md, solution-revision-record.md, follow-ups.md FU-002/FU-003 added on top of main's resolved FU-001) and code review's code-review-report.md and code-review-revision-record.md.
+- Validation: a docs-only change. The AC-016 re-judgement on the existing API-13 evidence is for API/E2E.
