@@ -1,0 +1,13 @@
+{
+  "name": "lead-radar",
+  "version": "0.1.0",
+  "description": "Company URL in, sourced and scored public leads plus human-approved reply drafts out (Tavily + Nebius Token Factory).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "compare": "node scripts/compare.js"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}

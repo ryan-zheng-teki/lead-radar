@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lead Radar</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lead Radar</h1>
+    <p class="tagline">Find people who need your product — sourced, scored and human-approved.</p>
+  </header>
+  <main>
+    <div class="banner">Nothing is ever posted automatically. You approve, edit or reject every draft, then copy it yourself.</div>
+
+    <form id="run-form" class="card run">
+      <label for="url">Company website</label>
+      <div class="row">
+        <input id="url" name="url" type="text" placeholder="https://www.autobyteus.com" value="https://www.autobyteus.com" autocomplete="off" />
+        <button id="run-btn" type="submit">Find leads</button>
+      </div>
+      <ol id="stages" class="stages"></ol>
+      <div id="error" class="error" hidden></div>
+    </form>
+
+    <section id="profile" class="card" hidden></section>
+    <section id="models" class="card">
+      <h2>Which model does what &amp; why</h2>
+      <table id="models-table"><thead><tr><th>Step</th><th>Model</th><th>Why</th></tr></thead><tbody></tbody></table>
+    </section>
+    <section id="drafts" class="card" hidden></section>
+    <section id="leads" class="card" hidden></section>
+    <section id="comparison" class="card" hidden></section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
