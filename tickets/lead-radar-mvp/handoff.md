@@ -36,3 +36,7 @@ R-1 non-person articles among results (prompt rubric handles); R-2 Kimi latency 
 ## Status
 
 Architecture Design Complete. Next: implementation, then API/E2E validation and delivery per the team routes.
+
+## Route recorded
+
+Sent to `/implementation_engineer` (run `implementation_engineer_3686c94820934523a7c78765a985964f`) at ~14:18 Berlin per the Small/Medium + Low rule.
