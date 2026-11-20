@@ -7,6 +7,7 @@
 | API-REV-001 | implementation_engineer / implementation-handoff.md / Round 1 | SR-001, IR-001 | N/A | Pass / 95% |
 | API-REV-002 | implementation_engineer / IR-002 / Round 2 | SR-002, IR-002 | Pass / 95% | Pass / 95% |
 | API-REV-003 | implementation_engineer / IR-003 / Round 3 | SR-003, IR-003 | Pass / 95% | Pass / 95% |
+| API-REV-004 | implementation_engineer / IR-004 / Round 4 | SR-004, IR-004 | Pass / 95% | Fail (AC-016) |
 
 ## Revision Entries
 
@@ -48,3 +49,13 @@ None.
 - Canonical artifacts updated: `api-e2e-execution-coverage-report.md` (Round 3)
 - Prior result: Pass / 95%. Current: Pass / 95%.
 - Remaining risks: uncommitted SR-004 edits (src/steps/*, public/app.js) appeared in the shared worktree during this round and are not covered by this result; the stepper labels are tight at 390 px (cosmetic).
+
+### API-REV-004 — IR-004 lead quality (AC-013..016) on 9eddc9a
+
+- Trigger: implementation_engineer, IR-004 (9eddc9a), Round 4
+- Cases added: API-12 (autobyteus browser journey: AC-013/014/015 Pass, AC-012 regression Pass), API-13 (cal.com AC-016: **Fail**, 6 and 6 leads with A ≥ 5 vs ≥ 8 required; plus one run where scorer A hung), API-14 (keys Pass)
+- Prior failure resolution: None
+- Canonical artifacts updated: `api-e2e-execution-coverage-report.md` (Round 4)
+- Prior result: Pass / 95%. Current: Fail (AC-016).
+- New failure IDs: API-13. Preliminary classification: Unclear (score calibration vs threshold). Recommended next step: code_reviewer failure-origin review.
+- Remaining risks: no deadline on scorer A (pre-existing; one live hang observed); autobyteus.com yields 1 draft under the new rubric.

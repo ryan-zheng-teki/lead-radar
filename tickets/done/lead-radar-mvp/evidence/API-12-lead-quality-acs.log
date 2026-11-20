@@ -1,0 +1,33 @@
+# API-12 SR-004 lead quality ACs, autobyteus.com — run runs/2026-11-20T13-59-56-273Z-autobyteus.com.json, code 9eddc9a, alone on :3001 (browser chip, 1280x720) — 2026-11-20T14:03:16Z
+totalMs=46634 scorerError=null companiesError=null leads=20 A>=5: 1 drafts=1
+## AC-013 domains:
+dev.to=2 medium.com=4 news.ycombinator.com=1 reddit.com=9 x.com=4
+discussion-source leads (reddit/HN/indiehackers/stackoverflow/quora/x/twitter): 14 / 20 (need >= 6)
+leads whose title, content or quote matches /autobyteus/i: 0 (need 0)
+## AC-014 kind=competitor:
+{"n":11,"maxA":2,"maxB":2}
+(need max A and max B <= 3)
+## all leads: platform | kind | A | B | title
+Reddit | discussing | 8 | 7 | Building a feedback memory layer for AI agents that learn from every h
+X | article | 3 | 3 | Vivek | Cybersecurity on X: "🧩 Anthropic Skills — Build Reusable AI Ag
+Reddit | article | 3 | 3 | 5 open-source repos that turn one AI agent into a specialist team
+Medium | article | 3 | 3 | Multi-Agent RAG with Handoff Orchestration
+dev.to | article | 3 | 3 | Multi-Agent Orchestration: A Guide to Patterns That Work - DEV Communi
+dev.to | article | 3 | 3 | Multi-Agent Handoff With Ownership Boundaries Nobody Crosses - DEV Com
+Reddit | competitor | 2 | 2 | Whats the best orchestration framework? : r/AI_Agents - Reddit
+Hacker News | competitor | 2 | 1 | Show HN: Era – Open-source local sandbox for AI agents | Hacker News
+Reddit | article | 2 | 2 | Build A 4-Agent Workflow With Agent Teams AI : r/AISEOInsider
+Reddit | competitor | 2 | 2 | Built an approval API for n8n AI agents
+X | article | 2 | 3 | 机器之心 JIQIZHIXIN on X: "What if building AI agent teams was as simple a
+Reddit | competitor | 2 | 1 | Building a local orchestration layer for AI systems to reduce tool ...
+Medium | competitor | 2 | 1 | Building My Own AI Agent Orchestrator: A Journey to Level 8
+X | competitor | 1 | 1 | Dan Kornas on X: "Running several coding agents shouldn’t mean jugglin
+X | competitor | 1 | 1 | Dan Kornas on X: "Building agent workflows shouldn’t mean rebuilding t
+Reddit | competitor | 1 | 1 | A voice-first AI agent orchestrator that actually runs local CLI tools
+Reddit | competitor | 1 | 1 | I built a local OS specifically to sandbox and orchestrate AI agents .
+Reddit | article | 1 | 1 | Qwen Releases an Open AI “World Model” That Lets Agents Practice Befor
+Medium | competitor | 1 | 1 | Medium
+Medium | competitor | 1 | 1 | Agents Squads: An Open-Source, Code-First, Local-First Framework for A
+## AC-015 companies:
+{"company":"Carrier","signal":"hiring","reason":"Job post for Agentic AI Engineer Lead to design, develop, and deploy AI agents and agentic workflows across Carrier Engineering.","url":"https://jobs.carrier.com/en/job/indianapolis/agentic-ai-engineer-lead/29289/100999692768","title":"Agentic AI Engineer Lead at Carrier"}
+manual check: Carrier = HVAC/building-systems manufacturer hiring an 'Agentic AI Engineer Lead' -> buyer side, not a seller of an agent platform. Source HTTP 200, page mentions 'Carrier' 149x, 'agentic' 55x (curl -sL at 14:00Z).

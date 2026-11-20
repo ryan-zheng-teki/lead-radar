@@ -1,0 +1,590 @@
+{
+  "url": "https://www.autobyteus.com/",
+  "at": "2026-11-20T13:59:56.275Z",
+  "totalMs": 46634,
+  "totalCost": 0.028236149999999998,
+  "profile": {
+    "name": "AutoByteus",
+    "summary": "A local-first, evaluation-driven agent team orchestration platform that lets users guide specialist agent teams whose feedback becomes better skills and improves the next task.",
+    "problems": [
+      "Orchestrating teams of AI agents like a company with teams, organizations, and tasks",
+      "Connecting specialist teams into an organization with handoff rules",
+      "Handing tasks to whole teams through a Project Task Manager",
+      "Capturing human expertise and feedback so agent skills improve without a restart",
+      "Choosing the runtime for each agent across local, self-hosted, Codex, Claude, or cloud providers",
+      "Keeping privacy, cost, and capability under control with local-first runtime control",
+      "Simulating a complete engineering department with specialized roles such as requirement analysis, design, implementation, and validation"
+    ],
+    "ideal_customer": "Teams and organizations building serious agent workflows or custom AI applications who need reusable specialist agent teams, local-first runtime control, and human-guided improvement loops.",
+    "pain_phrases": [
+      "I can't get multiple AI agents to hand off work reliably",
+      "My agent workflows don't learn from my feedback",
+      "I'm stuck managing prompts, runtimes, and model providers per agent",
+      "I need local or self-hosted control over privacy and costs",
+      "I want reusable specialist agent teams without rebuilding orchestration"
+    ],
+    "search_queries": [
+      "how do I orchestrate multiple AI agents with handoff rules",
+      "looking for local-first AI agent team orchestration tool",
+      "how to make AI agents learn from human feedback without restart",
+      "frustrated with managing different agent runtimes and model providers",
+      "tool to simulate software engineering team with AI agents",
+      "how to build reusable specialist agent teams for custom AI applications"
+    ],
+    "domain": "autobyteus.com",
+    "sources": [
+      "https://www.autobyteus.com/"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L8",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1uenk8t/building_a_feedback_memory_layer_for_ai_agents",
+      "title": "Building a feedback memory layer for AI agents that learn from every human approval and rejection : r/AI_Agents",
+      "content": "Title: Building a feedback memory layer for AI agents that learn from every human approval and rejection : r/AI_Agents\nSkip to main contentBuilding a feedback memory layer for AI agents that learn from every human approval and rejection : r/AI_Agents. # Building a feedback memory layer for AI agents that learn from every human approval and rejection. The AI agent submits a change, the human reviews -> approves or rejects (with a reason). The system learns from each piece of feedback and consolidates the knowledge over time. Most agentic systems are a constant loop that goes on and on and never improves. But for me the real unlock has always been self-improving systems -> the longer the agents run, the smarter they get. Image 2: u/Roblox avatarRoblox•Ad. Descubra os jogos de sobrevivência no Roblox. i work at Docsumo on document extraction so this comes up constantly for us the problem is signal quality: the agent learns 'approve this invoice extraction' but the human approved because the total field looked right, not because the line items were right. so the memory layer ends up learning the wrong thing from the start. field-level feedback vs document-level feedback is the actual distinction most human-in-the-loop layers dont make clean enough yet. it all comes down to whether the human approval maps to the right unit of work, not just the right document. I do agree LLMs are not good at capturing relative signal strenght - sometimes they will read one piece of prompt and run with it as if their life depended on it, when in reality it was a sidequest. I have also realized the typical issue of the agent memorizing some piece of information - and thinking about it as the most absolute truth. If the memory stores that unit plus the rejection reason, the agent has a much better chance of learning the right thing. I am modeling at the level of a knowledge base article. I think it is big enough to capture relevant learnings, and not too small so it is not require huge time investment by the human user/judge. this is exactly the kind of thing that separates a tool from an actual co-pilot, the loop feels obvious once you see it but somehow nobody builds it in from the start. Building feedback memory for AI agents.",
+      "tavilyScore": 0.5665582,
+      "query": "how to make AI agents learn from human feedback without restart",
+      "a": {
+        "score": 8,
+        "kind": "discussing",
+        "reason": "Builder describing human-feedback-driven agent learning — exactly AutoByteus's feedback-becomes-skills loop.",
+        "quote": "The system learns from each piece of feedback and consolidates the knowledge over time",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "kind": "discussing",
+        "reason": "The author describes firsthand work on human-feedback-driven agent improvement, closely matching AutoByteus's learning loop but not orchestration broadly.",
+        "quote": "The system learns from each piece of feedback and consolidates the knowledge over time.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "X",
+      "url": "https://x.com/VivekIntel/status/2083119487507898879",
+      "title": "Vivek | Cybersecurity on X: \"🧩 Anthropic Skills — Build Reusable AI Agent Capabilities An open-source collection of Agent Skills that teach Claude how to perform specialized tasks through reusable instructions, workflows, scripts, and resources for development, automation, enterprise, and document p...",
+      "content": "ssing. ✨ Features • 🤖 Demonstrates how to build reusable AI agent skills with the Agent Skills standard • 🛠️ Includes skills for software development, testing, automation, design, and enterprise workflows • 📄 Provides production-grade examples for PDF, DOCX, PPTX, and XLSX document processing • 🧠 Shows best practices for creating custom skills with structured YAML metadata • ⚙️ Compatible with Claude Code, Claude[.]ai, and the Claude API • 📚 Includes the Agent Skills specification, templates, and implementation examples • 🔌 Supports plugin-style installation and dynamic skill loading for AI agents • 🚀 Excellent reference for developers building domain-specific AI assistants and autonomous workflows 🔗 https://t.co/LJUfTLu3mA #AI #Claude #AgentSkills #LLM #Automation #DeveloperTools #OpenSource #AIEngineering #Productivity #GitHub\" / X\nTitle: Vivek | Cybersecurity on X: \"🧩 Anthropic Skills — Build Reusable AI Agent Capabilities An open-source collection of Agent Skills that teach Claude how to perform specialized tasks through reusable instructions, workflows, scripts, and resources for development, automation, enterprise, and document processing. ✨ Features • 🤖 Demonstrates how to build reusable AI agent skills with the Agent Skills standard • 🛠️ Includes skills for software development, testing, automation, design, and enterprise workflows • 📄 Provides production-grade examples for PDF, DOCX, PPTX, and XLSX document processing • 🧠 Shows best practices for creating custom skills with structured YAML metadata • ⚙️ Compatible with Claude Code, Claude[.]ai, and the Claude API • 📚 Includes the Agent Skills specification, templates, and implementation examples • 🔌 Supports plugin-style installation and dynamic skill loading for AI agents • 🚀 Excellent reference for developers building domain-specific AI assistants and autonomous workflows 🔗 https://t.co/LJUfTLu3mA #AI #Claude #AgentSkills #LLM #Automation #DeveloperTools #OpenSource #AIEngineering #Productivity #GitHub\" / X\n## Post. 🧩 Anthropic Skills — Build Reusable AI Agent Capabilities An open-source collection of Agent Skills that teach Claude how to perform specialized tasks through reusable instructions, workflows, scripts, and resources for development, automation, enterprise, and document processing. ✨ Features • 🤖 Demonstrates how to build reusable AI agent skills with the Agent Skills standard • 🛠️ Includes skills for software development, testing, automation, design, and enterprise workflows • 📄 Provides production-grade examples for PDF, DOCX, PPTX, and XLSX document processing • 🧠 Shows best practices for creating custom skills with structured YAML metadata • ⚙️ Compatible with Claude Code, Claude[.]ai, and the Claude API • 📚 Includes the Agent Skills specification, templates, and implementation examples • 🔌 Supports plugin-style installation and dynamic skill loading for AI agents • 🚀 Excellent reference for developers building domain-specific AI assistants and autonomous workflows 🔗 github.com/anthropics/ski… #AI #Claude #AgentSkills #LLM #Automation #DeveloperTools #OpenSource #AIEngineering #Productivity #GitHub. GitHub - anthropics/skills: Public repository for Agent SkillsFrom github.com. 9:16 AM · Jul 31, 2026553Views. dynamic loading is the key detail. Without it, reusable skills are mostly organized prompt folders.",
+      "tavilyScore": 0.61126596,
+      "query": "how to build reusable specialist agent teams for custom AI applications",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Article about Anthropic Skills and reusable agent capabilities; relevant to skills improvement but not a lead.",
+        "quote": "An open-source collection of Agent Skills that teach Claude how to perform specialized tasks",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A feature overview of reusable Claude skills is relevant to skill improvement but is not a personal buying need.",
+        "quote": "Demonstrates how to build reusable AI agent skills with the Agent Skills standard",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/WebAfterAI/comments/1wxj9ee/5_opensource_repos_that_turn_one_ai_agent_into_a",
+      "title": "5 open-source repos that turn one AI agent into a specialist team",
+      "content": "Instead of dozens of persistent personas, it gives agents reusable procedures for CRO, positioning, SEO, paid ads, email, analytics, pricing,",
+      "tavilyScore": 0.5591396,
+      "query": "how to build reusable specialist agent teams for custom AI applications",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Listicle of open-source repos for specialist agent teams; relevant topic but article format.",
+        "quote": "5 open-source repos that turn one AI agent into a specialist team",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A listicle about open-source specialist-team repositories is relevant reading, not a direct sales lead.",
+        "quote": "Instead of dozens of persistent personas, it gives agents reusable procedures for CRO, positioning, SEO, paid ads, email, analytics, pricing,",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "Medium",
+      "url": "https://medium.com/@junewine/multi-agent-rag-with-handoff-orchestration-6f8763c94e6d",
+      "title": "Multi-Agent RAG with Handoff Orchestration",
+      "content": "Agent descriptions drive handoff routing accuracy. The `description` parameter on each agent is included in the handoff tool definitions that the triage agent sees. Vague descriptions like \"handles agent questions\" don't give the LLM enough signal. Keyword-rich descriptions like \"creating agents, running agents, multimodal, structured output, RAG, declarative agents, observability, and LLM provider configuration\" provide clear decision criteria.\n\nPrevent circular handoffs explicitly. Without the instruction “do NOT hand off to another agent,” specialist agents sometimes route back to the triage agent or to each other. This creates infinite routing loops. A simple instruction in the specialist’s prompt eliminates the problem.\n\n## Single agent vs. multi-agent handoff [...] from agent_framework.orchestrations import HandoffBuilder  \n  \nworkflow = (  \n HandoffBuilder(  \n name=\"multi_rag_handoff\",  \n participants=all_agents, # [triage, agents_spec, tools_spec, ...]  \n )  \n .with_start_agent(triage)  \n .build()  \n)\nUnder the hood, `HandoffBuilder` does three things:\n\n1.   Generates handoff tool definitions for each participant. The triage agent gets tools named `handoff_to_agents_specialist`, `handoff_to_tools_specialist`, etc.\n2.   Manages control flow. When the triage agent calls a handoff tool, the framework suspends the triage agent and activates the target specialist.\n3.   Routes the user’s question to the activated specialist, which runs its `BaseContextProvider` and generates a response. [...] The workflow is single-turn by design. Each question gets a fresh workflow instance:\n\nwhile True:  \n user_input = input(\"You: \").strip()  \n workflow = _build_workflow() # fresh instance per question  \n  \n async for event in workflow.run(user_input, stream=True):  \n if event.type == \"handoff_sent\":  \n # Track routing: triage_agent → tools_specialist  \n handoff_trace.append(f\"{event.data.source} → {event.data.target}\")  \n  \n elif event.type == \"output\" and isinstance(event.data, AgentResponseUpdate):  \n print(event.data.text, end=\"\", flush=True)\nBuilding a fresh workflow per question avoids stale state from previous interactions. If you need multi-turn conversation with memory, you’d attach a persistent `AgentSession` instead.\n\n## The response fallback pattern",
+      "tavilyScore": 0.7636601,
+      "query": "how do I orchestrate multiple AI agents with handoff rules",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Technical article on handoff orchestration patterns; relevant topic but educational content, not a lead.",
+        "quote": "Agent descriptions drive handoff routing accuracy",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A technical tutorial on handoff routing is relevant to orchestration but contains no personal need or buying signal.",
+        "quote": "Agent descriptions drive handoff routing accuracy.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "dev.to",
+      "url": "https://dev.to/thedailyagent/multi-agent-orchestration-a-guide-to-patterns-that-work-1h81",
+      "title": "Multi-Agent Orchestration: A Guide to Patterns That Work - DEV Community",
+      "content": "### Pattern 3: Router / Handoff\n\nA lightweight classifier picks which specialist handles the request. Only one specialist runs per request. This is the most common production pattern because most workloads are not \"do five things at once\" -- they are \"figure out which one thing to do, then do it well.\"\n\n`User Input --> [Router] --> [Email Agent]\n--> [Calendar Agent]\n--> [Code Review Agent]`\n\nWhen to use it: Requests fall into distinct categories. Each category needs different tools, different prompts, different behavior. You cannot predict the category upfront.\n\nWhen to avoid it: Every request needs all specialists to contribute. That is fan-out, not routing. [...] ## When to Start Simple\n\nIf you are building AI agents that need to coordinate across multiple tools and services, the router/handoff pattern gets you 80% of the way with 20% of the complexity. Platforms like Nebula implement this pattern natively -- agents delegate to specialist sub-agents, each with their own tools and context, with state and auth handled automatically across runs. Whether you build it yourself or use a platform, the principle is the same: start with the simplest orchestration that solves your problem.\n\nThe progression that works in practice:\n\nSkip steps 3-5 until step 2 demonstrably fails. Most production agent systems never get past step 2 -- and that is a sign of good engineering, not a limitation. [...] Sequential pipeline (3 agents, 1K input, 500-token outputs):\n\nFan-out (3 agents, 1K input):\n\nGroup chat (the pattern most articles recommend first but should be recommended last):\n\nThe router/handoff pattern? One routing call (~200 tokens) plus one specialist call (~1,000 tokens). 1,200 tokens total. That is why it is the most common pattern in production.\n\n### Latency Stacking\n\nEvery agent in the chain adds 1-3 seconds of LLM latency. A 3-agent sequential pipeline adds 3-9 seconds minimum. A hierarchical system with 3 levels adds 6+ seconds before any worker starts executing. For batch workflows, this is fine. For real-time chat, it is a dealbreaker.\n\n### Debugging Overhead",
+      "tavilyScore": 0.7345006,
+      "query": "how do I orchestrate multiple AI agents with handoff rules",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Guide to multi-agent orchestration patterns including router/handoff; relevant but article format.",
+        "quote": "A lightweight classifier picks which specialist handles the request",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A guide to multi-agent orchestration patterns is useful topical content but not a direct sales lead.",
+        "quote": "A lightweight classifier picks which specialist handles the request.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "dev.to",
+      "url": "https://dev.to/gabrielanhaia/multi-agent-handoff-with-ownership-boundaries-nobody-crosses-nll",
+      "title": "Multi-Agent Handoff With Ownership Boundaries Nobody Crosses - DEV Community",
+      "content": "`run`\n\nThis is the shape OpenAI's SDK calls a \"handoff graph\" and LangGraph implements with `Command(goto=...)` (How Agent Handoffs Work in Multi-Agent Systems). Each node decides where control goes next based on its own state check, not on a god-planner's reasoning. You get the dynamism of LLM agents without paying for an extra LLM turn at every junction.\n\n`Command(goto=...)`\n\nThe trade is honest: you give up the planner's flexibility for predictable cost, predictable latency, and a graph you can draw on a whiteboard. For a two-agent pipeline, that trade always wins.\n\n## Closer [...] Two rules, written down so both agents see the same thing.\n\n`@dataclass\nclass HandoffPayload:\nfrom_agent: str\nto_agent: str\nreason: str\nstate: RunState\ndef handoff(state: RunState, to: str, reason: str) -> HandoffPayload:\nstate.handoff_count += 1\nif state.handoff_count > 4:\nstate.status = \"failed\"\nstate.owner = \"done\"\nraise RuntimeError(\nf\"handoff budget exceeded: {state.handoff_count}\"\n)\npayload = HandoffPayload(\nfrom_agent=state.owner,\nto_agent=to,\nreason=reason,\nstate=state,\n)\nstate.owner = to # type: ignore[assignment]\n return payload`\n\nFour handoffs is a lot for two agents. If you need more, you have the wrong decomposition or the wrong \"done\" signal. The `RuntimeError` is intentional. Failing loud beats burning tokens.\n\n`RuntimeError`\n\n## The research agent [...] A `Source` is the unit the research agent produces and the writer consumes. The writer never fetches its own sources. The research agent never writes prose.\n\n`Source`\n`@dataclass\nclass RunState:\nrun_id: str = field(default_factory=lambda: str(uuid4()))\ntopic: str = \"\"\nsources: list[Source] = field(default_factory=list)\ndraft: str = \"\"\nstatus: Status = \"research_in_progress\"\nowner: Literal[\"research\", \"writer\", \"done\"] = \"research\"\nhandoff_count: int = 0`\n\n`owner` is the load-bearing field. At any moment exactly one agent owns the state. The other one is not allowed to mutate it. `handoff_count` is your loop guard. Bound it and you bound the failure above.\n\n`owner`\n`handoff_count`\n\n## The handoff contract\n\nTwo rules, written down so both agents see the same thing.",
+      "tavilyScore": 0.7248703,
+      "query": "how do I orchestrate multiple AI agents with handoff rules",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Technical article on handoff ownership boundaries; relevant to handoff rules but educational, not a lead.",
+        "quote": "This is the shape OpenAI's SDK calls a \"handoff graph\"",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A technical article about handoff ownership boundaries addresses a relevant design issue without expressing purchase intent.",
+        "quote": "Two rules, written down so both agents see the same thing.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1t6mg5u/whats_the_best_orchestration_framework",
+      "title": "Whats the best orchestration framework? : r/AI_Agents - Reddit",
+      "content": "Crew44 is more of a local-first orchestrator for coding agents than a general agent framework. You create a small crew of specialists — planner",
+      "tavilyScore": 0.7310586,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promotes Crew44, a local-first orchestrator for coding agent crews; vendor-adjacent self-promotion.",
+        "quote": "Crew44 is more of a local-first orchestrator for coding agents than a general agent framework",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "The visible text recommends Crew44, a competing local-first coding-agent orchestrator, rather than expressing a lead's need.",
+        "quote": "Crew44 is more of a local-first orchestrator for coding agents than a general agent framework.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=46065997",
+      "title": "Show HN: Era – Open-source local sandbox for AI agents | Hacker News",
+      "content": "krunvm, case-sensitive volumes) are addressed with care in the README and setup scripts ・Maintains ~200ms microVM startup, making it fast enough to integrate naturally into agent execution loops ・Local-first by design, yet flexible enough to support Cloudflare Workers for orchestration when needed ・Well-crafted recipes and examples that go beyond the basics and support real-world usage This isn’t just about “running microVMs”—it’s about delivering a tool that developers can actually rely on. It feels far from a proof of concept; it’s something you’d want to keep in your toolbox. Running AI agents safely on local machines is still an open challenge with no clear standard. In that context, ERA’s approach—seamlessly integrating microVMs into everyday development workflows—is both timely and [...] volumes) are addressed with care in the README and setup scripts ・Maintains ~200ms microVM startup, making it fast enough to integrate naturally into agent execution loops ・Local-first by design, yet flexible enough to support Cloudflare Workers for orchestration when needed ・Well-crafted recipes and examples that go beyond the basics and support real-world usage This isn’t just about “running microVMs”—it’s about delivering a tool that developers can actually rely on. It feels far from a proof of concept; it’s something you’d want to keep in your toolbox. Running AI agents safely on local machines is still an open challenge with no clear standard. In that context, ERA’s approach—seamlessly integrating microVMs into everyday development workflows—is both timely and valuable. I have deep [...] ~200ms microVM startup, making it fast enough to integrate naturally into agent execution loops ・Local-first by design, yet flexible enough to support Cloudflare Workers for orchestration when needed ・Well-crafted recipes and examples that go beyond the basics and support real-world usage This isn’t just about “running microVMs”—it’s about delivering a tool that developers can actually rely on. It feels far from a proof of concept; it’s something you’d want to keep in your toolbox. Running AI agents safely on local machines is still an open challenge with no clear standard. In that context, ERA’s approach—seamlessly integrating microVMs into everyday development workflows—is both timely and valuable. I have deep respect for the thoughtful implementation and design philosophy behind it. |",
+      "tavilyScore": 0.7240906,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Show HN promoting Era, a local sandbox for agents; adjacent infrastructure, not orchestration teams.",
+        "quote": "Show HN: Era – Open-source local sandbox for AI agents",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Show HN promotes Era, an open-source local agent sandbox, rather than presenting a prospective customer's problem.",
+        "quote": "Local-first by design, yet flexible enough to support Cloudflare Workers for orchestration when needed",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AISEOInsider/comments/1vanwmx/build_a_4agent_workflow_with_agent_teams_ai",
+      "title": "Build A 4-Agent Workflow With Agent Teams AI : r/AISEOInsider",
+      "content": "Title: Build A 4-Agent Workflow With Agent Teams AI : r/AISEOInsider\nSkip to main contentBuild A 4-Agent Workflow With Agent Teams AI : r/AISEOInsider. # Build A 4-Agent Workflow With Agent Teams AI. Agent Teams AI makes it possible to divide one project between four specialised agents without losing visibility or control. A practical four-agent team can plan the work, complete separate tasks, review the results, and prepare the final output. Practical guidance, live support, and reusable AI workflows are available inside the AI Profit Boardroom. Want to make money and save time with AI? # Agent Teams AI Starts With Four Clear Roles. A four-agent workflow works best when every member has a narrow responsibility. The first role is a team lead that understands the main goal and assigns the work. A second agent can handle the first important part of the project. Another builder can complete a separate task without waiting for the first builder. The final agent reviews the combined work before it reaches you. Human approval should remain in place before important changes are accepted. Agent Teams AI becomes easier to manage when the four roles are defined before execution begins. # Agent Teams AI Needs One Focused Project. Start with one project that has a clear beginning and a result you can inspect. Create a separate project folder containing only the files needed for the task. A focused request gives every team member a clear direction from the start. # Choose Models For Each Agent Teams AI Role. Every member of the team does not need to use the same model. A capable reasoning model can manage the team lead role and create the project plan. The reviewer needs a model that can compare the result with the original requirements. # Build The Lead Role In Agent Teams AI. Ask the lead to inspect the folder and identify the main parts of the project. A reliable lead gives Agent Teams AI a clear direction throughout the entire workflow. # Add A Reviewer To Agent Teams AI. # Track The Four-Agent Workflow In Agent Teams AI. # Scale A Four-Agent Workflow With Agent Teams AI. 1.   What are the four roles in an Agent Teams AI workflow?",
+      "tavilyScore": 0.55335444,
+      "query": "how to build reusable specialist agent teams for custom AI applications",
+      "a": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Tutorial-style content promoting a paid boardroom; SEO-flavored, not a sales lead.",
+        "quote": "Agent Teams AI makes it possible to divide one project between four specialised agents",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "This is instructional and promotional content about a four-agent workflow, with no expressed customer pain or purchase intent.",
+        "quote": "Agent Teams AI makes it possible to divide one project between four specialised agents without losing visibility or control.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/n8n/comments/1v4gyvw/built_an_approval_api_for_n8n_ai_agents",
+      "title": "Built an approval API for n8n AI agents",
+      "content": "# Built an approval API for n8n AI agents. I've been experimenting with AI agents in n8n and kept running into the same problem. Generating an action is easy. Actually executing that action safely, especially after a human approval, a restart, or a retry is much harder. So I built a small API called AgentHail . The flow is simple: An n8n workflow submits the exact proposed action . The proposal appears in a structured approval inbox. A human approves or rejects it. The workflow retrieves the durable decision and resumes. The goal isn't to replace n8n. n8n remains the orchestrator and performs the actual Gmail, Stripe, CRM, or API actions. AgentHail only handles the approval workflow and decision lifecycle. Current features: Immutable action proposals Human approval/rejection Durable decision retrieval Idempotent proposal creation Append-only event history REST API I recorded a short (45-second) demo showing: Submit proposal → Human decision → Workflow resumes GIT REPO - I'm not trying to sell anything, I mainly want to learn where it breaks, what doesn't make sense, and whether this solves a real problem in production. If you have an n8n workflow that pauses for human decisions, I'd be happy to help you connect it and hear your honest feedback. The split that saved me: the agent owns creation, the deterministic layer owns operation, and the approval gate is where those two meet. The moment I let an agent improvise on something that runs on a schedule, it found a way to fail quietly — so now anything recurring goes through a fixed path and the agent only ever produces artifacts something else decides to act on. One thing I'd add to an approval setup: the failure that scared me most wasn't a crash, it was a run that reported success and was wrong. An approval gate protects you from bad actions; the receipt protects you from silent ones. the part i'd stress test is what happens after approval but before execution succeeds: retries, duplicate proposals, and stale approvals. for anything like stripe or crm writes, i'd want each approved action to carry an idempotency key, expiry time, and a small diff of what changed after execution. the approval log is useful, but the reconciliation log is what saves you later.",
+      "tavilyScore": 0.5525699,
+      "query": "how to make AI agents learn from human feedback without restart",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Builder promoting AgentHail approval API; overlaps human-approval loop but n8n-focused and self-promotional.",
+        "quote": "I built a small API called AgentHail",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Despite describing an approval problem, the post primarily promotes the author's AgentHail API for a narrower n8n use case.",
+        "quote": "So I built a small API called AgentHail .",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "X",
+      "url": "https://x.com/jiqizhixin/status/2082700968651808769",
+      "title": "机器之心 JIQIZHIXIN on X: \"What if building AI agent teams was as simple as snapping together reusable building blocks? Researchers at the University of Illinois at Urbana-Champaign present Agent Primitives for that! Instead of having agents chat in natural language (which causes errors piling up over t...",
+      "content": ", this method uses reusable internal building blocks called primitives that share information through a compact memory mechanism. An Organizer agent automatically picks the right combination for each task. The approach boosts accuracy by up to 16.5% over single-agent systems, cuts token usage and response time by roughly 3 to 4 times compared to text-based multi-agent setups, and stays stable across different AI models. Agent Primitives: Reusable Latent Building Blocks for Multi-Agent Systems Paper: https://t.co/5HBGnz5vn0 Our report: https://t.co/AvO4BUst8V 📬 #PapersAccepted by Jiqizhixin\" / X\nTitle: 机器之心 JIQIZHIXIN on X: \"What if building AI agent teams was as simple as snapping together reusable building blocks? Researchers at the University of Illinois at Urbana-Champaign present Agent Primitives for that! Instead of having agents chat in natural language (which causes errors piling up over time), this method uses reusable internal building blocks called primitives that share information through a compact memory mechanism. An Organizer agent automatically picks the right combination for each task. The approach boosts accuracy by up to 16.5% over single-agent systems, cuts token usage and response time by roughly 3 to 4 times compared to text-based multi-agent setups, and stays stable across different AI models. Agent Primitives: Reusable Latent Building Blocks for Multi-Agent Systems Paper: https://t.co/5HBGnz5vn0 Our report: https://t.co/AvO4BUst8V 📬 #PapersAccepted by Jiqizhixin\" / X\n## Post. What if building AI agent teams was as simple as snapping together reusable building blocks? Researchers at the University of Illinois at Urbana-Champaign present Agent Primitives for that! Instead of having agents chat in natural language (which causes errors piling up over time), this method uses reusable internal building blocks called primitives that share information through a compact memory mechanism. An Organizer agent automatically picks the right combination for each task. The approach boosts accuracy by up to 16.5% over single-agent systems, cuts token usage and response time by roughly 3 to 4 times compared to text-based multi-agent setups, and stays stable across different AI models. Agent Primitives: Reusable Latent Building Blocks for Multi-Agent Systems Paper: arxiv.org/pdf/2602.03695 Our report: mp.weixin.qq.com/s/Vp0Xj4VwbmZ0… 📬 #PapersAccepted by Jiqizhixin. 5:33 AM · Jul 30, 20261.1KViews.",
+      "tavilyScore": 0.5488549,
+      "query": "how to build reusable specialist agent teams for custom AI applications",
+      "a": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Research news about Agent Primitives; interesting but academic news, not a lead.",
+        "quote": "Researchers at the University of Illinois at Urbana-Champaign present Agent Primitives",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A research-news post about reusable multi-agent primitives is topically relevant but shows no lead intent.",
+        "quote": "What if building AI agent teams was as simple as snapping together reusable building blocks?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1sh3qw9/building_a_local_orchestration_layer_for_ai",
+      "title": "Building a local orchestration layer for AI systems to reduce tool ...",
+      "content": "We built an orchestration layer and a team of agents you can create on the spot, give it a try and us feedback!",
+      "tavilyScore": 0.5443473,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Self-promotion of their own orchestration layer and agent teams, soliciting feedback.",
+        "quote": "We built an orchestration layer and a team of agents you can create on the spot",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The authors promote their own local orchestration layer and agent team while soliciting feedback.",
+        "quote": "We built an orchestration layer and a team of agents you can create on the spot, give it a try and us feedback!",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "Medium",
+      "url": "https://medium.com/@onomojo/building-my-own-ai-agent-orchestrator-a-journey-to-level-8-14cfb0c0a813",
+      "title": "Building My Own AI Agent Orchestrator: A Journey to Level 8",
+      "content": "If you’re interested in agent orchestration, if you want a tool that works locally with Docker and gives you complete visibility into what your AI agents are doing, Sandstorm Desktopis out there as an open-source project. I’m not saying it’s ready for everyone — it’s still evolving quickly and the architecture is still stabilizing. But if you want to see what Level 8 AI-assisted coding actually looks like in practice, this is it. I’m probably going to mark the old CLI version as deprecated since I’m not using it anymore. The desktop version has completely replaced it in my workflow.\n\n## The Invitation [...] That’s where Sandstorm Desktop sits. This isn’t about using someone else’s agent framework or adapting to the constraints of a commercial tool. It’s about building exactly the orchestration system I need for the way I actually work. It integrates with Docker Desktop for local development environments. It works cross-platform on macOS and Linux, and would probably build fine for Windows if I took the time to test it. It’s open source, which means anyone can use it, modify it, or learn from it. But most importantly, it’s mine. I control every aspect of how it works, and I can evolve it as fast as my needs change.\n\n## Real-World Results: The Sprint That Took Three Days",
+      "tavilyScore": 0.72603726,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Author promoting Sandstorm Desktop, a local agent orchestrator — competitor with soft pitch.",
+        "quote": "a tool that works locally with Docker and gives you complete visibility into what your AI agents are doing",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The author promotes their own open-source Sandstorm Desktop orchestrator and invites others to use it.",
+        "quote": "Sandstorm Desktopis out there as an open-source project.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "X",
+      "url": "https://x.com/DanKornas/status/2117677179886538926",
+      "title": "Dan Kornas on X: \"Running several coding agents shouldn’t mean juggling several disconnected terminals.\n\nDevChain is a local-first orchestration tool for developers running teams of AI coding agents on their own hardware.\n\nIt helps you coordinate parallel coding work by giving agents a shared task… / X",
+      "content": "# Dan Kornas on X: \"Running several coding agents shouldn’t mean juggling several disconnected terminals. DevChain is a local-first orchestration tool for developers running teams of AI coding agents on their own hardware. It helps you coordinate parallel coding work by giving agents a shared task board, chat, and code review workflow while keeping their terminals visible in your browser. Key features: • Multiple coding providers – coordinate Claude Code, Codex, OpenCode, Antigravity, and GitHub Copilot agents • Live agent terminals – each agent runs in its own tmux session; watch, scroll back, or take over • Agent-managed task board – agents pick up epics and sub-epics and update their status through MCP tools • Built-in code review – inspect a live pre-commit diff with inline comments, [...] – inspect a live pre-commit diff with inline comments, @mentions, and discussion threads • Local-first storage – app state lives in a local SQLite database, and agents use your own provider accounts Free public GitHub repo. Link in the reply 👇\" [...] ## Post\n\n## Post",
+      "tavilyScore": 0.83004373,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Direct competitor promoting DevChain, a local-first multi-agent coding orchestration tool.",
+        "quote": "DevChain is a local-first orchestration tool for developers running teams of AI coding agents",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes DevChain, a directly competing local-first orchestration tool for teams of AI coding agents.",
+        "quote": "DevChain is a local-first orchestration tool for developers running teams of AI coding agents on their own hardware.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "X",
+      "url": "https://x.com/i/status/2098444945275134436",
+      "title": "Dan Kornas on X: \"Building agent workflows shouldn’t mean rebuilding them for every AI tool.\n\nPragma is a cross-harness platform for building reusable AI agent teams across models and runtimes.\n\nIt helps you define a team once as YAML DSL, then run it in its Desktop app or CLI, bring it into tools… / X",
+      "content": "# Dan Kornas on X: \"Building agent workflows shouldn’t mean rebuilding them for every AI tool. Pragma is a cross-harness platform for building reusable AI agent teams across models and runtimes. It helps you define a team once as YAML DSL, then run it in its Desktop app or CLI, bring it into tools such as Codex and Claude Code, or embed it through the SDK. Key features: • Portable team definitions – version, export, and share agent-team methods as `.pragma` bundles • Composable workflows – combine Experts, ExpertTeams, Flows, subflows, tools, and human checkpoints • Cross-harness adapters – use runtime adapters for Claude Code, Codex, PI, Qoder CLI, and Antigravity • Shared context and memory – carry decisions, artifacts, task state, and evidence-backed memory across a Mission • [...] task state, and evidence-backed memory across a Mission • Evaluation support – capture tasks and expectations to check workflow changes at the system level It’s source-available under the custom Pragma Source Available License 1.0. Link in the reply 👇\" [...] ## Post\n\n## Post",
+      "tavilyScore": 0.745954,
+      "query": "how to build reusable specialist agent teams for custom AI applications",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Direct competitor promoting Pragma, reusable cross-harness agent teams — overlaps AutoByteus's core pitch.",
+        "quote": "Pragma is a cross-harness platform for building reusable AI agent teams across models and runtimes",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes Pragma, a competing cross-harness platform for reusable AI agent teams across models and runtimes.",
+        "quote": "Pragma is a cross-harness platform for building reusable AI agent teams across models and runtimes.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/saasbuild/comments/1tp1h2o/a_voicefirst_ai_agent_orchestrator_that_actually",
+      "title": "A voice-first AI agent orchestrator that actually runs local CLI tools",
+      "content": "Selene is a desktop app that runs multi AI agent teams on your machine. fully local AI software factory that runs on almost anything",
+      "tavilyScore": 0.7261344,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Self-promotion of Selene, a local desktop app running multi-agent teams — direct competitor.",
+        "quote": "Selene is a desktop app that runs multi AI agent teams on your machine",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes Selene, a competing desktop application for running local multi-agent teams.",
+        "quote": "Selene is a desktop app that runs multi AI agent teams on your machine.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1t4aqr1/i_built_a_local_os_specifically_to_sandbox_and",
+      "title": "I built a local OS specifically to sandbox and orchestrate AI agents ...",
+      "content": "Multi-Agent Orchestration: You can drop separate local agents into a \"Team\" and they can delegate tasks to each other natively within the UI.",
+      "tavilyScore": 0.58118427,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Self-promotion of a local OS for sandboxing and orchestrating agent teams — direct competitor.",
+        "quote": "You can drop separate local agents into a \"Team\" and they can delegate tasks to each other",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The author promotes their own local OS for sandboxing and orchestrating teams of AI agents.",
+        "quote": "You can drop separate local agents into a \"Team\" and they can delegate tasks to each other natively within the UI.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AIGuild/comments/1ufr4mk/qwen_releases_an_open_ai_world_model_that_lets",
+      "title": "Qwen Releases an Open AI “World Model” That Lets Agents Practice Before Acting",
+      "content": "# Qwen Releases an Open AI “World Model” That Lets Agents Practice Before Acting. ## Post details. ## Content. Alibaba’s Qwen team released Qwen-AgentWorld, an AI model designed to simulate the environments used by autonomous agents. Unlike a normal agent that decides what action to take, AgentWorld predicts what will happen after an action. For example, it can simulate the response to a terminal command, browser click, software change, or tool request without executing it on a real system. It covers seven environments: Web browsers and search Linux terminals Software engineering Android devices Desktop operating systems MCP tools General web applications Qwen trained the models on more than 10 million real-world interaction sequences. Two versions were developed: 35B-A3B: 35 billion total parameters, with three billion active at a time 397B-A17B: 397 billion total parameters, with 17 billion active On Qwen’s AgentWorldBench, the larger model scored 58.71, slightly above GPT-5.4 at 58.25 and Claude Opus 4.8 at 56.59. The smaller model scored 56.39 and significantly outperformed the standard Qwen model of the same size. Qwen also used AgentWorld to create simulated training environments. Agents trained in these environments improved across coding, search, terminal, MCP, and tool-use benchmarks. In one experiment, agents practiced web research inside a completely fictional world containing invented people, organizations, and events. They later performed better on real search tasks, suggesting that they learned research strategies rather than memorizing answers. Qwen released the smaller model with a 256,000-token context window, along with its benchmark and deployment code, under an Apache 2.0 license. ## Top Comments.",
+      "tavilyScore": 0.52010024,
+      "query": "tool to simulate software engineering team with AI agents",
+      "a": {
+        "score": 1,
+        "kind": "article",
+        "reason": "News about Qwen's world model for agent simulation; unrelated to orchestration sales.",
+        "quote": "Qwen-AgentWorld, an AI model designed to simulate the environments used by autonomous agents",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "article",
+        "reason": "News about Qwen's agent world model concerns environment simulation, not a lead for agent-team orchestration.",
+        "quote": "Alibaba’s Qwen team released Qwen-AgentWorld, an AI model designed to simulate the environments used by autonomous agents.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "Medium",
+      "url": "https://medium.com/@muktharvortegix/why-multi-agent-orchestration-is-the-future-of-development-and-how-orcha-gets-you-there-c23668d51729",
+      "title": "Medium",
+      "content": "## Is Orcha Worth Trying Right Now?\n\nThe case for multi-agent orchestration isn’t theoretical it’s backed by controlled research, market data, and the lived experience of the developers already doing it. The 80.8% performance improvement on parallel tasks. The 3x scaling advantage McKinsey found among AI high performers. The 52-point gap between where enterprises are in basic automation versus where they are with AI agents.\n\nOrcha is the first desktop-native product to operationalize that architecture for individual developers and small teams without requiring you to build the scaffolding yourself. It’s local-first, works with the models you’re already using, and it’s free right now. [...] ## Is it safe to use Orcha with proprietary code?\n\nOrcha is explicitly local-first: your API keys, code, and data stay on your machine. Nothing is sent to Orcha’s servers. The only external calls are the standard API calls to whichever model provider you use (Anthropic, Google, OpenAI) the same calls you’d make running those models directly. For teams concerned about code leaving their environment, this architecture is a meaningful advantage over cloud-hosted orchestration platforms.\n\n## What kinds of development workflows benefit most from Orcha? [...] ## How Orcha Works: Features That Actually Change Your Workflow\n\nOrcha’s core value proposition is straightforward: instead of managing individual AI sessions yourself, you define an agent team and let Orcha coordinate it. Here’s how the main features break down in practice.\n\n## PM Agent — Configure Your Team in Plain English\n\nDescribe what you’re building. The PM agent breaks it down, creates the agent group, assigns roles (frontend, backend, DevOps, etc.), and deploys the team. No config files, no setup screens. You get a structured team from a single sentence like “Set up authentication for this Node.js project.”\n\n## Role-Based Agents — Each One Knows Its Job",
+      "tavilyScore": 0.7783125,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotional piece for Orcha, a local-first desktop multi-agent orchestrator — direct competitor.",
+        "quote": "It’s local-first, works with the models you’re already using, and it’s free right now",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The article advocates trying Orcha, a competing local-first multi-agent orchestration product.",
+        "quote": "It’s local-first, works with the models you’re already using, and it’s free right now.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "Medium",
+      "url": "https://medium.com/@JorgeVidaurre/agents-squads-an-open-source-code-first-local-first-framework-for-ai-agent-teams-57903a8cb2a4",
+      "title": "Agents Squads: An Open-Source, Code-First, Local-First Framework for AI Agent Teams",
+      "content": "## Who Is This For?\n\nTeams who want to understand their AI, not just use it.\n\n- You read your agents’ reasoning before trusting their output  \n- You version control your agent definitions like any other code  \n- You want memory and context without sending data to external services  \n- You’re building with Claude Code, Cursor, or similar tools\n\nTeams who value simplicity over sophistication.\n\n- No Kubernetes required  \n- No cloud infrastructure required  \n- No proprietary formats to learn  \n- Works with your existing git workflow\n\n### Getting Started\n\nbash  \nnpm install -g squads-cli  \n  \ncd your-project  \nsquads init  \nsquads status\nThat’s it. No accounts. No setup wizards. No configuration files to write.\n\nDefine your first squad: [...] Subscribe\n\n- [x] \n\nRemember me for faster sign in\n\n \n\nReal-time visibility into what your agents are doing — commits, goals, progress, git activity, token economics. Not logs you have to search. Not dashboards you have to build. Just run `squads dash`.\n\nMemory That Persists\n\nSearch across all your agents’ accumulated knowledge with `squads memory query “authentication”` — instantly find what your engineering lead learned about JWT tokens, what your security agent discovered about OAuth, all ranked by relevance.\n\nEvery agent accumulates knowledge. Every session builds on the last. Your agents learn your codebase, your patterns, your preferences.\n\nAnd it’s all stored in markdown files and extended in your local stack.\n\n## Who Is This For? [...] Sitemap\n\nOpen in app\n\nSign up\n\nSign in\n\n. No vendor lock-in.\n\nWant to add infrastructure later? The optional Docker stack gives you telemetry, memory persistence, and observability — all running locally.\n\nPress enter or click to view image in full size\n\nImage 5\n\n3. Teams-First, Not Tasks-First\n\nMost frameworks think in terms of tasks: “route this query to the right agent.”  \nWe think in terms of teams: “engineering squad handles infrastructure, research squad handles analysis.”\n\n.agents/squads/  \n engineering/  \n SQUAD.md # Team goals & config  \n ci-optimizer.md  \n infra-monitor.md  \n research/  \n SQUAD.md  \n market-analyst.md  \n marketing/  \n ...\nWhy does this matter?",
+      "tavilyScore": 0.7659437,
+      "query": "looking for local-first AI agent team orchestration tool",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes Agent Squads, an open-source local-first agent team framework — direct competitor.",
+        "quote": "An Open-Source, Code-First, Local-First Framework for AI Agent Teams",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "This promotes Agent Squads, a competing open-source local-first framework for AI agent teams.",
+        "quote": "Agents Squads: An Open-Source, Code-First, Local-First Framework for AI Agent Teams",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L8",
+      "text": "Your point about consolidation is crucial—raw feedback logs aren't enough; you need to distill patterns into reusable skills. On signal quality: require rejection reasons to reference specific fields, and treat approvals as weak signals unless paired with spot-checks. Disclosure: I work on AutoByteus, where we convert reviewed feedback into versioned skills for specialist agents. How are you handling conflicting feedback across reviewers?",
+      "usage": {
+        "in": 445,
+        "out": 85
+      },
+      "latencyMs": 2228
+    }
+  ],
+  "companies": [
+    {
+      "company": "Carrier",
+      "signal": "hiring",
+      "reason": "Job post for Agentic AI Engineer Lead to design, develop, and deploy AI agents and agentic workflows across Carrier Engineering.",
+      "url": "https://jobs.carrier.com/en/job/indianapolis/agentic-ai-engineer-lead/29289/100999692768",
+      "title": "Agentic AI Engineer Lead at Carrier"
+    }
+  ],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3423,
+      "tokensOut": 1384,
+      "cost": 0.0012054499999999998,
+      "latencyMs": 5526,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3434,
+      "tokensOut": 1521,
+      "cost": 0.022078,
+      "latencyMs": 33134,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 0.25,
+      "top5Overlap": 4
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 500,
+      "out": 779,
+      "cost": 0.0010848,
+      "latencyMs": 4679
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3423,
+      "out": 1384,
+      "cost": 0.0012054499999999998,
+      "latencyMs": 5526
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3434,
+      "out": 1521,
+      "cost": 0.022078,
+      "latencyMs": 33134
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3153,
+      "out": 985,
+      "cost": 0.0021279,
+      "latencyMs": 7170
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 445,
+      "out": 85,
+      "cost": 0.00174,
+      "latencyMs": 2228
+    }
+  ],
+  "scorerError": null
+}

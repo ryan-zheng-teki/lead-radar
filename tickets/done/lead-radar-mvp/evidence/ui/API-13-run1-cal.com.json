@@ -1,0 +1,627 @@
+{
+  "url": "https://cal.com/",
+  "at": "2026-11-20T14:04:25.239Z",
+  "totalMs": 27568,
+  "totalCost": 0.030829500000000003,
+  "profile": {
+    "name": "Cal.com",
+    "summary": "Cal.com is a scheduling app and online booking system that lets people share availability links and automates calendar syncing, timezone detection, reminders, video calls, routing, workflows, and team scheduling.",
+    "problems": [
+      "Eliminating booking back-and-forth",
+      "Preventing double bookings",
+      "Syncing calendars and detecting timezones automatically",
+      "Sending reminders and follow-ups automatically",
+      "Creating video meeting links for bookings",
+      "Routing and distributing inbound leads to the right person",
+      "Coordinating team scheduling with round-robin and shared availability",
+      "Embedding booking pages into a company’s own site and design",
+      "Connecting bookings to Slack, Salesforce, HubSpot, Stripe, Zoom, and other tools",
+      "Managing organization-wide scheduling with SSO, SCIM, audit logs, and uptime SLA",
+      "Hosting events with tickets, guest lists, and RSVPs",
+      "Letting AI agents check availability and book meetings through an API"
+    ],
+    "ideal_customer": "Individuals, teams, small businesses, larger organizations, enterprise admins, inbound-focused sales/support/ops teams, event hosts, and developers who need scheduling, booking, routing, or embedded booking workflows.",
+    "pain_phrases": [
+      "I’m tired of the back-and-forth emails just to book a meeting",
+      "How do I stop double-booking my calendar?",
+      "I need a booking link that syncs with my calendar and handles timezones",
+      "Our team needs round-robin scheduling so leads don’t fall through",
+      "I want to embed booking on my site without losing my design"
+    ],
+    "search_queries": [
+      "looking for a tool to schedule meetings without back-and-forth emails",
+      "how do I share availability and avoid double bookings",
+      "best way to route inbound leads to the right salesperson",
+      "how to embed a booking page on my website",
+      "team scheduling tool with round robin and shared availability",
+      "scheduling software with calendar sync reminders and video calls"
+    ],
+    "domain": "cal.com",
+    "sources": [
+      "https://cal.com/",
+      "https://cal.com",
+      "https://cal.com/about",
+      "https://cal.com/blog/calcom-v7-0",
+      "https://cal.com/enterprise"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L12",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/edtech/comments/1fjcgf5/looking_for_a_scheduling_software_with_2way",
+      "title": "Looking for a Scheduling Software with 2-Way Calendar Sync & Package Payments – Suggestions : r/edtech",
+      "content": "Title: Looking for a Scheduling Software with 2-Way Calendar Sync & Package Payments – Suggestions : r/edtech\n# Looking for a Scheduling Software with 2-Way Calendar Sync & Package Payments – Suggestions : r/edtech. Skip to main contentLooking for a Scheduling Software with 2-Way Calendar Sync & Package Payments – Suggestions : r/edtech. # Looking for a Scheduling Software with 2-Way Calendar Sync & Package Payments – Suggestions. I'm an ESL tutor launching my business and am looking for a scheduling solution that meets these **specific needs**:. 1.   **Two-way calendar sync** with Google Calendar, Outlook, or iCal (so changes can be reflected in both the software and my external calendar). 2.   The ability to offer **package payments and discounts** (e.g., clients can purchase multiple sessions upfront and automatically reserve that spot until their credits that they can use over time). I'd also be willing to pay for an \"all in one\" (think, GoHighLevel, but not a scam, if that exists) package if there were one that also helped with email marketing, etc. 1.   **Squarespace Scheduling (formerly Acuity)** – While you mentioned Acuity, it’s worth noting that it does offer package payments, and you can set up recurring appointments. For two-way calendar sync, they offer integration with Google Calendar, iCal, and Outlook, and they work with Stripe and PayPal for payments. 2.   **TutorCruncher** – This one is built specifically for tutoring businesses and offers two-way calendar sync, package payments, and recurring sessions. 3.   **Book Like A Boss** – It has two-way sync with Google Calendar and integrates with payment gateways. 4.   **Zoho Bookings** – Zoho has a strong ecosystem, and their scheduling tool allows two-way calendar sync, recurring appointments, and integrations with payment gateways like Stripe. If none of these work out of the box for package payments, you could consider using **Zapier** to bridge between a scheduling tool and a payment processor or package tracker. They can handle package payments, recurring appointments and integrations with Stripe or PayPal. For Outlook or iCal sync, sometimes Zapier or other middleware can bridge the gap, though native two-way sync is rarer outside Google calendars. By the way, if you ever switch both calendars to Google, I built StopDoubleBookings.com to keep two Google Calendars in sync—create or edit an event on one, and it shows up on the other.",
+      "tavilyScore": 0.54825026,
+      "query": "scheduling software with calendar sync reminders and video calls",
+      "a": {
+        "score": 9,
+        "kind": "asking",
+        "reason": "Direct request for scheduling software with two-way calendar sync and payments — exactly Cal.com's core offering.",
+        "quote": "Looking for a Scheduling Software with 2-Way Calendar Sync & Package Payments",
+        "verified": true
+      },
+      "b": {
+        "score": 10,
+        "kind": "asking",
+        "reason": "An ESL tutor explicitly seeks scheduling software with two-way calendar sync and payments, closely matching Cal.com's capabilities.",
+        "quote": "I'm an ESL tutor launching my business and am looking for a scheduling solution",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/therapists/comments/1t0ubhp/struggling_with_multiple_provider_platforms_and",
+      "title": "struggling with multiple provider platforms and scheduling : r/therapists",
+      "content": "I have different availability on my two platforms. That's the only way I avoid being double booked. For instance I have more spots for Rula",
+      "tavilyScore": 0.55148315,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 7,
+        "kind": "complaining",
+        "reason": "Therapist manually juggling availability across platforms to avoid double bookings.",
+        "quote": "I have different availability on my two platforms. That's the only way I avoid being double booked.",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "kind": "complaining",
+        "reason": "A therapist describes manually separating availability across provider platforms to avoid double bookings, a relevant calendar-sync pain.",
+        "quote": "I have different availability on my two platforms.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/WhichCRM/comments/1wu9gwg/scheduling_software_recommendations_for_multisite",
+      "title": "Scheduling software recommendations for multi-site law firm - Reddit",
+      "content": "Calendly-tier tools with team routing handle it fine. Look for per-location routing or round-robin scoped by office, plus per-staff",
+      "tavilyScore": 0.5279707,
+      "query": "team scheduling tool with round robin and shared availability",
+      "a": {
+        "score": 7,
+        "kind": "discussing",
+        "reason": "Discussion of team scheduling needs with routing and round-robin for multi-site firm — matches Cal.com team features.",
+        "quote": "Calendly-tier tools with team routing handle it fine. Look for per-location routing or round-robin",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "The discussion addresses multi-site law-firm scheduling with team routing and round-robin, but the excerpt is advice rather than a direct request.",
+        "quote": "Calendly-tier tools with team routing handle it fine.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/musicindustry/comments/1p6nfzl/how_do_you_manage_your_artists_bookings_without",
+      "title": "How do you manage your artists’ bookings without losing your mind? : r/musicindustry",
+      "content": "How do you manage your artists’ bookings without losing your mind? Skip to main contentHow do you manage your artists’ bookings without losing your mind? How do you manage your artists’ bookings without losing your mind? I've taken on a couple artists and trying to figure out how to stay organized with their bookings. Right now: email threads with venues/promoters, Google Sheet to track dates and deals. I use one g-sheet to track venue correspondence dates, one g-sheet to track deals and dates, and also use g-calendar to track dates (holds and confirmations) which is shared with the artist. So you send artists a calendar invite with all of the details of the gigs? How many artists do you manage? No, I share the entire calendar with the artist so they can view it but not modify. Gigwell and Google calendar for each. But we are on top level, I don't know if that works for small clubs - artists. Definitely gives a good image for the agency and the artists alike though. Why do you need Google calendar? How many artists do you manage? It's also easier to share a calendars with them so we avoid double bookings which is important when the territory is world. I totally prefer it over gigwells from an artist perspective too. I use a Google Sheet template calendar. Have one for each artist/band. That way, the second something is firmed up, you can make it a bright yellow/orange/green square on the artist’s calendar with details like date, set time, and load-in time. It's not a scalable friendly business if you want to do right by the artists and venues. Is there a number of artists/bookings where you realised it was becoming difficult to scale? File all booked or ciphering emails by date/venue or city, google spreadsheet that is a calendar and I mark confirmed and change cell colors once contracted and then link the email thread in the cell to get to it easy. Tips for managing artist bookings effectively. Effective tools for booking music artists. The best Music Industry community on Reddit. Anyone can view, post, and comment to this community.",
+      "tavilyScore": 0.68605465,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 6,
+        "kind": "asking",
+        "reason": "Manager struggling with artist bookings across email/sheets/calendar; related scheduling pain, not booking links.",
+        "quote": "I've taken on a couple artists and trying to figure out how to stay organized with their bookings.",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "kind": "asking",
+        "reason": "An artist manager asks how to organize bookings across email, spreadsheets, and shared calendars, though the workflow is venue management.",
+        "quote": "I've taken on a couple artists and trying to figure out how to stay organized with their bookings.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "Stack Overflow",
+      "url": "https://stackoverflow.com/questions/70709264/how-to-prevent-double-bookings-in-powerapps",
+      "title": "How to prevent double bookings in PowerApps - Stack Overflow",
+      "content": "OnSelect code from button Book:\n\n`Set(varNumDuration; varDuration);; // Make booking Patch(Bookings; Defaults(Bookings); {Begin: VarBeginDateTime}; {End: varEndDateTime}; {BookingStation: varStationSelected}; {Duration: varDuration});; // Send mail Office365Outlook.SendEmailV2(\"john@doe.com\";\"Confirmation booking \"&varStationSelectedText;\" Dear \"& varMyDetails.FullName & \",\" & \"<br><br>These are your booking details:\" & \"<br><br>Start: \"&VarBeginDateTime & \"<br> End: \"&varEndDateTime& \"<br> Duration: \"&varDurationText& \"<br> Station: \"&varStationSelectedText & \"<br><br> Kind regards, <br> Booking station app\");; // Next screen Navigate(ConfirmationScreen);;` [...] Situation: I'm developing an app where you can book stations on a chosen date and time with durations of 1, 2 or 4 hours. UI of the app.\n\nQuestion: What's the best way to prevent double bookings? They may also not overlap.\n\nImportant tables:\n\n1. Booking (BookingStation, Begin, End, Duration, Owner) View table with data\n2. Duration (Time, Minutes, Length) View table with data\n3. Station (Name, Number) View table with data\n\nThe code in 'items' of the gallery showing the stations: [...] The code in 'items' of the gallery showing the stations:\n\n`SortByColumns( Filter( Stations; Not( Name in Filter( Bookings; (Begin >= VarBeginDateTime && End <= varEndDateTime && Name <> BookingStation.Name); (Begin <= VarBeginDateTime && End <= varEndDateTime && Name <> BookingStation.Name); (Begin >= VarBeginDateTime && Begin <= varEndDateTime && End >= varEndDateTime && Name <> BookingStation.Name); (Begin <= VarBeginDateTime && End >= varEndDateTime && Name <> BookingStation.Name) ).Name ) ); \"cr8fc_number\"; Ascending )`\n\nOnSelect code from button Book:",
+      "tavilyScore": 0.5691942,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 6,
+        "kind": "asking",
+        "reason": "Developer building booking app with double-booking problem; could use scheduling API/infrastructure.",
+        "quote": "How to prevent double bookings in PowerApps",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "asking",
+        "reason": "The user needs help preventing double bookings in custom PowerApps code, not necessarily buying a scheduling platform.",
+        "quote": "How to prevent double bookings in PowerApps",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/SaaS/comments/1ptahfb/how_do_you_keep_track_of_customer_appointments",
+      "title": "How do you keep track of customer appointments and avoid double ...",
+      "content": "It shows your scheduled jobs in a clear calendar view so you can avoid double bookings, sends reminders, It shows your scheduled jobs in a",
+      "tavilyScore": 0.5687751,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Person describing need to track appointments and avoid double bookings with reminders.",
+        "quote": "It shows your scheduled jobs in a clear calendar view so you can avoid double bookings",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "The discussion concerns customer appointment tracking and avoiding double bookings, but the excerpt appears to recommend an existing tool.",
+        "quote": "It shows your scheduled jobs in a clear calendar view so you can avoid double bookings",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "Quora",
+      "url": "https://www.quora.com/How-can-I-list-a-holiday-cottage-on-multiple-websites-without-risk-of-double-booking-UK",
+      "title": "How to list a holiday cottage on multiple websites without risk of double booking - Quora",
+      "content": "How can I list a holiday cottage on multiple websites without risk of double booking? I listed my property on Airbnb and other platforms, but instant booking caused a double booking. The very first thing a competent host will do when using two booking platforms is to sync calendars so a booking on one site will make those dates unavailable on the other. If you host your home on other websites, you can link all of your hosting calendars to prevent multiple guests from booking the same dates. What is the best holiday booking website in the UK? Listing a single UK holiday cottage across multiple booking channels is common and workable if you combine clear rules, the right tools, and disciplined processes. Listing a single UK holiday cottage across multiple booking channels is common and workable if you combine clear rules, the right tools, and disciplined processes. - A channel manager synchronises availability, rates and bookings in real time between your master calendar and OTAs (Airbnb, Vrbo, Booking.com), your website and other sites. Use a channel manager for reliable, near-real-time two-way syncing; if you cannot, rely on one master calendar with strict manual procedures, disable instant-booking on some channels, require deposits, and perform daily reconciliations. What is the best way to deal with double booking when listing your home on multiple websites such as Airbnb and booking.com? What’s the best way for vacation rental hosts to manage multiple listings, avoid double bookings, and increase profits without working 24/7? I listed my property on Airbnb and other platforms, but instant booking caused a double booking. I listed my property on Airbnb and other platforms, but instant booking caused a double booking. If I’m not mistaken I think that if you have a booking come in for say Airbnb then you need to get onto the other sites to block the date to say it’s not available. How do I manage booking for multiple websites (booking.com, Airbnb etc) for my home stay? What is the best holiday booking website in the UK? What’s the best way for vacation rental hosts to manage multiple listings, avoid double bookings, and increase profits without working 24/7?",
+      "tavilyScore": 0.6918097,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 4,
+        "kind": "asking",
+        "reason": "Vacation rental double-booking problem; adjacent calendar sync need but not meeting scheduling.",
+        "quote": "How can I list a holiday cottage on multiple websites without risk of double booking?",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "asking",
+        "reason": "The user has a real double-booking problem, but it concerns holiday-property channels rather than appointment scheduling.",
+        "quote": "I listed my property on Airbnb and other platforms, but instant booking caused a double booking.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "Quora",
+      "url": "https://www.quora.com/What-scheduling-software-allows-you-to-sync-multiple-calendars",
+      "title": "What scheduling software allows you to sync multiple calendars? - Quora",
+      "content": "Title: What scheduling software allows you to sync multiple calendars? - Quora\nWhat scheduling software allows you to sync multiple calendars? Calendar and scheduling tools that can sync multiple calendars (from different accounts, platforms, or users) fall into two broad categories: calendar aggregators that consolidate many accounts into one view, and appointment/scheduling platforms that read/write across multiple calendars to prevent double-booking and show availability. Calendar and scheduling tools that can sync multiple calendars (from different accounts, platforms, or users) fall into two broad categories: calendar aggregators that consolidate many accounts into one view, and appointment/scheduling platforms that read/write across multiple calendars to prevent double-booking and show availability. * Modern calendar client that syncs multiple Google, Microsoft, and iCloud calendars. * Outlook handles multiple calendars; third-party tools like CalendarBridge or Sync2 let you two-way sync between Google and Outlook calendars. * Scheduling/booking platform that connects multiple calendars per user (Google, Outlook, iCloud, Office 365). * Detects conflicts across connected calendars to prevent double-booking; supports multiple event types and team scheduling. * Workforce scheduling platforms that integrate with employees’ calendars (Google, Outlook) to sync shifts and availability. * Primary need: scheduling appointments and preventing double-booking across calendars → choose a booking tool that supports multiple calendar connections (Calendly, Acuity, Microsoft Bookings, Zoho Bookings). If you need a short recommendation: for booking across multiple calendars use Calendly (or Acuity) connected to all your accounts; for daily multi-account viewing and management use Fantastical or Cron (macOS/iOS) or Outlook/Google Calendar on desktop/web depending on your ecosystem. Tip: Watch out for the time taken for the sync between the scheduling software and the google calendar. So, continuing with the example above, TimeTap adds appointments that get booked with you through TimeTap to your “Personal Events” Google Calendar as well as reads events that are on your “Personal Events” Google Calendar to block off your booking availability in TimeTap. You can, however, decide that you only want this sync to flow in one direction. How can I sync two Google calendar? Apptoto allows you to sync multiple calendars and allow clients to schedule with you online. Is there a way to sync multiple Google calendars? How can I sync two Google calendar? Is there a way to sync multiple Google calendars? How can I sync two Google calendar? Is there a way to sync multiple Google calendars?",
+      "tavilyScore": 0.5798763,
+      "query": "scheduling software with calendar sync reminders and video calls",
+      "a": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Quora answer-style content on multi-calendar sync; relevant topic but not a personal ask.",
+        "quote": "appointment/scheduling platforms that read/write across multiple calendars to prevent double-booking",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "kind": "asking",
+        "reason": "The question directly seeks scheduling software that synchronizes multiple calendars, a core Cal.com requirement.",
+        "quote": "What scheduling software allows you to sync multiple calendars?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Zoom/comments/1wgzr38/what_is_the_zoom_scheduler_and_will_it_screw_up",
+      "title": "What is the Zoom scheduler, and will it screw up my scheduled calls?",
+      "content": "Zoom Scheduler is an appointment booking tool built natively into the Zoom platform that eliminates the back-and-forth emails of setting up",
+      "tavilyScore": 0.7092205,
+      "query": "looking for a tool to schedule meetings without back-and-forth emails",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Informational explainer about Zoom's built-in scheduler, not a person seeking a solution.",
+        "quote": "Zoom Scheduler is an appointment booking tool built natively into the Zoom platform",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "This is an informational explanation of Zoom Scheduler, not a person seeking a scheduling solution.",
+        "quote": "Zoom Scheduler is an appointment booking tool built natively into the Zoom platform",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "Quora",
+      "url": "https://www.quora.com/Which-scheduling-systems-allow-two-way-calendar-sync",
+      "title": "Which scheduling systems allow two way calendar sync?",
+      "content": "Title: Which scheduling systems allow two way calendar sync?\nWhich scheduling systems allow two way calendar sync? Acuity Scheduling and Appointy two of many web-based software solutions that offer two-way sync with Google Calendar (which in turn can sync with iCal and many other calendars). All with Nano Banana Pro in Google Ads. What scheduling software allows you to sync multiple calendars? Researcher of appointment scheduling apps at Zoho Corporation · Author has 133 answers and 214.3K answer views. Let me explain how it works with the product that I know of the most, Zoho Bookings, as an example. You can sync your calendars and your staff’s with Zoho Bookings. It will show the combined availability on a common dashboard (calendar). There is no need to create separate accounts for each google calendar. You can embed this on your webpage or use the one page website that is part of Zoho Bookings. When your client books an appointment, it gets populated in the common calendar and gets synced to the google calendar that you. When your client books an appointment, it gets populated in the common calendar and gets synced to the google calendar that you map. If the appointment gets booked with you, your google calendar will be updated. If it was with your staff, their calendar gets updated. And, the common calendar is updated with the new combined availability. The same thing happens in the reverse if there is a cancellation or a rescheduling of the appointment. Tip: Watch out for the time taken for the sync between the scheduling software and the google calendar. If you use Google Calendar, add the person to your calendar by clicking the 3 dots next to the calendar you wish to share, and add the person in the sharing section. If you use Google and they use Outlook or iCloud, you’re going to need a syncing tool like https://calendarbridge.com/, whi. *   Two-way sync with Google Calendar, Outlook/Office 365, and iCloud. *   Two-way sync with Google Calendar, Office 365/Outlook, and iCloud. *   Two-way sync with Google Calendar and Office 365. *   Two-way sync with Zoho Calendar, Google Calendar, and Office 365/Outlook. *   Two-way sync with Google Calendar and Outlook/Office 365.",
+      "tavilyScore": 0.5503959,
+      "query": "scheduling software with calendar sync reminders and video calls",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Quora answer listing competitors like Acuity and Zoho Bookings, not a personal need.",
+        "quote": "Acuity Scheduling and Appointy two of many web-based software solutions that offer two-way sync",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "kind": "asking",
+        "reason": "The title asks directly about two-way calendar sync, but the visible answer promotes Zoho Bookings.",
+        "quote": "Which scheduling systems allow two way calendar sync?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "Medium",
+      "url": "https://medium.com/@boldertechnologies7/how-to-prevent-double-bookings-across-airbnb-and-vrbo-066508df1d0f?source=rss------api_integration-5",
+      "title": "How to Prevent Double Bookings Across Airbnb and Vrbo",
+      "content": "Managing a vacation rental across multiple booking platforms can help property owners reach more travelers and increase reservations. Fortunately, property managers can significantly reduce this risk by using proper calendar synchronization, reliable booking integrations, and centralized availability management. In this guide, we’ll explain how to prevent double bookings across Airbnb and Vrbo and why automated synchronization becomes increasingly important as your vacation rental business grows. If those dates are not immediately reflected on the Vrbo calendar, another traveler may still see the property as available and make a reservation. As the number of properties and booking channels increases, manually managing availability becomes more difficult. Calendar synchronization allows availability information to be shared between different booking platforms. If the Airbnb calendar is connected to Vrbo, those dates should also be reflected in the Vrbo availability calendar. Businesses that regularly receive last-minute reservations may benefit from more advanced booking integrations that provide centralized availability management. A centralized booking system can help connect these channels and reduce the need to manually update each calendar. A channel manager can become particularly useful when a vacation rental business manages multiple properties or multiple booking channels. For larger vacation rental businesses, API-based integrations can provide a more advanced way to connect booking platforms and property management systems. API integrations can be particularly useful for businesses building their own vacation rental technology or connecting multiple booking platforms to a central property management system. It is also good practice to periodically review your integrations, particularly after changing property management software, adding new booking channels, or modifying calendar settings. But consider a business managing 20, 50, or 100 properties across several booking platforms. Preventing double bookings across Airbnb and Vrbo starts with accurate and consistent availability management. Channel managers, centralized booking systems, and API integrations can help create a more connected vacation rental ecosystem. For businesses looking to connect Airbnb, Vrbo, Booking.com, direct booking websites, and other vacation rental systems, Bolder Technologies can provide technology and integration solutions designed around their specific operational requirements. A reliable integration strategy can help vacation rental businesses spend less time manually managing calendars and more time focusing on their guests and growing their property portfolio.",
+      "tavilyScore": 0.79438496,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Medium guide on vacation rental double bookings; relevant topic but article format.",
+        "quote": "prevent double bookings across Airbnb and Vrbo",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "This is a guide about vacation-rental calendar synchronization, not a prospective appointment-scheduling buyer.",
+        "quote": "How to Prevent Double Bookings Across Airbnb and Vrbo",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/microsoft-bookings-telanova-wysse",
+      "title": "Microsoft Bookings",
+      "content": "# Microsoft Bookings. Today, let's dive into one of these hidden gems: Microsoft Bookings. Microsoft Bookings is a web-based scheduling tool that integrates seamlessly with Outlook. It enables clients, colleagues, or customers to book appointments easily and ensures your calendar stays optimized. * Outlook Sync: Prevents double bookings by updating your calendar automatically. * Availability & Customization: Define meeting types, adjust your schedule, and even personalize your booking page’s appearance. * Web Access: users can access Microsoft Bookings through the web by visiting :. * Outlook Integration: Bookings automatically syncs with your Outlook calendar, preventing double bookings and keeping your schedule tidy. * Page Appearance: Even customize the look of your booking page! * Outlook and Teams Integration: Microsoft Bookings can also be accessed directly within Outlook and Microsoft Teams. Users can add the Bookings app to the left rail for convenient access:. * Open Outlook or Microsoft Teams. Personal Bookings is how you manage your own appointment timeslots; it allows you to easily configure and share your availability with your customers, clients, or colleague. * Public Meetings: Visible on your personal booking page. 1. On the home page, select Create meeting type under Personal booking page. Shared Bookings allows you to invite your team members and create booking pages and let your customers book time with you and your team. It contains various settings to define services, manage staff members, configure schedules and availability, business hours and customize how appointments are scheduled. Beyond personal use, Shared Bookings lets you invite your team members and create booking pages for your customers to book time with your entire team. There are a few more handy settings in Microsoft Bookings too:. * Colour Category Assigning colour categories to meeting types enables easy identification of bookings on the calendar. What license do I need to access Microsoft Bookings? A:  Microsoft Bookings included in every Microsoft Business, Enterprise licenses. ### What You Actually Need (and Don’t Need) for Small Business IT. At telanova, we’ve spent years helping small and medium-sized businesses in the UK get the most out of their IT…. * ### Creating a Shared Calendar in Outlook & Microsoft 365.",
+      "tavilyScore": 0.76383626,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Informational post about Microsoft Bookings, a competitor tool.",
+        "quote": "Microsoft Bookings is a web-based scheduling tool that integrates seamlessly with Outlook.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "This is an informational overview of Microsoft Bookings features rather than a user's purchasing need.",
+        "quote": "Microsoft Bookings is a web-based scheduling tool that integrates seamlessly with Outlook.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/razz-professional-services_manageditserviceslosangeles-losangelesmanagedserviceprovider-activity-7468694774196113408-o7Gw",
+      "title": "#manageditserviceslosangeles #losangelesmanagedserviceprovider #worksmarternotharder | Razz Professional Services, Inc.",
+      "content": "💡 Tech Tip Friday: Stop the Email Ping-Pong Let Clients Book Their Own Meetings! We've all been there: 6 emails back and forth just to schedule a 15-minute call. 😩 Here's a game-changer: Use Calendly, Appointment Core, Microsoft Bookings, or HubSpot Scheduling to let clients (and prospects) book time directly on your calendar — 24/7, no human required. ✅ Automatically syncs with Outlook/Google Calendar ✅ Buffers time between meetings ✅ Sends reminders to both parties ✅ Collects intake info before the call Think of how many hours your team spends each week just scheduling? This frees them up for actual work. 📅 Already using a scheduling tool? Drop a 👍 in the comments or let us know if you use one that wasn't mentioned above. 📩 Want help setting it up for your firm? DM us and we'd be happy",
+      "tavilyScore": 0.7611836,
+      "query": "looking for a tool to schedule meetings without back-and-forth emails",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "MSP tech tip recommending Calendly and similar tools; promotional content, not a personal pain.",
+        "quote": "6 emails back and forth just to schedule a 15-minute call",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A managed-services company shares a promotional tech tip recommending several scheduling tools, not a personal buying request.",
+        "quote": "Stop the Email Ping-Pong Let Clients Book Their Own Meetings!",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/revealtechnology_how-many-emails-does-your-team-send-just-activity-7520515641162825728-TSkK",
+      "title": "How many emails does your team send just to schedule a meeting? \"Does Tuesday work?\" \"How about 2 PM?\" For client-facing businesses, this back-and-forth can eat hours every week. Online booking… | Reveal Technology, LLC",
+      "content": "AS A VIRTUAL ASSISTANT — EPISODE 48 💻📅 What if people could book appointments without going back and forth with you over email? Let's talk about Calendly. 👀 I'm exploring how appointment scheduling tools can make coordinating meetings easier for both a VA and the person they're supporting. Here's how a VA can use Calendly: 📌 Share booking links Instead of asking, “What time works for you?” repeatedly, you can share a link showing available appointment slots. 📌 Set availability Help a client define when they're available for meetings and when they need to protect their personal or focus time. 📌 Reduce scheduling back-and-forth People can select from available times instead of exchanging multiple messages to find a suitable slot. 📌 Collect useful information Booking forms can ask [...] If booking a meeting takes four emails, something needs to change. Double-bookings, No-shows, Endless emails to find a suitable time to meet…. Scheduling a meeting shouldn't be this complicated. I built a Calendly booking system designed to make scheduling easier and more organized. Here's what I set up: 🟢 A branded booking page 🟡 Custom intake questions to understand who I'm meeting on the call 🔴 Buffer time between meetings 🟢 A daily meeting limit to prevent an overcrowded calendar 🟠 A 24-hour advance-booking rule to reduce last-minute scheduling But I didn't stop at setting everything up. I tested the entire process myself, from booking an appointment to going through the steps a client would experience. The goal was simple: make booking easier for the client and calendar management [...] How many emails does your team send just to schedule a meeting? \"Does Tuesday work?\" \"How about 2 PM?\" For client-facing businesses, this back-and-forth can eat hours every week. Online booking tools eliminate most of it. You share a link, the customer sees your real availability, and they pick a time that works. The appointment lands on your calendar, confirmations go out automatically, and reminders reduce no-shows. Many productivity platforms already include booking features, so you may not need another subscription. You can set up different appointment types with specific durations, add buffer time between meetings, and route bookings to the right person based on the service requested. The same idea works internally. Shared team calendars, room booking, and scheduling assistants that",
+      "tavilyScore": 0.7572562,
+      "query": "looking for a tool to schedule meetings without back-and-forth emails",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Promotional/educational post about Calendly for VAs, not a personal ask.",
+        "quote": "What if people could book appointments without going back and forth with you over email?",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "This is educational content explaining how virtual assistants can use Calendly, not a direct lead for Cal.com.",
+        "quote": "I'm exploring how appointment scheduling tools can make coordinating meetings easier",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "X",
+      "url": "https://x.com/NotionHQ/status/2027080676798030333",
+      "title": "Notion on X: \"Custom Agents can now use Mail and Calendar. That means: → Inbox sorted before you open it → Meetings booked without the back-and-forth → Context prepped before you walk into a meeting We've been testing a few of these agents internally…\" / X",
+      "content": "00:00\n\n  3\n\n  Notion@NotionHQ\n\n  Feb 26\n\n  One tip: custom agents work best when they do one thing. Rather than building and agent that handles all email and calendar tasks, we recommend: → One agent for triage → One agent for drafting replies → One agent for meeting prep It’ll make each agent easier to build, fix, and improve over time. Read the full guide:\n\n  Manage your inbox and calendar automatically with Custom AgentsFrom notion.com\n @LloydChiro\n\n  Feb 26\n\n  I need this for my IMAP email on my own domain. Not Gmail. [...] Log inSign up\n\n## Post\n\nLog inSign up\n\n# Notion on X: \"Custom Agents can now use Mail and Calendar. That means: → Inbox sorted before you open it → Meetings booked without the back-and-forth → Context prepped before you walk into a meeting We've been testing a few of these agents internally…\"\n\n Notion@NotionHQ\n\n  Custom Agents can now use Mail and Calendar. That means: → Inbox sorted before you open it → Meetings booked without the back-and-forth → Context prepped before you walk into a meeting We've been testing a few of these agents internally…\n\n  00:00\n\n  5:57 PM · Feb 26, 2026·42.5K\n\n  Views\n\n  20\n Notion@NotionHQ\n\n  Feb 26\n\n  📩 Inbox Organizer: reads emails, applies labels, drafts replies, and routes messages to the right place. Automatically. Template → notion.com/custom-agent-t…",
+      "tavilyScore": 0.74279505,
+      "query": "looking for a tool to schedule meetings without back-and-forth emails",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Notion promoting its own Custom Agents calendar feature; only a stray user comment about IMAP.",
+        "quote": "I need this for my IMAP email on my own domain. Not Gmail.",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Notion promotes its own agents for email, calendar, and meeting booking rather than expressing a scheduling need.",
+        "quote": "Custom Agents can now use Mail and Calendar.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/calum-smith-62272445_intermediacommunications-productivitytips-activity-7397594802290130944-q76w",
+      "title": "How to Automate Meeting Scheduling with Intermedia's Calendar Integration | Calum Smith posted on the topic | LinkedIn",
+      "content": "🔧 Weekly Intermedia Communications Tip Here's this week's practical tip to optimize your Intermedia intelligent communications experience: \\\\Tip: Automate Meeting Scheduling with Intermedia’s Calendar Integration\\\\ Did you know you can streamline your workflow and eliminate scheduling headaches by integrating Intermedia Unite’s calendar with Microsoft Outlook or Google Calendar? This feature auto-syncs meetings, lets you join video calls directly from calendar invites, and ensures you never miss important appointments. \\\\How to Set Up Calendar Integration:\\\\ 1. \\\\Log in to Intermedia Unite Web App\\\\ Go to  and sign in with your credentials. 2. \\\\Go to Settings\\\\ Click your profile icon (top right) and select \\\\Settings\\\\. 3. \\\\Find Calendar Integration\\\\ In the left panel, locate [...] 3. \\\\Find Calendar Integration\\\\ In the left panel, locate \\\\Calendar & Contacts\\\\ (sometimes listed under “Integrations”). 4. \\\\Choose Your Calendar\\\\ - Click \\\\Connect\\\\ next to Microsoft Outlook or Google Calendar. - You’ll be prompted to sign in to your calendar provider and authorize access. 5. \\\\Customize Your Preferences\\\\ - Choose which calendars to sync (work, personal, shared). - Enable notifications for upcoming meetings. - Optionally, set up “Join” buttons for video calls directly in each calendar event. 6. \\\\Save and Test\\\\ - Save your settings. - Create a test meeting in your calendar application—check that it instantly appears in the Unite platform and offers a Join Meeting button. \\\\Bonus:\\\\ You can now start or join Intermedia Unite meetings straight from your synced",
+      "tavilyScore": 0.75292206,
+      "query": "scheduling software with calendar sync reminders and video calls",
+      "a": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Vendor tip promoting Intermedia's own calendar integration.",
+        "quote": "Automate Meeting Scheduling with Intermedia’s Calendar Integration",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "The post is a tutorial for Intermedia's own calendar integration and does not express a scheduling-software need.",
+        "quote": "How to Automate Meeting Scheduling with Intermedia's Calendar Integration",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "X",
+      "url": "https://x.com/AlternativeTo/status/2039448732501205028",
+      "title": "AlternativeTo on X: \"Free beautiful Calendly alternative for branded booking pages with support for video backgrounds, Google and Outlook sync, embeds, reminders, and custom durations\" / X",
+      "content": "Title: AlternativeTo on X: \"Free beautiful Calendly alternative for branded booking pages with support for video backgrounds, Google and Outlook sync, embeds, reminders, and custom durations\" / X\n## Post. # AlternativeTo on X: \"Free beautiful Calendly alternative for branded booking pages with support for video backgrounds, Google and Outlook sync, embeds, reminders, and custom durations\". Free beautiful Calendly alternative for branded booking pages with support for video backgrounds, Google and Outlook sync, embeds, reminders, and custom durations. A booking page interface showcases TimeTuna, featuring user testimonials and a calendar for scheduling appointments. 09:04:03 PM · 04/01/2026·3,202. TimeTuna: Aesthetic scheduling with branded visuals, calendar sync, and customization. Design-focused scheduling with branded video or image booking pages, Google and Outlook integration, auto meeting links, reminders, and full customization.",
+      "tavilyScore": 0.692122,
+      "query": "scheduling software with calendar sync reminders and video calls",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "AlternativeTo promoting TimeTuna, a competing Calendly alternative.",
+        "quote": "Free beautiful Calendly alternative for branded booking pages",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The post promotes TimeTuna, a competing branded booking-page and calendar-sync product.",
+        "quote": "Free beautiful Calendly alternative for branded booking pages",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/sportsreference/comments/1wcvnso/quick_and_easy_schedule_maker",
+      "title": "Quick and Easy Schedule Maker : r/sportsreference - Reddit",
+      "content": "What it does: Balanced Round-Robin: Generates schedules for 4 to 26 teams, evenly distributing home/away games and time-slot allocations",
+      "tavilyScore": 0.60865223,
+      "query": "team scheduling tool with round robin and shared availability",
+      "a": {
+        "score": 1,
+        "kind": "article",
+        "reason": "Sports round-robin schedule generator, unrelated to meeting scheduling.",
+        "quote": "Balanced Round-Robin: Generates schedules for 4 to 26 teams",
+        "verified": true
+      },
+      "b": {
+        "score": 0,
+        "kind": "competitor",
+        "reason": "This promotes a sports round-robin schedule generator, unrelated to Cal.com's meeting-booking product.",
+        "quote": "Generates schedules for 4 to 26 teams, evenly distributing home/away games",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/ProductivityApps/comments/1w9uyw3/30k_views_and_37_comments_later_i_built_what",
+      "title": "30k views and 37 comments later — I built what Reddit asked for",
+      "content": "Prazo can find free time in your calendar and schedule your tasks into it. Sync Your Apple Reminders and Prazo tasks can work together. → Drag",
+      "tavilyScore": 0.53582716,
+      "query": "scheduling software with calendar sync reminders and video calls",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Self-promotion of Prazo, the poster's own scheduling product.",
+        "quote": "Prazo can find free time in your calendar and schedule your tasks into it.",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The author promotes their own Prazo calendar and task-scheduling product.",
+        "quote": "Prazo can find free time in your calendar and schedule your tasks into it.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/jaspinall_your-agent-will-double-book-you-activity-7517681532904505345-rFet",
+      "title": "Double-Booking Prevention Tip for Meeting Agents | John Aspinall ✱ posted on the topic | LinkedIn",
+      "content": "One link. They pick a time. Earlier in this series: six emails to book one call, because the only way to share your availability was to describe it. This is the fix, and it is short. Booking Pages in Fokus gives you a link. You send it once. The other person opens a page and picks a time. The screenshot is what they see. It's a booking page from our demo workspace: — Who they are meeting, and what the meeting is called. — Their time zone, written out, so nobody does the arithmetic. — A month to choose a day from. — A list of times for that day, each marked with how long the meeting is. That is the whole page. No thread, no \"does Tuesday work?\", nothing to reply to. Put it next to the email thread from earlier in the series. Six messages were two people reading their calendars to each [...] Three emails to find a time is two too many. Send one booking link that shows only the times you are free and let the other person pick. A booking link takes the back and forth out of scheduling. You set your open hours once, the other person picks a time, and the meeting lands on your calendar. Google Calendar has appointment schedules and Calendly has booking pages, so you may already own one. Two settings most people skip. First, add buffer time between meetings so you never start one running late. Google Calendar's help page lists buffer time as an appointment schedule setting, and Calendly's help center has a page on adding buffers between events. Second, add one short question to the booking form, like what do you want to cover. Google's help page says you can add fields to the [...] Your agent will double-book you And call it done I run two calendars, one for each part of my work life. If my booking agent could only see one of them, it would do exactly what I asked and still get it wrong. It would find an open slot, book the meeting, and report the task as done. Then I would find the clash when both meetings showed up. So I gave it a simple rule. Check the slot on both calendars before you create anything. If there is an overlap, flag it to me. Do not book it. Do not pick a winner. That one rule saves me from cleaning up after a booking that looked successful. If you use an agent to book meetings, steal this setup today. 1. Connect every calendar you live on, not just your main work one. 2. Tell the agent, in plain words, to check every calendar before it books. 3.",
+      "tavilyScore": 0.78082967,
+      "query": "how do I share availability and avoid double bookings",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promoting Fokus's own booking pages product.",
+        "quote": "Booking Pages in Fokus gives you a link. You send it once.",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "The post promotes Fokus Booking Pages as its own solution for scheduling without email back-and-forth.",
+        "quote": "Booking Pages in Fokus gives you a link.",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L12",
+      "text": "For two-way calendar sync, Cal.com handles Google, Outlook, and iCal well. Disclosure: I work on Cal.com. For package payments, you’d likely need to pair it with Stripe or another payment tool since native session credits aren’t fully built out yet. If you want an all-in-one with email marketing, you might need a separate CRM to avoid overcomplicating your setup.",
+      "usage": {
+        "in": 462,
+        "out": 86
+      },
+      "latencyMs": 1707
+    },
+    {
+      "leadId": "L10",
+      "text": "Setting different availability on each platform is a smart workaround, but it means giving up bookable time. A scheduling layer that reads all your calendars and writes every booking back to one source of truth can prevent double bookings without splitting hours. Disclosure: I work on Cal.com, which supports multiple calendar connections and availability schedules. Whether you use us or another tool, I’d prioritize true two-way calendar sync over platform-specific slots.",
+      "usage": {
+        "in": 218,
+        "out": 91
+      },
+      "latencyMs": 1975
+    },
+    {
+      "leadId": "L14",
+      "text": "Per-location routing and office-scoped round-robin are exactly the right features to check. Also verify timezone handling per office, separate intake questions, and whether staff can belong to multiple locations without duplicating availability. Disclosure: I work on Cal.com; it supports team routing and round-robin scheduling, but I’d test those multi-office edge cases in a trial before committing.",
+      "usage": {
+        "in": 220,
+        "out": 82
+      },
+      "latencyMs": 1901
+    },
+    {
+      "leadId": "L5",
+      "text": "I’d start by making one calendar per artist the source of truth for holds and confirmations, then keep deal terms and venue correspondence in a single sheet with an artist column. That’s easier to maintain than separate systems for a couple artists. Disclosure: I work on Cal.com. Its team scheduling and shared availability can help prevent double-bookings, but it won’t replace your deal tracker.",
+      "usage": {
+        "in": 445,
+        "out": 84
+      },
+      "latencyMs": 3710
+    },
+    {
+      "leadId": "L8",
+      "text": "To prevent double bookings in PowerApps, check for overlapping bookings before patching. Use a `LookUp` or `Filter` to query existing bookings for the same station where `Begin < varEndDateTime && End > VarBeginDateTime`. If no overlap exists, proceed; otherwise, show an error. Note: this isn't fully concurrency-safe, so enforce uniqueness server-side if possible. Disclosure: I work on Cal.com; similar overlap checks are common in scheduling systems.",
+      "usage": {
+        "in": 492,
+        "out": 102
+      },
+      "latencyMs": 1996
+    }
+  ],
+  "companies": [],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3278,
+      "tokensOut": 1224,
+      "cost": 0.0011037,
+      "latencyMs": 6936,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3284,
+      "tokensOut": 1106,
+      "cost": 0.017628,
+      "latencyMs": 10003,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 0.9,
+      "top5Overlap": 3
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3035,
+      "out": 849,
+      "cost": 0.0019293000000000001,
+      "latencyMs": 4773
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3278,
+      "out": 1224,
+      "cost": 0.0011037,
+      "latencyMs": 6936
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3284,
+      "out": 1106,
+      "cost": 0.017628,
+      "latencyMs": 10003
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3335,
+      "out": 870,
+      "cost": 0.0020445,
+      "latencyMs": 3090
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 1837,
+      "out": 445,
+      "cost": 0.008124,
+      "latencyMs": 3710
+    }
+  ],
+  "scorerError": null
+}

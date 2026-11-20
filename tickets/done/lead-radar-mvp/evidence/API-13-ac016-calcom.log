@@ -1,0 +1,50 @@
+# API-13 AC-016 cal.com, code 9eddc9a, server :3001 — 2026-11-20T14:05:56Z
+## Attempt A: browser (cal.com chip, 1920x1080, alone). Scorer A (zai-org/GLM-5.3-Flash) did not return: at 14:03:41Z the page read timer 198.5 s, stepper 'Read site 7.5 s, Understand 7.5 s, Search 14.0 s, Score leads ACTIVE'. The probe hit its 260 s timeout and closed the browser; no run file was written; the server log shows no error. A direct GLM ping at 14:04:06Z took 1.2 s (HTTP 200), so the hang was one stuck call: nebius.js has a 120 s per-call timeout and one JSON retry, and pipeline.js puts no deadline on scorer A (only B has the 75 s cap).
+## API-13-run1-cal.com.json (curl POST /api/run, alone except while attempt A was hung)
+totalMs=27568 leads=20 A>=5: 6 (need >= 8)  drafts=5 companies=0 companiesError=null kinds=article=9,asking=4,competitor=4,complaining=1,discussing=2
+{"competitors":4,"maxA":2,"maxB":1}
+  9 | asking | Reddit | Looking for a Scheduling Software with 2-Way Calendar Sync & Package P
+  7 | complaining | Reddit | struggling with multiple provider platforms and scheduling : r/therapi
+  7 | discussing | Reddit | Scheduling software recommendations for multi-site law firm - Reddit
+  6 | asking | Reddit | How do you manage your artists’ bookings without losing your mind? : r
+  6 | asking | Stack Overflow | How to prevent double bookings in PowerApps - Stack Overflow
+  6 | discussing | Reddit | How do you keep track of customer appointments and avoid double ...
+  4 | asking | Quora | How to list a holiday cottage on multiple websites without risk of dou
+  4 | article | Quora | What scheduling software allows you to sync multiple calendars? - Quor
+  3 | article | Reddit | What is the Zoom scheduler, and will it screw up my scheduled calls?
+  3 | article | Quora | Which scheduling systems allow two way calendar sync?
+  3 | article | Medium | How to Prevent Double Bookings Across Airbnb and Vrbo
+  3 | article | LinkedIn | Microsoft Bookings
+  3 | article | LinkedIn | #manageditserviceslosangeles #losangelesmanagedserviceprovider #worksm
+  3 | article | LinkedIn | How many emails does your team send just to schedule a meeting? "Does 
+  2 | competitor | X | Notion on X: "Custom Agents can now use Mail and Calendar. That means:
+  2 | article | LinkedIn | How to Automate Meeting Scheduling with Intermedia's Calendar Integrat
+  1 | competitor | X | AlternativeTo on X: "Free beautiful Calendly alternative for branded b
+  1 | article | Reddit | Quick and Easy Schedule Maker : r/sportsreference - Reddit
+  1 | competitor | Reddit | 30k views and 37 comments later — I built what Reddit asked for
+  1 | competitor | LinkedIn | Double-Booking Prevention Tip for Meeting Agents | John Aspinall ✱ pos
+## API-13-run2-cal.com.json (curl POST /api/run, alone except while attempt A was hung)
+totalMs=29878 leads=20 A>=5: 6 (need >= 8)  drafts=5 companies=0 companiesError=null kinds=article=6,asking=3,competitor=5,discussing=6
+{"competitors":5,"maxA":2,"maxB":1}
+  8 | asking | Reddit | What is the best AI SDR software for B2B lead qualification and demo s
+  7 | asking | Reddit | How do you handle lead routing once you have 1,000+ inbound leads/mont
+  6 | asking | Reddit | Recommendations for a scheduling app?
+  6 | discussing | Reddit | Scheduling software recommendations for multi-site law firm - Reddit
+  5 | discussing | Reddit | Alternative to Zoom Rooms? - Reddit
+  5 | discussing | LinkedIn | Double-Booking Prevention Tip for Meeting Agents | John Aspinall ✱ pos
+  4 | discussing | LinkedIn | Ever had two meetings scheduled for the same time? | Benedicta Elinam 
+  4 | article | Medium | Medium
+  3 | discussing | Reddit | How are you managing your STR calendar across ...
+  3 | article | Reddit | 6 Best Free Employee Scheduling Software 2026
+  3 | article | Reddit | Google Calendar Apps&extensions 2026 : r/GoogleCalendar - Reddit
+  3 | article | LinkedIn | The Best Appointment Booking Software to Cut No-Shows and Increase Rev
+  3 | article | LinkedIn | Scheduling software with calendar integration
+  2 | competitor | Reddit | For Mac users whose work runs on Google Calendar: we made hora ...
+  2 | competitor | Reddit | Built a scheduling algorithm for music teachers — looking for feedback
+  2 | competitor | Reddit | AI Scheduling Assistant That Works Through Email : r/SaaS
+  2 | article | LinkedIn | Avoid Double Booking Meetings with a Simple Checklist | Venuo.co poste
+  1 | competitor | X | Crazy Egg on X: "We’ve done a terrible job of marketing what our Surve
+  1 | discussing | Stack Overflow | cp sat - Round robin scheduling with CP-SAT from Google OR tools - Sta
+  1 | competitor | Indie Hackers | How do you pick scheduling software for a small appointment-based busi
+## Baseline before SR-004 (d0bfa5a, API-10 1920x1080 cal.com, round 3): All-tab default view showed 7 cards with A >= 5.
+## Implementer IMP-09: 9 with A >= 5 (87.1 s, run in parallel).

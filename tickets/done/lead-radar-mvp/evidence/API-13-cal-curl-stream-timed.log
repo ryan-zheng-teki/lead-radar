@@ -1,0 +1,12 @@
+   0.4 {"type":"stage","stage":"profile","message":"Reading the website with Tavily and profiling the product","elapsedMs":0}
+   7.9 {"type":"profile","profile":{"name":"Cal.com","summary":"Cal.com is a scheduling app and online booking system that lets people share availability links and automates calendar syncing, timezone detection, reminders, vide
+   7.9 {"type":"stage","stage":"leads","message":"Searching public posts with 6 queries","elapsedMs":7606}
+  13.9 {"type":"candidates","count":20}
+  14.0 {"type":"stage","stage":"scoring","message":"Scoring 20 leads with zai-org/GLM-5.3-Flash (reference moonshotai/Kimi-K3.1-Pro runs in parallel)","elapsedMs":13693}
+  20.9 {"type":"leads","leads":[{"id":"L12","platform":"Reddit","url":"https://www.reddit.com/r/edtech/comments/1fjcgf5/looking_for_a_scheduling_software_with_2way","title":"Looking for a Scheduling Software with 2-Way Calendar
+  20.9 {"type":"stage","stage":"drafts","message":"Drafting 5 openers with moonshotai/Kimi-K3.1-Pro (and looking for target companies)","elapsedMs":20636}
+  24.6 {"type":"drafts","drafts":[{"leadId":"L12","text":"For two-way calendar sync, Cal.com handles Google, Outlook, and iCal well. Disclosure: I work on Cal.com. For package payments, you’d likely need to pair it with Strip
+  28.0 {"type":"companies","companies":[],"error":null}
+  28.2 {"type":"reference","leads":[{"id":"L12","platform":"Reddit","url":"https://www.reddit.com/r/edtech/comments/1fjcgf5/looking_for_a_scheduling_software_with_2way","title":"Looking for a Scheduling Software with 2-Way Cale
+  28.3 {"type":"comparison","comparison":{"a":{"model":"zai-org/GLM-5.3-Flash","tokensIn":3278,"tokensOut":1224,"cost":0.0011037,"latencyMs":6936,"scored":20,"verifiedQuotes":20},"b":{"model":"moonshotai/Kimi-K3.1-Pro","tokensI
+  28.3 {"type":"done","runFile":"runs/2026-11-20T14-04-25-238Z-cal.com.json","totalMs":27568,"totalCost":0.030829500000000003,"leadCount":20}

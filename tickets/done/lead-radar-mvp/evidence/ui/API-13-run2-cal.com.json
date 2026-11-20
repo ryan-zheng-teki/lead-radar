@@ -1,0 +1,623 @@
+{
+  "url": "https://cal.com/",
+  "at": "2026-11-20T14:05:35.815Z",
+  "totalMs": 29878,
+  "totalCost": 0.03332435,
+  "profile": {
+    "name": "Cal.com",
+    "summary": "Cal.com is a scheduling and online booking platform that lets people share availability links, sync calendars, automate reminders and workflows, route team meetings, and embed booking pages.",
+    "problems": [
+      "Eliminating booking back-and-forth",
+      "Preventing double bookings by checking calendars for conflicts",
+      "Handling timezone detection, reminders, and video call links automatically",
+      "Scheduling across teams without one person getting all meetings",
+      "Routing inbound leads to the right person on the first try",
+      "Logging meetings in CRM tools and notifying teams when bookings happen",
+      "Embedding booking pages on a website in your own design",
+      "Managing organization-wide scheduling with SSO, audit logs, uptime SLA, and compliance controls"
+    ],
+    "ideal_customer": "Individuals, small businesses, teams across support, sales and ops, inbound-focused teams, larger organizations, and enterprises that need scheduling links, team routing, workflows, and admin controls.",
+    "pain_phrases": [
+      "I’m tired of going back and forth to find a meeting time",
+      "How do I stop double bookings across my team?",
+      "I need a booking link that syncs with my calendar and video calls",
+      "Our inbound leads aren’t getting routed to the right rep",
+      "I want to embed scheduling on my site without building it myself"
+    ],
+    "search_queries": [
+      "looking for a tool to eliminate scheduling back and forth",
+      "how do I avoid double bookings when scheduling meetings",
+      "meeting scheduler that syncs Google Calendar and Zoom",
+      "tool to route inbound leads to the right sales rep",
+      "embed booking page on website with own design",
+      "scheduling software for teams with round robin and workflows"
+    ],
+    "domain": "cal.com",
+    "sources": [
+      "https://cal.com/",
+      "https://cal.com",
+      "https://cal.com/about",
+      "https://cal.com/blog/calcom-v7-0",
+      "https://cal.com/enterprise"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L3",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/hubspot/comments/1uv46ae/what_is_the_best_ai_sdr_software_for_b2b_lead",
+      "title": "What is the best AI SDR software for B2B lead qualification and demo scheduling automation in 2026?",
+      "content": "# What is the best AI SDR software for B2B lead qualification and demo scheduling automation in 2026? We get solid traffic, but too many inbound leads die in routing purgatory or get touched way too late. Right now, qualifying intent and booking demos is manual chore for our SDR team we’re completely ignoring anonymous high intent traffic. I’m trying to automate qualification and booking without disrupting our current Hubspot/Salesforce setup. Has anyone transitioned from traditional SDR routing to AI-powered engagement? - The lead leakage is indeed frustrating, but I wouldn’t choose an AI SDR yet. HubSpot can already route leads through workflows, and its Salesforce sync depends on which records you have set to sync. - We tested a few tools including Drift and Qualified, and recently tried Knock AI. My team uses inzata.ai , and its live graph is useful for assembling context across CRM and other systems before an AI answers or routes anything. If the agent only reads form fields, it will automate the same incomplete decisions your current process makes manually. - There are tools now that handle this automatically, an AI agent picks up the inbound, qualifies the lead, books the demo, and logs everything back into HubSpot or Salesforce without an SDR touching it. What does your current setup look like from inbound to first touch? - In my experience AI SDR in B2B hasn't really worked out for my clients. We have implemented AI enabled ICP qualification with automated Hyperpersonlized emails sent to inbounds allowing for IQL qualifed meetings to be directly booked into Reps calenders. We work with you to decide how much automation you want or how involved you want to be, we create dashboards to monitor effectiveness. It's deeply integrated with HubSpot, and it'll basically help you engage and qualify all that traffic that your team can't get around to. - Part of this could be solved without AI and part with. You need to look at your lead nurturing before looking for anything for automation. Ai is just a tool which works with what you give to it. - Don't try to automate every lead on day one.",
+      "tavilyScore": 0.6317079,
+      "query": "tool to route inbound leads to the right sales rep",
+      "a": {
+        "score": 8,
+        "kind": "asking",
+        "reason": "Asks about automating demo booking and lead routing — directly matches Cal.com's routing and scheduling use case.",
+        "quote": "too many inbound leads die in routing purgatory or get touched way too late",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "kind": "asking",
+        "reason": "Describes manual demo booking and inbound routing pain and asks for automation compatible with HubSpot and Salesforce.",
+        "quote": "I’m trying to automate qualification and booking without disrupting our current Hubspot/Salesforce setup.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/n8n/comments/1uw3uaj/how_do_you_handle_lead_routing_once_you_have_1000",
+      "title": "How do you handle lead routing once you have 1,000+ inbound leads/month?",
+      "content": "Most CRMs (HubSpot, Salesforce, etc.) route leads using rules like: - Round robin - Territory - Company size - Industry That works well, but I'm wondering if it breaks down for larger teams. Imagine a company with: - 40 sales reps - 1,000 inbound leads/month - Different win rates by industry - Different workloads - Multiple languages and time zones - SLA requirements - Calendar availability Instead of assigning each lead independently, what if an optimization engine looked at all open leads and all available reps at once and assigned them to maximize expected revenue while balancing workload and meeting SLAs? Use deterministic rules to produce the eligible rep set first: language, territory, product authorization, working hours, capacity, and SLA. Showing SLA risk, capacity gaps, overrides, and unexplained routing decisions gives RevOps something useful immediately and creates the clean data needed for later optimization. also \"expected revenue per lead\" is going to be noisy unless you have enough closed-won volume per rep x industry combo to make that number mean anything, and most orgs your size don't. i'd ship that alone first, prove it holds under real lead volume, then layer in revenue optimization once you've got enough data to trust the model over a rep's gut feel. The safer path is shadow mode first: CRM remains the source of truth, the engine recommends owner + reason, and you compare it against current routing for a few weeks. Expected revenue for rep R on lead L requires enough closed-won samples per rep-by-segment cell. Worse, historic win rates are contaminated by the routing that produced them: reps who got better leads look better, so the model sends them more good leads, and the loop hardens into an assumption. What actually moves the number at that volume is boring: deduping so two reps aren't calling the same person, hard SLA timers with escalation when a lead goes untouched, after-hours and language coverage, and an instant first touch (auto-reply with a booking link) so the lead is engaged before a human sees it. Keep HubSpot or Salesforce as the source of truth, have the engine recommend an owner plus reason, then compare it against current routing for a few weeks: SLA hit, speed to lead, accept/reassign rate, conversion by segment, and workload skew.",
+      "tavilyScore": 0.7308665,
+      "query": "tool to route inbound leads to the right sales rep",
+      "a": {
+        "score": 7,
+        "kind": "asking",
+        "reason": "Asks about lead routing with calendar availability and SLAs — related to Cal.com's routing feature but focused on CRM optimization.",
+        "quote": "How do you handle lead routing once you have 1,000+ inbound leads/month?",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "kind": "asking",
+        "reason": "Asks about high-volume inbound lead routing with calendar availability, but seeks a broader optimization engine rather than scheduling software specifically.",
+        "quote": "How do you handle lead routing once you have 1,000+ inbound leads/month?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1sxm7ad/recommendations_for_a_scheduling_app",
+      "title": "Recommendations for a scheduling app?",
+      "content": "# Recommendations for a scheduling app? I’d like to be able to send the link to the families and they can book my time. I saw your post about looking for a flexible scheduling app for your work with multiple families. It sounds like you need something robust that can handle varied schedules and direct booking without the constant back-and-forth. We're an online booking system designed to be highly adaptable, and we've been helping businesses manage their appointments efficiently for a while now. If you're interested in exploring how Chamebook could be customized to perfectly suit your flexible scheduling requirements, feel free to DM me for more details. - Honestly, most scheduling apps will kind of do this (like Calendly etc.), but they’re usually built for meetings, not real-life flexible work like babysitting/tutoring. I’ve built an online booking and small business management tool called pod.world specifically for people working with multiple clients/families like you. It not only managed your working hours, online bookings, reminders etc it also helps you manage your finances. You send one link → they see your real availability → they book directly into your calendar. No back-and-forth messages, no double bookings. The difference vs typical apps: You can block time, shift your schedule, or work irregular hours (not just fixed slots) Works well if you have multiple families booking you separately Built for real service work, not corporate meetings If you want to try it or just see if it fits your workflow there is a 30 day credit card free trial and the base package that you would need is only $19 per month. They can see open slots and book without back-and-forth texts. As a bit of extra advice from another small business angle, once you get that booking system sorted, promoting your availability on social is the next natural step. It learns our business and schedules everything for us, so we never have to think about what to post or when. The double booking or just the constant messages? expensive but they handle scheduling, invoicing, payments, and customer communication in one. for staff scheduling (shifts, time off) homebase is free for small teams and works well.",
+      "tavilyScore": 0.6065567,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 6,
+        "kind": "asking",
+        "reason": "Genuine ask for a booking-link scheduling app, though thread is hijacked by a competitor's pitch.",
+        "quote": "I’d like to be able to send the link to the families and they can book my time",
+        "verified": true
+      },
+      "b": {
+        "score": 9,
+        "kind": "asking",
+        "reason": "Directly asks for a scheduling app that provides a booking link for families and eliminates scheduling back-and-forth.",
+        "quote": "I’d like to be able to send the link to the families and they can book my time.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/WhichCRM/comments/1wu9gwg/scheduling_software_recommendations_for_multisite",
+      "title": "Scheduling software recommendations for multi-site law firm - Reddit",
+      "content": "Look for per-location routing or round-robin scoped by office, plus per-staff availability inside each one. If your offices span time zones",
+      "tavilyScore": 0.5191709,
+      "query": "scheduling software for teams with round robin and workflows",
+      "a": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Discussion of multi-location routing and round-robin scheduling needs — matches Cal.com's team routing.",
+        "quote": "Look for per-location routing or round-robin scoped by office, plus per-staff availability inside each one",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Addresses multi-site law-firm scheduling with relevant office routing and staff availability needs, though the excerpt is advice rather than the original request.",
+        "quote": "Look for per-location routing or round-robin scoped by office, plus per-staff availability inside each one.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Zoom/comments/1rw6gqc/alternative_to_zoom_rooms",
+      "title": "Alternative to Zoom Rooms? - Reddit",
+      "content": "Zoom Scheduler option: create a scheduler link thats integrated with your google or o365 calendar. then create booking pages. one can be like \"",
+      "tavilyScore": 0.5186376,
+      "query": "meeting scheduler that syncs Google Calendar and Zoom",
+      "a": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "Describes Zoom's scheduler/booking pages as an alternative — related need but discussing a competitor's solution.",
+        "quote": "create a scheduler link thats integrated with your google or o365 calendar. then create booking pages",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "discussing",
+        "reason": "Mentions calendar-integrated scheduler links only as an incidental feature in a discussion about Zoom Rooms alternatives.",
+        "quote": "create a scheduler link thats integrated with your google or o365 calendar.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/jaspinall_your-agent-will-double-book-you-activity-7517681532904505345-rFet",
+      "title": "Double-Booking Prevention Tip for Meeting Agents | John Aspinall ✱ posted on the topic | LinkedIn",
+      "content": "Three emails to find a time is two too many. Send one booking link that shows only the times you are free and let the other person pick. A booking link takes the back and forth out of scheduling. You set your open hours once, the other person picks a time, and the meeting lands on your calendar. Google Calendar has appointment schedules and Calendly has booking pages, so you may already own one. Two settings most people skip. First, add buffer time between meetings so you never start one running late. Google Calendar's help page lists buffer time as an appointment schedule setting, and Calendly's help center has a page on adding buffers between events. Second, add one short question to the booking form, like what do you want to cover. Google's help page says you can add fields to the [...] Your agent will double-book you And call it done I run two calendars, one for each part of my work life. If my booking agent could only see one of them, it would do exactly what I asked and still get it wrong. It would find an open slot, book the meeting, and report the task as done. Then I would find the clash when both meetings showed up. So I gave it a simple rule. Check the slot on both calendars before you create anything. If there is an overlap, flag it to me. Do not book it. Do not pick a winner. That one rule saves me from cleaning up after a booking that looked successful. If you use an agent to book meetings, steal this setup today. 1. Connect every calendar you live on, not just your main work one. 2. Tell the agent, in plain words, to check every calendar before it books. 3. [...] If booking a meeting takes four emails, something needs to change. Double-bookings, No-shows, Endless emails to find a suitable time to meet…. Scheduling a meeting shouldn't be this complicated. I built a Calendly booking system designed to make scheduling easier and more organized. Here's what I set up: 🟢 A branded booking page 🟡 Custom intake questions to understand who I'm meeting on the call 🔴 Buffer time between meetings 🟢 A daily meeting limit to prevent an overcrowded calendar 🟠 A 24-hour advance-booking rule to reduce last-minute scheduling But I didn't stop at setting everything up. I tested the entire process myself, from booking an appointment to going through the steps a client would experience. The goal was simple: make booking easier for the client and calendar management",
+      "tavilyScore": 0.83682144,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "Advocates booking links to eliminate scheduling back-and-forth — exactly Cal.com's value prop, but educational content.",
+        "quote": "Send one booking link that shows only the times you are free and let the other person pick",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "An instructional post recommending booking links and buffer settings, with no expressed purchase intent.",
+        "quote": "A booking link takes the back and forth out of scheduling.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/benedictakuma_virtualassistant-businesssupport-productivity-activity-7492869983807496193-Ng1Y",
+      "title": "Ever had two meetings scheduled for the same time? | Benedicta Elinam Kuma",
+      "content": "Ever had two meetings scheduled for the same time? It’s a mistake that’s easier to prevent than fix. Double bookings are avoidable with the right calendar management habits. Here are a few things I do to prevent them: 📌 Update the calendar immediately after every confirmed meeting. 📌 Use one primary calendar as the single source of truth. 📌 Block out focus time, travel time, and personal commitments. 📌 Review the day’s schedule every morning and the week’s schedule every Friday. 📌 Set buffer time between meetings to avoid overlaps and last-minute stress. Good calendar management isn’t just about filling up a schedule, it’s about protecting your time, staying organized, and ensuring every commitment gets the attention it deserves. What’s one calendar management habit that keeps you",
+      "tavilyScore": 0.85633236,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 4,
+        "kind": "discussing",
+        "reason": "Personal tips on preventing double bookings manually — related pain but no software need expressed.",
+        "quote": "Double bookings are avoidable with the right calendar management habits",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Shares general calendar-management advice for avoiding double bookings rather than seeking a scheduling platform.",
+        "quote": "Double bookings are avoidable with the right calendar management habits.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "Medium",
+      "url": "https://medium.com/@chienwa1007/the-only-calendar-guide-you-need-to-never-double-book-a-meeting-again-34c3eab1d73f",
+      "title": "Medium",
+      "content": "This is the fix most people skip, and it’s the single most common cause of a real double-booking, not a cosmetic one. In Calendly, go to Settings → Scheduling → Calendars and check which calendars are selected under “Calendars to check for conflicts.” Then check something most people never think to check: Calendly only treats events marked “Busy” as a real conflict by default. On Outlook connections specifically, Calendly will also read “Tentative,” “Away/Out of Office,” and “Working Elsewhere” statuses as unavailable, but only if you haven’t unchecked them under “What’s considered unavailable?” An event marked “Free,” or created by an app that defaults to a different status, gets silently ignored, meaning someone can book right on top of it. If you’ve ever been double-booked despite [...] # The Only Calendar Guide You Need to Never Double-Book a Meeting Again\n\nCalendly’s own research found that 43% of professionals spend three or more hours a week just scheduling meetings, not attending them, scheduling them. Somewhere in that time sink is the moment you’ve done before: you accept a 3pm call, then thirty seconds later accept another one at 3pm, because the second invite never got flagged against the first. Double-booking isn’t a rare accident. It’s the predictable output of treating your calendar like a to-do list instead of a single source of truth. [...] tagged. The moment every calendar you own is merged, every conflict-detection setting is checked, and every event is honestly marked busy or free, the double-booking problem doesn’t get “reduced.” It structurally can’t happen anymore, because there’s no longer a gap for a conflict to hide in, whether that conflict was scheduled by a person or suggested by AI.",
+      "tavilyScore": 0.80332816,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Detailed Calendly conflict-calendar troubleshooting — relevant pain but article/tutorial format about a competitor.",
+        "quote": "Calendly only treats events marked “Busy” as a real conflict by default",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "A highly relevant Calendly troubleshooting tutorial, but instructional content rather than a lead expressing a need.",
+        "quote": "check which calendars are selected under “Calendars to check for conflicts.”",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/ShortTermRentals/comments/1ruqf5o/how_are_you_managing_your_str_calendar_across",
+      "title": "How are you managing your STR calendar across ...",
+      "content": "most hosts use a channel manager or pms that syncs everything automatically so you dont get double booked. the basic setup is your calendar lives in one",
+      "tavilyScore": 0.60882664,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 3,
+        "kind": "discussing",
+        "reason": "Vacation rental double-booking discussion; adjacent but different product category (PMS/channel managers).",
+        "quote": "most hosts use a channel manager or pms that syncs everything automatically so you dont get double booked",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "discussing",
+        "reason": "Discusses short-term-rental calendar synchronization and double bookings, a different vertical and product category.",
+        "quote": "most hosts use a channel manager or pms that syncs everything automatically so you dont get double booked.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/Connecteam/comments/1sm58og/6_best_free_employee_scheduling_software_2026",
+      "title": "6 Best Free Employee Scheduling Software 2026",
+      "content": "Scheduling turning into chaos with no-shows, last-minute changes, and constant back-and-forth? We reviewed 6 employee scheduling apps to see which ones",
+      "tavilyScore": 0.59749043,
+      "query": "looking for a tool to eliminate scheduling back and forth",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Listicle of employee scheduling software; relevant category but article format.",
+        "quote": "We reviewed 6 employee scheduling apps to see which ones",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "A software-review listicle about employee shift scheduling, not a prospective buyer describing a booking-link need.",
+        "quote": "We reviewed 6 employee scheduling apps to see which ones",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/GoogleCalendar/comments/1xasofk/google_calendar_appsextensions_2026",
+      "title": "Google Calendar Apps&extensions 2026 : r/GoogleCalendar - Reddit",
+      "content": "It syncs both ways with your Google calendars, Join Google Meet, Zoom and Teams calls in one click … syncs directly with Google Calendar, with",
+      "tavilyScore": 0.57242405,
+      "query": "meeting scheduler that syncs Google Calendar and Zoom",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Listicle of Google Calendar apps/extensions; relevant but article format.",
+        "quote": "It syncs both ways with your Google calendars, Join Google Meet, Zoom and Teams calls in one click",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "A Google Calendar apps and extensions roundup with no identifiable personal buying need.",
+        "quote": "It syncs both ways with your Google calendars",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/best-appointment-booking-software-cut-no-shows-increase-revenue-c7qxc?trackingId=y72nU3TOFBI9nLKGawWU7g%3D%3D",
+      "title": "The Best Appointment Booking Software to Cut No-Shows and Increase Revenue",
+      "content": "Who usually chooses it Consultants, agencies, founders, creators, premium local services, and teams that treat the booking page as part of the buyer journey.\n\nSetup tip that saves time Build two booking types first: a fast intro call and a high-intent booking with intake. Measure conversion and show-up separately for each.\n\nTool 2: Calendly What it’s best for Fast scheduling for meetings, especially internal and external meetings where the main goal is eliminating back-and-forth.\n\nStrengths that matter in practice\n\n Familiar interface that many customers already trust\n Strong for simple meeting types, routing, basic reminders, and integrations\n Often adopted quickly by teams\n\nCommon limitations to watch [...] Published Mar 16, 2026\n\n+ Follow\n\nBest appointment booking software solves a simple problem: it turns interest into a confirmed appointment, with the right time, the right person, and the right details, without back-and-forth.\n\nIf you run a service business in the US, appointment booking software is also a policy engine. It quietly enforces your buffer times, deposits, cancellations, intake forms, reminders, and team assignments so your calendar stays predictable and your revenue stays protected.Growing teams researching best appointment scheduling software for small business often benchmark operational setups at scheduling software for small business. [...] 1. Public booking page Customers pick a service, date, and time, then confirm.\n2. Availability rules Working hours, breaks, buffers, time-off, minimum notice, and travel time.\n3. Calendar sync Two-way sync with Google Calendar, Outlook, iCloud, or team calendars so double-bookings drop.\n4. Confirmation and reminders Email and SMS to reduce no-shows and reschedules.\n5. Intake Forms, waivers, notes, and customer history so the appointment is actually usable.\n6. Payments and deposits Optional deposits, full payment, packages, tips, and receipts.\n7. Team scheduling logic Pick a specific staff member, assign round-robin, or route based on rules.\n8. Reporting Bookings, utilization, revenue per slot, no-show rate, lead sources, and trends.",
+      "tavilyScore": 0.79438496,
+      "query": "looking for a tool to eliminate scheduling back and forth",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Listicle/review of appointment booking software including Calendly; article format.",
+        "quote": "Tool 2: Calendly What it’s best for Fast scheduling for meetings",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "An appointment-booking software comparison with relevant evaluation criteria, but no personal buying request.",
+        "quote": "The Best Appointment Booking Software to Cut No-Shows and Increase Revenue",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/scheduling-software-calendar-integration-lunacal-ovxjc",
+      "title": "Scheduling software with calendar integration",
+      "content": "- Reminders and workflows: Calendly Workflows can send automated emails and text reminders before and after meetings. This matters a lot for appointment scheduling because calendar integration alone does not stop people from forgetting calls.After covering the setup, the second G2 review matches what I’d expect in real use. The reviewer said Calendly helped their office reduce scheduling back-and-forth, let patients and clients self-schedule based on real availability, and used reminders to reduce no-shows. That is one of Calendly’s strongest use cases. [...] ### Pricing\n\n- Starter costs $20/month monthly or $16/month annually. It includes 1 calendar, payments, email reminders, forms, and automatic time zone conversion.\n- Standard costs $34/month monthly or $27/month annually. It includes up to 6 calendars, text reminders, packages, memberships, and gift certificates.\n- Premium costs $61/month monthly or $49/month annually. It includes up to 36 calendars, BAA support, logo removal, multiple time zones for staff or locations, custom API, and CSS.\n- Acuity offers a 7-day free trial, and listed prices are in USD before applicable taxes.\n\n## Calendly\n\nCalendly is popularly known for clean scheduling links, simple calendar sync, and removing the back-and-forth from booking meetings.",
+      "tavilyScore": 0.79246426,
+      "query": "looking for a tool to eliminate scheduling back and forth",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Article reviewing Calendly's scheduling features and pricing; article format about a competitor.",
+        "quote": "Calendly helped their office reduce scheduling back-and-forth, let patients and clients self-schedule",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "A review-style discussion of calendar integrations, reminders, and pricing rather than a prospect describing their own requirement.",
+        "quote": "Scheduling software with calendar integration",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/apple/comments/1x39cki/for_mac_users_whose_work_runs_on_google_calendar",
+      "title": "For Mac users whose work runs on Google Calendar: we made hora ...",
+      "content": "Several Google accounts in one window, your next meeting one-click join for Meet, Zoom and Teams, for Meet, Zoom and Teams, a scheduler for",
+      "tavilyScore": 0.6772606,
+      "query": "meeting scheduler that syncs Google Calendar and Zoom",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promotes hora, a Mac calendar/meeting app competing in scheduling space.",
+        "quote": "Several Google accounts in one window, your next meeting one-click join for Meet, Zoom and Teams",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes its own Google Calendar desktop app and scheduler rather than expressing a customer need.",
+        "quote": "we made hora",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/SideProject/comments/1r9vvfq/built_a_scheduling_algorithm_for_music_teachers",
+      "title": "Built a scheduling algorithm for music teachers — looking for feedback : r/SideProject",
+      "content": "Title: Built a scheduling algorithm for music teachers — looking for feedback : r/SideProject\n# Built a scheduling algorithm for music teachers — looking for feedback : r/SideProject. Skip to main contentBuilt a scheduling algorithm for music teachers — looking for feedback : r/SideProject. Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to SideProject. # Built a scheduling algorithm for music teachers — looking for feedback. Image 2: r/SideProject - Built a scheduling algorithm for music teachers — looking for feedbackImage 3: r/SideProject - Built a scheduling algorithm for music teachers — looking for feedback. I’m a guitar teacher and ran into a problem I didn’t notice at first:. To deal with this (and the whole weekly vs. bi-weekly scheduling mess), I built a small **free beta web app** for teachers called **Flowzart**. It’s still a work in progress — which is also why I’d really appreciate feedback. *   The teacher defines their **availability once** (e.g. _Monday 14:00–20:00 in Zurich at School A / Room A, Tuesday at School B / Room B, etc._). *   Students or parents enter **their own availability**, **where** they want lessons (which school/location), and whether they want **weekly or bi-weekly** lessons (e.g. _Monday 15:00–17:00 at School A_). *   A scheduling algorithm puts all of this together and **creates a conflict-free schedule** without manual back-and-forth. *   Regular students stay in a structured weekly / bi-weekly rhythm. *   For **non-regular students**, there’s an appointment tool where they can book:. The core features are **free to use for teachers**. I’m working on an optional reminder feature where students who haven’t had a lesson for _X days_ get a friendly nudge to book again. I’m _not selling anything here_ — I’m genuinely looking for **feedback from other teachers** while this is still in beta. Also, if there happens to be a **coder/developer here who likes the idea and wants to help shape it**, I’d be very happy to connect. This is a teacher-built project, not a polished startup. If you’re curious to try it, give feedback, or just share thoughts, feel free to **DM me for an invite code**. The SpaceX IPO just launched. Be the first to comment.",
+      "tavilyScore": 0.6261242,
+      "query": "looking for a tool to eliminate scheduling back and forth",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Builder promoting their own scheduling product for music teachers.",
+        "quote": "Built a scheduling algorithm for music teachers — looking for feedback",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes a self-built scheduling algorithm for music teachers and requests product feedback.",
+        "quote": "Built a scheduling algorithm for music teachers — looking for feedback",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/SaaS/comments/1i44s4a/looking_for_feedback_and_ideas_ai_scheduling",
+      "title": "AI Scheduling Assistant That Works Through Email : r/SaaS",
+      "content": "Title: AI Scheduling Assistant That Works Through Email : r/SaaS\n# Looking for Feedback and Ideas: AI Scheduling Assistant That Works Through Email : r/SaaS. Skip to main contentLooking for Feedback and Ideas: AI Scheduling Assistant That Works Through Email : r/SaaS. Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to SaaS. # Looking for Feedback and Ideas: AI Scheduling Assistant That Works Through Email. I’m working on building an AI-powered scheduling assistant that aims to simplify managing meetings and appointments. The idea is to have an assistant you can reach via email, enabling seamless scheduling without relying on traditional calendar tools. You can email your assistant (e.g., assistant@my.miraa.cc) with a scheduling request. The assistant handles all back-and-forth communication with participants to find a suitable time for the meeting. It integrates with your existing calendar to avoid conflicts and keep everything in sync. Anyone, including third parties, can email the assistant to request meetings with you, making it easy for external participants to get in touch. I’d love your feedback on the concept! What pain points do you face with scheduling that this tool could solve? What features would you want in a scheduling assistant like this? Would this kind of tool make your scheduling process easier? I’m still in the early stages, so your input would be invaluable in shaping the tool and validating the idea. Looking forward to hearing your thoughts and suggestions! Thanks in advance for your time! No monthly fees, no minimum deposit, just a reliable fixed rate when you open and fund a high-yield Bank CD account today from Morgan Stanley Private Bank, National Association, Member FDIC. Image 3: Clickable image which will reveal the video player: No monthly fees, no minimum deposit, just a reliable fixed rate when you open and fund a high-yield Bank CD account today from Morgan Stanley Private Bank, National Association, Member FDIC. # Comments Section. # People also ask about section. Top SaaS trends to watch in 2024. *   Reddit reReddit: Top posts of January 18, 2025 * * *. *   Reddit reReddit: Top posts of 2025 * * *. *   Best of Reddit in Portuguese. *   Best of Reddit in German.",
+      "tavilyScore": 0.6217706,
+      "query": "looking for a tool to eliminate scheduling back and forth",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Builder seeking feedback on their own AI scheduling assistant product.",
+        "quote": "I’m working on building an AI-powered scheduling assistant",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Promotes an AI scheduling assistant under development and seeks feedback on that product.",
+        "quote": "I’m working on building an AI-powered scheduling assistant",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/getvenuo_officemanagement-officeoperations-activity-7513146307272736768-TaX5",
+      "title": "Avoid Double Booking Meetings with a Simple Checklist | Venuo.co posted on the topic | LinkedIn",
+      "content": "Two teams. One room. Both have an invitation. If you manage office operations, you may be the person expected to untangle this while a client waits at reception. Before moving either meeting, check three things: • Which booking record decides who has the room? • Who owns each reservation and can agree to a change? • Does either meeting need setup or clearing time outside the invitation? A 10:00 client appointment can need the room from 09:45. If the earlier meeting ends at 10:00, those calendars only look compatible. A useful team rule: reserve the whole period you need the room, and keep the client arrival time clear in the invitation. We put the conflict checklist into a short guide for office and operations managers:  Follow Venuo for practical office operations notes: room handovers, [...] Your office has four meeting rooms. A client arrives at 10:00. The team meeting ends at 10:00 too. The agent hosting the client needs fifteen minutes to clear documents and prepare the room. The appointment time and the room booking need to tell different parts of the same story. A workable plan: • Client arrives at 10:15. • The room is reserved from 10:00 for preparation. • The conversation finishes at 11:00. • The room stays reserved until 11:15 for clearing away. Confirm the changed arrival time with the client. Tell reception which room to use. Keep negotiation details out of the shared booking title. Office managers handle decisions like this throughout the day. Writing down the handover rule helps the rest of the team make them too. Our back-to-office checklist covers room [...] How many steps does someone in your office take to reserve a meeting room? If the answer starts with “ask the office manager,” a routine booking depends on that person being available. A team member needs a clear sequence: check which room is free, choose the time, add a title, confirm, then see the reservation in the calendar. In our 14-second product demo, Alex Morgan selects Meeting Room Blue for 12:00–13:00, enters “Project sync” and books it. The calendar then shows the confirmed reservation alongside other bookings. That is a more useful instruction for a team than “just put it in the calendar.” It shows which action actually reserves the room. Watch the member booking demo:  What is the extra step in your current room-booking process? #OfficeManagement #OfficeOperations",
+      "tavilyScore": 0.82147413,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Vendor (Venuo.co) content about room double-booking; different category and self-promotional.",
+        "quote": "We put the conflict checklist into a short guide",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Provides a checklist for physical meeting-room conflicts, which is outside Cal.com's core meeting-scheduling use case.",
+        "quote": "Two teams. One room. Both have an invitation.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "X",
+      "url": "https://x.com/CrazyEgg/status/1902792854759498174?lang=en",
+      "title": "Crazy Egg on X: \"We’ve done a terrible job of marketing what our Surveys tool is capable of. So, here are 3 ways you …\"",
+      "content": "# Crazy Egg on X: \"We’ve done a terrible job of marketing what our Surveys tool is capable of. So, here are 3 ways you …\"\n\nWe’ve done a terrible job of marketing what our Surveys tool is capable of.\n\nSo, here are 3 ways you can use it to automate your sales, marketing, and support workflows:\n\n💸 Automate Inbound Sales - Qualify leads by response, automate email followup, distribute to the right sales rep.\n\n👷‍♀️ Speed up Support - Route responses to Slack, email, or your CRM. Auto-create support tickets, and link to the relevant Session Recording.\n\n🔍 Conversion Optimization - Trigger surveys on exit intent to see why they’re leaving. Analyze responses alongside heatmaps & session recordings.\n\nAll 100% free, no card required.\n\n[Image 1] [...] All 100% free, no card required.\n\n[Image 1]\n\n- Author: @CrazyEgg (Crazy Egg)\n- Posted: 2025-03-20T18:42:23+00:00\n- Views: 3230\n- Likes: 2\n- Reposts: 1\n- Replies: 2\n- Quotes: 0\n- Bookmarks: 1\n\n## People\n\n- @CrazyEgg (Crazy Egg) — Started in 2005. Over 436,000 websites use Crazy Egg for Heatmaps, Recordings, A/B Testing, Web Analytics, and more. Get a free trial at:",
+      "tavilyScore": 0.6095823,
+      "query": "tool to route inbound leads to the right sales rep",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Crazy Egg promoting its own Surveys tool, unrelated to scheduling.",
+        "quote": "Automate Inbound Sales - Qualify leads by response, automate email followup, distribute to the right sales rep.",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Vendor self-promotion for Crazy Egg Surveys, with lead distribution only one advertised workflow.",
+        "quote": "here are 3 ways you can use it to automate your sales, marketing, and support workflows",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "Stack Overflow",
+      "url": "https://stackoverflow.com/questions/77634872/round-robin-scheduling-with-cp-sat-from-google-or-tools",
+      "title": "cp sat - Round robin scheduling with CP-SAT from Google OR tools - Stack Overflow",
+      "content": "except KeyError: constraints[f\"{h}_{o}\"] = [] constraints[f\"{h}_{o}\"].append(matches[h,o,d]) for constraint in constraints.values(): model.AddExactlyOne(constraint) if __name__ == '__main__': logging.basicConfig(stream=sys.stdout, level=logging.DEBUG) nb_teams = 4 home_teams = [f\"Team_{x+1}\" for x in range(nb_teams)] oppo_teams = [f\"Team_{x+1}\" for x in range(nb_teams)] # for 3 and teams, date neeed is 6 nb_dates_needed = (math.ceil(nb_teams/2)22) -2 dates = [f\"Date_{x+1}\" for x in range(nb_dates_needed)] # Creates the model. model = cp_model.CpModel() # create variables matches = {} for h in home_teams: for o in oppo_teams: for d in dates: if h == o: continue matches[h,o,d] = model.NewBoolVar(f'match_h{h}_o{o}d_{d}') # constraints home_opposition_constraint(model, matches) [...] `from ortools.sat.python import cp_model import logging import sys import math def match_date(n): return n[-1] class SolutionPrinter(cp_model.CpSolverSolutionCallback): \"\"\"Print intermediate solutions.\"\"\" def __init__(self, matches): cp_model.CpSolverSolutionCallback.__init__(self) self._matches = matches def on_solution_callback(self): result = [] match_count = 0 for match in self._matches: h,o,d = match,match,match if self.Value(self._matches[(h,o,d)]): match_count += 1 result.append(match) logging.info('Match Count: %i' % match_count) for match in sorted(result, key=match_date): print (f\"{match}: {match} X {match}\") self.StopSearch() def teams_on_a_day_constraint(model, matches): # team plays atmost one match in a day # regardless of ground or opposition constraints = {} for match in [...] I am creating round robin tournament fixtures with CP-SAT from google OR tools in python.\n\nProblem: There are multiple teams about 150 split in to different groups and divisions in a league. The teams share ground and ground also has constraint about some days it will not be available. I need to make a fairly allocated round robin groups where teams play home and away leg matches. Teams do not want to plan more than 1 or 2 home matches consecutively. When possible team wants to finish playing against all oppositions (with combination of home/away) before playing each other again.\n\nSolution:\n\nCurrently I using, boolean variables g\\_h\\_o\\_d (ground\\_home\\_opposition\\_date). And add constraints such as:",
+      "tavilyScore": 0.5474641,
+      "query": "scheduling software for teams with round robin and workflows",
+      "a": {
+        "score": 1,
+        "kind": "discussing",
+        "reason": "Technical CP-SAT round-robin sports scheduling question, unrelated to booking software.",
+        "quote": "Round robin scheduling with CP-SAT from Google OR tools",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "asking",
+        "reason": "A technical constraint-programming question about sports round-robin fixtures, unrelated to appointment scheduling software.",
+        "quote": "Round robin scheduling with CP-SAT from Google OR tools",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Indie Hackers",
+      "url": "https://www.indiehackers.com/post/how-do-you-pick-scheduling-software-for-a-small-appointment-based-business-fcc1819fde",
+      "title": "How do you pick scheduling software for a small appointment-based business? - Indie Hackers",
+      "content": "# How do you pick scheduling software for a small appointment-based business?\n\nAyeSalon is salon scheduling software that keeps all your bookings in one calendar, so you can see open slots, avoid double bookings and spend less time on phone calls. Built for salon owners in India.",
+      "tavilyScore": 0.517388,
+      "query": "how do I avoid double bookings when scheduling meetings",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "AyeSalon promoting its own salon scheduling software.",
+        "quote": "AyeSalon is salon scheduling software that keeps all your bookings in one calendar",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Despite the question-style title, the post promotes AyeSalon's own salon scheduling software.",
+        "quote": "AyeSalon is salon scheduling software that keeps all your bookings in one calendar",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L3",
+      "text": "That \"routing purgatory\" usually comes from slow handoffs after qualification. Fix the logic in HubSpot/Salesforce first, then automate the booking step. Disclosure: I work on Cal.com. Our routing forms can qualify inbound leads and send them to the right rep’s calendar immediately, with round-robin or team availability. I’d keep AI focused on intent/context, not let it own CRM decisions.",
+      "usage": {
+        "in": 433,
+        "out": 90
+      },
+      "latencyMs": 1704
+    },
+    {
+      "leadId": "L1",
+      "text": "At 1,000+ leads/month, I’d treat routing as a two-stage system: deterministic eligibility first, then optimization within that set. Your point about noisy expected-revenue estimates is key; sparse rep x industry data can make “optimal” assignments worse than simpler rules.\n\nStart with capacity, SLA risk, overrides, and explanations, then measure outcomes before adding optimization.\n\nDisclosure: I work on Cal.com; scheduling availability is one input, not the routing decision itself.",
+      "usage": {
+        "in": 424,
+        "out": 104
+      },
+      "latencyMs": 1729
+    },
+    {
+      "leadId": "L8",
+      "text": "For sending a link so families can book your time, look for multiple availability schedules, buffers between bookings, and limits on how far ahead people can book. That helps prevent babysitting or tutoring slots from colliding.\n\nDisclosure: I work on Cal.com. It supports those basics and calendar syncing to avoid double bookings. Whatever tool you choose, test the booking flow on a phone first, since that’s likely how families will use it.",
+      "usage": {
+        "in": 408,
+        "out": 95
+      },
+      "latencyMs": 1743
+    },
+    {
+      "leadId": "L12",
+      "text": "For per-location routing with round-robin scoped by office, Cal.com handles this through routing forms that direct bookings to specific teams, then distributes via round-robin within that group. Each staff member sets their own availability and time zone, so multi-timezone offices work without manual conversion. You can also weight distribution or prioritize certain team members. Disclosure: I work on Cal.com.",
+      "usage": {
+        "in": 214,
+        "out": 83
+      },
+      "latencyMs": 2525
+    },
+    {
+      "leadId": "L13",
+      "text": "Cal.com does exactly that. Disclosure: I work on Cal.com.\n\nYou can connect your Google or O365 calendar to check for conflicts, then create booking pages for different meeting types. It handles the availability logic and time zones automatically, and you can embed the pages on your own site if you don't want to send people to a separate link.",
+      "usage": {
+        "in": 207,
+        "out": 76
+      },
+      "latencyMs": 1694
+    }
+  ],
+  "companies": [],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3043,
+      "tokensOut": 1277,
+      "cost": 0.00109495,
+      "latencyMs": 8439,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3066,
+      "tokensOut": 1410,
+      "cost": 0.020232,
+      "latencyMs": 11387,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 0.6,
+      "top5Overlap": 5
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3035,
+      "out": 790,
+      "cost": 0.0018585,
+      "latencyMs": 3270
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3043,
+      "out": 1277,
+      "cost": 0.00109495,
+      "latencyMs": 8439
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3066,
+      "out": 1410,
+      "cost": 0.020232,
+      "latencyMs": 11387
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3323,
+      "out": 1075,
+      "cost": 0.0022868999999999997,
+      "latencyMs": 8563
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 1686,
+      "out": 448,
+      "cost": 0.007852000000000001,
+      "latencyMs": 2525
+    }
+  ],
+  "scorerError": null
+}

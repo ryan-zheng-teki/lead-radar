@@ -162,3 +162,26 @@ No repository suite exists, so the "post-repository" column covers the reused im
 - Confidence (Round 3): requirement proof 96%, directness 96%, integration realism 95%, environment 93% (a concurrent-edit window, bounded by the timestamps above), failure/recovery 95%, UI 95%; durable regression N/A. Overall 95%.
 - Cleanup: the 3001 server (pid 54680) was stopped; the Chromium profile and `/tmp/lr-ir003` were removed (the probe was kept as evidence); the server on 3000 was not touched.
 - Result: **Pass** for `d0bfa5a`.
+
+---
+
+## Round 4 — IR-004 (SR-004 lead quality: AC-013..016) — API-REV-004
+
+- Trigger: implementation_engineer, IR-004, branch `ui-polish-sr003` at `9eddc9a` (on `e9255f4`). Classification: Small + Low, direct route. Clean worktree at the start (`git status` empty at 13:58Z).
+- Environment: my own server `LEAD_RADAR_ENV_FILE=…/lead-radar/.env PORT=3001 node server.js`, started at 13:59Z from `9eddc9a`. I did not restart the `:3000` server because it is not mine. Browser runs use the CDP journey probe (copy of `API-10-probe-journey.mjs` tagged API-12); cal.com timing runs use `curl -sN -X POST /api/run`.
+
+| Case ID | Criteria | Steps | Result | Evidence | Look For | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| API-12 | AC-013, AC-014, AC-015; AC-012 regression | Browser 1280×720, autobyteus.com chip, full journey | Pass | `API-12-lead-quality-acs.log`, `ui/API-12-1280x720-*`, `ui/API-12-run-autobyteus.com.json` | `discussion-source leads … 14 / 20`; `matches /autobyteus/i: 0`; `{"n":11,"maxA":2,"maxB":2}`; one company, `Carrier`, signal `hiring`, an HVAC manufacturer hiring an "Agentic AI Engineer Lead" (buyer side; source HTTP 200); `total 46.6 s`; `consoleErrors: []`; `hscroll` false in every state including 390 px | Only 1 lead scored A ≥ 5 (1 draft). AC-013..015 do not require more, but a demo on autobyteus.com shows a single draft. |
+| API-13 | AC-016 | (A) browser, cal.com chip, 1920×1080, alone; (B) and (C) `curl` POST /api/run cal.com, alone | **Fail** | `API-13-ac016-calcom.log`, `API-13-cal-curl-stream-timed.log`, `ui/API-13-run1-cal.com.json`, `ui/API-13-run2-cal.com.json` | (B) `totalMs=27568 … A>=5: 6 (need >= 8)`; (C) `totalMs=29878 … A>=5: 6 (need >= 8)`; (A) scorer A hung: page timer `198.5 s`, "Score leads" active, no run file within the probe's 260 s | Time limit met by B and C (≤ 30 s); the count is not met (6, 6 vs the required 8). The implementer saw 9 in IMP-09. Before SR-004 (`d0bfa5a`, API-10 1920) the All view showed 7 leads with A ≥ 5. AC-014 also holds on B and C (competitors max A 2, max B 1). |
+| API-14 | AC-006 | key-value counts | Pass | `API-14-key-check.log` | `0` and `0` | |
+
+- Failure detail (AC-016): two isolated cal.com runs gave 6 leads with A ≥ 5; the criterion requires ≥ 8.
+  - Kinds: run B had article 9, asking 4, competitor 4, complaining 1, discussing 2; run C had article 6, asking 3, competitor 5, discussing 6.
+  - The new rubric caps articles at 4 and competitors at 2, so fewer leads reach 5.
+  - The result is non-deterministic: the implementer's run gave 9. The pre-SR-004 baseline view showed 7.
+- Separate observation (attempt A): one scorer A (GLM) call hung for more than 180 s, while a direct GLM ping at the same time took 1.2 s. `nebius.js` allows 120 s per call plus one retry, and `pipeline.js` has no deadline on scorer A (B has a 75 s cap), so a single stuck call can push a run past AC-005 / AC-016's 90 s. This code path is unchanged by SR-004 (pre-existing), and runs B and C did not reproduce it.
+- Preliminary classification: `Unclear`. It is either a scoring calibration issue (`Local Fix` in `src/steps/score.js`, implementation_engineer) or a threshold that conflicts with the stricter rubric (`Requirement Gap`, solution_designer: is ≥ 8 still the right bar when articles are capped at 4?). The hung-A observation is a follow-up candidate, not this ticket's failure.
+- Earlier ACs on `9eddc9a`: AC-001..004, 006, 009, 011 and 012 held in API-12; AC-005 held in API-12 (46.6 s) and runs B and C (≤ 30 s).
+- Cleanup: the 3001 server and the probe Chromium were stopped and `/tmp/lr-ir004` removed; the `:3000` server was not touched.
+- Result: **Fail** (AC-016 count). Next: code_reviewer failure-origin review.

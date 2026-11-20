@@ -1,0 +1,219 @@
+{
+  "viewport": "1280x720",
+  "chip": "https://www.autobyteus.com",
+  "layout": {
+    "empty": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    },
+    "running": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    },
+    "results": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a.lead-title \"Building a feedback memory layer for AI \""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"how do I orchestrate mult\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how do I orchestrate mult\" x A. \"autobyteus.com/\"",
+        "SPAN.pill pill-muted \"how to make AI agents lea\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how to make AI agents lea\" x A. \"autobyteus.com/\"",
+        "SPAN.pill pill-muted \"how to build reusable spe\" x H2. \"Leads · 20 people and pos\"",
+        "SPAN.pill pill-muted \"how to build reusable spe\" x SPAN.muted \"· 20 people and posts, ra\"",
+        "TD. \"profile\" x H2. \"Which model does what & w\"",
+        "SPAN.model-pill \"DeepSeek-V4.1-Flash-1017\" x H2. \"Which model does what & w\"",
+        "TD. \"scoring A\" x H2. \"Which model does what & w\"",
+        "TD. \"scoring A\" x TD. \"Product profile\""
+      ]
+    },
+    "afterActions": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a.lead-title \"Vivek | Cybersecurity on X: \"🧩 Anthropi\"",
+        "a.lead-title \"机器之心 JIQIZHIXIN on X: \"What if building \"",
+        "a.lead-title \"Dan Kornas on X: \"Running several coding\"",
+        "a.lead-title \"Dan Kornas on X: \"Building agent workflo\"",
+        "a.lead-title \"Building a feedback memory layer for AI \""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"how do I orchestrate mult\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how do I orchestrate mult\" x A. \"autobyteus.com/\"",
+        "SPAN.pill pill-muted \"how to make AI agents lea\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how to make AI agents lea\" x A. \"autobyteus.com/\"",
+        "SPAN.pill pill-muted \"how to build reusable spe\" x H2. \"Leads · 20 people and pos\"",
+        "SPAN.pill pill-muted \"how to build reusable spe\" x SPAN.muted \"· 20 people and posts, ra\"",
+        "TD. \"profile\" x H2. \"Which model does what & w\"",
+        "SPAN.model-pill \"DeepSeek-V4.1-Flash-1017\" x H2. \"Which model does what & w\"",
+        "TD. \"scoring A\" x H2. \"Which model does what & w\"",
+        "TD. \"scoring A\" x TD. \"Product profile\""
+      ]
+    },
+    "phone390": {
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a.lead-title \"Building a feedback memory layer for AI \"",
+        "a.lead-title \"Vivek | Cybersecurity on X: \"🧩 Anthropi\"",
+        "a.lead-title \"5 open-source repos that turn one AI age\"",
+        "a.lead-title \"Multi-Agent RAG with Handoff Orchestrati\"",
+        "a.lead-title \"Multi-Agent Orchestration: A Guide to Pa\"",
+        "a.lead-title \"Multi-Agent Handoff With Ownership Bound\"",
+        "a.lead-title \"Whats the best orchestration framework? \"",
+        "a.lead-title \"Show HN: Era – Open-source local sandbox\"",
+        "a.lead-title \"Build A 4-Agent Workflow With Agent Team\""
+      ],
+      "overlaps": [
+        "A.brand \"Lead Radar\" x A.lead-title \"Build A 4-Agent Workflow \"",
+        "A.brand \"Lead Radar\" x P.lead-reason \"Tutorial-style content pr\"",
+        "SPAN.pill pill-muted \"Nebius Token Factory · Ta\" x P.lead-reason \"Tutorial-style content pr\"",
+        "SPAN.pill pill-muted \"how do I orchestrate mult\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how do I orchestrate mult\" x A. \"autobyteus.com/\"",
+        "SPAN.pill pill-muted \"how to make AI agents lea\" x H2. \"Leads · 20 people and pos\"",
+        "SPAN.pill pill-muted \"how to make AI agents lea\" x SPAN.muted \"· 20 people and posts, ra\"",
+        "SPAN.pill pill-muted \"frustrated with managing \" x BUTTON.tab \"All\"",
+        "SPAN.pill pill-muted \"frustrated with managing \" x BUTTON.tab \"High-fit\"",
+        "SPAN.pill pill-muted \"frustrated with managing \" x BUTTON.tab \"With draft\""
+      ]
+    },
+    "error": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    }
+  },
+  "chipClicked": "autobyteus.com",
+  "runningStepper": [
+    "step done: ✓Read site8.1 s",
+    "step done: ✓Understand product8.1 s",
+    "step active: Search the web",
+    "step pending: 4Score leads",
+    "step pending: 5Draft replies"
+  ],
+  "runSeconds": 46.811,
+  "progressTitle": "Done — review your leads and drafts below | total 46.6 s",
+  "errorShown": null,
+  "kpis": "20 Leads found 1 High-fit (score ≥ 7) 46.6 s Run time $0.0282 Total model cost",
+  "profile": {
+    "text": "AutoByteus Product profile A local-first, evaluation-driven agent team orchestration platform that lets users guide specialist agent teams whose feedback becomes better skills and improves the next t",
+    "sourceLinks": [
+      "https://www.autobyteus.com/"
+    ]
+  },
+  "leads": {
+    "all": {
+      "cards": 1,
+      "withLink": 1,
+      "verified": 1,
+      "notVerbatim": 0,
+      "showMore": "Show 19 low-fit results",
+      "header": "Leads · 20 people and posts, ranked by GLM-5.3-Flash"
+    },
+    "afterShowLow": {
+      "cards": 20,
+      "withLink": 20,
+      "verified": 20,
+      "notVerbatim": 0,
+      "showMore": "Hide low-fit results",
+      "header": "Leads · 20 people and posts, ranked by GLM-5.3-Flash"
+    },
+    "sampleCard": "8 Kimi 7 Reddit Discussing ✓ Verified in source Building a feedback memory layer for AI agents that learn from every human approval and rejection : r/AI_Agents ↗ Builder describing human-feedback-driven agent learning — exactly AutoByteus's feedback-becomes-skills loop. “The system learns from each ",
+    "tab_high": {
+      "cards": 1,
+      "selected": "High-fit"
+    },
+    "tab_draft": {
+      "cards": 1,
+      "selected": "With draft"
+    },
+    "tab_all": {
+      "cards": 20,
+      "selected": "All"
+    }
+  },
+  "undo": {
+    "afterUndo": "EXCEPTION TypeError: Cannot read properties of undefined (reading 'querySelectorAll')\n    at <anonymous>:1:127"
+  },
+  "drafts": [
+    {
+      "cls": "draft approved",
+      "badge": "Reddit",
+      "buttons": [
+        "Copy reply",
+        "Open post ↗",
+        "Undo"
+      ],
+      "tail": "g conflicting feedback across reviewers?"
+    }
+  ],
+  "draftsCounter": "1 approved · 0 rejected · 0 pending",
+  "draft1HasEdit": "EXCEPTION TypeError: Cannot read properties of undefined (reading 'innerText')\n    at <anonymous>:1:47",
+  "copy": {
+    "toast": "Copied — paste it on the post yourself",
+    "clipboardChars": 442,
+    "draftContainsClipboard": true
+  },
+  "requestsDuringDraftActions": [],
+  "companies": {
+    "hidden": false,
+    "text": "Target companies · buying signals Carrier hiring Job post for Agentic AI Engineer Lead to design, develop, and deploy AI agents and agentic workflows across Carrier Engineering. Agentic AI Engineer Lead at Carrier ↗",
+    "links": 1
+  },
+  "comparison": "Model comparison Same leads, scored by two Nebius models GLM-5.3-Flash was 18.3× cheaper and 6.0× faster than Kimi-K3.1-Pro, agreeing on 4 of the top 5 leads. Scorer Tokens in / out Cost Latency GLM-5.3-Flash primary 3,423 / 1,384 $0.0012 5.5 s Kimi-K3.1-Pro reference 3,434 / 1,521 $0.0221 33.1 s 0.25 Mean |score A − score B| on a 0–10 scale 4 / 5 Same leads in both top 5 20/20 · 20/20 Quotes verified in source (A · B) Every model call in this run (5)",
+  "models": "Which model does what & why Product profile DeepSeek-V4.1-Flash-1017 Fast, cheap and good at reading a web page into structured JSON. Lead scoring A (primary) GLM-5.3-Flash Very cheap and fast (with reasoning_effort low) — the model you would run on thousands of posts a day. Lead scoring B (reference) Kimi-K3.1-Pro Strongest model, run on the same leads as a quality reference to measure how much the cheap model loses. Reply drafts Kimi-K3.1-Pro Strongest writer: a human reads every draft, so ton",
+  "sections": [
+    "hero",
+    "progress",
+    "kpis",
+    "profile",
+    "leads",
+    "drafts",
+    "comparison",
+    "models",
+    "companies"
+  ],
+  "error": "! Something went wrong \"not a url\" is not a valid URL. Try again",
+  "afterTryAgain": {
+    "error": "! Something went wrong \"not a url\" is not a valid URL. Try again",
+    "newRunRequests": 2
+  },
+  "allRequests": [
+    "GET /",
+    "GET /style.css",
+    "GET /app.js",
+    "GET /api/config",
+    "POST /api/run",
+    "POST /api/run",
+    "POST /api/run"
+  ],
+  "consoleErrors": []
+}
