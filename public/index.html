@@ -3,37 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lead Radar</title>
+  <title>Lead Radar — find people who need your product</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234F46E5'/%3E%3Ccircle cx='12' cy='12' r='6' fill='none' stroke='white' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='1.8' fill='white'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Lead Radar</h1>
-    <p class="tagline">Find people who need your product — sourced, scored and human-approved.</p>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/" aria-label="Lead Radar home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9" opacity=".45"/><circle cx="12" cy="12" r="5" opacity=".75"/><path d="M12 12 18.5 5.5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>
+        </span>
+        Lead Radar
+      </a>
+      <span class="pill pill-muted">Nebius Token Factory · Tavily</span>
+    </div>
   </header>
-  <main>
-    <div class="banner">Nothing is ever posted automatically. You approve, edit or reject every draft, then copy it yourself.</div>
 
-    <form id="run-form" class="card run">
-      <label for="url">Company website</label>
-      <div class="row">
-        <input id="url" name="url" type="text" placeholder="https://www.autobyteus.com" value="https://www.autobyteus.com" autocomplete="off" />
-        <button id="run-btn" type="submit">Find leads</button>
+  <main class="container">
+    <section id="hero" class="hero">
+      <h1>Find people who need your product — right now.</h1>
+      <p class="subline">Paste a company website. Lead Radar reads it, finds people publicly describing the problem it solves, scores them and drafts a reply. You decide what gets sent.</p>
+      <form id="run-form" class="search" autocomplete="off">
+        <label for="url" class="sr-only">Company website</label>
+        <div class="search-field">
+          <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <input id="url" name="url" type="text" placeholder="yourcompany.com" spellcheck="false" />
+        </div>
+        <button id="run-btn" class="btn btn-primary btn-lg" type="submit">Find leads</button>
+      </form>
+      <div class="examples" id="examples">
+        <span class="muted">Try:</span>
+        <button type="button" class="chip" data-url="https://www.autobyteus.com">autobyteus.com</button>
+        <button type="button" class="chip" data-url="https://cal.com">cal.com</button>
+        <button type="button" class="chip" data-url="https://posthog.com">posthog.com</button>
       </div>
-      <ol id="stages" class="stages"></ol>
-      <div id="error" class="error" hidden></div>
-    </form>
-
-    <section id="profile" class="card" hidden></section>
-    <section id="models" class="card">
-      <h2>Which model does what &amp; why</h2>
-      <table id="models-table"><thead><tr><th>Step</th><th>Model</th><th>Why</th></tr></thead><tbody></tbody></table>
+      <ul class="trust">
+        <li>✓ Every lead sourced</li>
+        <li>✓ Quotes verified in the source</li>
+        <li>✓ Nothing posted automatically</li>
+      </ul>
     </section>
-    <section id="drafts" class="card" hidden></section>
-    <section id="leads" class="card" hidden></section>
-    <section id="companies" class="card" hidden></section>
-    <section id="comparison" class="card" hidden></section>
+
+    <section id="progress" class="card progress" hidden>
+      <div class="progress-head">
+        <span id="progress-title" class="progress-title">Working…</span>
+        <span id="timer" class="timer">0.0 s</span>
+      </div>
+      <ol id="stepper" class="stepper" aria-live="polite"></ol>
+      <p id="progress-note" class="progress-note muted" hidden></p>
+    </section>
+
+    <section id="error" class="alert" role="alert" hidden></section>
+    <div id="skeleton" class="skeleton-wrap" hidden>
+      <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton short"></div>
+    </div>
+
+    <section id="kpis" class="kpis reveal" hidden></section>
+    <section id="profile" class="card reveal" hidden></section>
+    <section id="leads" class="card reveal" hidden></section>
+    <section id="drafts" class="card reveal" hidden></section>
+    <section id="comparison" class="card reveal" hidden></section>
+    <section id="models" class="card reveal" hidden></section>
+    <section id="companies" class="card reveal" hidden></section>
   </main>
+
+  <footer class="footer container">Built at AI Builders × commIT Hack Day Berlin · builds on AutoByteus</footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <script type="module" src="/app.js"></script>
 </body>
 </html>

@@ -57,6 +57,30 @@ Single page, clean light styling: header "Lead Radar — find people who need yo
 
 `src/steps/companies.js`, called by the pipeline after drafts (or in parallel with drafting): 2–3 Tavily `/search` queries built from `profile.ideal_customer` (e.g. `"<ICP> hiring <role>"`, `"<ICP> startup launches <category>"`, `topic:"news"` for funding), `search_depth:"basic"`, max 8, no include_domains. Then one `PROFILE_MODEL` call → JSON `[{company, signal, reason, url}]` (max 5, url must be one of the given result URLs; drop any other). New NDJSON event `{type:"companies"}`; page section "Target companies (buying signals)". Failure here is non-fatal: show "Target companies unavailable" and continue.
 
+## Visual design (SR-003, REQ-014) — authoritative for the page
+
+Starting point: validated page (evidence/API-02-calcom-browser-full.png) works but reads like a long document: small text, dense tables, everything full-width, drafts before leads. Restyle and restructure the page only; **no pipeline, API or data changes** (server.js, src/ untouched except nothing). Files: `public/index.html`, `public/style.css`, `public/app.js`.
+
+Look: calm, premium SaaS (Linear / Vercel / Stripe). Plain CSS custom properties; no frameworks or CDNs (works offline).
+
+- **Tokens:** font `Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`; mono `ui-monospace, SFMono-Regular, Menlo`. Background `#F7F8FA`; surface `#FFF`; border `#E6E8EC`; text `#0F172A`; muted `#64748B`; accent `#4F46E5` (hover `#4338CA`, soft `#EEF2FF`); success `#16A34A`/`#DCFCE7`; warning `#D97706`/`#FEF3C7`; danger `#DC2626`/`#FEE2E2`. Radius 12px cards, 8px controls, 999px pills. Shadow `0 1px 2px rgba(15,23,42,.04), 0 4px 16px rgba(15,23,42,.06)`. Base 16px / 1.55; H1 40px/700, letter-spacing -0.02em; section titles 20px/600. Container max-width 1120px.
+- **Top bar:** sticky, white, hairline border: inline-SVG radar mark in an indigo rounded square + "Lead Radar"; right: pill "Nebius Token Factory · Tavily".
+- **Hero (empty state):** H1 "Find people who need your product — right now."; subline "Paste a company website. Lead Radar reads it, finds people publicly describing the problem it solves, scores them and drafts a reply. You decide what gets sent."; 56px search-style input with globe icon + primary "Find leads"; example chips `autobyteus.com` `cal.com` `posthog.com` (click = fill + run); trust row "✓ Every lead sourced · ✓ Quotes verified in the source · ✓ Nothing posted automatically". After a run the hero compacts to one row (input + button).
+- **Running:** horizontal stepper (Read site → Understand product → Search the web → Score leads → Draft replies): pending grey circle, active indigo spinner, done green check, seconds under each; live total timer; skeleton shimmer cards below. Sections fade/slide in as events arrive.
+- **Order of results:** KPI strip → Product profile → Leads → Reply drafts → Model comparison → Which model does what & why → (Target companies if present).
+- **KPI strip:** 4 tiles: Leads found · High-fit (A score ≥ 7) · Run time · Total cost $ (4 decimals). 28px/700 numbers.
+- **Product profile:** name, one-line summary; two columns "Solves" (max 6 bullets, "+n more" toggle) and "Ideal customer"; pain phrases as soft indigo pills; search queries collapsed under "Search queries used"; sources as small link chips.
+- **Leads:** cards, not a table. Left: 44px score circle (≥ 8 green, 5–7 amber, < 5 grey) with A score, beneath "Kimi n". Body: platform pill (Reddit `#FF4500`, Hacker News `#FF6600`, X `#0F172A`, LinkedIn `#0A66C2`, others grey) + title link ↗ (new tab) + reason (muted) + quote as left-bordered italic blockquote + pill "✓ Verified in source" or "⚠ Not verbatim". Tabs: All · High-fit · With draft. Leads with A < 5 collapsed under "Show n low-fit results".
+- **Reply drafts — you approve:** header counter "n approved · n rejected · n pending". Card: platform pill + lead title link + short quote; draft in soft panel; buttons primary Approve, secondary Edit, ghost Reject. Edit → auto-growing textarea with "Save & approve"/"Cancel". Approved → green left border, "Approved" pill, buttons "Copy reply" + "Open post ↗"; Rejected → 55 % opacity, "Rejected" pill, "Undo". Toast on copy: "Copied — paste it on the post yourself". Two-column grid ≥ 1200px, one column below.
+- **Model comparison:** headline sentence from the numbers (e.g. "GLM-5.3-Flash was 19.1× cheaper and 1.8× faster than Kimi-K3.1-Pro, agreeing on 3 of the top 5"); table Model · Tokens in/out · Cost · Latency with inline horizontal bars for cost and latency; agreement tiles (mean |A−B|, top-5 overlap, verified quotes); "Every model call in this run" collapsed.
+- **Which model does what & why:** 4 rows: step · model in mono pill · why · $/1M.
+- **Error:** danger-soft alert card with icon, plain message, "Try again"; missing key names the variable.
+- **Footer:** "Built at AI Builders × commIT Hack Day Berlin · builds on AutoByteus".
+- **Motion/a11y:** 150–200 ms transitions; focus ring 2px accent offset 2px; real `<button>`s; AA contrast; `aria-live="polite"` on the stepper.
+- **Projector:** perfect at 1280×720 (no horizontal scroll, text ≥ 14px) and 1920×1080; acceptable at 390px.
+
+Check (AC-012): real run in a browser, screenshots to `evidence/ui/`, look at each and fix what looks off. Time box 15:20 Berlin; the pushed validated version is the fallback.
+
 ## Files (Change inventory: all Add)
 
 `package.json` (`"start": "node server.js"`, engines node ≥ 22, no deps), `server.js`, `src/config.js`, `src/nebius.js`, `src/tavily.js`, `src/json.js`, `src/quote.js`, `src/compare.js`, `src/pipeline.js`, `src/steps/{profile,leads,score,draft}.js`, `public/{index.html,app.js,style.css}`, `scripts/compare.js`, `README.md` (replace stub), `DEMO.md` (3-min demo + video script), `DESIGN.md` (created by Solution Designer), `runs/` gitignored (already). Each file < 300 lines.

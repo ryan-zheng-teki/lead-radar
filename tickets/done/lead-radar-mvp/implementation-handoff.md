@@ -157,3 +157,13 @@ Evidence folder: `/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-2
 - AC-008: the fresh-clone run.
 - An independent live E2E run through the browser on a new company.
 - Confirm that keys never reach the browser (`/api/config` and the run stream).
+
+## Round 3 — SR-003 UI polish (IR-003)
+
+- Scope: `public/index.html`, `public/style.css`, `public/app.js` only, plus the Solution Designer's SR-003 edits to requirements-doc.md, design-spec.md and solution-revision-record.md. Classification confirmed: Medium + Low (page-only, no API or data change).
+- Branch `ui-polish-sr003`, based on origin/main 1d859de. Commit identity is the no-reply address only; the old `ticket/lead-radar-mvp` branch must not be merged or pushed.
+- REQ-014 trace: everything in the spec "Visual design (SR-003)" is implemented except the "$/1M" column, which needs prices from the API; this round is page-only, so it was left out. Details are in IR-003.
+
+| Check ID | Command Or Steps | Commit Tested | Environment | Code It Exercises | Behavior / Criteria IDs | Result | Evidence Files | Look For |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| IMP-08 | `node IMP-08-probe-shoot.mjs http://localhost:3000 <company> <W> <H> <out> <port>`: a real run each on tavily.com at 1280×720 and cal.com at 1920×1080. It captures the empty, running, results top, leads, drafts (one approved, one edited and approved, one rejected), copy toast, comparison, full-page and error states | UI as committed on `ui-polish-sr003` (src identical to 1d859de) | headless Chromium via CDP, live keys | `public/*` | AC-012, AC-003, REQ-005/006/012 | Pass | `evidence/ui/IMP-08-*.png`, `IMP-08-<viewport>-report.json` | report `"hscroll"` all `false`, `"minFont": 14`, `"consoleErrors": []`, counter `2 approved · 1 rejected` |

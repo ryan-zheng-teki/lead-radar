@@ -73,6 +73,7 @@ Standard: blocking findings must cite a REQ/AC ID below; scope-changing proposal
 - REQ-010 README content: what it is; old vs new process; which model does what and why; comparison numbers from real runs; limitations; what existed before today; how to run.
 - REQ-011 Demo script: a ≤3-minute live demo script and video script for the user.
 - REQ-013 (STRETCH, conditional) Target companies: only after AC-001..AC-005 pass in a real run and before ~14:50 Berlin. From the profile's ideal customer, 2–3 Tavily searches for companies showing buying signals (job posts, launches, funding/news); a Nebius model lists up to 5 companies, each with a source URL and a one-line reason grounded in that source; shown as its own section below the leads. If not done by ~14:50 it is dropped and listed as future work in the README. Never delays the core, README or push.
+- REQ-014 World-class, clean UI (user request ~14:30: "make the UI as beautiful as possible… clean and users like it"): the page follows design-spec.md "Visual design (SR-003)"; reads well on a projector at 1280×720 and on 1920×1080; every state designed. Time box: done and validated by 15:20 Berlin, otherwise the validated pre-polish UI stays.
 - REQ-012 Progress and errors: the page shows pipeline stage progress; a failed external call (Tavily/Nebius) shows a readable error rather than a blank page; a site with too little content still produces a profile from search results or an explicit error.
 
 ## Acceptance Criteria
@@ -87,6 +88,7 @@ Standard: blocking findings must cite a REQ/AC ID below; scope-changing proposal
 - AC-008 (REQ-009, UC-004) Fresh clone + `.env` + documented command starts the app.
 - AC-009 (REQ-012) An invalid/unreachable URL or a missing key gives a readable error.
 - AC-011 (REQ-013, stretch) When built: the run shows up to 5 target companies, each with a working source link and a reason supported by that source; the run still finishes in about 90 s.
+- AC-012 (REQ-014) Real-run browser screenshots at 1280×720 and 1920×1080 (empty, running, results top, leads, drafts with one edited+approved and one rejected, comparison, error) saved to `evidence/ui/`; no clipped/overlapping text, no horizontal scroll, no console errors; all earlier ACs still pass.
 - AC-010 (REQ-011) Demo script file exists in the repo/ticket and fits 3 minutes.
 
 ## Relevant Scenarios And Journeys
@@ -125,6 +127,7 @@ Standard: blocking findings must cite a REQ/AC ID below; scope-changing proposal
 | D-1 | Which two Nebius models to compare on the scoring step | Asked the user; proceeding on recommended default (user informed), changeable in `.env` | Llama models are no longer in the live catalog (Measured: `/v1/models`). Scorer A = `zai-org/GLM-5.3-Flash` ($0.15/$0.50 per 1M, with `reasoning_effort:"low"`); scorer B = `moonshotai/Kimi-K3.1-Pro` ($2/$10, strongest, with `chat_template_kwargs:{thinking:false}`); profile = `deepseek-ai/DeepSeek-V4.1-Flash-1017` ($0.30/$1.20); drafts = `moonshotai/Kimi-K3.1-Pro`. Prices are read live from `/v1/models?verbose=true`. |
 | D-2 | Public GitHub repo under the user's account and its name | `Needs user` — open; gates only the push at delivery | `gh` is logged in as `ryan-zheng-teki`. Recommend public repo `lead-radar`; push only after explicit yes. |
 | D-3 | Solo or team demo; who presents | Asked; proceeding on default solo (user informed) | Script written for one speaker; trivially re-split. |
+| D-8 | UI quality bar | User asked for world-class UI (~14:30); visual spec by Solution Designer | No Product Design team round: it cannot fit before the 15:30 freeze. A concrete visual spec plus screenshot checks gives the quality asked for; the validated UI stays as fallback. |
 | D-7 | Leads are people/posts (core); companies only as a conditional stretch | User delegated ("You decide, we need to win, show people it works", ~14:25) → Solution Designer | People/posts match the user's old process (GTM usefulness 40%) and carry explicit sourced need; a reliable working demo wins more than breadth. The company view adds a recognizable "accounts" angle for the Nebius × Tavily judges, so it is built only if the core already works. |
 | D-4 | Stack | Solution Designer | Node 22 with zero npm dependencies (built-in `fetch` + `http`), one HTML page. No pip on this machine, and judges can run it with only Node. |
 | D-5 | Quality metric | Solution Designer | Agreement between the two scorers (mean abs. diff, top-5 overlap) — cheap, numeric, honest; the 70B serves as reference. A third-model judge rating is optional if time allows. |

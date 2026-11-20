@@ -1,0 +1,31 @@
+{
+  "viewport": "1280x720",
+  "company": "https://www.tavily.com",
+  "hscroll": {
+    "empty": false,
+    "running": false,
+    "results": false,
+    "after": false
+  },
+  "runSeconds": 43.363,
+  "draftsState": [
+    "approved:Approved",
+    "approved:Approved · edited",
+    "rejected:Rejected"
+  ],
+  "counter": "2 approved · 1 rejected · 0 pending",
+  "sections": [
+    "hero",
+    "progress",
+    "kpis",
+    "profile",
+    "leads",
+    "drafts",
+    "comparison",
+    "models",
+    "companies"
+  ],
+  "minFont": 14,
+  "errorText": "!\nSomething went wrong\n\"not a url\" is not a valid URL.\nTry again",
+  "consoleErrors": []
+}

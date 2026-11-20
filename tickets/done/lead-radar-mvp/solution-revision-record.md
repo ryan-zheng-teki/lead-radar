@@ -6,6 +6,7 @@
 | --- | --- | --- | --- |
 | SR-001 | 2026-11-20 14:15 | Requirements baseline + design | Requirements Approved; design complete (Medium / Low) |
 | SR-002 | 2026-11-20 14:27 | Requirements addition (conditional stretch) + design note | Approved (user delegated the decision) |
+| SR-003 | 2026-11-20 14:48 | UI quality requirement + visual spec (page only) | Approved (user's own request) |
 
 ## Revision Entries
 
@@ -31,3 +32,12 @@
 - Approval: user delegated the decision to the Solution Designer; decision recorded in D-7.
 - Design impact: design-spec "Stretch: target companies" section; classification unchanged (Medium / Low).
 - Next action: implementation engineer informed; core first.
+
+### SR-003 — World-class UI (page-only polish round)
+
+- Trigger: user ~14:30: "At least you test the UI make the UI as beautiful as possible design world class UI for this application should be clean and users like it".
+- Basis: first delivery (a4b58a2, API/E2E Pass) being pushed as fallback; delivery email decision B taken by Solution Designer (protects the user's private address; user informed).
+- Added REQ-014, AC-012, D-8; design-spec "Visual design (SR-003)". Page files only; pipeline/API unchanged.
+- Intended behavior changed: Yes (presentation only). Approval: the user's own request.
+- Classification unchanged: Medium / Low. Time box 15:20 Berlin.
+- Next action: implementation engineer (direct route).
