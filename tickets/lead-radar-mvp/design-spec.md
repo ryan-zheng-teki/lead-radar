@@ -1,0 +1,88 @@
+# Design Spec — lead-radar-mvp
+
+Proportionate design for a one-afternoon hackathon prototype. Hard time box: working demo ~14:45, feature freeze 15:30 Berlin.
+
+## Basis
+
+- Approved requirements: `requirements-doc.md` SR-001 (Approved by Solution Designer within direction, user informed). D-2 now approved by the user ("you can create the github repo", 14:14): public repo `https://github.com/ryan-zheng-teki/lead-radar` created empty; push of the finished, secret-free `main` is approved.
+- Evidence: `investigation-notes.md` (all model/Tavily facts below are Measured there).
+- Authorities read: architecture-design.md, design-principles.md; project `DESIGN.md`: none existed → created at repo root in this ticket (`lead-radar-mvp/DESIGN.md`).
+- Change posture: greenfield feature. Design health: `No Design Issue Found` (no existing code). Refactor needed now: no.
+
+## Stack
+
+Node ≥ 22, **zero npm dependencies** (global `fetch`, `node:http`, `node:fs`). One static HTML page with vanilla JS. Start: `node server.js` (or `npm start`), port `3000` (env `PORT`). Rationale: no pip here; judges need only Node.
+
+## Spines
+
+- SP-1 (UC-001/003, primary): `Browser page (URL + Run)` → `POST /api/run` (server.js, streams NDJSON progress events) → `Pipeline.run(url)` → [Profile step → Lead search step → Scoring step (model A ∥ model B) → Draft step] → `runs/<ts>-<domain>.json` → final `result` event rendered by the page.
+- SP-2 (UC-002, local in the browser): `Draft card` → Approve / Edit (textarea → Save & approve) / Reject → status badge + Copy button. Browser state only; nothing sent anywhere. (Optionally `POST /api/decision` appends the decision to the run file — skip if short of time.)
+- SP-3 (UC-003 aggregate): `node scripts/compare.js` → reads `runs/*.json` → prints a markdown comparison table (per company + average) for the README.
+
+## Pipeline steps (owner: `src/pipeline.js`, which calls each step in order and emits progress events)
+
+1. **Profile** (`src/steps/profile.js`): Tavily `/extract` on the URL (basic) + Tavily `/search` `"<domain> product"` with `include_domains:[domain]`, max 5 → page text (cap ~12k chars) + source URLs. Model `PROFILE_MODEL` = `deepseek-ai/DeepSeek-V4.1-Flash-1017` → JSON `{name, summary, problems[], ideal_customer, pain_phrases[3-5], search_queries[4-6]}` where queries are phrased as a *person* asking for help/complaining (e.g. "how do I … without …", "looking for a tool that …"). If extract fails and search returns nothing → error event "Could not read the site" (REQ-012).
+2. **Lead search** (`src/steps/leads.js`): run the 4–6 queries in parallel on Tavily `/search` (`search_depth:"advanced"`, `max_results:8`, `time_range:"year"`, `include_domains:["reddit.com","news.ycombinator.com","x.com","twitter.com","linkedin.com","indiehackers.com","dev.to","stackoverflow.com","quora.com","medium.com"]`). Dedupe by normalized URL, drop the company's own domain, keep top 20 by Tavily score. Candidate = `{id, url, title, content, platform}`; `platform` from hostname.
+3. **Scoring** (`src/steps/score.js`): one batched call per model with all candidates (id + title + content truncated ~700 chars) and the profile → JSON array `[{id, score 0-10, reason, quote}]`. Rubric in prompt: 9–10 a person explicitly asking for/complaining about exactly this problem; 5–8 related need; 0–4 article, listicle, vendor self-promotion, or unrelated. `quote` must be copied verbatim from the content. Run model A and model B **in parallel** on the same input; each returns `{scores, usage, latencyMs, model}`. Primary ranking uses model A (the cheap scorer; that is the product's point); B is the reference. **Quote verification** (`src/quote.js`): normalized (lowercase, collapse whitespace, strip quotes/ellipsis) substring of normalized content → `verified: true/false`.
+4. **Drafts** (`src/steps/draft.js`): top `DRAFT_COUNT` (default 5) leads by model A score with score ≥ 5. One call per lead **in parallel**, `DRAFT_MODEL` = `moonshotai/Kimi-K3.1-Pro`: ≤ 70 words, references the person's specific words, helpful first, mentions the product once with honest affiliation ("I work on X" / "disclosure: …"), no hype, no links unless natural; platform-appropriate tone.
+5. **Comparison** (`src/compare.js`, pure functions): per model tokens in/out, cost $ = tokens × live price, latency ms; agreement = mean absolute score difference, top-5 overlap (|A∩B| of top-5 ids), Spearman optional. Also total run cost and wall time.
+
+## Nebius client (`src/nebius.js`) — the one owner of model calls
+
+- `chat({model, messages, maxTokens}) → {content, usage, latencyMs}`; base URL `https://api.tokenfactory.nebius.com/v1`; `temperature: 0.2` (scoring 0).
+- **Thinking control per model family (Measured, required):** `zai-org/GLM*` → `reasoning_effort:"low"`; `moonshotai/Kimi*` → `chat_template_kwargs:{thinking:false}` for scoring, default (thinking) is acceptable for drafts only if latency allows — use `thinking:false` by default; `deepseek-ai/*`, `openai/gpt-oss*` → `reasoning_effort:"low"`. Keep this mapping in one small table in `nebius.js`. `max_tokens` ≥ 2000 for scoring, 600 for drafts/profile.
+- `getPrices()` → `GET /v1/models?verbose=true` once at startup (cached): `{id: {in, out}}` in $/token. Missing price → cost shown as "n/a" (not 0).
+- JSON extraction helper (`src/json.js`): take the first `{…}`/`[…]` block (strip ```json fences); on parse failure retry once with "Return only valid JSON".
+- Never log headers or keys; errors surface `status + message` only.
+
+## Tavily client (`src/tavily.js`)
+
+`search(query, opts)`, `extract(url)`; `Authorization: Bearer ${TAVILY_API_KEY}`; 20 s timeout via `AbortSignal.timeout`.
+
+## Config (`src/config.js`)
+
+Loads env file from `process.env.LEAD_RADAR_ENV_FILE || ./.env` (tiny parser, no dependency) into `process.env` without overriding existing vars. Exposes `NEBIUS_API_KEY`, `TAVILY_API_KEY`, `PROFILE_MODEL`, `SCORER_A_MODEL` (default `zai-org/GLM-5.3-Flash`), `SCORER_B_MODEL` (default `moonshotai/Kimi-K3.1-Pro`), `DRAFT_MODEL`, `DRAFT_COUNT`, `PORT`. Missing key → server starts but `/api/run` returns a readable error naming the missing variable (AC-009). Keys are never sent to the browser.
+
+## HTTP (`server.js`, composition root)
+
+- `GET /` → `public/index.html`; `GET /app.js`, `/style.css` static.
+- `GET /api/config` → models per step + "why" text (REQ-006), no keys.
+- `POST /api/run {url}` → validates/normalizes URL (adds https://) → streams `application/x-ndjson` events: `{type:"stage", stage, message}`, `{type:"profile", …}`, `{type:"leads", …}`, `{type:"scores", …}`, `{type:"drafts", …}`, `{type:"comparison", …}`, `{type:"done", runFile, totalMs, totalCost}`, `{type:"error", message}`.
+
+## Page (`public/`)
+
+Single page, clean light styling: header "Lead Radar — find people who need your product, sourced and human-approved"; URL input + Run; stage list with ticks and elapsed time; Product profile card (with source links); "Which model does what & why" panel; Leads table sorted by score A (score A, score B, platform, title→link, reason, quote with ✓ verified / ⚠ unverified); Drafts cards (lead link + quote, draft text, Approve / Edit / Reject, status badge, Copy); Comparison table (model, tokens in/out, cost $, latency, plus agreement row). Banner: "Nothing is ever posted automatically."
+
+## Files (Change inventory: all Add)
+
+`package.json` (`"start": "node server.js"`, engines node ≥ 22, no deps), `server.js`, `src/config.js`, `src/nebius.js`, `src/tavily.js`, `src/json.js`, `src/quote.js`, `src/compare.js`, `src/pipeline.js`, `src/steps/{profile,leads,score,draft}.js`, `public/{index.html,app.js,style.css}`, `scripts/compare.js`, `README.md` (replace stub), `DEMO.md` (3-min demo + video script), `DESIGN.md` (created by Solution Designer), `runs/` gitignored (already). Each file < 300 lines.
+
+## README content (REQ-010) and demo (REQ-011)
+
+README: what it is; old process (scrolling X/LinkedIn by hand, ~30–60 min/day, unsourced) vs new (one URL → sourced, scored leads + drafts in ~1 min, human approves); model-per-step table with why (profile: fast+good; scorer A: cheapest fast, the one we'd run at volume; scorer B: strongest, reference; drafts: strongest writer since humans read it); comparison numbers from real runs on 2–3 companies (autobyteus.com plus e.g. https://www.tavily.com and https://linear.app or a judge-style company) via `scripts/compare.js`, including the thinking-on vs off finding; limitations (Tavily index coverage of X/LinkedIn is partial, no login-only content, scores are model judgement, quotes verified only against the snippet, no posting by design); what existed before (AutoByteus + Marketing Reply Scout / Event Networking Team patterns: find → score → approve; today's build is new); how to run (Node 22, `cp .env.example .env`, add keys, `npm start`, open http://localhost:3000). DEMO.md: 3-minute solo script (old way 20 s → live run on judge's URL 90 s → approve/edit a draft 30 s → comparison table + model choices 30 s → limitations/what existed 10 s) and a video shot list.
+
+## Verification intent
+
+Smoke: `node --check` all files; a real end-to-end run on https://www.autobyteus.com (time, lead count ≥ 8, drafts, comparison) and 1–2 more companies; error path with an invalid URL; `git grep -nE "tvly-|v1\.Cm"` empty; browser check of the page (approve/edit/reject).
+
+## Change Scope
+
+Only the new `lead-radar` repo. Leaves alone: AutoByteus and anything outside the repo. Follow-ups: none yet.
+
+## Removal plan / persisted data
+
+N/A (greenfield). Run files are disposable (`Discard or Rebuild`).
+
+## Structural triggers fired
+
+None material. `src/nebius.js` and `src/tavily.js` are real I/O boundaries (not empty indirection). The pipeline is the single sequence owner; steps do not call each other.
+
+## Terminology
+
+lead (a public post/comment by a person), candidate (search result before scoring), profile, scorer A/B, draft, decision (approve/edit/reject). No project glossary found.
+
+## Classification
+
+- `task_size`: Medium (≈15 small new files, one process, two external APIs).
+- `architectural_risk`: Low — greenfield, no persistence, no deployment, no concurrency beyond parallel HTTP calls; secrets handled by gitignored `.env` (verified ignored). Uncertainty on model output is bounded by measured probes and JSON-retry.
+- Evidence: investigation-notes.md Runtime findings. Escalation trigger: if the first real run cannot return ≥ 8 candidates or takes > 3 min, return a Design Impact to the Solution Designer.
