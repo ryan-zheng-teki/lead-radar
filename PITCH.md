@@ -1,98 +1,110 @@
 # Lead Radar: 3-minute pitch
 
-Spoken script for the live demo at the AI Builders × commIT Hack Day Berlin, 2026-11-20. Lines in *italics* are stage cues, not spoken.
+Read it like you're talking to a friend. Short lines, pause at each line break. *Italics are what you do, not what you say.*
 
 ---
 
-**0:00, title page on screen**
+**Start**
 
-Hi, I'm Ryan. I built this today, at this hackathon, from my phone, with a team of AI agents doing the work. It's called Lead Radar.
+Hi, I'm Ryan.
 
-Here's the problem. To find customers, you scroll through X, LinkedIn and Reddit, looking for people who have the problem your product solves.
+I built this today, here at the hackathon, from my phone. AI agents did the work, I steered.
 
-It takes a lot of time. At the end you have a list in your head, no sources, and tomorrow you start again.
-
-Lead Radar does the scrolling. You keep the judgement.
+It's called Lead Radar.
 
 ---
 
-**0:20, ask a judge**
+**The problem**
 
-Can someone give me a company website? Any company.
+You know how you find customers?
 
-*(No answer? Type cal.com.)*
+You scroll. X, LinkedIn, Reddit. You look for people who have the problem your product solves.
 
-*(Type it, press Find leads.)*
+It takes forever. And at the end you've got a list in your head, no sources, nothing saved.
 
----
+Next day, you start again.
 
-**0:30, the steps tick off**
-
-First, Tavily reads the website.
-
-Then a Nebius model turns it into a product profile: what it solves, who buys it, and how a frustrated buyer would describe the pain.
-
-*(Point at the purple pain phrases.)*
-
-These are the words real people use when they ask for help. Not marketing words.
-
-Then Tavily searches public posts on Reddit, Hacker News, X and LinkedIn for exactly those words.
+Lead Radar does the scrolling for you. You just make the calls.
 
 ---
 
-**1:00, the numbers at the top**
+**Live demo**
 
-Done in about thirty seconds, for about three cents.
+So let's try it. Can someone give me a company? Any website.
+
+*(Nobody? Type cal.com. Press Find leads.)*
+
+First, it reads the website.
+
+Then it figures out what the product does, who buys it, and how people actually talk about the pain.
+
+*(Point at the purple phrases.)*
+
+See these? That's how real people ask for help. Not how marketing talks.
+
+Now it searches Reddit, Hacker News, X and LinkedIn for exactly those words.
+
+*(Results appear.)*
+
+That took about thirty seconds. And it cost about three cents.
 
 ---
 
-**1:10, scroll to the leads**
+**The leads**
 
-Here are the leads. Each one links to the original post.
+*(Scroll down to the leads.)*
 
-A small, fast model, GLM Flash on Nebius, scored every one from zero to ten, with a reason.
+Here's who it found. Every lead links to the real post.
+
+A small, fast model scores each one, zero to ten, and tells you why.
 
 *(Point at a green tick.)*
 
-This green tick means the quote was found word for word in the source. Nothing here is made up.
+This green tick means the quote was found word for word in the post. So nothing here is made up.
 
-People asking for help score high. Articles, vendors and competitors score low.
-
----
-
-**1:40, the drafts**
-
-For the best leads, a stronger model, Kimi on Nebius, writes a short opener. It answers the person's own words, and it says openly that you work on the product.
-
-*(Click Approve on one. Edit one, Save. Reject one.)*
-
-And this is important: nothing is ever posted. You approve, edit or reject every message. The human stays in charge.
+People asking for help score high. Ads, articles and competitors score low.
 
 ---
 
-**2:10, the comparison card**
+**The messages**
 
-We also scored the same leads with the stronger model, to compare.
+For the best ones, a bigger model writes a short first message.
 
-The small model is about sixteen to twenty times cheaper and more than twice as fast. The scores are only about one point apart, and they agree on three of the top five.
+It replies to what that person actually said. And it's honest that you work on the product.
 
-So the cheap model is good enough to filter, and the strong model is only used where writing quality matters.
+*(Approve one. Edit one and save. Reject one.)*
 
----
-
-**2:40, close**
-
-The limits: it only sees public posts, and the scores are model judgement. That's why a human approves.
-
-What existed before today: the same find, score and approve idea in my AutoByteus agent teams. What was built today is this standalone app, on GitHub, with Nebius and Tavily, by agents I steered from my phone.
-
-That's Lead Radar, from team PocketSwarm. Thank you!
+And nothing gets posted. Ever. You read it, you decide.
 
 ---
 
-## Tips
+**The numbers**
 
-- If a run gives only one or two strong leads, say: "It only shows real people asking for help. For a niche product that's a short list, and that's the honest answer."
+*(Show the comparison card.)*
+
+Quick word on models. Both run on Nebius.
+
+The small one is GLM Flash. The big one is Kimi.
+
+The small one is about sixteen to twenty times cheaper and more than twice as fast. And it mostly agrees with the big one.
+
+So we use the cheap one to filter, and the big one only where the writing matters.
+
+---
+
+**Close**
+
+To be fair about the limits: it only sees public posts. And the scores are the model's opinion. That's why a person always approves.
+
+The find, score, approve idea comes from my AutoByteus agent teams. What's new today is this app, built on Nebius and Tavily. It's all on GitHub.
+
+That's Lead Radar. Team PocketSwarm. Thanks!
+
+---
+
+## If something goes wrong
+
+- **Only one or two good leads?** Say: "It only shows real people asking for help. For a niche product, that's a short list. And that's the honest answer."
+- **Wi-Fi fails?** Switch to your backup tab: "Here's one I ran earlier."
 - Zoom the browser to about 120% before you start.
-- If the Wi-Fi fails, switch to the backup tab: "Here's a run from earlier."
-- Numbers are from 17 real runs (snapshot 2026-11-20 15:04); see the README's comparison section.
+- Numbers come from 17 real runs (snapshot 2026-11-20 15:04); see the README's comparison section.
