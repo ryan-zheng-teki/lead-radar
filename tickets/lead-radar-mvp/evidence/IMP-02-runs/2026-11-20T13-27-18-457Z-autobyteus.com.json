@@ -1,0 +1,567 @@
+{
+  "url": "https://www.autobyteus.com/",
+  "at": "2026-11-20T13:27:18.457Z",
+  "totalMs": 33655,
+  "totalCost": 0.0295352,
+  "profile": {
+    "name": "AutoByteus",
+    "summary": "A local-first, evaluation-driven agent team orchestration platform that lets people guide specialist agent teams whose feedback becomes better skills and informs the next task.",
+    "problems": [
+      "Coordinating multiple specialist agents and tasks is hard without company-like teams, organizations, and handoff rules.",
+      "Agent work loses context when follow-up work is not routed back to the team that has the context.",
+      "User feedback does not automatically become better agent skills, and improvements may require restarts.",
+      "Teams need mixed runtime support and per-agent runtime choice across local models, self-hosted endpoints, Codex, Claude, and cloud providers.",
+      "Organizations need privacy, cost, and capability control while running specialist agent teams locally.",
+      "Building reusable, high-value agent teams for serious work such as software engineering is difficult."
+    ],
+    "ideal_customer": "Developers, AI application builders, and organizations that want local-first control over specialist agent teams, model/runtime choices, privacy, cost, and reusable execution layers for custom AI applications.",
+    "pain_phrases": [
+      "My agents keep losing context when work gets handed off.",
+      "I have to restart everything just to improve agent skills from feedback.",
+      "I can't control which runtime or model each agent uses.",
+      "Coordinating multiple agents feels nothing like running a real team.",
+      "I need specialist agent teams but still want privacy and cost control."
+    ],
+    "search_queries": [
+      "how do I coordinate multiple AI agents with handoff rules",
+      "looking for local-first multi-agent orchestration tool with model choice per agent",
+      "frustrated with AI agents losing context between tasks",
+      "how to turn user feedback into better agent skills without restart",
+      "tool to build reusable specialist agent teams for software engineering",
+      "self-hosted agent team orchestration privacy cost control"
+    ],
+    "domain": "autobyteus.com",
+    "sources": [
+      "https://www.autobyteus.com/"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L3",
+      "platform": "dev.to",
+      "url": "https://dev.to/harishkotra/building-local-agent-studio-a-local-first-oss-multi-agent-orchestration-app-1fe3",
+      "title": "Building Local Agent Studio: A Local-First OSS Multi-Agent Orchestration App - DEV Community",
+      "content": "In the MVP, the canvas supports:\n\n## Agent Model\n\nOne of the core product decisions was that each agent profile should carry its own provider and model selection.\n\nThat means the system is not tied to a single workspace-wide model choice.\n\nAn agent profile includes:\n\nExample:\n\n`export const agentProfileSchema = z.object({\nid: z.string(),\nname: z.string().min(1),\ndescription: z.string().default(\"\"),\nnotes: z.string().default(\"\"),\nprofileType: z.string().min(1).default(\"general\"),\nrole: agentRoleSchema,\nproviderId: z.string(),\nmodel: z.string().min(1),\nsystemPrompt: z.string().default(\"\"),\ntemperature: z.number().min(0).max(2).default(0.4),\nmaxTokens: z.number().int().positive().default(1200),\n});` [...] That design makes mixed-provider graphs straightforward. A coordinator can run on local Ollama while a worker uses a remote OpenAI-compatible model.\n\n## Provider Abstraction\n\nThe provider layer uses a common adapter interface so the runtime does not care whether the backing model is:\n\nThat abstraction is the difference between a flexible orchestration platform and a model-specific app.\n\nFeatherless.ai was intentionally modeled as OpenAI-compatible instead of a custom provider branch. That avoids provider sprawl and keeps the system extensible.\n\n## Runtime Design\n\nThe orchestration runtime has a small, explicit responsibility set:\n\nThe first important runtime guardrail is DAG validation: [...] For an MVP, DAG-only execution is the right constraint. Cycles, resumable long-running jobs, and schedulers all complicate failure handling and state recovery.\n\n## Node Execution\n\nThe runtime supports these node types:\n\n`input`\n`agent`\n`router`\n`http_tool`\n`output`\n\nEach type maps to a different execution path:\n\n`input`\n`agent`\n`router`\n`http_tool`\n`output`\n\nFor agent nodes, the runtime composes:\n\nThat gives each node enough context to behave like a stage in a larger orchestration rather than a standalone chat call.\n\n## Streaming and Traces\n\nOne of the biggest UX wins in orchestration products is showing execution as it happens.\n\nThe app emits structured events:\n\n`queued`\n`started`\n`stream_delta`\n`completed`\n`failed`",
+      "tavilyScore": 0.7221353,
+      "query": "looking for local-first multi-agent orchestration tool with model choice per agent",
+      "a": {
+        "score": 8,
+        "reason": "Builder of a directly competing/adjacent local-first multi-agent orchestration app with per-agent model selection; strong related-need signal.",
+        "quote": "each agent profile should carry its own provider and model selection",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Builder showcasing a directly competing local-first multi-agent orchestration app rather than asking for a solution.",
+        "quote": "each agent profile should carry its own provider and model selection",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "Medium",
+      "url": "https://medium.com/@nomannayeem/lets-build-a-self-improving-ai-agent-that-learns-from-your-feedback-722d2ce9c2d9",
+      "title": "Let’s Build a Self-Improving AI Agent That Learns From Your Feedback",
+      "content": "The skill library tracks which skills were used in each trajectory. When feedback comes in, those skills get updated. If the feedback is positive (task success > 0.7), the skill’s success rate increases. If the feedback is negative, it decreases.\n\nThis creates a natural selection process. Good skills get used more because they have higher success rates. Bad skills get used less because they have lower success rates. Over time, the agent’s skill set evolves toward better approaches.\n\nUsers can also create new skills manually. If a response is particularly good, they can check a box and describe what made it good. That becomes a new skill that the agent can use in the future.\n\nThe feedback endpoint in the API handles this: [...] When a user asks a question, the agent retrieves relevant skills, enhances the query with skill context, and generates a response. That response is then evaluated, and if it’s good, the skills used get a boost.\n\nThis creates a positive feedback loop. Good skills get used more. Used skills get better. The agent improves over time.\n\nNext, let’s see how the reinforcement learning system makes this improvement happen.\n\n## Reinforcement Learning in Action\n\nReinforcement learning is what makes REFLEX self-improving. Every user interaction becomes a learning opportunity. Here’s how it works. [...] Combine RL with RAG, and you get something powerful: an agent that can both access knowledge and learn from experience. That’s what REFLEX does.\n\nHere’s a simple example. A static agent might always use the same approach to answer questions. It doesn’t know if users prefer detailed explanations or quick summaries. It doesn’t learn that certain topics need web search while others can use the knowledge base.\n\nREFLEX learns these patterns. It tracks which skills work best for which types of questions. It remembers what users rate highly. Over time, it gets better at matching the right approach to the right question.",
+      "tavilyScore": 0.64243245,
+      "query": "how to turn user feedback into better agent skills without restart",
+      "a": {
+        "score": 8,
+        "reason": "Directly addresses feedback becoming improved skills — the exact feedback-to-skills loop AutoByteus offers.",
+        "quote": "When feedback comes in, those skills get updated",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Directly explores feedback-driven skill improvement, a core product capability, but as a build tutorial rather than a request.",
+        "quote": "When feedback comes in, those skills get updated.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1vwvca5/how_are_you_handling_long_running_ai_agents",
+      "title": "How are you handling long running AI agents without losing context or blowing up costs? : r/AI_Agents",
+      "content": "The sweet spot we landed on separates task state from conversation memory completely: a small structured record of what's done, what's pending and the key results, which the agent reads to pick the next step instead of re-reading history. Raw tool output never goes in the window, it gets stored and referenced, and that is where most of the token blowup actually comes from. That same record is what makes it resumable, so a crash mid-task restarts from the last checkpoint instead of a bad mid-summary.\n\nImage 19: u/HeyZaney avatar\n\nHeyZaney\n\n•2mo ago\n\nFor 4–5 calls I probably wouldn’t over-engineer it yet. The thing that made the biggest difference for us was separating session context from project state. [...] The agent’s context is disposable. It gets the specific piece of work it’s doing, the relevant decisions/requirements, blockers and whatever artefacts it needs. It can reason, use tools, make a mess of its context window, then disappear.\n\nThe durable bit lives outside the session: what’s been done, what’s currently being worked on, decisions that were made and why, blockers, dependencies, and what should happen next. The next agent/session queries that state rather than trying to reconstruct the project from the previous conversation. [...] I’d also be careful with summaries as the persistent layer. A summary of “what happened” and the actual current state of the work aren’t quite the same thing, especially once a human changes something between agent runs. I’d rather have one authoritative task/decision state and keep the history separately.\n\nWe actually ended up building this into WithNettle because we needed it while building another product with agents. Git still owns the code/technical docs; WithNettle is basically the shared work context that both we (humans) and the agents read/write through MCP.\n\nSo out of your four, I’d probably make #2 the foundation, use #1 for whatever the agent needs right now, make #4 query #2, and treat #3 more as history/checkpointing than the thing the next agent has to trust as truth.",
+      "tavilyScore": 0.6391732,
+      "query": "frustrated with AI agents losing context between tasks",
+      "a": {
+        "score": 8,
+        "reason": "Real practitioners asking how to handle long-running agents, context loss, and cost — explicit problem discussion.",
+        "quote": "How are you handling long running AI agents without losing context or blowing up costs?",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "reason": "Real practitioners explicitly discuss handling long-running agents, context loss, resumability, and token costs.",
+        "quote": "How are you handling long running AI agents without losing context or blowing up costs?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/adamchilds_self-hosted-ai-agents-activity-7496248250568695808-WSeM",
+      "title": "Self-hosted AI Agents | Adam Childs",
+      "content": "- Greater Model Optionality - your own agent is highly configurable allowing selection of the right model for every operation: orchestration, delegation, or route-by-topic to meet your needs (Cost / Performance / Specialization / Privacy)\n- Easier access to real-time information. Any real-time data-feed you have access to, is available. Current Cloud products offer some of this (and have easier access to data they own) but are limited in what they can call out to\n- Freedom of query - less controls / safeguards. Note: you'll still be under T&C and safeguards of selected services and backbone models unless you are hosting your own [...] I gave a fun presentation on self-hosted open source agents last month to our local AI and Data Engineering group. My example setup was Hermes Agent (#1 on the openrouter app leader board).\nYes, there are significant security and data governance considerations to be aware of and handle! But someone is finding value in these setups! Openrouter is showing >36T tokens through Hermes Agent in the last 30 days, Mac minis have been difficult to get all year.\nWhat is the value proposition of these self-hosted agents?\nHere's what I found:\n- Allows Security-capability trade-off: Greater Security Risk for Greater Capability. Grant all locally runnable tools and ability to install needed tools–> Greater functionality, Grant credentials for any MCP/API –> Greater data access [...] I asked Claude Code to say \"ok.\" It cost me 28,500 tokens and $0.18.\nThe command was claude -p \"Reply with exactly: ok\" --output-format json. Four words in. One word back. The kind of reply that should cost nothing, or close enough to nothing that you'd never think to check.\nThe usage block tells the story. Input: 9,931. Cache write: 3,235. Cache read: 15,291. My four words were a rounding error. The rest is Claude Code loading its own furniture before it ever reads your prompt.\nHere's the deal. Every single call bills your installed skills, your global CLAUDE.md, plugins, project session memory. All of it. Fresh input and cache write. Every time, whether that call touches any of it or not.",
+      "tavilyScore": 0.72535694,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 7,
+        "reason": "Presenter advocating self-hosted agents with per-operation model choice — closely matches product's runtime/privacy value props.",
+        "quote": "your own agent is highly configurable allowing selection of the right model for every operation",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "reason": "Discusses self-hosted agents with per-operation model choice for cost, specialization, and privacy, closely matching runtime needs.",
+        "quote": "allowing selection of the right model for every operation: orchestration, delegation, or route-by-topic",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/stop-fighting-ai-agents-build-reusable-multi-agent-dev-george-ivan-mxwbe",
+      "title": "Stop Fighting AI Agents and Build a Reusable Multi-Agent Dev Environment",
+      "content": "### The Solution: Code Copilot Team\n\nI open-sourced everything I learned into a single repo: Code Copilot Team - a set of reusable, opinionated templates and conventions for AI-assisted development with multi-agent delegation.\n\nGitHub: \n\nIt's built for Claude Code as the reference implementation, but the conventions port directly to Cursor, GitHub Copilot, Windsurf, Aider, and local LLMs.\n\n### The Three-Phase Workflow\n\nThe core idea is simple: AI agents are powerful but they need structure. Not every task should be delegated, and delegation needs clear boundaries.\n\nThe workflow breaks every development cycle into three phases:\n\n### Phase 1 — Plan [...] Adaptive configuration. Instead of manually choosing a template, the Agent Builder analyzes your project (stack, structure, dependencies, team size) and generates the most accurate copilot configuration for that specific context. A solo Python CLI tool doesn't need the same setup as a full-stack mono-repo with five contributors.\n Session monitoring and learning. With user permission, the Agent Builder observes copilot sessions: what rules get triggered, where the agent struggles, which patterns lead to rework; and refines the configuration automatically. Every session makes the next one better. This creates the kind of closed-loop that turns static rules into a living, self-improving system. [...] The foundation for this already exists in the repo's modular rule files and session-splitting conventions. The Agent Builder is the natural next step: moving from \"here are good defaults\" to \"here's the optimal configuration for exactly what you're doing right now\".\n\nAlso coming:\n\n More templates (mobile, data engineering, DevOps/IaC)\n Metrics tracking for token spend per phase\n CI integration patterns for agent-generated code\n Instructions for tags needed for WebMCP\n\nThe repo is MIT Licensed and actively maintained. If you're experimenting with AI-powered dev workflows, whether single-agent loops or multi-agent teams, I would love your feedback.\n\nGitHub:",
+      "tavilyScore": 0.7092205,
+      "query": "tool to build reusable specialist agent teams for software engineering",
+      "a": {
+        "score": 7,
+        "reason": "Author building reusable multi-agent dev team conventions — same problem space of reusable specialist agent teams.",
+        "quote": "a set of reusable, opinionated templates and conventions for AI-assisted development with multi-agent delegation",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Author addresses reusable multi-agent development structure and delegation boundaries, but primarily promotes an open-source alternative.",
+        "quote": "AI agents are powerful but they need structure.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "Medium",
+      "url": "https://medium.com/@Quaxel/your-first-multi-agent-handoff-without-chaos-a9fe116c7812",
+      "title": "Your First Multi-Agent Handoff Without Chaos",
+      "content": "Put together:\n\nrun_id R-9912  \n handoff: router -> specialist_policy (H-2048)  \n tool: search_policy (840ms)  \n tool: fetch_doc (410ms)  \n specialist_result: \"policy found, missing fare_type\"  \n handoff: specialist_policy -> composer (H-2051)  \n output: clarifying_question  \n outcome: pending_user\nNow you can debug. Now you can improve.\n\n## A Real-World Failure Mode: The “Polite Loop”\n\nHere’s a common one: agents keep handing off because nobody is allowed to decide.\n\n   Specialist says: “Needs more info, ask user.”\n   Composer says: “Let’s verify policy first.”\n   Router sees uncertainty and routes again.\n   Repeat.\n\nThe fix is a protocol rule:\n\n## Decision ownership\n\n   Router owns “what happens next”\n   Specialist owns “what’s true”\n   Composer owns “what’s said”\n\nAnd a loop breaker: [...] ## The Three Building Blocks: Roles, Protocols, Logs\n\nThink of multi-agent handoff design as a triangle:\n\n1.   Roles define responsibilities.\n2.   Protocols define what’s passed between roles.\n3.   Logs define what you can debug and measure.\n\nGet these right and the rest becomes tuning.\n\n## Roles: Start With the Smallest Useful Division\n\nYou might be tempted to create five agents on day one. Don’t.\n\nYour first multi-agent handoff should split along a natural seam:\n\n   “Find info” vs “decide”\n   “Plan” vs “execute”\n   “Draft” vs “review”\n\nA proven starter set:\n\n## Agent 1: Router\n\n   Classifies intent\n   Selects which specialist(s) to involve\n   Sets budgets and constraints\n\n## Agent 2: Specialist [...] User  \n |  \n v  \nRouter Agent  \n - intent  \n - budgets  \n - pick specialist(s)  \n |  \n v  \nSpecialist Agent  \n - retrieve / compute  \n - cite evidence  \n - return structured findings  \n |  \n v  \nComposer Agent  \n - decide what to say  \n - render answer  \n - ask 1 clarifying question if needed  \n |  \n v  \nUser\nAnd the key: only the Router initiates handoffs.  \nSpecialists don’t spawn more agents. That’s how you prevent agent “family trees” and runaway cost.\n\n## Logs: The Three Logs That Make Handoffs Debbugable\n\nIf you log one thing, log the handoff packet. If you log three, log these:\n\n## 1) Handoff Log\n\nEvery handoff is a record:\n\n   who → who\n   why (intent + objective)\n   what was passed (packet hash)\n   timestamps (start/end)\n\nThis gives you a trace of delegation.\n\n## 2) Tool Log",
+      "tavilyScore": 0.69688743,
+      "query": "how do I coordinate multiple AI agents with handoff rules",
+      "a": {
+        "score": 7,
+        "reason": "Educational post on multi-agent handoffs, but audience is practitioners actively wrestling with routing and handoff chaos.",
+        "quote": "agents keep handing off because nobody is allowed to decide",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Instructional article about multi-agent handoff debugging and decision ownership, not an explicit buyer request.",
+        "quote": "agents keep handing off because nobody is allowed to decide.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "dev.to",
+      "url": "https://dev.to/leena_malhotra/i-let-an-ai-agent-handle-a-multi-step-task-heres-where-it-broke-m31",
+      "title": "I Let an AI Agent Handle a Multi-Step Task. Here's Where It Broke - DEV Community",
+      "content": "Step 4 never happened. By the time I manually corrected Step 2 and regenerated Step 3, the agent had lost enough context that the email draft was generic and disconnected from the specific patterns we'd found.\n\nThe task wasn't impossible. The AI had all the capabilities needed. But the workflow broke because multi-step tasks require human-like judgment about when to branch, when to backtrack, and when to ask for clarification—and current AI agents don't handle these meta-decisions well.\n\n## Where AI Agents Actually Break\n\nAfter running dozens of similar experiments, I've identified the specific failure modes that plague multi-step AI workflows: [...] Ambiguity resolution fails silently. When an AI agent encounters ambiguity—multiple valid interpretations of a step—it doesn't stop to ask. It picks one interpretation (often the first or most common) and continues. By the time you realize it went the wrong direction, it's three steps downstream and the context is contaminated.\n\nContext windows create artificial boundaries. Long multi-step workflows exceed token limits. The agent starts forgetting early decisions. Step 7 might contradict Step 2 because the original context has been truncated. Humans maintain a mental model of the entire task; agents lose coherence as context windows fill. [...] Progress isn't resumable. If a multi-step workflow breaks at Step 5 of 8, you can't just fix Step 5 and continue. The entire context is lost. You're starting from scratch. There's no equivalent of \"pick up where we left off\" in most agent frameworks.\n\n## The Task Types That Work vs. Those That Don't\n\nThrough experimentation, I've developed a rough taxonomy of what current AI agents handle well versus where they consistently break:\n\nTasks that work:\n\n Linear workflows with no branching (\"parse this, transform that, output result\")\n Single-domain operations where context is narrow and well-defined\n Tasks where every step has exactly one correct next action\n Workflows where intermediate failures are obvious and early\n Short sequences (3-4 steps max) that fit comfortably in context windows",
+      "tavilyScore": 0.6719013,
+      "query": "frustrated with AI agents losing context between tasks",
+      "a": {
+        "score": 7,
+        "reason": "Practitioner describing context loss and coordination failure in multi-step agent work — a core problem AutoByteus solves.",
+        "quote": "the agent had lost enough context that the email draft was generic and disconnected",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "reason": "First-person account of repeated agent workflow failures, lost context, and poor multi-step judgment indicates a related pain.",
+        "quote": "the agent had lost enough context that the email draft was generic and disconnected",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "dev.to",
+      "url": "https://dev.to/whoffagents/self-hosted-pantheon-vs-claude-managed-agents-a-real-cost-comparison-3o9o",
+      "title": "Self-Hosted Pantheon vs Claude Managed Agents — A Real Cost Comparison - DEV Community",
+      "content": "### What Self-Hosted Gives You\n\n| Feature | Managed | Self-Hosted |\n --- \n| Custom orchestration logic | ❌ API-constrained | ✅ Full control |\n| Filesystem access | ❌ Sandboxed | ✅ Native |\n| Local tool execution | ❌ Limited | ✅ Full shell |\n| Data leaves your machine | ✅ (it does) | ✅ Stays local |\n| Custom inter-agent protocols | ❌ Anthropic's format | ✅ PAX or anything |\n| Debugging visibility | ❌ Black box | ✅ Watch sessions live |\n| Model mixing | ❌ Claude only | ✅ Any model |\n\n## The Filesystem Problem [...] Pantheon (self-hosted): tmux-based persistent Claude Code sessions on local/VPS hardware. Custom orchestration via file-based coordination, PAX-format handoffs, and an Atlas orchestrator god session.\n\nBoth approaches run Claude models. The difference is who runs the infrastructure.\n\n## Pricing at Scale\n\n### Managed Agents\n\n### Pantheon (self-hosted)\n\nVerdict: Self-hosted saves 60–70% at moderate scale. Managed Agents pricing inverts once you hit 4+ persistent agents.\n\n## Control Tradeoffs\n\n### What Managed Agents Give You [...] ## The Real Question\n\nThe managed vs. self-hosted debate isn't about technology. It's about what you're building.\n\nIf agents are a feature you're selling → Managed makes sense.  \n  \nIf agents are your production infrastructure → Self-hosted wins.\n\nPantheon is production infrastructure. Every god session has real filesystem access, runs real deployments, and coordinates through real files. No amount of hosted convenience is worth losing that.\n\nBut for teams building the next Whoff Agents — selling agent capabilities to others — Managed Agents at $0.08/session-hour is a reasonable starting point. Just model your pricing before you scale.\n\n## Resources",
+      "tavilyScore": 0.6378207,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 7,
+        "reason": "Cost/feature comparison of self-hosted vs managed agents; audience actively evaluating self-hosted orchestration options.",
+        "quote": "Model mixing | ❌ Claude only | ✅ Any model",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Comparison and promotion of a self-hosted orchestration alternative, not a prospective customer seeking help.",
+        "quote": "Custom orchestration via file-based coordination, PAX-format handoffs",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "Medium",
+      "url": "https://medium.com/@unicodeveloper/claude-managed-agents-what-it-actually-offers-the-honest-pros-and-cons-and-how-to-run-agents-52369e5cff14",
+      "title": "Claude Managed Agents: What It Actually Offers, the Honest Pros and Cons, and How to Run Agents Yourself | by unicodeveloper | Medium",
+      "content": "Self-host if:\n\n You need model flexibility (mixing Claude, GPT-5, open-source models for different tasks)\n Data privacy requirements mean agent workloads can’t leave your infrastructure\n You’re running high-volume workloads where $0.08/session-hour adds up\n You need features in “research preview” to be stable and available now\n You already have engineering capacity to own the infrastructure layer\n You’re in a regulated industry with strict data residency requirements\n\nConsider Multica if: You want the team/task management UX (agents as colleagues, skill sharing, Kanban) with multi-model flexibility and self-hosting. [...] ## Get unicodeveloper’s stories in your inbox\n\nJoin Medium for free to get updates from this writer.\n\nModel compatibility: Claude Code, OpenAI Codex, OpenClaw, OpenCode. Vendor-neutral by design.\n\nWhere it falls short vs. Claude Managed Agents: No container-level sandboxing with credential vault isolation. No tool-call tracing at the level Claude Console provides. It’s an orchestration and task management layer on top of existing CLIs, not a compute execution infrastructure. If you need deep security isolation (credential vaults, scoped network access per agent run), Multica doesn’t provide that out of the box.\n\nWhere it wins: Multi-model, fully self-hostable, richer team collaboration UX (Kanban boards, agent profiles, skill sharing), and zero vendor dependency. Free to self-host. [...] Anthropic’s enterprise tier has data privacy commitments, but that’s a different question from whether you want your most sensitive operational data flowing through a third-party cloud at all. The developer community has been vocal about this: “security nightmare” comes up frequently when agents have access to real systems.\n\n### Pricing at scale needs modeling\n\n$0.08 per session-hour sounds cheap. For a fleet of agents processing long tasks, model the numbers before you commit. A 24-agent system each running 8-hour daily tasks is $15.36/day in session overhead, before inference costs. At some point, you might have to ask yourself if its cheaper to just have an engineer handle it especially if you’re not making the kind of money from customers that offsets the cost.",
+      "tavilyScore": 0.61230963,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 7,
+        "reason": "Article laying out exactly when to self-host agents — model flexibility, privacy, cost — matching product's value props.",
+        "quote": "Data privacy requirements mean agent workloads can’t leave your infrastructure",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Article gives self-hosting criteria and recommends another team/task management product rather than expressing buyer intent.",
+        "quote": "You need model flexibility (mixing Claude, GPT-5, open-source models for different tasks)",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "dev.to",
+      "url": "https://dev.to/apexforge_dev/building-a-local-first-multi-agent-orchestration-system-with-autonomous-ai-workers-17mb",
+      "title": "Building a local-first multi-agent orchestration system with autonomous AI workers - DEV Community",
+      "content": "Title: Building a local-first multi-agent orchestration system with autonomous AI workers - DEV Community\n## DEV Community. Cover image for Building a local-first multi-agent orchestration system with autonomous AI workers. # Building a local-first multi-agent orchestration system with autonomous AI workers. Local-first AI systems and autonomous workflows are becoming increasingly important as more developers move toward self-hosted and privacy-oriented infrastructures. One idea that kept resurfacing during development was:. What would a fully self-hosted multi-agent orchestration platform look like? Most AI agent systems today feel heavily cloud-centric and fragmented. ApexForge Swarm is being designed as a more systems-oriented approach — a platform where autonomous agents can coordinate tasks, execute tools and interact with local LLMs while remaining modular, extensible and privacy-focused. ## The Core Idea. The architecture is currently centered around a supervisor/worker model. The supervisor agent is responsible for:. Worker agents act as specialized execution units that can:. The long-term goal is building a modular orchestration platform focused on:. ## Current Areas of Experimentation. Current development is focused on:. One realization during development has been how quickly orchestration becomes more important than the model itself. Managing coordination, memory, tooling and execution flow often becomes more complex than the inference layer. ## Why Local-First? One of the major goals behind ApexForge Swarm is reducing dependency on cloud-only workflows. The platform is being explored around concepts such as:. The project is still heavily experimental, but the architecture is starting to come together. Feedback from people experimenting with local-first AI systems, orchestration runtimes or autonomous workflows would be greatly appreciated. Are you sure you want to hide this comment? Hide child comments as well. For further actions, you may consider blocking this person and/or reporting abuse. ### Trending on DEV Community Hot. Thank you to our Diamond Sponsors for supporting the DEV Community. Google AI - Official AI Model and Platform Partner. Google AI is the official AI Model and Platform Partner of DEV. Neon is the official database partner of DEV. Algolia is the official search partner of DEV. DEV Community — A space to discuss and keep up software development and manage your software career. Built on Forem — the open source software that powers DEV and other inclusive communities. Made with love and Ruby on Rails.",
+      "tavilyScore": 0.60480744,
+      "query": "looking for local-first multi-agent orchestration tool with model choice per agent",
+      "a": {
+        "score": 7,
+        "reason": "Builder of a local-first multi-agent orchestration system — directly adjacent problem and audience.",
+        "quote": "What would a fully self-hosted multi-agent orchestration platform look like?",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Builder article introducing another local-first multi-agent orchestration system, so primarily competitive self-promotion.",
+        "quote": "What would a fully self-hosted multi-agent orchestration platform look like?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/omidsaffari_cursor-self-hosted-machines-draws-its-security-activity-7501283685271240704-Tg3R",
+      "title": "Cursor Self-Hosted Machines draws its security boundary through the middle of one agent session.\n\nThe commands move to your network. The model and planning remain in Cursor’s cloud.\n\nThat split can… | Omid Saffari",
+      "content": "But the loop cannot plan blind. Selected file contents, terminal output, diffs, screenshots, local MCP results, and routing metadata still go back to Cursor. Privacy Mode keeps that code out of training. It does not make the session offline.\nThis lets a security team approve two separate things: where tools execute, and where the context used by the model is processed. Calling the whole setup “self-hosted” and stopping the review there misses the second half.\nThe same split applies to cost. Managed Cloud Agents include the execution machine. Self-hosted agents keep Cursor’s model charges, require an Enterprise contract for Team Pools, and add the worker bill plus base-image maintenance, isolation, patching, cleanup, and capacity. [...] Cursor’s Cloudflare template makes that visible. The smallest reference shape is 0.5 vCPU, 4 GiB of memory, and 8 GB of disk. Under one specific model of 100 one-hour sessions plus a five-minute idle window, the container line comes to about $11.993 for the month after included usage.\nThat figure excludes the Enterprise contract, model use, Worker and Durable Object usage, logs, egress, R2, and the people maintaining it.\nSelf-host when private tools, custom hardware, or a custom image justify owning the worker. If managed networking already reaches what the agent needs, the extra fleet buys no new model capability.\nApprove the execution boundary and the context boundary separately, then price both. [...] 5. End at a pull request with test evidence. Keep CI, human review, staging, and release unchanged.\nThat turns the agent into an asynchronous implementation lane, not an unsupervised owner of production.\nThe business math then gets simple. Take a 40-hour task at an illustrative $100 an hour. Human-led implementation costs $4,000.\nIf the agent-led lane needs four 30-minute checkpoints and 3 hours of final review, the team spends 5 human hours, or $500. That leaves a maximum of $3,500 for model and tool costs before the labor advantage disappears.\nIt is not a promised $3,500 saving. If the pull request needs another 35 human hours of correction, the advantage is gone before the model bill even matters.",
+      "tavilyScore": 0.7298087,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 6,
+        "reason": "Discussion of privacy boundaries and cost in agent execution; audience overlaps with local-first control needs, but no explicit ask.",
+        "quote": "Calling the whole setup “self-hosted” and stopping the review there misses the second half.",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Technical analysis of Cursor self-hosting privacy and cost tradeoffs, not a person seeking orchestration help.",
+        "quote": "Calling the whole setup “self-hosted” and stopping the review there misses the second half.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/addyosmani_ad-ai-programming-activity-7495366408336433152-7K5I",
+      "title": "Self-hosted AI agent platform for secure team collaboration | Addy Osmani posted on the topic | LinkedIn",
+      "content": "Agents at team scale need somewhere to run that you can actually trust. Say you and your team are using AI coding agents - Claude Code, Codex, Cursor, often several at once. On a laptop, that's fine for a quick change. At team scale it's a real problem: each agent has full access to your machine, your keys, your network. No isolation. No audit trail. No central control over models or spend. That's the gap Coder closes. It's a self-hosted platform where your developers and their AI agents work together on your own infrastructure. The agent loop runs in your Coder control plane and workspace - only the model's answer comes over the wire. Check them out:  I ran it end to end. On a real app - the RealWorld blog - I delegated one task from a chat: \"add an estimated reading time to each [...] A quick heads U This video is sponsored by Coder. Let's dive right in. Say you and your team are using AI coding agents, Claude Code Codex, Open Code, maybe a number of others. Now these are all running on your laptops, and this can work totally fine if you're a solo developer. But if you're on a team and you're working at scale, things totally change. Now this is a real problem that you have a team scale. Each agent has full access to your machine, your keys, your network. There's no isolation, there's no audit trail, so security doesn't have visibility into what the AI did. There's no central control over models, spend, or guardrails. And this is the gap that Coder was really built to close. It's really, really cool. I want to show you it in action. Coder is kind of a self hosted [...] LikeReply1 Reaction 2 Reactions \n\nImage 8: Kais Neffati, graphic\n\nKais Neffati 3d \n\n   Report this comment\n\nThe infrastructure layer is becoming part of AI governance. As agents move from individual developer tools to team scale workflows, isolation, access control, observability and cost visibility become just as important as the model itself. The interesting question is no longer only which agent performs best, but whether you can operate it safely and predictably at scale.\n\nLikeReply1 Reaction 2 Reactions \n\nImage 9: Benjamin Rotshtein, graphic\n\nBenjamin Rotshtein 3d \n\n   Report this comment\n\nWhat isn't audited doesn't exist. The isolation is table stakes; the audit stream is the actual unlock. What's the first thing you'd audit: prompts, keys, or tool calls?",
+      "tavilyScore": 0.6999727,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 6,
+        "reason": "Vendor self-promotion for Coder, but articulates the exact team-scale agent control problem AutoByteus targets.",
+        "quote": "No isolation. No audit trail. No central control over models or spend.",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Strongly articulates team-scale agent isolation, audit, model, and spend problems, but the post promotes Coder.",
+        "quote": "No isolation. No audit trail. No central control over models or spend.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "dev.to",
+      "url": "https://dev.to/thegdsks/i-built-a-self-hosted-ai-agent-that-runs-on-a-raspberry-pi-161e",
+      "title": "I Built a Self-Hosted AI Agent That Runs on a Raspberry Pi - DEV Community",
+      "content": "profClaw sits in a different spot: a self-hosted, multi-provider agent engine with a proper TUI, a task queue, multi-agent orchestration, and integrations across 22 chat platforms.\n\n## What profClaw actually is\n\nprofClaw is a Node.js agent runtime you install and run yourself. Here's the short version of what it ships with:\n\n`/commit`\n`/review-pr`\n`/deploy`\n`/summarize`\n`/web-research`\n`/analyze-code`\n`/ticket`\n`/image`\n\nThe task queue is backed by BullMQ with dead-letter queues, retry logic, and priority scheduling — not an in-memory queue that drops work if the process restarts.\n\nCost tracking is built in. You can set per-token budgets per provider and get alerts when you're approaching limits.\n\n## The TUI [...] itskondrat profile image\n\nself-hosting the context is the real unlock for teams with compliance constraints. cloud agents work fine until someone asks who has access to your code context - then suddenly the Pi tier looks very attractive.\n\nthegdsks profile image\n\nExactly this. \"Who has access to your code context\" is where the cloud pitch falls apart for a lot of teams. The Pi tier was originally just a cost play but the compliance angle ended up being way more interesting. Once context stays on your network, a whole class of enterprise objections just goes away.\n\nitskondrat profile image [...] This is actually the direction I find much more interesting than \"just another AI coding tool\". Control over the environment is a huge deal. Once you start dealing with real projects (or even just sensitive internal tools), sending everything through a third-party API quickly becomes a blocker, not a feature.  \nAlso really like the idea of separating agent runtime from model. Most tools today bundle everything together, which makes them easy to start with - but painful to extend or adapt later.  \nThe Raspberry Pi angle, is especially cool. Running something like this on cheap, local hardware makes AI feel more like infrastructure, and less like a subscription.",
+      "tavilyScore": 0.64857763,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 6,
+        "reason": "Self-promotion of a competing self-hosted multi-provider agent runtime, but signals an active builder audience.",
+        "quote": "a self-hosted, multi-provider agent engine with a proper TUI, a task queue, multi-agent orchestration",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Product build announcement for a self-hosted multi-provider agent engine with orchestration, making it an alternative rather than a lead.",
+        "quote": "a self-hosted, multi-provider agent engine with a proper TUI, a task queue, multi-agent orchestration",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "dev.to",
+      "url": "https://dev.to/gabrielanhaia/multi-agent-coordination-message-bus-patterns-that-keep-agents-sane-57gd",
+      "title": "Multi-Agent Coordination: Message-Bus Patterns That Keep Agents Sane - DEV Community",
+      "content": "A handoff transfers control. Agent A finishes, hands the whole conversation to Agent B, and steps out. This reads well in a demo. In production it means the transcript grows on every hop, and by the fourth agent you are paying to re-read a conversation nobody trimmed. Handoffs also lose the parent: once A hands off to B, nobody is holding the original task to check the final answer against it.\n\nA shared bus keeps a supervisor in charge. Workers never talk to each other. They receive a small typed task, do the work, and return a small typed artifact to the supervisor, which composes the result. This is the shape of Anthropic's research system, and it is the default you should reach for. [...] The test is one question: does a worker need to see what a sibling just produced? If yes, you do not have parallel workers. You have a sequential pipeline pretending to be a team, and you should run it as one ordered chain, not as free-form handoffs.\n\nHere is the bus shape in the bare Anthropic SDK. Three workers fan out, the supervisor merges. No worker touches another worker. [...] `await`\n\n## The one rule to keep\n\nIf a worker needs to see what a sibling produced, you do not have a parallel team. Keep workers isolated, hand them small typed tasks, make them return small typed artifacts, and put the budget in the envelope. Do that and the supervisor-worker shape stays cheap, traceable, and debuggable. Skip it and the same pattern turns into a group chat that argues with itself until the bill arrives.",
+      "tavilyScore": 0.647018,
+      "query": "how do I coordinate multiple AI agents with handoff rules",
+      "a": {
+        "score": 6,
+        "reason": "Technical discussion of agent coordination patterns; audience includes people building multi-agent systems, though no explicit ask.",
+        "quote": "Handoffs also lose the parent: once A hands off to B, nobody is holding the original task",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Practitioner discussion identifies concrete handoff context and cost failures relevant to orchestration, though framed as guidance.",
+        "quote": "Handoffs also lose the parent: once A hands off to B, nobody is holding the original task",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/daily-ai-wire_crew-multi-agent-orchestration-tool-for-activity-7425856006775238658-5coD",
+      "title": "Crew: Multi-Agent Orchestration Tool for AI Development | Daily AI Wire News",
+      "content": "We’ve just open-sourced AgentOS 🚀\nAfter months of deep engineering work, I’m excited to share the first public release of AgentOS — a system-level, local-first AI agent orchestration platform built for control, auditability, and real execution.\n🔗 GitHub: \nWhat is AgentOS?\nAgentOS is not another chat-based AI tool.\nIt’s an execution system where every action is a first-class task with:\na clear lifecycle\nexplicit checkpoints\nhuman-in-the-loop governance\nand a complete audit trail\nThe goal is simple:\nmake AI agents operable, interruptible, and trustworthy in real engineering workflows.\nWhat you can do today (v0.3.x)\n✅ Task-centric execution\nAll work is modeled as tasks, not ephemeral conversations\nDeterministic state transitions with full lineage\n✅ Human-in-the-loop control [...] Designed for post-hoc analysis, not just success paths\n✅ Local-first & security-conscious\nRuns entirely on your machine\nNo telemetry, no credential exfiltration\nAPI keys never leave the local runtime\nWhy we built this\nMost AI coding tools today are:\nsession-centric\nopaque\nhard to interrupt\nimpossible to audit after the fact\nAgentOS starts from the opposite assumption:\nAI systems should behave like production systems, not chatbots.\nCurrent status\nArchitecture-stable core\nGovernance semantics frozen\nSuitable for experimentation, evaluation, and advanced workflows\nActively evolving toward richer autonomous and supervised execution\nIf you’re interested in:\nAI agents beyond demos\ncontrolled automation\nhuman-AI collaboration at system scale\nI’d love feedback, issues, or thoughtful discussion. [...] The Maestro is a desktop-based orchestration platform for using AI Agents to automate and manage your projects/repositories and run multiple AI Agents simultaneously. Each AI Agent runs in an isolated session (workspace, conversation history, execution context, etc.) to ensure no two agents interfere with each other. Currently, Maestro supports the following AI Agents:\nClaude Code\nOpenAI Codex\nOpenCode\nSupport for Gemini CLI, and Qwen Coder are planned for future releases.\nBy providing isolation of each Session, Automation capabilities, and a Developer-friendly Web or CLI interface, Maestro allows you to scale your use of AI in the way you want, without sacrificing speed, control, or visibility.\n#ai #ml #genAI #agenticAI #maestro",
+      "tavilyScore": 0.6191835,
+      "query": "looking for local-first multi-agent orchestration tool with model choice per agent",
+      "a": {
+        "score": 6,
+        "reason": "Vendor launch of a competing local-first orchestration platform; signals market activity but is self-promotion.",
+        "quote": "a system-level, local-first AI agent orchestration platform built for control, auditability",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Open-source launch promotion for a directly overlapping local-first agent orchestration platform.",
+        "quote": "a system-level, local-first AI agent orchestration platform built for control, auditability, and real execution.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "dev.to",
+      "url": "https://dev.to/nfrankel/designing-a-team-of-agents-j1b",
+      "title": "Designing a team of agents - DEV Community",
+      "content": "— Create custom subagents\n\nClaude Code provides several built-in subagents: explore, plan, general purpose, status line, and Claude Code guidelines. You can read more about each of them in the documentation.\n\nHowever, and this is where it gets interesting, you can define a specialized subagent through a dedicated Markdown file with a specific front matter in a `.claude/agents` folder. The front matter defines: a name, a description, a model, and a list of available tools. The body describes the subagent's purpose, i.e., its instructions. Here's a sample:\n\n`.claude/agents`\n`---\nname: code-reviewer\ndescription: \"Reviews code for quality and best practices\"\ntools: Read, Glob, Grep\nmodel: sonnet [...] Claude Code's experimental Agent Teams feature is an early implementation: multiple instances work in parallel on a shared codebase, where teammates operate in their own context windows and communicate directly with each other. Anthropic used 16 parallel agents to build a C compiler from scratch that can compile Linux. Cursor ran hundreds of concurrent agents for weeks to build a web browser from scratch and migrate their own codebase from Solid to React.\n\nObviously, I have neither the resources nor the know-how to tackle such a huge undertaking. However, I wanted to design a team to handle smaller tasks.\n\n## Subagents\n\nI recently wrote about subagents.\n\nClaude describes several benefits of using subagents:\n\n— Create custom subagents [...] `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`\n`1`\n`settings.json`\n\nOn the plus side, it pays to invest time in agents. Within or without teams, you explicitly call agents on the command line.\n\n## Conclusion\n\nAutonomous agent teams sit at the top of the agentic engineering ladder. Getting there requires designing agent interactions upfront and solving the autonomy vs. security tradeoff.\n\nThe feature is experimental, and I'd treat it as such, but the direction is clear. We are already spending less time coding directly and more time managing agents. Agents' teams are the next logical step.\n\nTo go further:\n\nOriginally published at A Java Geek on May 3rd, 2026.\n\n## Top comments (23)\n\npic\noljaas profile image",
+      "tavilyScore": 0.61173,
+      "query": "tool to build reusable specialist agent teams for software engineering",
+      "a": {
+        "score": 6,
+        "reason": "Tutorial on building specialist agent teams in Claude Code; audience of builders with related needs.",
+        "quote": "you can define a specialized subagent through a dedicated Markdown file",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Tutorial on configuring Claude Code specialist subagents, relevant technically but not a sales request.",
+        "quote": "you can define a specialized subagent through a dedicated Markdown file",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "Medium",
+      "url": "https://medium.com/predict/context-engineering-in-practice-why-your-agents-forget-things-and-how-to-fix-it-ee64e6f53cd8",
+      "title": "Context Engineering in Practice: Why Your Agents Forget Things and How to Fix It",
+      "content": "Press enter or click to view image in full size\n\nImage 4\n\nYour agent answered a question, perfectly last Tuesday. Ask the same question today. It has no idea what you are talking about.\n\nNot because the model got dumber. Because the agent was never designed to remember. Most AI agents are amnesiac by default. Every session starts cold. Every conversation starts blank. The model that helped you draft that email, analyze that dataset, or debug that code has no memory of any of it the next time you open a new chat window. [...] If you have been building with Claude Code, Cursor, or any agentic framework and noticed that your agent keeps asking you the same questions, forgets decisions you made two hours ago, or gives generic responses despite ten previous conversations — you do not have a prompt problem. You have an architecture problem.\n\nAnd in 2026, there are well-understood patterns to solve it.\n\nThis is the article I wish I had when I first started losing context mid-session and blaming the model.\n\n## Create an account to read the full story.\n\nThe author made this story available to Medium members only.  \nIf you’re new to Medium, create a new account to read this story on us.\n\nContinue in app\n\nOr, continue in mobile web\n\nSign up with Google\n\nSign up with Facebook\n\nSign up with email [...] Sitemap\n\nOpen in app\n\nSign up\n\nSign in\n\n[](\n\nGet app\n\nWrite\n\nSearch\n\nSign up\n\nSign in\n\nImage 1: Unknown user\n\n## Predict\n\n·\nFollow publication\n\nImage 2: Predict\nwhere the future is written\n\nFollow publication\n\nMember-only story\n\nArtificial Intelligence\n\nAI Agent\n\nSoftware Development\n\nProgramming\n\nTechnology\n\n# Context Engineering in Practice: Why Your Agents Forget Things and How to Fix It\n\n## The context window is RAM, not storage. That single misunderstanding is behind most agent failures and here’s the architecture that fixes it..\n\nImage 3: @pramodchandrayan\n\n@pramodchandrayan\n\nFollow\n\n13 min read\n\n·\n\nMay 25, 2026\n\n[](\n\n180\n\n[](\n\n[](\n\nListen\n\nShare\n\nPress enter or click to view image in full size\n\nImage 4",
+      "tavilyScore": 0.5907792,
+      "query": "frustrated with AI agents losing context between tasks",
+      "a": {
+        "score": 6,
+        "reason": "Article on agent memory/context loss; related problem (context persistence) but no explicit ask.",
+        "quote": "your agent keeps asking you the same questions, forgets decisions you made",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Describes a widespread agent memory problem relevant to contextual follow-up work, but remains an instructional article.",
+        "quote": "Your agent answered a question, perfectly last Tuesday. Ask the same question today. It has no idea what you are talking about.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "Medium",
+      "url": "https://medium.com/towards-artificial-intelligence/deploying-ai-agents-to-production-cloud-self-hosted-or-hybrid-6ce8e2905ee2",
+      "title": "Medium",
+      "content": "## Best suited for\n\nSelf-hosted deployment earns its operational burden in two scenarios: when compliance makes it non-negotiable, and when volume makes cloud inference economics unsustainable. Often these arrive together — regulated industries with high-frequency workloads, where keeping data on-premises and controlling inference cost are both requirements rather than preferences. The team capability to run this stack isn’t optional; it’s a prerequisite for the choice to hold.\n\n## Option 3: Hybrid Deployment\n\nHybrid deployment splits your agent’s workload deliberately across cloud and local infrastructure, based on the nature of each task and the data involved. A self-hosted orchestration and routing layer sits in the middle, deciding where each request goes. [...] That’s where the easy part ends.\n\nDeploying an AI agent to production isn’t like deploying a REST API or a microservice. Agents maintain state, execute multi-step workflows, invoke external tools, and often process sensitive data. The infrastructure decisions you make at this stage shape everything that follows — cost, latency, security, compliance, and how easily the system scales months or years later.\n\nIn practice, most production deployments fall into one of three architectures: cloud, self-hosted (local), or hybrid. None is universally better for every workload. Each optimizes for a different set of constraints. This article will help you understand those trade-offs so you can choose the architecture that best fits your workload.\n\n## Why Agent Deployment Is Different [...] ## Best suited for\n\nCloud is the right default for teams that haven’t built ML infrastructure and aren’t planning to — where the priority is getting something into production quickly, the data involved isn’t regulated or confidential, and traffic is unpredictable enough that elastic scaling is a genuine advantage rather than a marketing feature. If none of your constraints push you toward local, start here.\n\n## Option 2: Self-Hosted (Local) Deployment\n\nSelf-Hosted (Local) deployment means everything runs on infrastructure you own and operate. The model weights live on your machines, the agent runtime runs on your servers, and nothing leaves your network unless you decide it should.",
+      "tavilyScore": 0.6521306,
+      "query": "self-hosted agent team orchestration privacy cost control",
+      "a": {
+        "score": 5,
+        "reason": "Generic article on self-hosted deployment tradeoffs; relevant topic but no identifiable person with a need.",
+        "quote": "when compliance makes it non-negotiable, and when volume makes cloud inference economics unsustainable",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "General deployment guidance covering self-hosting and hybrid infrastructure without a personal request or complaint.",
+        "quote": "when compliance makes it non-negotiable, and when volume makes cloud inference economics unsustainable",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Medium",
+      "url": "https://medium.com/@jaberi.mohamedhabib/ai-agent-design-patterns-playlist-part-4-multi-agent-patterns-4a6bbe9335de",
+      "title": "AI Agent Design Patterns Playlist — Part 4: Multi-Agent Patterns",
+      "content": "User request  \n ↓  \nRouter  \n ├── Data agent → SQL, dashboards, metrics  \n ├── Policy agent → approved knowledge base  \n └── Support agent → CRM and ticketing system\nThe router does not need database access. The policy agent does not need permission to modify a customer ticket. Splitting the system lets you apply the least-privilege principle and test each capability independently.\n\n> _Rule of thumb:__add another agent only when it has a distinct role, toolset, permission boundary, or evaluation method._\n\n## 1. Router and handoff pattern\n\nThe router classifies the request and forwards it to the most appropriate specialist.\n\n“Why was my invoice rejected?”  \n ↓  \n Router  \n ↓  \n Billing specialist  \n ↓  \nAnswer based on billing records and policy\n## Router responsibilities [...] Identify the request’s domain or intent.\n   Select a specialist, deterministic workflow, or human queue.\n   Pass only the context needed by the selected destination.\n   Handle low-confidence cases safely.\n\n## Handoff responsibilities\n\nA handoff should preserve the conversation’s important context:\n\n   the user’s original request;\n   relevant facts already collected;\n   constraints and requested output format;\n   a reason for the handoff;\n   what has already been attempted.\n\nAvoid handing the entire transcript to every agent by default. A concise, structured handoff is cheaper, more private, and less likely to confuse the recipient.\n\n## Example routing policy [...] Use schemas, append-only evidence logs, versioning, and conflict rules when several agents write to the same state.\n\n## A runnable Python example: router, specialists, and a supervisor\n\nThis example uses simple deterministic rules rather than an LLM. It demonstrates the architecture: a router chooses a specialist, each specialist returns structured evidence, and a supervisor formats the answer.",
+      "tavilyScore": 0.6338636,
+      "query": "how do I coordinate multiple AI agents with handoff rules",
+      "a": {
+        "score": 5,
+        "reason": "Educational pattern article on multi-agent design; relevant topic but no person expressing a need.",
+        "quote": "add another agent only when it has a distinct role, toolset, permission boundary",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Educational design-pattern article about specialist routing and permissions, with no explicit personal need.",
+        "quote": "add another agent only when it has a distinct role, toolset, permission boundary, or evaluation method.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/matt-kenyon-50959964_working-on-multiple-tasks-with-ai-is-insanely-activity-7445830922454634496-0v4_",
+      "title": "Managing Multiple Tasks with AI: The Context-Switching Conundrum | Matt Kenyon posted on the topic | LinkedIn",
+      "content": "Working on multiple tasks with AI is insanely draining. This is not just true for developers, but marketers and sales folks as well. Don't get me wrong, Claude Code cooking in 6 parallel terminals is a rush, but it left me feeling absolutely exhausted and with 6 partially-completed tasks. That's because the problem is not the task itself, but the constant context-switching. Here's my solution so far: - One terminal window open working with Claude Code on a high cognition task (strategy, research, brainstorming, editing, reporting) - A second terminal window open working with Claude Code on a low cognition task (organizing my knowledge base, cleaning up my desktop or HDs, doing independent research that doesn't need my help) THAT'S IT. NO MORE. Humans were not built for the kind of speed [...] Lenny Rachitsky  Lenny Rachitsky is an Influencer\n\nDeeply researched product, growth, and career advice\n\n\"Using coding agents well is taking every inch of my 25 years of experience as a software engineer, and it is mentally exhausting. I can fire up four agents in parallel and have them work on four different problems, and by 11am I am wiped out for the day. There is a limit on human cognition. Even if you're not reviewing everything they're doing, how much you can hold in your head at one time. There's a sort of personal skill that we have to learn, which is finding our new limits. What is a responsible way for us to not burn out, and for us to use the time that we have?\" Don't miss my full conversation with the great Simon Willison: \n\n  3\n\nLike   Comment [...] IT. NO MORE. Humans were not built for the kind of speed AI offers for knowledge work, and we DEFINITELY weren't built to multi-task between high cognition tasks like this.",
+      "tavilyScore": 0.58593065,
+      "query": "frustrated with AI agents losing context between tasks",
+      "a": {
+        "score": 5,
+        "reason": "Practitioner complaining about multi-task AI context-switching pain — related coordination need, though single-agent focused.",
+        "quote": "it left me feeling absolutely exhausted and with 6 partially-completed tasks",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "reason": "A real user explicitly complains about exhaustion and incomplete work from managing multiple parallel AI tasks.",
+        "quote": "it left me feeling absolutely exhausted and with 6 partially-completed tasks.",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L3",
+      "text": "The per-profile provider/model choice is the right call. In practice, the tricky part is keeping orchestration state separate from model config so swapping a worker from Ollama to an OpenAI-compatible endpoint doesn't break the graph. How are you handling per-agent context windows and token budgets when mixing local and remote models? Disclosure: I work on AutoByteus, and we hit similar friction around evaluation when agents use different providers.",
+      "usage": {
+        "in": 448,
+        "out": 92
+      },
+      "latencyMs": 2697
+    },
+    {
+      "leadId": "L11",
+      "text": "“When feedback comes in, those skills get updated” is a useful starting point, but I’d be careful about updating every skill in a trajectory from one outcome. A successful response can still contain weak steps, and a failed one can include useful skills. Attributing feedback at the step or skill level, with confidence and rollback, makes the loop safer. Disclosure: I work on AutoByteus, where evaluation-driven feedback informs future tasks.",
+      "usage": {
+        "in": 420,
+        "out": 95
+      },
+      "latencyMs": 2601
+    },
+    {
+      "leadId": "L12",
+      "text": "Separating task state from conversation memory is the cleanest way to handle this. Keeping raw tool outputs out of the window is essential for cost control. Disclosure: I work on AutoByteus, where we use that structured record to let specialist agents hand off work. It also helps to store feedback from failures as reusable skills, so the next session starts with better instructions rather than just a summary of what happened.",
+      "usage": {
+        "in": 448,
+        "out": 89
+      },
+      "latencyMs": 5142
+    },
+    {
+      "leadId": "L2",
+      "text": "Selection of the right model for every operation\" is the key insight. The harder problem is knowing which model actually works best for each operation. Without evaluation, you're guessing based on benchmarks that may not reflect your tasks. Disclosure: I work on AutoByteus, and we've found that capturing feedback from specialist agent outputs is what turns configurability into actual improvement over time.",
+      "usage": {
+        "in": 423,
+        "out": 81
+      },
+      "latencyMs": 3669
+    },
+    {
+      "leadId": "L4",
+      "text": "The \"reusable, opinionated templates and conventions\" framing is the right abstraction — most teams rebuild this scaffolding per project. One thing worth exploring: making the conventions themselves evolvable, so session feedback refines the templates rather than just the config. Disclosure: I work on AutoByteus, where agent feedback becomes reusable skills for the next task. Curious how your Agent Builder decides which patterns are worth codifying versus discarding.",
+      "usage": {
+        "in": 421,
+        "out": 94
+      },
+      "latencyMs": 2527
+    }
+  ],
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3892,
+      "tokensOut": 1186,
+      "cost": 0.0011768,
+      "latencyMs": 5413,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3851,
+      "tokensOut": 1072,
+      "cost": 0.018422,
+      "latencyMs": 18181,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 1.95,
+      "top5Overlap": 3
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 500,
+      "out": 797,
+      "cost": 0.0011064,
+      "latencyMs": 6473
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3892,
+      "out": 1186,
+      "cost": 0.0011768,
+      "latencyMs": 5413
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3851,
+      "out": 1072,
+      "cost": 0.018422,
+      "latencyMs": 18181
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 2160,
+      "out": 451,
+      "cost": 0.008830000000000001,
+      "latencyMs": 5142
+    }
+  ],
+  "scorerError": null
+}

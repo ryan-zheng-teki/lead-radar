@@ -1,0 +1,15 @@
+# IMP-04
+# Command: PORT=3012 SCORER_B_MODEL=nonexistent/model node server.js; curl POST /api/run {"url":"https://www.tavily.com"}
+# Commit: 6d763ea | Env: Linux, Node v22.23.3, live Nebius + Tavily keys via LEAD_RADAR_ENV_FILE | Date: 2026-11-20
+
+stage Reading the website with Tavily and profiling the product   
+profile  6 queries  
+stage Searching public posts with 6 queries   
+candidates    
+stage Scoring 20 leads with zai-org/GLM-5.3-Flash (reference nonexistent/model runs in parallel)   
+leads    
+stage Drafting 5 openers with moonshotai/Kimi-K3.1-Pro   
+drafts   5 drafts 
+reference Nebius nonexistent/model failed: HTTP 404 {"error":{"type":"invalid_request_error","message":"The model `nonexistent/model` does not exist.","param":"model","co   
+comparison Nebius nonexistent/model failed: HTTP 404 {"error":{"type":"invalid_request_error","message":"The model `nonexistent/model` does not exist.","param":"model","co   
+done    totalMs 20065

@@ -1,0 +1,159 @@
+# Implementation Handoff — lead-radar-mvp
+
+## Upstream Artifact Package
+
+- Upstream review applicability and handoff-rule result: direct implementation (Medium + Low, architecture review not selected), per `handoff.md`.
+- Requirements doc: `/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-20/lead-radar-mvp/tickets/lead-radar-mvp/requirements-doc.md` (SR-001)
+- Investigation notes: `.../tickets/lead-radar-mvp/investigation-notes.md`
+- Solution revision record: `.../tickets/lead-radar-mvp/solution-revision-record.md`
+- Design spec: `.../tickets/lead-radar-mvp/design-spec.md`; project `DESIGN.md` at the repo root
+- Supplemental task artifacts: none
+- Design review report: `N/A — not applicable`
+- Architecture review revision record: `N/A — not applicable`
+- Triggering rework report: N/A (initial)
+
+## Current Implementation Summary
+
+- Implementation cycle: `Initial`
+- Implementation revision record: `.../tickets/lead-radar-mvp/implementation-revision-record.md`
+- Current implementation revision ID: `IR-001`
+- Code commit: `6d763ea` on `ticket/lead-radar-mvp` (handoff docs and evidence are in the next commit)
+- Related solution revision IDs: `SR-001`. ARCH-REV / CRR / API-REV / DR: `N/A`. Triggering finding IDs: `N/A`.
+
+A Node 22 app with zero dependencies. `npm start` serves http://localhost:3000. A company URL streams NDJSON progress through these steps:
+
+1. Profile: Tavily extract + domain search → DeepSeek-V4.1-Flash JSON.
+2. Lead search: 6 Tavily advanced searches over public sources, dedupe, drop the company's own domain, keep the top 20.
+3. Scoring A: GLM-5.3-Flash ranks the leads. Reference scorer B (Kimi-K3.1-Pro) runs in parallel.
+4. Drafts for the top 5 with A ≥ 5 (Kimi, thinking off).
+5. Comparison: tokens, live $ prices, latency, mean absolute score difference, top-5 overlap.
+6. The run is saved to `runs/<ts>-<domain>.json`.
+
+The page shows:
+- the stages;
+- the profile with its sources;
+- each step's model and why;
+- drafts with Approve / Edit / Reject / Copy (browser-only, nothing is sent);
+- a leads table with A and B scores and verified/unverified quotes;
+- a cost/speed/quality card.
+
+`scripts/compare.js` (`npm run compare`) prints the README table. README.md and DEMO.md are written with real numbers.
+
+## Routing Classification (Mandatory)
+
+- Task size: `Medium`
+- Architecture risk: `Low`
+- Design classification section / evidence reference: design-spec.md "Classification"
+- Classification confirmed or changed: `Confirmed`
+- Evidence and rationale: 16 small files (the largest is `public/app.js` at 195 lines; all others are under 80), one process, no persistence beyond disposable run files, no deployment. The escalation trigger did not fire: every real run returned 20 candidates in 29–37 s (under 3 min and at least 8).
+- Selected route: `Direct API/E2E` (via `get_handoff_rules`)
+- Lightweight implementation self-review completed for the direct route: `Yes` (see Known Risks and the design refinements below)
+- New design impact or escalation trigger: `None`
+
+## Reviewed Behavior Implementation Trace
+
+| Behavior ID | Approved Change / Preserved Outcome | Implemented Production Path / Key Files | Result / Notes |
+| --- | --- | --- | --- |
+| REQ-001 / AC-001 | Profile from the site, with sources | `src/steps/profile.js` (Tavily extract + `include_domains` search → `chatJson` with an `accept` shape check) | Pass: profiles for autobyteus.com, tavily.com, linear.app with 3–5 source URLs |
+| REQ-002 / AC-002 | ~15–25 deduped public candidates | `src/steps/leads.js` | Pass: 20 per run, platform labels, own domain dropped |
+| REQ-003 / AC-002 | 0–10 score, reason, verbatim quote, verified flag | `src/steps/score.js`, `src/quote.js` | Pass: 60/60 quotes verified per scorer in the final runs. One earlier run showed 19/20 and flagged the missing quote ⚠ |
+| REQ-004 | Grounded drafts of at most 70 words, with disclosure, for the top N | `src/steps/draft.js` | Pass: 4–5 drafts per run, each with "disclosure: I work on …" |
+| REQ-005 / AC-003 | Approve / Edit / Reject and copy; nothing sent | `public/app.js` (browser state only; no action makes a network call) | Pass in the browser: approve → "Approved", reject → "Rejected", edit + save → "Approved (edited)", with the edited text kept |
+| REQ-006 | Model per step and why, in the UI and the README | `src/config.js modelPlan()` → `GET /api/config`; README table | Pass |
+| REQ-007 / AC-004 | A/B on the same candidates: tokens, $, latency, agreement; saved run JSON | `src/pipeline.js`, `src/compare.js`, `src/nebius.js getPrices()` | Pass |
+| REQ-008 / AC-006 | Secrets never logged, sent or committed | `src/config.js`; errors carry only the status and response text | Pass (IMP-06) |
+| REQ-009 / AC-008 | One command | `package.json` `npm start` | Pass locally; the fresh-clone check is left to API/E2E |
+| REQ-010 / AC-007 | README with real numbers from 3 companies | `README.md` (table generated by `scripts/compare.js` from the final runs) | Pass |
+| REQ-011 / AC-010 | Demo script of at most 3 minutes, plus a video script | `DEMO.md` | Pass |
+| REQ-012 / AC-009 | Progress and readable errors | `server.js` (URL validation, missing keys); profile step ("Could not read the site") | Pass (IMP-03, IMP-04) |
+| AC-005 | Run takes about 60–90 s | — | Pass: full run 29–37 s; leads and drafts visible at about 21 s |
+
+- Changes stayed within the requirements doc's Scope Guardrail: `Yes`
+
+## Implementation refinements of the design (no behavior change)
+
+1. **Reference scorer B no longer blocks the result.** The design runs A ∥ B. In one live run Kimi took 94 s (a failed parse, then a retry under load), and that held back the whole page.
+   - Now A ranks the leads and the drafts start as soon as A returns.
+   - B keeps running in parallel under a 75 s total deadline, then fills in its column and the comparison (`reference` event).
+   - If B fails or times out, the run still completes and shows the reason. If A fails, B ranks the leads.
+   - Same spine and owners; the change is only inside `src/pipeline.js`.
+2. **The profile `max_tokens` is 3000, not 600.** DeepSeek's reasoning tokens count toward the budget, and one live reply was cut off at 1200 and returned no fields. `chatJson` and `parseJsonBlock` now take an `accept` shape check, so an unexpected shape triggers the existing single retry. This follows the DESIGN.md convention of a generous `max_tokens`.
+3. `POST /api/decision` (optional in the design) was not built. Decisions stay in the browser.
+
+## Key Files Or Areas
+
+`server.js`, `src/{config,nebius,tavily,json,quote,compare,pipeline}.js`, `src/steps/{profile,leads,score,draft}.js`, `public/{index.html,app.js,style.css}`, `scripts/compare.js`, `package.json`, `README.md`, `DEMO.md`.
+
+## Important Assumptions
+
+- Run with `LEAD_RADAR_ENV_FILE=/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-20/lead-radar/.env` (the worktree has no `.env`).
+- Prices come live from `/v1/models?verbose=true`. A missing price shows "n/a".
+
+## Known Risks
+
+- R-1: many candidates are articles or blogs, mostly from Medium and dev.to. The scorers rate them low, but they stay in the list. The number of leads with A ≥ 7 ranged from 1 to 10 per company.
+- R-2: Kimi latency varies; scoring B took 15–94 s. It no longer blocks the result and is capped at 75 s.
+- The scorers have a systematic offset: A scores about 2 points higher than B on average (documented in the README).
+- Model replies in an unexpected shape get one retry, then a readable error.
+
+## Task Design Health Assessment Implementation Check
+
+- Reviewed change posture: greenfield. Root cause: N/A. Refactor decision: `No Refactor Needed`.
+- Implementation matched the reviewed assessment: `Yes`. Routed as Design Impact: `N/A`.
+
+## Legacy / Compatibility Removal Check
+
+- Backward-compatibility mechanisms: `None`. Legacy retained: `No`.
+- Dead code removed: `Yes`. A per-call timeout option was tried and then reverted rather than left unused. Dead code elsewhere: none.
+- Shared structures tight: `Yes`. Shared guidance reapplied: `Yes`. Deviations from a design principle: `None`.
+- Size guardrails: `Yes` (all files under 200 lines).
+
+## Persisted Data Transition Check
+
+- `Discard or Rebuild`: the design says run files are disposable, and `runs/` is gitignored. Implementation follows it: `Yes`.
+
+## Environment Or Dependency Notes
+
+Node v22.23.3; no npm install. Server for the browser check: `LEAD_RADAR_ENV_FILE=… node server.js` on port 3000. A server from this session may still be running there.
+
+## Checks Run
+
+Evidence folder: `/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-20/lead-radar-mvp/tickets/lead-radar-mvp/evidence/`
+
+| Check ID | Command Or Steps | Commit Tested | Environment | Code It Exercises | Behavior / Criteria IDs | Result | Evidence Files | Look For |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| IMP-01 | `node --check` on every JS file | 6d763ea | Linux, Node 22.23.3 | all | — | Pass | `IMP-01-node-check.log` | 16 `ok` lines |
+| IMP-02 | 3 parallel live runs via `curl -X POST /api/run` (autobyteus.com, tavily.com, linear.app), then `node scripts/compare.js` | 6d763ea | live Nebius + Tavily | whole pipeline, compare | AC-001/002/004/005/007 | Pass | `IMP-02-real-runs-compare.log`, `IMP-02-runs/*.json` | `"leadCount":20` ×3; `\| **Average** \| 20 (4.3) \| $0.0011 \| $0.0190 \| 17.1×` |
+| IMP-03 | Error paths: `"not a url"`, empty URL, unreachable domain, server with no keys | working tree before 6d763ea (the server.js and profile error code is the same in 6d763ea) | live | `server.js`, `src/steps/profile.js`, `src/config.js` | AC-009 | Pass | `IMP-03-error-paths.log` | `Missing NEBIUS_API_KEY and TAVILY_API_KEY` |
+| IMP-04 | Live run with `SCORER_B_MODEL=nonexistent/model` | 6d763ea code | live | `src/pipeline.js` reference path | REQ-007/012 | Pass | `IMP-04-reference-scorer-failure.log` | `5 drafts`, `reference Nebius nonexistent/model failed: HTTP 404`, `totalMs 20065` |
+| IMP-05 | Browser: run autobyteus.com and linear.app from the page; click Approve, Reject, then Edit → Save & approve | UI as in 6d763ea | headless Chromium, 1905 px wide | `public/*` | AC-003, REQ-005/006/012 | Pass | `IMP-05-page-full-review-actions.png`, `IMP-05-page-stages-nonblocking.png` | badges "Approved", "Rejected", "Approved (edited)" with "EDITED TEXT test"; "Drafting … done at 21.5 s" before "Waiting for reference … done at 37.1 s" |
+| IMP-06 | Secret scan of the index, logs and run files | 6d763ea | — | repo | AC-006 | Pass | `IMP-06-secret-scan.log` | every scan reports `exit 1 (no match)` |
+
+- Not run, left to API/E2E: fresh clone + `npm start` (AC-008), a narrow (mobile) viewport, Copy to clipboard in a real browser with clipboard permission.
+
+## Frontend Rendered-Result Check
+
+- Affected surface: the single page at `/`. There is no UI/UX spec; the page follows the design spec's description.
+- Inspected:
+  - the idle and running states, and the done state with all cards;
+  - draft actions: approve, reject, edit + save;
+  - B pending ("…") and filled-in states;
+  - errors: IMP-03 checked them through the API, and the page shows `error` events in the red box.
+- Fixed:
+  - Emoji stage icons rendered as empty boxes in headless Chromium; they are now CSS text markers ✓ / … / ✕.
+  - Stage times now read "done at X s", and the last stage gets its time too.
+  - The reason/quote column is wider.
+- Not verified: a narrow viewport (the CSS has a 760 px breakpoint) and the clipboard in a real browser.
+
+## Downstream Coverage Hints / Suggested Scenarios
+
+- A timed live run on a judge-style URL that is not in the README (for example a small SaaS), with at least 8 leads.
+- Fresh clone → `cp .env.example .env` → `npm start` (AC-008).
+- A missing key and an invalid URL, entered on the page itself.
+- B slow or failing (`SCORER_B_MODEL=nonexistent/model`): leads and drafts must still appear.
+
+## API / E2E / Executable Coverage Investigation And Execution Still Required
+
+- AC-008: the fresh-clone run.
+- An independent live E2E run through the browser on a new company.
+- Confirm that keys never reach the browser (`/api/config` and the run stream).

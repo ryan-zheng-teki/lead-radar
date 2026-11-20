@@ -1,0 +1,22 @@
+# IMP-02
+# Command: curl -sN -X POST localhost:3000/api/run -d {"url":...} for autobyteus.com, tavily.com, linear.app in parallel; then node scripts/compare.js
+# Commit: 6d763ea | Env: Linux, Node v22.23.3, live Nebius + Tavily keys via LEAD_RADAR_ENV_FILE | Date: 2026-11-20
+
+## /tmp/lr-final-linear.app.ndjson (done event)
+{"type":"done","runFile":"runs/2026-11-20T13-27-15-279Z-linear.app.json","totalMs":30502,"totalCost":0.0291478,"leadCount":20}
+## /tmp/lr-final-www.autobyteus.com.ndjson (done event)
+{"type":"done","runFile":"runs/2026-11-20T13-27-18-457Z-autobyteus.com.json","totalMs":33655,"totalCost":0.0295352,"leadCount":20}
+## /tmp/lr-final-www.tavily.com.ndjson (done event)
+{"type":"done","runFile":"runs/2026-11-20T13-27-14-083Z-tavily.com.json","totalMs":29284,"totalCost":0.03340125000000001,"leadCount":20}
+
+## node scripts/compare.js
+Scorer A = `zai-org/GLM-5.3-Flash`, scorer B = `moonshotai/Kimi-K3.1-Pro`, same candidates per company.
+
+| Company | Leads (A ≥ 7) | Cost A | Cost B | B/A cost | Latency A | Latency B | Verified quotes A / B | Mean abs. score diff | Top-5 overlap | Full run | Full run cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| tavily.com | 20 (1) | $0.0011 | $0.0206 | 18.6× | 4.5 s | 17.0 s | 20/20 / 20/20 | 2.15 | 4/5 | 29.3 s | $0.0334 |
+| linear.app | 20 (2) | $0.0010 | $0.0180 | 17.3× | 5.3 s | 15.2 s | 20/20 / 20/20 | 1.90 | 3/5 | 30.5 s | $0.0291 |
+| autobyteus.com | 20 (10) | $0.0012 | $0.0184 | 15.7× | 5.4 s | 18.2 s | 20/20 / 20/20 | 1.95 | 3/5 | 33.7 s | $0.0295 |
+| **Average** | 20 (4.3) | $0.0011 | $0.0190 | 17.1× | 5.1 s | 16.8 s | | 2.00 | 3.3/5 | 31.1 s | $0.0307 |
+
+Scoring 1,000 posts/day (extrapolated from the average per-lead cost): A ≈ $0.0555/day, B ≈ $0.9510/day (GLM-5.3-Flash vs Kimi-K3.1-Pro).

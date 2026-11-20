@@ -1,0 +1,573 @@
+{
+  "url": "https://linear.app/",
+  "at": "2026-11-20T13:27:15.279Z",
+  "totalMs": 30502,
+  "totalCost": 0.0291478,
+  "profile": {
+    "name": "Linear",
+    "summary": "Linear is a product development system for teams and agents that helps plan, build, review, and ship products with issues, projects, roadmaps, AI workflows, and mobile access.",
+    "problems": [
+      "Customer conversations and feedback are not automatically turned into routed, labeled, and prioritized issues",
+      "Teams struggle to plan and navigate from idea to launch with aligned initiatives, strategic roadmaps, and up-to-date PRDs",
+      "AI agents and automations do not work alongside teams as teammates to handle complex tasks or delegate issues end-to-end",
+      "Code reviews have too much back-and-forth and slow PRs without clear diffs and context",
+      "Product work cannot move forward from anywhere because workflows are not available in compact mobile form",
+      "Workplace requests are not turned into actionable issues",
+      "Teams need best-in-class security practices to keep work safe and secure"
+    ],
+    "ideal_customer": "Modern product development teams, startups, mid-size companies, large and scaling companies, admins, team members, and teams with AI workflows.",
+    "pain_phrases": [
+      "Our customer feedback is scattered and never becomes prioritized issues",
+      "We can’t keep our roadmap, initiatives, and PRDs aligned from idea to launch",
+      "Code reviews have too much back-and-forth and our PRs are slowing down",
+      "I need to move product work forward when I’m away from my desk",
+      "Workplace requests get lost instead of becoming actionable issues"
+    ],
+    "search_queries": [
+      "looking for a tool to turn customer feedback into prioritized issues",
+      "how do I keep roadmap and PRDs aligned from idea to launch",
+      "frustrated with code review back-and-forth slowing PRs",
+      "tool to manage product development with AI workflows and agents",
+      "how to turn workplace requests into actionable issues",
+      "best issue tracking for startups and scaling product teams"
+    ],
+    "domain": "linear.app",
+    "sources": [
+      "https://linear.app/",
+      "https://linear.app/docs/start-guide",
+      "https://linear.app/features",
+      "https://linear.app",
+      "https://linear.app/docs/conceptual-model",
+      "https://linear.app/mobile"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L10",
+      "platform": "Medium",
+      "url": "https://medium.com/@guidorusso95/i-stopped-reviewing-every-pr-my-team-ships-faster-now-8bce2d235bbb",
+      "title": "I Stopped Reviewing Every PR. My Team Ships Faster Now.",
+      "content": "The output isn’t a wall of comments. It’s a triage:\n\n   Actionable → gets fixed automatically and repushed.\n   Nit → resolved with a short comment, no back-and-forth needed.\n   Ambiguous → escalated to me, with the reviewer’s reasoning attached, so I’m not starting from zero.\n\nThat last bucket is the only one I actually look at. Everything else resolves itself before I’ve had my coffee.\n\nCost note, because someone will ask: yes, running three reviewer agents per PR is not free. In my case, it’s still a fraction of what one senior engineer’s time costs per PR, and nobody’s context gets interrupted to do it.\n\n## 2. Automate the babysitting, not just the reviewing [...] Press enter or click to view image in full size\n\nImage 7\n\nNone of these four changes is exotic. Multi-agent review, automated babysitting, deterministic gates, small observable diffs. On their own, each one sounds like a minor process tweak.\n\nTogether, they change what “code review” even means. It stops being a queue where every item waits for the same scarce resource (you), and becomes a pipeline where most items resolve themselves, and only the genuinely ambiguous ones make it to a human.\n\nThe uncomfortable part of this shift is admitting how much of what you used to review never needed you. My honest guess, looking back at six months of my own approvals, is that it was somewhere around 60%.\n\nThat’s not a productivity hack. That’s a correction.\n\n## Where to start, realistically [...] Subscribe\n\n- [x] \n\nRemember me for faster sign in\n\n \n\nThis one change did more for my energy levels than any amount of “reviewing faster” ever did. I stopped context-switching every twenty minutes to check on something that didn’t need checking.\n\n## 3. Not every PR deserves your eyes. Build a stamper.\n\nPress enter or click to view image in full size\n\nImage 5\n\nSomewhere between “the reviewer agents flagged nothing” and “I have to click approve anyway” lives the most pointless part of the old process.\n\nA huge share of the PRs I used to approve were genuinely low-risk: a config tweak, a log message, a dependency bump, a one-line fix to a formatting rule. Approving them added zero value and cost me a context switch every time.",
+      "tavilyScore": 0.6383846,
+      "query": "frustrated with code review back-and-forth slowing PRs",
+      "a": {
+        "score": 7,
+        "reason": "Practitioner describing their AI code review workflow and pain with review back-and-forth; active in exactly this space.",
+        "quote": "Ambiguous → escalated to me, with the reviewer’s reasoning attached, so I’m not starting from zero.",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "First-person experience but already solved with their own agent setup, not seeking a solution.",
+        "quote": "Everything else resolves itself before I’ve had my coffee.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/justinmecham_replitpartner-activity-7497993740897288193-A5Jh",
+      "title": "Prioritize customer feedback with Feedback Radar | Justin Mecham ...",
+      "content": "Centralizing feedback is one of the simplest ways to stop a roadmap from becoming an internal wish list. AI can quickly cluster scattered",
+      "tavilyScore": 0.61039543,
+      "query": "looking for a tool to turn customer feedback into prioritized issues",
+      "a": {
+        "score": 7,
+        "reason": "Person building/discussing AI clustering of customer feedback into prioritization — directly related to feedback-to-issues problem.",
+        "quote": "Centralizing feedback is one of the simplest ways to stop a roadmap from becoming an internal wish list.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Post about prioritizing customer feedback, but appears to promote a tool rather than express a need.",
+        "quote": "Centralizing feedback is one of the simplest ways to stop a roadmap from becoming an internal wish list.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "dev.to",
+      "url": "https://dev.to/yeahiasarker/pr-reviews-are-the-biggest-engineering-bottleneck-lets-fix-that-22ec",
+      "title": "PR Reviews Are the Biggest Engineering Bottleneck - Let’s Fix That - DEV Community",
+      "content": "Inconsistency Creates Rework and Delays\n\nDifferent reviewers focus on different things. One flag coding style, another flag architecture. A third misses both. This inconsistency causes back-and-forth cycles that extend review time and frustrate authors. Without a shared baseline, teams repeat the same conversations across every pull request.\n\nTraditional Tools Review Diffs, Not Systems\n\nMost tools focus on what changed, not where it lives. They miss architectural patterns, historical decisions, and codebase conventions. Even GitHub AI PR review and GitLab AI code review features often stop at surface-level checks. The result is noisy feedback that slows progress instead of accelerating it.\n\nManual Reviews Don’t Match Modern Delivery Speed [...] With the right AI code review tools, teams can surface issues early, reduce back-and-forth, and maintain momentum. When reviews stop blocking flow, engineering speed and code quality finally move in the same direction.\n\nWhy PR Reviews Become Engineering Bottlenecks?\n\nBefore diving in, here’s an uncomfortable truth. If your pull requests keep piling up, the problem isn't a lack of discipline or team size. It’s how PR reviews are designed. Fix the system, and the bottleneck will disappear.\n\nThe PR Review Process Was Never Built to Scale\n\nThe PR review process depends on human availability. Reviews happen in between meetings, feature work, and production issues. As code volume grows, review capacity stays flat. [...] This mismatch turns PR reviews into a waiting game. Even teams that follow solid PR review best practices experience a slowdown as throughput increases.\n\nContext Switching Destroys Review Velocity\n\nReviewing code is not a lightweight task. Engineers must load the system context, understand the intent, and evaluate the impact. Every interruption reset that mental state. When reviews are treated as background work, they stretch from minutes into days. Over time, review queues quietly become delivery blockers.\n\nInconsistency Creates Rework and Delays",
+      "tavilyScore": 0.7932662,
+      "query": "frustrated with code review back-and-forth slowing PRs",
+      "a": {
+        "score": 6,
+        "reason": "Discusses code review bottlenecks and back-and-forth pain, related to Linear's review problem, but it's a general article not a person asking for help.",
+        "quote": "This inconsistency causes back-and-forth cycles that extend review time and frustrate authors.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Article about PR review bottlenecks, not a person asking for help.",
+        "quote": "This inconsistency causes back-and-forth cycles that extend review time and frustrate authors.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "Medium",
+      "url": "https://vitalii4reva.medium.com/the-hidden-cost-of-slow-code-reviews-data-from-8-million-prs-9926849f1428",
+      "title": "The Hidden Cost of Slow Code Reviews: Data from 8 Million PRs",
+      "content": "The industry average outside big tech is worse. One study from Full Scale put it at 4.4 days for initial review, with developers losing 5.8 hours per week to review-related bottlenecks.\n\n## Where the time goes\n\nIt’s not just the review itself. It’s the waiting _between_ steps:\n\n1.   Waiting for initial pickup — the biggest chunk. LinearB’s data shows this is where most idle time lives.\n2.   Back-and-forth comments — multiple rounds of “can you change this?” followed by another wait cycle.\n3.   Re-review after changes — the reviewer has to re-load context too.\n4.   Merge conflicts from stale PRs — the longer a PR sits, the more likely it conflicts with trunk.\n\nEach step resets the context-switching clock for both the author and the reviewer.\n\n## The hidden costs [...] ## Developer experience\n\nMeta published research on this. They looked at the P75 review time — the slowest quartile — and found it correlated directly with engineer dissatisfaction. Not just “annoyed about reviews” dissatisfaction. Overall job satisfaction tanked for developers whose PRs consistently sat in limbo.\n\n   Developer turnover costs 100–150% of annual salary to backfill. For a senior dev earning $140K, that’s $170K+ in replacement costs including lost knowledge and ramp-up time.\n   44% of teams report slow code reviews as their single biggest delivery bottleneck.\n\nIf your best engineers are frustrated and your reviews are slow, those two facts are probably related.\n\n## Why this happens\n\nThe problem isn’t that reviewers are lazy or bad at their jobs. It’s structural. [...] Reviewers have their own sprint work. Reviewing someone else’s code means pausing your own tasks. There’s no sprint points for reviews. No OKR for “reviewed 20 PRs this week.” So it becomes the thing that gets pushed to “after lunch” and then “tomorrow morning.”\n\nPRs are too large. Google’s engineering practices recommend changes around 200 lines. LinearB’s elite teams average under 219 lines. But many teams ship PRs of 500–1,000+ lines because splitting work into smaller chunks feels like overhead. The irony: larger PRs take disproportionately longer to review _and_ catch fewer bugs.",
+      "tavilyScore": 0.7390459,
+      "query": "frustrated with code review back-and-forth slowing PRs",
+      "a": {
+        "score": 6,
+        "reason": "Data-driven article on slow code reviews; audience includes people with this pain, but it's content not a direct request.",
+        "quote": "developers losing 5.8 hours per week to review-related bottlenecks",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Data article on slow code reviews, not an individual expressing a need.",
+        "quote": "Back-and-forth comments — multiple rounds of “can you change this?” followed by another wait cycle.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "Medium",
+      "url": "https://medium.com/@ribrewguy/a-professional-workflow-for-building-software-with-ai-agents-4d9697dba66f",
+      "title": "A Professional Workflow for Building Software With AI Agents",
+      "content": "collaborating with Product Owners and other stakeholders\n   defining high-level objectives and features\n   running Scrum, Kanban, and other project-management workflows\n   tracking delivery at the program and portfolio level\n   elevating visibility to leadership\n\nThat pre-work matters. I still do it. Where most project management tools start to break down _today_ is as an execution surface for AI agents.\n\nWhat I use Beads for instead:\n\n   agent-first execution\n   binding work to explicit design and constraints\n   creating units of work that can be inspected, resumed, and reasoned about by machines\n\nA project-management task may:\n\n   inform a PRD\n   influence priority\n   provide context\n\nBut it does not always map 1:1 to a bead, and that’s intentional. [...] Press enter or click to view image in full size\n\nImage 5\n\nAIDX: The Hierarchy of AI Governance\n\n## AGENTS.md: The Actual Product\n\nAGENTS.md is where this workflow stops being a collection of tools and becomes a system.It is the piece that makes everything else cohere.\n\nThe most important artifact in this entire setup is AGENTS.md. This file is not guidance. It is law.\n\nIt defines:\n\n   mandatory kickoff declarations\n   pre-flight checks\n   execution gates\n   escalation rules\n   self-correction requirements\n\nIf an agent violates process, the work is considered invalid even if the output is technically correct.\n\nYou can download my AGENTS.md and adapt it to your own repos. I strongly recommend keeping it short and cross-project, with detailed rules pushed into referenced policy files. [...] What I use Beads UI for:\n\n   Making AI execution legible to humans\n   Reviewing progress without interrupting flow\n   Maintaining trust and shared understanding\n\n## The `/specs` Directory: Guardrails, Not Documentation\n\nSpecs are where intent and constraints live. They are not “documentation.”\n\nMy repos follow a simple structure:\n\n/specs  \n /prd  \n /architecture  \n /features\n   PRDs define _what_ and _why_\n   Architecture specs define _what is forbidden_\n   Feature specs define _behavior_, bounded by architecture\n\nAgents are not allowed to silently modify PRDs or architecture. Ever. If intent changes, that’s a human decision with visible blast radius.\n\nThis prevents the most dangerous AI behavior of all:  \nquiet reinterpretation of goals.",
+      "tavilyScore": 0.7227227,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 6,
+        "reason": "Practitioner discussing AI-agent execution workflows and PM tooling gaps; related need for agent-friendly work systems.",
+        "quote": "Where most project management tools start to break down _today_ is as an execution surface for AI agents.",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Author shares real frustration with project management tools as AI agent execution surfaces.",
+        "quote": "Where most project management tools start to break down _today_ is as an execution surface for AI agents.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "dev.to",
+      "url": "https://dev.to/rahulxsingh/how-to-reduce-code-review-time-by-50-proven-strategies-and-tools-2hed",
+      "title": "How to Reduce Code Review Time by 50% - Proven Strategies and Tools - DEV Community",
+      "content": "The most important metric is review rounds. Each round of \"reviewer requests changes, author makes changes, reviewer looks again\" adds hours or days to the cycle. When AI eliminates 2-3 rounds of this back-and-forth, the total cycle time compression is dramatic.\n\n## Strategy 6: Use async review workflows with Slack integration\n\nOne of the hidden costs of code review is the notification and context-switching overhead. A reviewer gets a GitHub email notification, opens the PR, reads through it, leaves comments, then goes back to their work. Hours later they get another email that the author responded. They open the PR again, re-read the context, and continue the conversation. Each context switch costs 15-25 minutes of productive time according to research on developer productivity. [...] The compounding effects are what really hurt. Long review cycles create a vicious cycle: developers batch more changes into fewer PRs to avoid the overhead of multiple slow reviews, which makes each PR larger and harder to review, which makes reviews take even longer. Teams stuck in this pattern often see PR sizes creep from 200 lines to 800 or even 1,500 lines - at which point review quality drops dramatically and the review becomes little more than a rubber stamp. [...] ### Implementing priority-based review\n\nPrefix review comments with priority. A simple convention is to prefix comments with the tier: `[blocking]`, `[suggestion]`, or `[nit]`. This tells the author immediately which comments require action and which are optional. Many teams adopt this convention and find it significantly reduces the back-and-forth about whether a comment needs to be addressed.\n\n`[blocking]`\n`[suggestion]`\n`[nit]`\n`[blocking] This SQL query interpolates user input directly. Use parameterized queries.\n[suggestion] Consider extracting this logic into a separate function for reuse.\n[nit] I would name this variable `userCount` instead of `cnt`, but not important.`",
+      "tavilyScore": 0.6567684,
+      "query": "frustrated with code review back-and-forth slowing PRs",
+      "a": {
+        "score": 6,
+        "reason": "Article on reducing code review time and back-and-forth; relevant audience with this pain, but not a direct ask.",
+        "quote": "When AI eliminates 2-3 rounds of this back-and-forth, the total cycle time compression is dramatic.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "How-to article on reducing code review time, not a person asking for help.",
+        "quote": "Each round of \"reviewer requests changes, author makes changes, reviewer looks again\" adds hours or days to the cycle.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/chowdennis_your-beautifully-crafted-roadmap-is-doing-activity-7462170182761758720-jsxg",
+      "title": "Your beautifully crafted roadmap is doing nothing to align your stakeholders. | Dennis Chow",
+      "content": "Your beautifully crafted roadmap is doing nothing to align your stakeholders. I was talking to a VP of Product who spent three weeks perfecting a roadmap. Clean swim lanes. Color-coded themes. Dependencies mapped. Executive review scheduled. The CFO looked at it for six seconds and asked why none of this connected to the margin pressure she'd been talking about for two months. The roadmap wasn't wrong. It just wasn't built to answer the questions stakeholders were actually asking. This is the pattern I kept seeing in my last few years as a PM. Roadmaps became documents we made for approval, not tools for alignment. PRDs became artifacts we filed, not reasoning we shared. The format was right. The content was there. But the connective tissue between what we were building and why it mattered [...] tissue between what we were building and why it mattered to each stakeholder's world — that part lived in someone's head. Usually mine. And it stayed there until someone explicitly asked for it, which meant I was always one meeting behind. The problem isn't that we lack alignment frameworks. We have too many. Roadmaps for timelines. Strategy docs for direction. Business cases for investment. [...] I’m pretty aligned with what you’re talking about in this post. What product managers need to do differently is move past alignment and into commitment across those stakeholders. You can work your rear end off and you’ll get alignment for one day and then after that, it starts to decay almost exponentially. Commitment, that’s different. It’s more. It’s enduring. And if someone wants to start moving away from their commitment, that’s a very different conversation than trying to get them realigned.",
+      "tavilyScore": 0.61935616,
+      "query": "how do I keep roadmap and PRDs aligned from idea to launch",
+      "a": {
+        "score": 6,
+        "reason": "Experienced PM discussing roadmap/PRD alignment failures; related need for aligned roadmaps and PRDs.",
+        "quote": "Roadmaps became documents we made for approval, not tools for alignment.",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "reason": "PM describes recurring real problem of roadmaps and PRDs failing to align stakeholders.",
+        "quote": "Roadmaps became documents we made for approval, not tools for alignment.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "dev.to",
+      "url": "https://dev.to/olaproeis/the-ai-development-workflow-i-actually-use-549i",
+      "title": "The AI Development Workflow I Actually Use - DEV Community",
+      "content": "Only when I'm confident in the spec do I feed it to Task Master. The time spent refining the PRD pays off immediately, the generated tasks are specific, sequenced correctly, and actually buildable.\n\nThe AI produces dramatically better code when it knows exactly what success looks like. A vague requirement creates vague tasks creates vague code. A tight PRD creates tight tasks creates code that works.\n\n### 3. Break Work Into Tasks\n\ntask-master example\n\ntask-master example\n\nBig features need to be broken down. I use Task Master (an MCP tool) to parse requirements and generate structured task lists with dependencies.\n\nIt turns a feature into a sequence of steps where each task has clear inputs, outputs, and ordering. The AI knows what to build first and what depends on what. [...] ### 2. Create the PRD\n\nTask Master needs a Product Requirements Document to generate tasks. This isn't just a formality, the quality of the PRD directly determines the quality of your tasks.\n\nAfter the initial AI discussions, I ask one of the AIs to draft a PRD. It captures the problem, features, and specific acceptance criteria. \"Add search\" becomes a structured document with sections for keyboard shortcuts, UI behavior, edge cases, and technical considerations.\n\nThen I run the PRD through other AIs for review. Claude might spot missing edge cases. Gemini might question an architectural decision. Perplexity might flag that a library I mentioned has known issues.\n\nI iterate. Sometimes it's a quick tweak, sometimes a fundamental rethink. The PRD gets tighter with each pass. [...] The AI wasn't the problem. My process was.\n\nI needed structure. A way to break down work, maintain context between sessions, and verify results without reading every line of code.\n\n## The Workflow\n\n### 1. Talk to Multiple AIs First\n\nBefore any code, I discuss the idea with different AI assistants. Claude for architecture. Perplexity for research on libraries and approaches. Sometimes Gemini for another perspective.\n\nEach AI has blind spots. One suggests a library, another knows it has issues. One proposes an architecture, another spots why it won't scale. Five minutes getting multiple opinions saves hours later.\n\n### 2. Create the PRD",
+      "tavilyScore": 0.59502196,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 6,
+        "reason": "Practitioner workflow from PRD to tasks; related need for PRD-to-execution tooling.",
+        "quote": "A tight PRD creates tight tasks creates code that works.",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "First-person workflow account touching PRD-to-task needs, but author has a working solution.",
+        "quote": "A vague requirement creates vague tasks creates vague code.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/from-napkin-sketch-roadmap-10x-your-product-workflow-rajagopal-qvjwc",
+      "title": "From Napkin Sketch to Roadmap: 10x Your Product Workflow",
+      "content": "This blog post introduces a Claude skill (open-sourced) which provides the structured, five-phase process that helps you move from an early idea to a fully developed PRD, and ultimately to a detailed JIRA breakdown ready for execution. The result is a PRD that is thorough, evidence-backed, and aligned, reducing review cycles and accelerating delivery.\n\n> Note: The Claude skill mentioned in this blog post is open-sourced and can be downloaded here\n\n### 2. The Current Reality\n\nBefore diving into each phase, it’s important to understand the current reality of how PRDs are typically written and reviewed, and why the process often feels slow and frustrating. [...] At this point you have a full-fledged PRD with a roadmap that you can hand over to the team for implementation.\n\n### 6. Conclusion: Building an AI-First Workflow\n\nThis five-phase workflow turns PRD creation into a repeatable, low-friction process: clarify requirements through structured dialogue, ground decisions in evidence via research and tagging, draft a complete PRD with consistent structure, refine it section-by-section with you in control, and finally translate the approved PRD into Jira-ready epics and stories. The result is fewer review loops, fewer missed edge cases, faster alignment, and a cleaner handoff from idea to execution, so teams can ship with confidence instead of iterating on ambiguity. [...] But the moment you try to turn that idea into a Product Requirements Document (PRD), reality sets in. Important scenarios are missing. Edge cases surface late. Assumptions are not captured. What felt clear in your head becomes ambiguous when writing it down. Writing a strong PRD is not just about documenting features, its about translating your idea into shared understanding, so that engineers, designers, and stakeholders can build exactly what you envision, without endless clarification cycles.\n\nEven though I have never been a product owner, I have always felt the pain these folks have to go through in translating their vision into a final product. As an engineer, I thought, \"Why not build a workflow that is AI first, which can help them in this entire process?\"",
+      "tavilyScore": 0.64097303,
+      "query": "how do I keep roadmap and PRDs aligned from idea to launch",
+      "a": {
+        "score": 5,
+        "reason": "Author actively building PRD-to-JIRA workflows; related need for PRD and planning tooling, though self-promotional.",
+        "quote": "move from an early idea to a fully developed PRD, and ultimately to a detailed JIRA breakdown",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Blog post promoting an open-sourced Claude skill for PRDs, not a direct lead.",
+        "quote": "why the process often feels slow and frustrating",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "Medium",
+      "url": "https://aakashgupta.medium.com/i-spent-28k-testing-every-ai-tool-for-product-managers-only-9-were-worth-it-ad7ddffa9115",
+      "title": "I Spent $28K Testing Every AI Tool for Product Managers. Only 9 Were Worth It. | by Aakash Gupta | Medium",
+      "content": "You need this before shipping any AI feature. Without it, you’re flying blind. Users report problems. You have no idea why. Engineers can’t debug. The feature dies.\n\n## Automate: Stop Doing Repetitive Work\n\nPMs waste hours on repetitive tasks. Updating stakeholders. Formatting documents. Moving data between tools. Scheduling meetings.\n\nMost automation tools are either too simple or too complex. Simple tools like Zapier handle basic tasks but break on edge cases. Complex tools like n8n require engineering knowledge.\n\nRelay.app hits the sweet spot. No-code workflows with AI agents. The key feature is human-in-the-loop checkpoints.\n\nYour automation runs. Pauses for approval. You review. It continues. This prevents automation from running wild while still saving massive time. [...] Nine tools survived because they solve real problems in actual workflows. They deliver measurable value, not just impressive demos.\n\nResearch: Dovetail, DeepSky, Mobbin\n\nBuild: Reforge Build, Magic Patterns, Linear\n\nValidate: Arize\n\nAutomate: Relay, Descript\n\nYou can get all nine for $150. One year access. Complete bundle here.\n\nOr spend three months testing everything yourself like I did. Waste time on tools that don’t work. Miss the ones that do.\n\nThe choice is obvious.\n\nFor more on building AI products effectively, see the complete AI PM course and AI product strategy guide. The AI testing frameworks and practical AI agents guide show specific implementations.\n\nThe AI tool landscape is overwhelming. These nine tools are the only ones worth your time.\n\nUse them.\n\nAI\n\nProduct Management [...] Use DeepSky for competitive intelligence. Run reports weekly. Track how competitors position against you. Identify gaps they’re not addressing.\n\nAdd prototyping next. Pick one feature you’re planning. Use Reforge Build or Magic Patterns to prototype it. Test with five users. Iterate before writing specs.\n\nThe AI prototyping workflow shows the full process.\n\nImplement observability before shipping AI. Set up Arize. Instrument your AI features. Watch behavior in production. Iterate based on actual usage.\n\nAutomate last. Identify repetitive tasks consuming hours weekly. Build Relay workflows with human-in-the-loop approval. Start simple. Expand as you trust the automation.\n\n## The ROI Is Ridiculous\n\nTime saved per week using these tools versus manual workflows:",
+      "tavilyScore": 0.614394,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 5,
+        "reason": "PM discussing automation and AI tool pain points; audience of PMs with related needs, though it's a listicle.",
+        "quote": "PMs waste hours on repetitive tasks. Updating stakeholders. Formatting documents. Moving data between tools.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Tool review article describing PM pain points, but promotional content rather than a help request.",
+        "quote": "PMs waste hours on repetitive tasks. Updating stakeholders. Formatting documents.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "Medium",
+      "url": "https://medium.com/@s.musiiko/top-tools-for-startup-project-management-and-team-collaboration-that-actually-work-8212ef3a0cc3",
+      "title": "8 Top Tools for Early-Stage Startup Project Management and Team Collaboration",
+      "content": "How we use it:\n\n   Sprint planning. Two-week sprints. Short enough to stay focused, long enough to actually ship something.\n   Bug tracking. When users report issues (and they will), Jira ensures nothing falls through the cracks.\n   Feature prioritization. We tag features by impact (high/medium/low) and effort (high/medium/low). High impact + low effort? That’s going in the next sprint.\n\nIs Jira overkill for early-stage startups? Sometimes. If you’re pre-product or still figuring out product-market fit, maybe start with something simpler. But once you’re building in earnest, having proper project management becomes non-negotiable.\n\n## Miro: Where ideas become slightly less messy\n\nMiro is our visual thinking space. Whenever we need to: [...] What actually works:\n\n   Dedicated channels for different aspects. We have #product-updates, #user-feedback, #random, and #wins. The last one is crucial — celebrating small victories keeps morale high when you’re bootstrapping.\n   Threads. Seriously, use threads. Nothing kills productivity faster than 50 messages about three different topics flying around the main channel.\n   Integrations with other tools. When Notion sends updates to Slack, or when someone books a demo through our Connecto agent and it pings the channel — that’s when Slack becomes powerful.\n\nWhat doesn’t work:\n\n   Having Slack open 24/7. I learned this the hard way. Set boundaries, or you’ll burn out before you find product-market fit.\n\n## Gmail: Boring but essential [...] Tools facilitate collaboration, but understanding people enables it.\n\n## What doesn’t make the cut (and why)\n\nLet me save you some time. Here are the tools we tried and dropped:\n\n— Asana: Too enterprise-y for our stage. If you’re a team of 2–5, you don’t need this level of complexity.\n\n— Monday.com: Beautiful interface, but we ended up spending more time organizing boards than actually working.\n\n— Trello: Great for simple projects, but we outgrew it quickly. Once you need dependencies, sprint planning, and proper bug tracking, you need something more robust.\n\n— Discord: We tried this for team chat. Everyone kept forgetting to check it because they’re already in Slack for everything else. Lesson learned: minimize the number of places your team needs to check.",
+      "tavilyScore": 0.6110919,
+      "query": "best issue tracking for startups and scaling product teams",
+      "a": {
+        "score": 5,
+        "reason": "Startups actively choosing project management tools like Jira; potential Linear buyers, but listicle format.",
+        "quote": "Is Jira overkill for early-stage startups? Sometimes.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Listicle of startup project management tools, not a person seeking help.",
+        "quote": "When users report issues (and they will), Jira ensures nothing falls through the cracks.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/mildred-ishaya_productmanagement-productstrategy-agile-activity-7515638142851244033-Sp2C",
+      "title": "Can we get exact launch dates and named team assignments for everything on this roadmap for the next 12 months? | Mildred Ishaya",
+      "content": "for engineers, QA, and designers. Resource Planning Belongs in Execution, not Strategy on the Roadmap. Keep it high-level squad focus (Growth Team vs. Platform Team) and investment ratios (60% Features, 25% Tech Debt, 15% Fixes). On Sprint Boards: Assign specific names, story points, and tickets inside tools like Jira or Linear. The Risk of Blurring the Lines Premature Solutions: Locks teams into feature builds months before proper discovery. Micromanagement: Stakeholders track task completion rather than business impact. Think of your roadmap as the destination on a map, and your PRD as the turn-by-turn navigation. You don't read turn-by-turn directions for a turn you're taking six months from now. To my network: How does your team handle resource planning alongside road mapping? Let’s [...] Can we get exact launch dates and named team assignments for everything on this roadmap for the next 12 months? The short answer? No. A product roadmap is a strategic guide for vision, priorities, and outcomes not a Gantt chart, resource sheet, or fixed date Wishlist. Confusing roadmaps with execution tools like PRDs or resource matrices kills team momentum. Product Roadmap vs. PRD: The Key Difference Product Roadmap (High-Level Strategy): outlines the Why/ What using flexible frameworks (Now/Next/Later) for executives and stakeholders. Golden Rule: Detail is inversely proportional to distance in time. PRD / Requirements Document (Deep Execution): Outlines the How with system logic, API specs, user stories, and acceptance criteria for engineers, QA, and designers. Resource Planning Belongs",
+      "tavilyScore": 0.5636782,
+      "query": "how do I keep roadmap and PRDs aligned from idea to launch",
+      "a": {
+        "score": 5,
+        "reason": "Discussion of roadmap vs execution tooling that explicitly mentions Linear; audience with related planning needs.",
+        "quote": "Assign specific names, story points, and tickets inside tools like Jira or Linear.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Roadmap advice post that mentions Linear positively, not a prospect with an unmet need.",
+        "quote": "Assign specific names, story points, and tickets inside tools like Jira or Linear.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/top-product-management-tools-startup-teams-india-krishna-kumar-q9euc",
+      "title": "Top Product Management Tools for Startup Teams in India - LinkedIn",
+      "content": "1. Jira Best for: It helps teams manage: Sprints Backlogs Epics and user stories Bug tracking Release cycles … useful for startups scaling",
+      "tavilyScore": 0.6728693,
+      "query": "best issue tracking for startups and scaling product teams",
+      "a": {
+        "score": 4,
+        "reason": "Listicle of PM tools; readers are startup teams shopping for tools like Linear, but it's vendor-style content.",
+        "quote": "It helps teams manage: Sprints Backlogs Epics and user stories",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Listicle of product management tools, not a genuine lead.",
+        "quote": "It helps teams manage: Sprints Backlogs Epics and user stories Bug tracking Release cycles",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "Medium",
+      "url": "https://medium.com/design-bootcamp/integrating-ai-into-your-workflow-as-a-product-manager-e8dbcbbc9ca2",
+      "title": "Integrating AI Into Your Workflow as a Product Manager",
+      "content": "How it works:\n\n   Describe a UI or workflow in plain language via a prompt and or document\n   AI generates layouts, components, or interaction flows\n   Refine visually instead of starting from blank canvas\n\nUse this when:\n\n   You need visual alignment quickly\n   Turning abstract ideas into concrete flows\n   Early-stage design exploration\n\n### ii) Building Functional Prototypes\n\nTools:Cursor, Replit AI, Bolt.new, Lovable.dev, GitHub Copilot etc\n\nHow it works:\n\n   Describe functionality conversationally most effective with PRDs\n   AI generates working code or interactive prototypes\n   Iterate through prompts instead of traditional coding\n\nUse this when:\n\n   Testing workflows or interactions\n   Creating internal tools quickly\n   Building proof-of-concept demos\n   MVP testing [...] What runs autonomously:\n\n   Scans market trends, competitor moves, tech developments\n   Monitors feedback + product usage for emerging behaviours\n   Detects signals like new use cases or shifting demand\n   Alerts you with evidence and suggested next steps\n\nExamples of outputs:\n\n   “15% of users are using Feature X for an unintended workflow; opportunity for a dedicated flow.”\n   “3 competitors added Capability Y this month, market shift toward Z.”\n   “8 enterprise deals mentioned need for [feature] not on the roadmap.”\n\nValidation assistance: For promising opportunities, the agent can auto-gather supporting evidence, suggest experiments, and draft a lightweight business case.\n\nOutcome: A proactive system that helps you spot opportunities earlier and act faster.\n\n## D) Communication [...] You might need AI here if:\n\n   Ideas stay conceptual because prototyping takes too long\n   You struggle to communicate product vision without visuals or examples\n   Early stakeholder feedback happens too late in the process\n   You rely heavily on engineering just to test basic ideas\n   You want to explore multiple directions quickly without committing resources\n   Validation happens after development instead of before\n\n### How PMs Prototype with AI Today\n\nThere isn’t a single “right” way to prototype with AI. Usually, most PMs use a combination of tools depending on what they’re trying to explore or validate at the moment. Here are 2 common approaches and how they work.\n\n### i) UI & Experience Prototyping\n\nTools:v0 (Vercel), Galileo AI, Uizard, Figma AI / plugins, Framer AI etc.",
+      "tavilyScore": 0.62738067,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 4,
+        "reason": "PM workflow article touching PRDs and AI prototyping; loosely related audience.",
+        "quote": "Describe functionality conversationally most effective with PRDs",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Instructional article on AI workflows for PMs, not a lead.",
+        "quote": "AI generates working code or interactive prototypes",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/aatirar_how-to-write-a-launch-plan-in-a-prd-most-activity-7400168344210997248-SGyc",
+      "title": "How to write a launch plan in a PRD: Most PRD templates focus on the \"why\" and \"what\" behind the product. But without an integrated launch plan, you get misalignment between product and marketing… | Aatir Abdul Rauf",
+      "content": "How to write a launch plan in a PRD: Most PRD templates focus on the \"why\" and \"what\" behind the product. But without an integrated launch plan, you get misalignment between product and marketing teams, features nobody knows exist, and failed launches. But why in the PRD? Product, engineering, and design need visibility because: → Certain launch activities mandate development tasks (e.g., onboarding updates, in-app notifications) → It clarifies how existing customers will discover the feature → It allows PMs and PMMs to align on the right KPIs But what if you don't have confirmed launch specifics? Like a PRD, the launch section can evolve and become more concrete over time. But adding a section serves as a forcing function to think about distribution. What to include in your launch plan: [...] about distribution. What to include in your launch plan: → High-level summary of goals and strategy → Target audience segments → Key messaging and differentiation → Impact on packaging/tiering (which plan gets this feature?) → Rollout strategy (beta, limited GA, full launch) → Channel strategy for reaching customers → Timeline with key milestones or launch gates → Launch budget → Success metrics Of course, you don't want to unload all the details there. Give a summary and link out to a separate doc. If you need a prompt to \"brainstorm\" with, use this: \"Generate a launch plan for [PRODUCT/FEATURE] targeting [AUDIENCE]. Product category is [B2B SaaS/Enterprise/SMB]. Budget is [AMOUNT]. We have [EMAIL LIST SIZE, SOCIAL FOLLOWING, OTHER CHANNELS]. Launch tier is [PRICING TIER]. Approach is [...] OTHER CHANNELS]. Launch tier is [PRICING TIER]. Approach is [ROLLING THUNDER/BIG BANG]. Suggest sales enablement requirements, potential launch gates, channel ideas, timeline, and KPIs. I'll refine the strategy based on our specific context.\" Can AI build my launch plans? You can spar with an LLM on ideas, and it can also \"write\" a draft of your launch plan. But the thinking behind it needs human nuance and a sense of audience psychology. I would sit down and think hard about what will actually resonate with customers. For example, I have buyers in healthcare that resonate with compliance-focused webinars, while similar enterprise buyers in tech might prefer interactive product demos, and SMB audiences might convert better through self-serve trials. So, read the room. You can only build",
+      "tavilyScore": 0.5688949,
+      "query": "how do I keep roadmap and PRDs aligned from idea to launch",
+      "a": {
+        "score": 4,
+        "reason": "PM advice content on PRDs and launch alignment; related topic but no expressed need.",
+        "quote": "without an integrated launch plan, you get misalignment between product and marketing teams",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Advice post on launch plans in PRDs describing misalignment, not a direct request for help.",
+        "quote": "you get misalignment between product and marketing teams, features nobody knows exist, and failed launches",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "Medium",
+      "url": "https://medium.com/@bhushannemade2001/ai-agents-for-product-managers-b2dfe10adf82",
+      "title": "AI Agents For Product Managers",
+      "content": "Ferrix AIFerrix AI gives you ready-to-use PRD Agent and Product Specification Agents that connect to your existing product workflows for context. They also consume outputs from previous agents to generate structured PRDs, and once the PM approves the PRD, the product spec agent transforms it into execution-ready product specifications.\n\n### Execution Monitoring Agent\n\nThe agent helps PMs understand whether product execution is progressing as expected, blocked, delayed, changed, or at risk. It continuously analyzes execution activity and delivery signals to provide visibility into the current state of work.\n\nThe agent: [...] Ferrix AIFerrix AI provides a prebuilt Product Discovery Agent that stays connected to your product workflow. It proactively tracks customer signals, creates discovery briefs for PMs, and once approved, passes the right context to the next agents in the workflow.\n\n### Product Idea Validation Agent\n\nThe agent evaluates product ideas based on request frequency, issue severity, impacted customer segments, feasibility, and revenue impact. To determine whether an idea is backed by real customer demand and delivers meaningful business value.\n\nThe agent: [...] Ferrix AIFerrix AI Product Validation Agent connects across your product, customer, and internal team context. It also consumes outputs from earlier Ferrix agents, like the Product Discovery Agent, and evaluates ideas against real demand, urgency, affected segments, CRM revenue impact, product usage, and strategic alignment. PMs get a clear validation brief they can review, adjust with business context, and approve for the next agent to continue the workflow.\n\n### PRD and Specification Generator Agent",
+      "tavilyScore": 0.7588682,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 3,
+        "reason": "Vendor self-promotion for a competing PRD agent product, not a lead.",
+        "quote": "Ferrix AI gives you ready-to-use PRD Agent and Product Specification Agents",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Vendor promotion for Ferrix AI agents, not a genuine lead.",
+        "quote": "Ferrix AI gives you ready-to-use PRD Agent and Product Specification Agents",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "Medium",
+      "url": "https://medium.com/analysts-corner/n8n-an-end-to-end-guide-for-ai-product-owners-project-managers-and-business-analysts-18d59fd1bf3d",
+      "title": "N8N: An End-to-End Guide for AI Product Owners, Project Managers, and Business Analysts",
+      "content": "to support the making of their strategic decisions . By providing a low-code platform, n8n provides an opportunity for business analysts and Project Managers to build complicated automations together while not requiring either of them to have in-depth programming knowledge of the code that n8n is built upon . This democratization of technology enables product development to be done in a more holistic manner by shifting the focus from managing individual tasks to managing autonomous agents and establishing ethical oversight of the agents . In reviewing the literature and practice guidelines currently available, this review will assess how n8n can be used as a basic building block for developing, integrating and scaling AI based products in a manner that creates real value for business . [...] AI agents may be taught to evaluate client feedback, bugs, and trends to provide suggestions for priority-setting regarding your product backlog. In addition to enhancing the quality of the team’s work product, utilising real-time data analytics will allow Project Managers to ensure that each iteration consists of the most meaningful feature(s) / fix(es). The usage of the n8n orchestrating platform will allow Project Managers to provide a system for the ongoing and continuously improving state (real-time) of the product backlog rather than providing to the product team once every sprint cycle. The utilisation of this automation will allow Project Managers to change their role from a “gatekeeper” of tasks to a “curator” of value which will then fundamentally alter the nature of the entire [...] With increased autonomy of AI agents, the function of the Product Manager (PM) is transitioning from performing direct management of tasks to overseeing and training these intelligent agents. n8n offers a robust framework for this transition including the n8n AI Agent node through which PMs can specify prompt(s) and actions for the agent. As an example, a PM could instruct the agent to perform as a ‘sales analyst’; thus enabling the agent to receive incoming lead data and offer suggestions on the best strategies for converting those leads. The PM must provide adequate guidance to the agent so that the output produced by the agent will be accurate and in alignment with the goals of the product. A structured methodology for working with AI agents is accomplished through four key phases;",
+      "tavilyScore": 0.70911986,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 3,
+        "reason": "Generic n8n guide/article, not a person with a need.",
+        "quote": "build complicated automations together while not requiring either of them to have in-depth programming knowledge",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Guide promoting n8n for product owners, not a lead expressing a need.",
+        "quote": "n8n provides an opportunity for business analysts and Project Managers to build complicated automations together",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/bay-street-group-llc_10-essential-customer-feedback-analysis-tools-activity-7418761639241367552-nRQG",
+      "title": "10 Essential Customer Feedback Analysis Tools: When you consider customer feedback analysis, having the right tools is vital for gaining insights. Various options can help you gather and interpret… | Bay Street Group LLC",
+      "content": "\\ Revuze: An AI-powered platform that consolidates unstructured feedback, providing a comprehensive Voice of Customer analysis.\n\\ Zonka Feedback and SurveySparrow: Streamline feedback collection and reporting, making it easier to gather and analyze customer insights.\n\\ Alchemer and Retently: Leverage APIs for automated data actioning, enhancing response prioritization and overall customer experience.\nKey Features of Customer Feedback Analysis Tools\nIn relation to customer feedback analysis tools, several key features can greatly improve your ability to grasp customer sentiments and improve experiences. [...] This analysis encompasses diverse data sources, transforming unstructured input into actionable insights that improve products and services. By utilizing voice of customer analytics, businesses gain a thorough view of customer sentiments and experiences, allowing them to identify pain points effectively.\nSystematically collecting voice of customer feedback enables organizations to prioritize improvements that greatly impact the customer experience. The insights derived from VoC analysis play a critical role in boosting customer satisfaction, loyalty, and retention.\nCompanies that implement effective VoC programs often witness a 55% boost in customer retention and experience faster revenue growth.\nThe Importance of Customer Feedback [...] \\ Implement a Likert scale question: “Rate your satisfaction with our service from 1 to 5,” to quantify customer satisfaction levels.\n\\ Include an open-ended question such as: “What improvements would you suggest for our product?” to gather qualitative feedback.\n\\ Ask a yes/no question: “Was our customer support response timely?” to assess service effectiveness directly.\n\\ Utilize a ranking question: “Prioritize these attributes: price, quality, and service,” to understand customer value perceptions.\nWhat Is a Customer Satisfaction Survey?\nWhen you want to understand how well your customers feel about your products or services, a customer satisfaction survey serves as an essential tool. This survey is designed to gather feedback on customer experiences with your company’s offerings.",
+      "tavilyScore": 0.6149144,
+      "query": "looking for a tool to turn customer feedback into prioritized issues",
+      "a": {
+        "score": 3,
+        "reason": "Listicle of feedback analysis tools; tangentially related to feedback-to-issues but vendor content.",
+        "quote": "consolidates unstructured feedback, providing a comprehensive Voice of Customer analysis",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Listicle of customer feedback analysis tools, not a genuine lead.",
+        "quote": "having the right tools is vital for gaining insights",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/from-idea-launch-complete-product-development-life-cycle-salunke-vesxc",
+      "title": "From Idea to Launch: The Complete Product Development Life Cycle Every Product Manager Should Understand",
+      "content": "### Create the PRD\n\nA Product Requirements Document helps align Product, Design, Engineering, QA, Data, and relevant stakeholders.\n\nA useful PRD typically includes:\n\n- Problem statement and target users.\n- Customer insights and supporting evidence.\n- Goals, success metrics, and guardrails.\n- User stories and acceptance criteria.\n- Functional and non-functional requirements.\n- Scope, exclusions, and edge cases.\n- Dependencies, assumptions, and risks.\n- Open questions and decision owners.\n\nPrioritization techniques such as MoSCoW, Kano, and RICE can support decision-making. They are aids to judgment, not substitutes for strategic thinking.\n\nDeliverable: A product direction, prioritized roadmap, and sufficiently clear requirements for design and development. [...] For example:\n\n- Objective: Improve the first-time shopping experience.\n- Outcome metric: Increase successful first-purchase conversion.\n- Supporting metrics: Checkout completion, time to purchase, and error rate.\n- Guardrails: Refund rate, order cancellations, and customer complaints.\n\nAvoid defining success solely as delivering a list of features.\n\n### Build the roadmap\n\nA roadmap communicates strategic priorities and intended outcomes over time. It should reflect dependencies, risks, learning opportunities, and resource constraints.\n\nRoadmaps may use timelines, outcome themes, or Kanban-style views depending on the product and audience. Dates can be useful when dependencies require them, but they should not create a false sense of certainty.\n\n### Create the PRD [...] It is the smallest solution that can deliver meaningful value to an intended user segment and help the team test important assumptions.\n\nFor example, an MVP for an expense-sharing app might allow users to create a group, record expenses, split costs, and see who owes what. Advanced budgeting, multiple currencies, and sophisticated analytics may wait until the core experience is validated.\n\nThe right scope depends on the problem, risks, and learning objectives.\n\n### Maintain alignment during development\n\nProduct Managers should help the team clarify:\n\n- Requirements and acceptance criteria.\n- Edge cases and error states.\n- Dependencies and technical constraints.\n- Scope changes and their implications.\n- Release risks and unresolved decisions.",
+      "tavilyScore": 0.70598775,
+      "query": "how do I keep roadmap and PRDs aligned from idea to launch",
+      "a": {
+        "score": 2,
+        "reason": "Educational article on product development lifecycle, no expressed need.",
+        "quote": "A Product Requirements Document helps align Product, Design, Engineering, QA, Data, and relevant stakeholders.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Educational article on product development life cycle, no personal need expressed.",
+        "quote": "A Product Requirements Document helps align Product, Design, Engineering, QA, Data, and relevant stakeholders.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/designing-smarter-practical-guide-building-ai-agents-product-roberts-oxble",
+      "title": "Designing Smarter: The Practical Guide to Building AI Agents for Product Development",
+      "content": "Best software stack to build it:\n\n- OpenAI GPT-4/5 API or Claude for structured reasoning\n- LangChain for workflow orchestration\n- Fusion 360 or SolidWorks APIs for CAD interrogation\n- Google Patents API for IP scanning\n- Custom cost-modelling tools in Python\n- Pinecone or Weaviate for vector database retrieval\n\nThis agent mirrors what we do manually during early feasibility - but at dramatically increased speed.\n\n### 2. The Concept Generation Agent\n\nPurpose: Expand creative exploration without increasing time-to-market\n\nGreat products rarely emerge from a single idea. They evolve through structured iteration.\n\nHow it works: Given design constraints such as material, cost ceiling, ergonomics, user persona, and regulatory class, this agent: [...] How it works: This agent continuously scans regulatory updates and aligns them with a product’s specification. It can:\n\n- Identify required testing standards\n- Draft technical documentation frameworks\n- Flag gaps against ISO 13485 processes\n- Map CE/UKCA classification pathways\n- Suggest risk mitigation strategies\n\nBest software stack to build it:\n\n- Retrieval-augmented generation using GPT models\n- Custom vector database trained on regulatory documents\n- API integrations with standards databases\n- Notion or Confluence automation for document structuring\n\nRather than replacing regulatory specialists, this agent reduces admin load and improves oversight.\n\n## Recommended by LinkedIn\n\n### 4. The Sustainability Optimisation Agent\n\nPurpose: Embed circular thinking from day one [...] # Designing Smarter: The Practical Guide to Building AI Agents for Product Development\n\nA decade ago, product development teams were asking whether AI would replace designers.\n\nToday, the better question is this: how do we architect AI agents to strengthen each stage of the product journey?\n\nAt ITERATE ® , we see AI not as a shortcut, but as infrastructure - a system that can de-risk development, accelerate innovation, and enhance decision-making across the entire RPD Pathway.\n\nIf you were building an AI-powered product team from scratch, here are the five agents worth developing - how they would work, and the best software foundations to build them on.\n\n### 1. The Feasibility & Risk Agent\n\nPurpose: De-risk ideas before serious capital is committed",
+      "tavilyScore": 0.6351093,
+      "query": "tool to manage product development with AI workflows and agents",
+      "a": {
+        "score": 2,
+        "reason": "Generic AI agent design guide for physical product development, unrelated to Linear.",
+        "quote": "Fusion 360 or SolidWorks APIs for CAD interrogation",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Guide to building AI agents for product development, no expressed need.",
+        "quote": "This agent mirrors what we do manually during early feasibility - but at dramatically increased speed.",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L10",
+      "text": "Attaching the reviewer’s reasoning is what makes the ambiguous bucket useful; otherwise you’re just re-reviewing the PR under a different label. I’d also keep the original diff hunk and the agent’s confidence beside that reasoning, so you can spot a bad escalation quickly. Disclosure: I work on Linear, and this maps well to routing only unresolved questions into a human triage queue.",
+      "usage": {
+        "in": 453,
+        "out": 85
+      },
+      "latencyMs": 5424
+    },
+    {
+      "leadId": "L17",
+      "text": "Internal wish list\" is a good way to put it. The hard part is often making sure the feedback actually reaches the people shaping the roadmap, not just collecting it in one place. Disclosure: I work on Linear, and we built Customer Requests to connect feedback directly to issues and projects so teams can see patterns and prioritize with more context.",
+      "usage": {
+        "in": 213,
+        "out": 76
+      },
+      "latencyMs": 5164
+    },
+    {
+      "leadId": "L1",
+      "text": "The back-and-forth is often a symptom of missing context rather than reviewer inconsistency. If architectural decisions and conventions live only in PR comments, every review restarts the same debate. Try moving those decisions into a shared engineering doc and linking the relevant one from the PR template; reviewers can then focus on deltas, not re-litigate standards. Disclosure: I work on Linear, where teams often keep that context alongside issues and projects.",
+      "usage": {
+        "in": 421,
+        "out": 94
+      },
+      "latencyMs": 2929
+    },
+    {
+      "leadId": "L3",
+      "text": "5.8 hours a week is a full workday lost to waiting, not reviewing. One thing that helped my team: treat review pickup as a queue with an owner, not a broadcast request. Auto-assign based on ownership, and set a same-day pickup norm. Disclosure: I work on Linear, and we use issue-linked PRs to keep that queue visible. The re-review context reload you mention is the next target.",
+      "usage": {
+        "in": 453,
+        "out": 93
+      },
+      "latencyMs": 2993
+    },
+    {
+      "leadId": "L4",
+      "text": "That distinction between planning context and agent execution is useful. The risk I see is splitting intent from delivery: constraints, decisions, and outcomes can drift when agents work elsewhere. Disclosure: I work on Linear. I think the opportunity is making issues and projects machine-readable execution surfaces while preserving the human workflow you describe, rather than treating project management as merely an input to a separate agent system.",
+      "usage": {
+        "in": 439,
+        "out": 84
+      },
+      "latencyMs": 3868
+    }
+  ],
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3502,
+      "tokensOut": 1035,
+      "cost": 0.0010428,
+      "latencyMs": 5338,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3512,
+      "tokensOut": 1100,
+      "cost": 0.018024000000000002,
+      "latencyMs": 15179,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 1.9,
+      "top5Overlap": 3
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 1638,
+      "out": 1093,
+      "cost": 0.001803,
+      "latencyMs": 8211
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3502,
+      "out": 1035,
+      "cost": 0.0010428,
+      "latencyMs": 5338
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3512,
+      "out": 1100,
+      "cost": 0.018024000000000002,
+      "latencyMs": 15179
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 1979,
+      "out": 432,
+      "cost": 0.008278,
+      "latencyMs": 5424
+    }
+  ],
+  "scorerError": null
+}

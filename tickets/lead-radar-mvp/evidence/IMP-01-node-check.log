@@ -1,0 +1,18 @@
+# IMP-01
+# Command: for f in server.js src/*.js src/steps/*.js scripts/*.js public/app.js; do node --check $f; done
+# Commit: 6d763ea | Env: Linux, Node v22.23.3, live Nebius + Tavily keys via LEAD_RADAR_ENV_FILE | Date: 2026-11-20
+
+ok server.js
+ok src/compare.js
+ok src/config.js
+ok src/json.js
+ok src/nebius.js
+ok src/pipeline.js
+ok src/quote.js
+ok src/tavily.js
+ok src/steps/draft.js
+ok src/steps/leads.js
+ok src/steps/profile.js
+ok src/steps/score.js
+ok scripts/compare.js
+ok public/app.js
