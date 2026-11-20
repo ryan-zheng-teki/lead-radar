@@ -5,6 +5,7 @@
 | DR-001 | 2026-11-20 ~14:45 | API/E2E Pass (b2f085c), direct route | Verified from the evidence. Docs synced, RELEASE.md created, ticket archived, `main` fast-forwarded and pushed to `origin`. No release (the user's decision: push only). |
 | DR-002 | 2026-11-20 ~14:50 | API/E2E Pass round 2 (API-REV-002), IR-002 code b28dd34 | Verified from the evidence. Stretch REQ-013 delivered onto `origin/main`, the README updated by the implementation engineer, pushed. No release. |
 | DR-003 | 2026-11-20 ~15:00 | API/E2E Pass round 3 (SR-003 UI polish, AC-012), code d0bfa5a + reports e9255f4 | Verified from the evidence. `main` fast-forwarded to the `ui-polish-sr003` branch plus a delivery docs commit, pushed. No release. |
+| DR-004 | 2026-11-20 ~15:16 | API/E2E Pass round 5 (SR-004 lead quality + SR-005 AC-016 restatement), code 9eddc9a = 54bede7, reports 70a74c4 | Verified from the evidence. `main` fast-forwarded to 70a74c4 plus this record, pushed. No release. |
 
 ## DR-001
 
@@ -28,3 +29,19 @@
 - Code check: `git diff --quiet d0bfa5a -- src public server.js scripts package.json .gitignore .env.example` held.
 - Integrated check DE-03: `node --check` on all JS passed. A server on port 3007 served `/`, `/style.css` and `/app.js` with 200, `missingKeys` was empty, and the invalid-URL error was readable. Every element id that `app.js` looks up exists in `index.html` (none missing). The server was stopped.
 - Docs synced: README (the phone limitation and the "make it work on phones" next step removed, because FU-001 is resolved), DEMO.md (the screen names now match the new page: stepper, KPI strip, leads list with "Show N low-fit results", "Model comparison" card), follow-ups.md (FU-001 marked resolved, not sent).
+
+## DR-004
+
+- Inputs: api-e2e-execution-coverage-report.md Rounds 4 and 5, API-REV-005, sr-004-lead-quality-fix.md ("SR-005 revision"), evidence API-12..15 and ui/API-13-run1/2.
+- Code check: `git diff 9eddc9a sr005-release -- src public server.js package.json scripts` was empty, so the code is the code round 4 validated live. Branch `sr005-release` sits directly on `origin/main` 8f6b3fb and all of its commits carry the no-reply identity. The working tree was clean.
+- AC-016 (restated): ≥ 5 leads with A ≥ 5 within 90 s. API-13 runs B (27.6 s, 6 leads) and C (29.9 s, 6 leads). Proven.
+- README / DEMO "17-run snapshot", recomputed by delivery from the run files (`runs/*.json` up to 15:05 Berlin, 17 with both scorers):
+  - cost ratio: 22.4× aggregate, 16–17.5× for most companies → "16–22×" holds
+  - latency ratio: 2.55× aggregate → "2.3–2.6×" holds
+  - score gap: mean |A−B| 1.34 → "1–1.4" holds
+  - top-5 overlap: 3.24 against the stated 3.3, a rounding gap
+  - run time: 27–49 s plus the 87 s outlier the README names → holds
+  - cost per run: mostly $0.028–0.039 → holds; two runs at about $0.09, with a B/A cost ratio of about 63× (cal.com 14:48 and posthog.com 14:49), are not mentioned
+  - Accepted as documentation under the deadline; not edited.
+- Residual risks (from API/E2E): scorer A has no overall deadline (one hung GLM call stalled a run for more than 198 s); autobyteus.com gives 1 draft; lead counts vary.
+- Pre-push checks: secret pattern, key values and private email each 0; file names OK.

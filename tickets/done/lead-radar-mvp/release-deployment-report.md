@@ -151,3 +151,10 @@ During delivery the ticket worktree held uncommitted, unvalidated changes from t
 - Release decision: `No release` (push only).
 - Finalization: `main` = e9255f4 plus the delivery docs commit, pushed fast-forward. The user's checkout is fast-forwarded with `--ff-only`.
 - Cleanup: temporary clone removed. The worktree and its branches are kept, because uncommitted SR-004 work is active there.
+
+## Round 4/5 (DR-004): SR-004 lead quality, SR-005 restatement
+
+- Verification from the evidence: `Sufficient`. See delivery-revision-record.md DR-004 (code identity, the AC-016 runs, the snapshot recomputation).
+- User check needed: `No`. Release decision: `No release` (push only).
+- Finalization: `main` fast-forwarded from 8f6b3fb to 70a74c4 plus the DR-004 record commit, pushed. The user's checkout is fast-forwarded with `--ff-only`.
+- Cleanup: temporary clone removed. The worktree is kept.
