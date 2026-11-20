@@ -81,4 +81,33 @@ During delivery the ticket worktree held uncommitted, unvalidated changes from t
 
 ## Repository Finalization
 
-See the record in the section "Finalization Result" below; it is written after the push.
+- Bootstrap context source: `handoff.md` (finalization target `main`, then push; GitHub push approved by the user, D-2)
+- Ticket branch: `ticket/lead-radar-mvp`. Not merged as a whole and not pushed. At 14:43 the implementation engineer committed the unvalidated REQ-013 stretch (b28dd34) one second before the local delivery commit a4b58a2, so the branch tip is not the verified state.
+- Ticket branch commit result: local delivery commit a4b58a2 (docs only), on top of b28dd34
+- Ticket branch push result: not pushed (RELEASE.md: only `main` is pushed)
+- Finalization target remote: `origin` = https://github.com/ryan-zheng-teki/lead-radar.git (public, empty before this push)
+- Finalization target branch: `main`
+- Target advanced after verification: `No` (the remote was empty)
+- Delivery-owned edits protected before re-integration: `Not needed`
+- Re-integration before final merge result: `Not needed`
+- How the verified `main` was built: in a temporary clone, `main` was set to 624e257 (the validated code b2f085c plus the SR-002 ticket docs) and the docs-only delivery commit a4b58a2 was cherry-picked onto it. `git diff b2f085c main` over `src public server.js scripts package.json .gitignore .env.example` was empty.
+- Author email rewrite: every commit had the user's private email as author and committer. On the Solution Designer's decision B (14:4x Berlin), `git filter-branch --env-filter` set author and committer to `5105956+ryan-zheng-teki@users.noreply.github.com`. The trees are byte-identical (the tree hash matched the pre-rewrite commit 3ccf7b4), and the email occurs in no file. SHA map: 922954d→0bb6a0b, 58c1d09→c91b9bc, 41f3cf4→03ef25f, 6d763ea→2e67ac4, 8242b9d→6e19854, b2f085c→f95a059, 624e257→9a60508, delivery→b2d110b. SHAs cited in the ticket documents refer to the pre-rewrite history.
+- Checks before pushing (RELEASE.md): `git grep -nE "tvly-[A-Za-z0-9]{10,}|v1\.Cm"` found 0 lines; the real key values were counted in tracked and worktree files: 0; no forbidden file-name characters; no case duplicates.
+- Merge into target result: `main` = b2d110b (built as above; no merge commit)
+- Push target branch result: `git push -u origin main` created `main` at 14:44 Berlin. `git ls-remote` equals the local b2d110b. GitHub API: public, default branch `main`, README.md and DEMO.md present, all commit author emails are the no-reply address.
+- User's checkout of the target branch (`/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-20/lead-radar`): `Updated to b2d110b`, then to the record commit. The user's checkout cannot fast-forward across rewritten history, so on the Solution Designer's explicit instruction delivery added `origin`, fetched and ran `git reset --hard origin/main`. Beforehand it was on `main` at 922954d with an empty `git status` and only the ignored `.env`. `.env` was unchanged afterwards (same sha256 prefix and size, 322 bytes). `main` now tracks `origin/main`.
+- Repository finalization status: `Completed`
+
+## Release / Publication / Deployment
+
+- Applicable: `No` (no tag, package or deployment; RELEASE.md default)
+- Release/publication/deployment result: `Not required`
+- Release notes handoff result: `Not required`
+
+## Post-Finalization Cleanup
+
+- Temporary clones `/tmp/de-fresh-*`, `/tmp/de-rewrite` and `/tmp/de-deliver`: removed (the fresh clone held a `.env`)
+- Dedicated ticket worktree `/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-20/lead-radar-mvp`: `Not required` now. It is still active: the implementation engineer has b28dd34 plus uncommitted IR-002 edits there, and API/E2E is validating the stretch. Cleanup belongs to the round that finishes that work.
+- Local ticket branch cleanup result: `Not required` (in use, as above)
+- Remote branch cleanup result: `Not required` (none pushed)
+- Note for the next round: `ticket/lead-radar-mvp` is based on the pre-rewrite history (old SHAs, private email). The next delivery puts the stretch commits (b28dd34 and later) onto `origin/main` b2d110b+ with the no-reply identity, rather than merging the old branch, which would bring the private-email history back.
