@@ -8,6 +8,7 @@
 | API-REV-002 | implementation_engineer / IR-002 / Round 2 | SR-002, IR-002 | Pass / 95% | Pass / 95% |
 | API-REV-003 | implementation_engineer / IR-003 / Round 3 | SR-003, IR-003 | Pass / 95% | Pass / 95% |
 | API-REV-004 | implementation_engineer / IR-004 / Round 4 | SR-004, IR-004 | Pass / 95% | Fail (AC-016) |
+| API-REV-005 | implementation_engineer / IR-005 / Round 5 | SR-005, CRR-001, IR-005 | Fail (AC-016) | Pass / 95% |
 
 ## Revision Entries
 
@@ -59,3 +60,17 @@ None.
 - Prior result: Pass / 95%. Current: Fail (AC-016).
 - New failure IDs: API-13. Preliminary classification: Unclear (score calibration vs threshold). Recommended next step: code_reviewer failure-origin review.
 - Remaining risks: no deadline on scorer A (pre-existing; one live hang observed); autobyteus.com yields 1 draft under the new rubric.
+
+### API-REV-005 — AC-016 re-judged under SR-005 restatement (no code change)
+
+- Trigger: implementation_engineer, IR-005 (sr005-release at 54bede7), after CRR-001 classified API-13 as Requirement Gap CR-001 and the Solution Designer restated AC-016 to ≥ 5 leads with A ≥ 5 in ≤ 90 s.
+- Cases: API-13 re-judged on the existing run files with no rerun (code identical to 9eddc9a); API-15 key check on 54bede7.
+
+#### Prior Failure Resolution
+
+| Prior Case / Failure Reference | Previous Classification | Current Resolution | Case IDs Now Proving It |
+| --- | --- | --- | --- |
+| API-13 (AC-016: 6 < 8) | Unclear → CRR-001 Requirement Gap CR-001 | AC-016 restated by the Solution Designer; 6 ≥ 5 in 27.6 s and 29.9 s | API-13 (re-judged) |
+
+- Prior result: Fail (AC-016). Current: Pass / 95%.
+- Remaining risks: scorer A has no deadline (pre-existing); README/DEMO numbers are for delivery to verify.

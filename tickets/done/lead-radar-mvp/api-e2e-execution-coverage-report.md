@@ -185,3 +185,22 @@ No repository suite exists, so the "post-repository" column covers the reused im
 - Earlier ACs on `9eddc9a`: AC-001..004, 006, 009, 011 and 012 held in API-12; AC-005 held in API-12 (46.6 s) and runs B and C (≤ 30 s).
 - Cleanup: the 3001 server and the probe Chromium were stopped and `/tmp/lr-ir004` removed; the `:3000` server was not touched.
 - Result: **Fail** (AC-016 count). Next: code_reviewer failure-origin review.
+
+---
+
+## Round 5 — IR-005 / SR-005 (AC-016 restated after CRR-001 / CR-001) — API-REV-005
+
+- Trigger: implementation_engineer, IR-005. Branch `sr005-release` at `54bede7` (on origin/main `8f6b3fb`; `b8f5193` and `6a6c6b5` are cherry-picks of `9eddc9a` and `346ecaa`). There is no code change: `git diff 9eddc9a 54bede7 -- src public server.js package.json` is empty, and `6a6c6b5..54bede7` touches only README.md, DEMO.md and ticket docs.
+- Basis: AC-016 as restated in `sr-004-lead-quality-fix.md` ("SR-005 revision"): a cal.com run yields **≥ 5 leads with model A score ≥ 5**, run ≤ 90 s, and all earlier ACs hold. Requirement Gap CR-001 was resolved by the Solution Designer.
+- Re-judged on the existing evidence, with no rerun (the code is identical to what Round 4 exercised):
+
+| Case ID | Criteria | Evidence | Look For | Result |
+| --- | --- | --- | --- | --- |
+| API-13 (re-judged) | AC-016 (restated) | `ui/API-13-run1-cal.com.json`, `ui/API-13-run2-cal.com.json`, `API-13-ac016-calcom.log` | run B `totalMs=27568 A>=5=6`; run C `totalMs=29878 A>=5=6`; both ≥ 5 and ≤ 90 s | **Pass** |
+| API-12 (Round 4) | AC-013/014/015, AC-012 regression | unchanged | as in Round 4 | Pass (still holds: same code) |
+| API-15 | AC-006 | `git grep --untracked -F` both key values on `54bede7` | `0` files | Pass |
+
+- Not re-validated here: the README / DEMO.md numbers in the "17-run snapshot" are documentation, which delivery verifies against the run evidence.
+- Residual risks, carried: scorer A has no deadline (one live hang in Round 4 attempt A; pre-existing; see follow-ups); autobyteus.com yields 1 draft under the SR-004 rubric; the lead count varies from run to run.
+- Confidence: requirement proof 95%, directness 95% (live runs on the identical code), realism 95%, environment 93%, failure/recovery 90% (A-hang path unguarded but outside scope), UI 95%. Overall 94–95%, no category below 90%.
+- Result: **Pass** for `54bede7`. Test-code review: `Not Required — direct low-risk route`.
