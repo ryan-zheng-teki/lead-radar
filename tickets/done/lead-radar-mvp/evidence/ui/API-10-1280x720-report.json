@@ -1,0 +1,239 @@
+{
+  "viewport": "1280x720",
+  "chip": "https://posthog.com",
+  "layout": {
+    "empty": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    },
+    "running": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    },
+    "results": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a. \"posthog.com/blog/what-if-your-product-bu\""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/products\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/pricing\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/blog/what-if-\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/products\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/pricing\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com\""
+      ]
+    },
+    "afterActions": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a. \"posthog.com/blog/what-if-your-product-bu\"",
+        "a.lead-title \"Fail me once, shame on the AI agent. Fai\"",
+        "a.lead-title \"An agent watching session replays found \"",
+        "a.lead-title \"Most AI agents hand you code they've nev\""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/products\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/pricing\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/blog/what-if-\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/products\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/pricing\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com\""
+      ]
+    },
+    "phone390": {
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a. \"posthog.com/blog/what-if-your-product-bu\"",
+        "a.lead-title \"Analytics has changed. Here's what to do\"",
+        "a.lead-title \"Session Replay After A/B Tests: Find Los\"",
+        "a.lead-title \"Fail me once, shame on the AI agent. Fai\"",
+        "a.lead-title \"PostHog's Self-Driving Product for Code \"",
+        "a.lead-title \"An agent watching session replays found \"",
+        "a.lead-title \"How Agoda is evolving engineering suppor\"",
+        "a.lead-title \"#dynatrace #opentelemetry #observability\"",
+        "a.lead-title \"Guidely — Product analytics, in-app guid\""
+      ],
+      "overlaps": [
+        "A.brand \"Lead Radar\" x A.lead-title \"Frontend System Design: L\"",
+        "A.brand \"Lead Radar\" x P.lead-reason \"Educational article listi\"",
+        "SPAN.pill pill-muted \"Nebius Token Factory · Ta\" x A.lead-title \"Frontend System Design: L\"",
+        "SPAN.pill pill-muted \"Nebius Token Factory · Ta\" x P.lead-reason \"Educational article listi\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to uni\" x A. \"posthog.com/products\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/pricing\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com\"",
+        "SPAN.pill pill-muted \"how do I give AI coding a\" x A. \"posthog.com/blog/what-if-\""
+      ]
+    },
+    "error": {
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    }
+  },
+  "chipClicked": "posthog.com",
+  "runningStepper": [
+    "step active: Read site",
+    "step active: Understand product",
+    "step pending: 3Search the web",
+    "step pending: 4Score leads",
+    "step pending: 5Draft replies"
+  ],
+  "runSeconds": 43.38,
+  "progressTitle": "Done — review your leads and drafts below | total 43.3 s",
+  "errorShown": null,
+  "kpis": "20 Leads found 0 High-fit (score ≥ 7) 43.3 s Run time $0.0326 Total model cost",
+  "profile": {
+    "text": "PostHog Product profile PostHog is a product context layer that ingests and stores analytics, errors, replays, and business data so teams and AI agents can query and act on it. SOLVES Product and co",
+    "sourceLinks": [
+      "https://posthog.com/",
+      "https://posthog.com/products",
+      "https://posthog.com/pricing",
+      "https://posthog.com/",
+      "https://posthog.com/blog/what-if-your-product-built-itself"
+    ]
+  },
+  "leads": {
+    "all": {
+      "cards": 3,
+      "withLink": 3,
+      "verified": 3,
+      "notVerbatim": 0,
+      "showMore": "Show 17 low-fit results",
+      "header": "Leads · 20 people and posts, ranked by GLM-5.3-Flash"
+    },
+    "afterShowLow": {
+      "cards": 20,
+      "withLink": 20,
+      "verified": 20,
+      "notVerbatim": 0,
+      "showMore": "Hide low-fit results",
+      "header": "Leads · 20 people and posts, ranked by GLM-5.3-Flash"
+    },
+    "sampleCard": "6 Kimi 5 LinkedIn ✓ Verified in source Analytics has changed. Here's what to do about it ↗ PostHog's own content about agents misquerying analytics; describes the exact problem PostHog solves, but vendor-authored. “We asked Claude, Cursor, and PostHog AI \"what's our MRR last month?\" and got three di",
+    "tab_high": {
+      "cards": 0,
+      "selected": "High-fit"
+    },
+    "tab_draft": {
+      "cards": 3,
+      "selected": "With draft"
+    },
+    "tab_all": {
+      "cards": 20,
+      "selected": "All"
+    }
+  },
+  "drafts": [
+    {
+      "cls": "draft approved",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Copy reply",
+        "Open post ↗",
+        "Undo"
+      ],
+      "tail": "initions current as the product changes."
+    },
+    {
+      "cls": "draft approved",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Copy reply",
+        "Open post ↗",
+        "Undo"
+      ],
+      "tail": "fore deciding what to fix. [API-10 edit]"
+    },
+    {
+      "cls": "draft rejected",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Undo"
+      ],
+      "tail": "mparison. Disclosure: I work on PostHog."
+    }
+  ],
+  "draftsCounter": "2 approved · 1 rejected · 0 pending",
+  "draft1HasEdit": true,
+  "copy": {
+    "toast": "Copied — paste it on the post yourself",
+    "clipboardChars": 385,
+    "draftContainsClipboard": true
+  },
+  "requestsDuringDraftActions": [],
+  "companies": {
+    "hidden": false,
+    "text": "Target companies · buying signals Potpie AI funding Raised a $2.2M pre-seed to unify context across engineering stacks and make AI agents useful in complex software environments. Potpie AI raises $2.2 million to make AI agents usable inside real-world engineering systems - Robotics & Automation Ne",
+    "links": 5
+  },
+  "comparison": "Model comparison Same leads, scored by two Nebius models GLM-5.3-Flash was 18.3× cheaper and 3.3× faster than Kimi-K3.1-Pro, agreeing on 2 of the top 5 leads. Scorer Tokens in / out Cost Latency GLM-5.3-Flash primary 4,022 / 943 $0.0011 5.0 s Kimi-K3.1-Pro reference 4,014 / 1,169 $0.0197 16.8 s 1.25 Mean |score A − score B| on a 0–10 scale 2 / 5 Same leads in both top 5 20/20 · 20/20 Quotes verified in source (A · B) Every model call in this run (5)",
+  "models": "Which model does what & why Product profile DeepSeek-V4.1-Flash-1017 Fast, cheap and good at reading a web page into structured JSON. Lead scoring A (primary) GLM-5.3-Flash Very cheap and fast (with reasoning_effort low) — the model you would run on thousands of posts a day. Lead scoring B (reference) Kimi-K3.1-Pro Strongest model, run on the same leads as a quality reference to measure how much the cheap model loses. Reply drafts Kimi-K3.1-Pro Strongest writer: a human reads every draft, so ton",
+  "sections": [
+    "hero",
+    "progress",
+    "kpis",
+    "profile",
+    "leads",
+    "drafts",
+    "comparison",
+    "models",
+    "companies"
+  ],
+  "error": "! Something went wrong \"not a url\" is not a valid URL. Try again",
+  "afterTryAgain": {
+    "error": "! Something went wrong \"not a url\" is not a valid URL. Try again",
+    "newRunRequests": 2
+  },
+  "allRequests": [
+    "GET /",
+    "GET /style.css",
+    "GET /app.js",
+    "GET /api/config",
+    "POST /api/run",
+    "POST /api/run",
+    "POST /api/run"
+  ],
+  "consoleErrors": []
+}

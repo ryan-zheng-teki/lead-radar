@@ -1,0 +1,622 @@
+{
+  "url": "https://cal.com/",
+  "at": "2026-11-20T13:55:51.148Z",
+  "totalMs": 28638,
+  "totalCost": 0.0358707,
+  "profile": {
+    "name": "Cal.com",
+    "summary": "Cal.com is a scheduling app and meeting scheduling software that lets people share booking links while handling calendar syncing, timezone detection, reminders, video calls, routing, workflows, and online bookings.",
+    "problems": [
+      "Eliminating booking back-and-forth",
+      "Preventing double bookings and calendar conflicts",
+      "Handling timezone detection for meetings",
+      "Automating reminders and follow-ups",
+      "Routing each lead to the right person on the first try",
+      "Spreading meetings across a team with round-robin scheduling",
+      "Connecting bookings to tools like Slack, Salesforce, HubSpot, Zoom, Stripe, and Google Calendar",
+      "Embedding booking pages on your own site in your own design",
+      "Managing scheduling across support, sales, and ops",
+      "Providing enterprise admin controls such as SAML SSO, SCIM, audit logs, and uptime SLA",
+      "Letting AI agents check real availability and book real hours"
+    ],
+    "ideal_customer": "Individuals, teams, small businesses, inbound-focused teams, support/sales/ops teams, larger organizations needing admin and security controls, event hosts, and developers embedding scheduling into their own sites or agents.",
+    "pain_phrases": [
+      "I’m tired of the back-and-forth emails just to book a meeting.",
+      "People keep double-booking my calendar and I need a link that syncs availability.",
+      "I need scheduling that handles time zones and reminders without manual work.",
+      "Our leads don’t get routed to the right person on the first try.",
+      "I want bookings to show up in Slack and my CRM without extra work."
+    ],
+    "search_queries": [
+      "looking for a tool to stop email back and forth scheduling meetings",
+      "how do I share a booking link without double booking my calendar",
+      "frustrated with scheduling across time zones and calendar conflicts",
+      "how to route inbound leads to the right salesperson automatically",
+      "looking for scheduling software that integrates with Slack and Salesforce",
+      "how to embed a booking page on my website with my own design"
+    ],
+    "domain": "cal.com",
+    "sources": [
+      "https://cal.com/",
+      "https://cal.com",
+      "https://cal.com/about",
+      "https://cal.com/blog/calcom-v7-0",
+      "https://cal.com/enterprise"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L18",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/smallbusinessesowners/comments/1vf7ce8/how_do_you_avoid_all_the_backandforth_when",
+      "title": "How do you avoid all the back-and-forth when scheduling client meeting? : r/smallbusinessesowners",
+      "content": "Title: How do you avoid all the back-and-forth when scheduling client meeting? : r/smallbusinessesowners\nSkip to main contentHow do you avoid all the back-and-forth when scheduling client meeting? # How do you avoid all the back-and-forth when scheduling client meeting? I was considering using Calendly with my free Gmail account, but then I realized I had still need another tool for hosting client meetings. I have checked out some all in one options, but paying for both Calendly and another tool like Webex is getting expensive for something that should be straightforward. I had prefer to have just 1 tool that lets me schedule meetings, send invites, and host calls so I don't need several subscriptions. Is anyone using a tool that handles all of this in one place? Use Calendly and Google meetings, you don't need to pay for either unless you want extra functionality. It all works, but I was hoping there was a decent option where the whole client-facing flow lives in one place. For someone only doing a handful of meetings a month though, I agree that Calendly + Meet is probably hard to beat on cost. I’m trying to avoid ending up with a really nice booking system that still requires another subscription/tool for the call itself. You can either have a good all-in-one (and probably expensive) or you can stitch together good tools with free tiers. I'm on Google workspace (paid, because I wanted a custom business domain and I prefer google), Fathom (notetaker, free), cal.com (calendar scheduling, free), Zoom (free, but will most likely go back to Google meets because of the hard stop at 40min), Hubspot (CRM, free. Google calendar has a booking option and you can add meet video calls to it. Yes, it's the one I use for all my client facing calls. My main issue isn’t really finding a scheduling tool by itself but it’s that once you add a calendar, booking page, email, and video meeting tool, you end up maintaining 3-4 different things back to back. if I still need a separate tool for actually hosting the meeting, I’m back to maintaining multiple subscriptions. Tips to avoid back-and-forth in scheduling.",
+      "tavilyScore": 0.5464054,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 9,
+        "reason": "Small business owner explicitly asking for a scheduling tool that handles meetings and calls.",
+        "quote": "How do you avoid all the back-and-forth when scheduling client meeting?",
+        "verified": true
+      },
+      "b": {
+        "score": 10,
+        "reason": "A small-business user explicitly asks how to eliminate scheduling back-and-forth and wants one affordable tool for booking, invites, and calls.",
+        "quote": "How do you avoid all the back-and-forth when scheduling client meeting?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/elija-owino-8b7960278_virtualassistant-calendarmanagement-timezones-activity-7518603609857773569-f8rK",
+      "title": "I scheduled a founder’s launch week and got the time zones wrong. | Elija Owino",
+      "content": "I scheduled a founder’s launch week and got the time zones wrong. Twice. I’m in Nairobi. The founder in my practice project is in New York. Her partners were in London. Seven hours apart from her, four hours between her and London, and the clocks change on different days. What went wrong: -One-off meetings repeated every day because I left a “repeat” setting on -Times showed in my time zone instead of hers -Old events piled up on top of the new ones What fixed it: 1️⃣ Write the time zone in every event title, like “11:00 AM ET” 2️⃣ Build the schedule in one standard time (UTC) and let the calendar convert it 3️⃣ Put the schedule in its own calendar, so a mistake is a single delete away 4️⃣ Check the week view before you say “done” A calendar isn’t just a list of times. When people work [...] A calendar isn’t just a list of times. When people work across time zones, a wrong time means a missed call, and a missed call costs trust. I’m taking on virtual assistant projects in inbox, calendar, CRM and automation work. If you work across time zones and your schedule feels messy, send me a message. What’s your best trick for scheduling across time zones? 👇 #VirtualAssistant #CalendarManagement #TimeZones #Productivity #RemoteWork",
+      "tavilyScore": 0.7142296,
+      "query": "frustrated with scheduling across time zones and calendar conflicts",
+      "a": {
+        "score": 8,
+        "reason": "Real person describing repeated timezone scheduling mistakes Cal.com directly solves.",
+        "quote": "I scheduled a founder’s launch week and got the time zones wrong. Twice.",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "reason": "A real person describes repeated timezone and recurring-event scheduling failures, though they already found manual workarounds.",
+        "quote": "I scheduled a founder’s launch week and got the time zones wrong. Twice.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/lukeswetman_i-agree-with-the-points-below-choosing-the-activity-7416986496890593281-NQGR",
+      "title": "Choosing the Right Coordination Tool for 1:1 Emails | Luke Swetman 🏳️‍🌈 posted on the topic | LinkedIn",
+      "content": "# Choosing the Right Coordination Tool for 1:1 Emails\n\nThis title was summarized by AI from the post below.\n\nLuke Swetman 🏳️🌈\n\n Report this post\n\nI agree with the points below. Choosing the right coordination tool makes a difference. For 1:1 emails, I’ve been using \"Help Me Schedule\" in Gmail. It lets me insert specific time options directly into the body of the message. A hybrid approach is often even more effective: - Offering a few curated times shows respect for the other person. (Plus, using \"Help Me Schedule\" lets them lock in that time easily) - Including a booking page/link as a backup provides flexibility and reduces the email back-and-forth. My two cents 🪙🪙\n\nDan Phan [...] Stop using Calendy. It quietly damages relationships. Story time: Last fall, someone reached out asking if I would be a guest on their podcast. I said yes. I usually do when the ask feels genuine because I remember what it was like to be early, building something, trying to get momentum. Then the follow up came. A Calendly link. Two separate meetings for me to book. One for a prep call and another for the recording. No suggested times or sense of flexibility and what really SENTTTTT me was that her calendar was very wide open when I clicked on it. I stopped responding. Calendly was not the problem. It's how it was used and signaled to me that she was more important than me. I firmly believe that when you are the one requesting someone’s time, you should not use Calendly. You made the [...] Stop using Calendy. It quietly damages relationships. Story time: Last fall, someone reached out asking if I would be a guest on their podcast. I said yes. I usually do when the ask feels genuine because I remember what it was like to be early, building something, trying to get momentum. Then the follow up came. A Calendly link. Two separate meetings for me to book. One for a prep call and another for the recording. No suggested times or sense of flexibility and what really SENTTTTT me was that her calendar was very wide open when I clicked on it. I stopped responding. Calendly was not the problem. It's how it was used and signaled to me that she was more important than me. I firmly believe that when you are the one requesting someone’s time, you should not use Calendly. You made the ask.",
+      "tavilyScore": 0.6260099,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 6,
+        "reason": "Practitioner discussing reducing email back-and-forth with booking links; related need.",
+        "quote": "Including a booking page/link as a backup provides flexibility and reduces the email back-and-forth.",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "reason": "A real user actively discussing scheduling coordination and booking links, but already satisfied with a Gmail-based hybrid approach.",
+        "quote": "Including a booking page/link as a backup provides flexibility and reduces the email back-and-forth.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/jaspinall_your-agent-will-double-book-you-activity-7517681532904505345-rFet",
+      "title": "Double-Booking Prevention Tip for Meeting Agents | John Aspinall ✱ posted on the topic | LinkedIn",
+      "content": "Three emails to find a time is two too many. Send one booking link that shows only the times you are free and let the other person pick. A booking link takes the back and forth out of scheduling. You set your open hours once, the other person picks a time, and the meeting lands on your calendar. Google Calendar has appointment schedules and Calendly has booking pages, so you may already own one. Two settings most people skip. First, add buffer time between meetings so you never start one running late. Google Calendar's help page lists buffer time as an appointment schedule setting, and Calendly's help center has a page on adding buffers between events. Second, add one short question to the booking form, like what do you want to cover. Google's help page says you can add fields to the [...] One link. They pick a time. Earlier in this series: six emails to book one call, because the only way to share your availability was to describe it. This is the fix, and it is short. Booking Pages in Fokus gives you a link. You send it once. The other person opens a page and picks a time. The screenshot is what they see. It's a booking page from our demo workspace: — Who they are meeting, and what the meeting is called. — Their time zone, written out, so nobody does the arithmetic. — A month to choose a day from. — A list of times for that day, each marked with how long the meeting is. That is the whole page. No thread, no \"does Tuesday work?\", nothing to reply to. Put it next to the email thread from earlier in the series. Six messages were two people reading their calendars to each [...] messages were two people reading their calendars to each other, one slot at a time. Here one person looks at a page and chooses. For a small business the difference shows up at the first contact. A client who asks for a call gets a link in your reply and can choose a time straight away, instead of starting a conversation about calendars. Where to put the link: in your email signature, at the end of a proposal, on your contact page. Anywhere \"let's find a time\" used to go. Booking Pages is one of the four add-on specialists in the Fokus crew: €4/mo billed yearly, €5 monthly, and free during the public beta.",
+      "tavilyScore": 0.55871826,
+      "query": "how do I share a booking link without double booking my calendar",
+      "a": {
+        "score": 6,
+        "reason": "Practitioner sharing booking-link and buffer tips; audience with scheduling pain, though not asking for help.",
+        "quote": "A booking link takes the back and forth out of scheduling.",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Highly relevant scheduling advice, but it is instructional content recommending existing Google and Calendly features rather than a request for help.",
+        "quote": "Three emails to find a time is two too many.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/adenike-oyindamola-matanmi_how-many-emails-should-it-take-to-schedule-activity-7512511948375183360-915b",
+      "title": "‎How many emails should it take to schedule ONE meeting? 😩 ‎ ‎“Does Tuesday work?” ‎“No, how about Wednesday?” ‎“Morning or afternoon?” ‎“Can we try Thursday instead?” ‎ ‎Sometimes, scheduling the… | Adenike Oyindamola matanmi-Arimiyau",
+      "content": "‎How many emails should it take to schedule ONE meeting? 😩 ‎ ‎“Does Tuesday work?” ‎“No, how about Wednesday?” ‎“Morning or afternoon?” ‎“Can we try Thursday instead?” ‎ ‎Sometimes, scheduling the meeting takes longer than the meeting itself. ‎ ‎One thing I'm learning as I develop my Virtual Assistant skills is that good appointment scheduling isn't simply about finding an empty space on a calendar. ‎ ‎It's about understanding a client's availability, protecting focus time, setting appropriate meeting durations and buffers, considering time zones, and creating a system that reduces unnecessary back-and-forth. ‎ ‎Tools like Calendly can make the process easier by allowing people to choose from \\\\approved available times\\ instead of exchanging multiple emails. ‎ ‎Less back-and-forth. More",
+      "tavilyScore": 0.53952914,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 6,
+        "reason": "VA in training discussing scheduling pain and tools like Calendly; related need, learning audience.",
+        "quote": "creating a system that reduces unnecessary back-and-forth",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "reason": "A real virtual assistant describes the exact email back-and-forth and timezone scheduling pain, though Calendly is already mentioned as a possible aid.",
+        "quote": "Sometimes, scheduling the meeting takes longer than the meeting itself.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/razz-professional-services_manageditserviceslosangeles-losangelesmanagedserviceprovider-activity-7468694774196113408-o7Gw",
+      "title": "#manageditserviceslosangeles #losangelesmanagedserviceprovider #worksmarternotharder | Razz Professional Services, Inc.",
+      "content": "💡 Tech Tip Friday: Stop the Email Ping-Pong Let Clients Book Their Own Meetings! We've all been there: 6 emails back and forth just to schedule a 15-minute call. 😩 Here's a game-changer: Use Calendly, Appointment Core, Microsoft Bookings, or HubSpot Scheduling to let clients (and prospects) book time directly on your calendar — 24/7, no human required. ✅ Automatically syncs with Outlook/Google Calendar ✅ Buffers time between meetings ✅ Sends reminders to both parties ✅ Collects intake info before the call Think of how many hours your team spends each week just scheduling? This frees them up for actual work. 📅 Already using a scheduling tool? Drop a 👍 in the comments or let us know if you use one that wasn't mentioned above. 📩 Want help setting it up for your firm? DM us and we'd be happy",
+      "tavilyScore": 0.77662295,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 5,
+        "reason": "MSP promoting scheduling tools to an audience with the exact back-and-forth pain; vendor content but relevant buyers active.",
+        "quote": "6 emails back and forth just to schedule a 15-minute call",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "An MSP giving generic tech tips and recommending competitor tools, not expressing its own buying need.",
+        "quote": "We've all been there: 6 emails back and forth just to schedule a 15-minute call.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/moraesmarcos_i-used-to-think-time-zones-were-a-scheduling-activity-7510381951636205568-XuuX",
+      "title": "I used to think time zones were a scheduling problem. | Marcos Moraes",
+      "content": "I used to think time zones were a scheduling problem. They're not. They're a focus problem. Since Madrid became one of my bases, the thing that actually costs hours isn't travel, it's how little overlap there is with teams spread across Brazil, Colombia, Peru and, now, Mexico. By the time some of them are just getting into the day, mine in Europe is already winding down. Meetings get pushed, answers wait, and a day that should be one conversation ends up stretched across five clocks. For a while I tried to fix that by being available all the time: early calls, late messages, answering whenever something came in. Felt disciplined. Wasn't. It just meant I was reachable everywhere and useful nowhere in particular. What actually worked was different: most decisions don't need me online, they [...] This tracks with leading regional teams. What actually breaks things isnt the time zone, its mistaking constant presence for clarity. A team with the right context doesnt need you online, it needs a sharp answer whenever you show up.\n\nGreat insight, Marcos Moraes! I couldn't agree more. Working with a multi-location team right now, I'm seeing this too. What really saves the day for us is having strong organization in our communication and project management 👏 [...] was different: most decisions don't need me online, they need me clear. If the team has the context, they don't need my presence, they need a sharp answer whenever I show up. That's a different skill than being always on, and it's the one that's freed up real attention for SigmaCX lately. Turns out the real cost of working across time zones was never the hours lost. It was mistaking being online for being useful.",
+      "tavilyScore": 0.5514228,
+      "query": "frustrated with scheduling across time zones and calendar conflicts",
+      "a": {
+        "score": 5,
+        "reason": "Real person struggling with cross-timezone team overlap; related scheduling pain.",
+        "quote": "how little overlap there is with teams spread across Brazil, Colombia, Peru",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "reason": "A real person describes distributed-team timezone pain and meeting delays, though the post frames it primarily as a focus and availability issue.",
+        "quote": "Meetings get pushed, answers wait, and a day that should be one conversation ends up stretched across five clocks.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/top-content/sales/sales-pipeline-management/inbound-lead-generation",
+      "title": "Inbound Lead Generation",
+      "content": "→ No Guesswork Within seconds of form submission, lead data flows into: ▪️ Clay for enrichment ▪️ Instantly.ai for validation This gives us a complete 360° profile before the SDR even sees the lead. 3️⃣ Lead Qualification → Automated Scoring Our scoring model checks: ▪️ ICP match ▪️ Buying signals ▪️ Channel/source quality ▪️ Fit indicators Then routes them automatically to Qualified or Unqualified. No spreadsheets. No manual review. 4️⃣ Routing & Rep Assignment → Zero Lag Qualified leads get: ▪️ Auto-routed to the right GTM rep ▪️ Synced to CRM ▪️ Slack alerts fired in real-time ▪️ Signal validation triggered Speed = higher conversion. 5️⃣ Pre-Engagement Orchestration Before the meeting is even booked: ▪️ Connect on LinkedIn ▪️ Pre-frame emails sent ▪️ Account enriched with live data [...] and nudge them toward a demo call or a product purchase, agent-led sales automation is pretty much the way to go to ensure that you keep the leads warm and eventually convert them. Here is how we do it at Lyzr 👇 Clay - Be it the inbound or the outbound list, use Clay to enrich your contacts. This saves a lot of time as you can reach out to your ICP and not spend time on unqualified leads. Our agency partners love Clay+Jazon combo. Jazon (AI SDR) - Activate Jazon for outbound and inbound. Just add your list of leads, Jazon does the following autonomously - research the leads, write personalized emails or text, followup with leads, answer queries and book demo calls. ( Additional Focus 📢 In addition to the above 'must-do' sales processes, the following tracks also help (about 20%) Lyzr [...] ▪️ Pre-frame emails sent ▪️ Account enriched with live data This boosts show-up rates by up to 30–40%. 6️⃣ Meeting Prep Loop The rep receives: ▪️ Lead summary ▪️ Meeting doc ▪️ Deal auto-created ▪️ Calendar reminders Every rep walks into calls fully primed. 7️⃣ Post-Meeting Automation After the call, the engine pushes: ▪️ Meeting summary ▪️ Follow-up sequences ▪️ Feedback workflow Pipeline momentum continues automatically. 8️⃣ Nurture & Re-Engagement If the lead isn’t a fit yet: ▪️ Automated re-engagement ▪️ Newsletter loop ▪️ 30-day re-evaluation Nothing leaks. Nothing gets lost. The result: A fully orchestrated inbound engine that books meetings, qualifies, routes, preps reps, nurtures leads, and drives pipeline without adding SDR headcount. Most companies have inbound. Very few have",
+      "tavilyScore": 0.75346667,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 4,
+        "reason": "Lead routing automation discussion; related to Cal.com routing but focused on CRM/SDR tooling.",
+        "quote": "Auto-routed to the right GTM rep",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Vendor-style description of an inbound lead workflow; routing is adjacent but there is no personal scheduling pain or request.",
+        "quote": "Then routes them automatically to Qualified or Unqualified.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/sonikandarp_auto-route-inbound-leads-in-less-than-one-activity-7415061764473798659-xC13",
+      "title": "Auto-Route Inbound Leads in Under 24 Hours | Kandarp Soni posted on the topic | LinkedIn",
+      "content": "Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.\n\n# Auto-Route Inbound Leads in Under 24 Hours\n\nView profile for Kandarp Soni\n\nNever let inbound leads go cold again — auto-route + first-touch tasks in less than one day\nMost “speed-to-lead” problems aren’t solved by more SDRs or a new tool. They’re solved by making ownership automatic. This playbook shows a complete, low-cost DIY setup (Microsoft Forms → CRM → Teams) that assigns every inbound lead to the right rep, creates a first-touch task with an SLA, and escalates if the SLA is missed—so no lead slips through the cracks.\n\nTo view or add a comment, sign in\n\n## More Relevant Posts\n\nView organization page for Prevail Tech Consulting\n\n53 followers [...] 54% of SMBs shy away from automation due to perceived high costs, but the reality is often the opposite—lost productivity from manual tasks can far exceed the costs of setup.\nA \\\\lead response automation\\\\ ensures that inquiries are triaged efficiently, reducing time spent on leads that don’t fit.\n\\\\Setup in HubSpot + Slack:\\\\ (1) Create a workflow in HubSpot to classify leads into hot/warm/cold; (2) Integrate with Slack to alert the sales team for hot leads within minutes; (3) Use tags to prioritize follow-ups.\n\\\\KPI:\\\\ Convert lead response time from 3 hours → 25 minutes; payback in 4 weeks based on increased deal closure.\nWhere this often stalls: Teams often overlook lead scoring complexity at the start. Stick with a basic model for the first 30 days to gather data before fine-tuning. [...] Avoid these three automation mistakes that quietly damage performance:\n1. The “Every Lead Gets Everything” workflow\nSending the same nurture to every lead results in irrelevant messaging.\n→ Split by lead source, service, and intent.\n2. The infinite follow-up loop\nEndless daily follow-ups lead to STOP replies and spam complaints.\n→ Cap sequences at 7–10 touches, then move to long-term nurture.\n3. The instant pipeline jump\nClicks and opens ≠ progress.\n→ Only move stages on real intent signals (booked calls, replies, payments, completed forms).\nAutomation should reflect reality — not create false momentum.\n#Automation #AIAutomation #SalesAutomation #MarketingAutomation #LeadGeneration #CRM #Productivity #BusinessGrowth #ClientAcquisition #RevenueOperations #PipelineManagement #GoHighLevel",
+      "tavilyScore": 0.6834195,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 4,
+        "reason": "DIY lead-routing playbook; related need but not scheduling-focused.",
+        "quote": "assigns every inbound lead to the right rep",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "A DIY lead-routing playbook rather than someone seeking scheduling software; only adjacent to Cal.com's routing use case.",
+        "quote": "This playbook shows a complete, low-cost DIY setup (Microsoft Forms → CRM → Teams)",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/superhumanhq_stop-that-annoying-inbox-back-and-forth-activity-7460403630882369536-yspS",
+      "title": "Schedule Meetings in Superhuman Mail - LinkedIn",
+      "content": "Stop that annoying inbox back and forth. With email-first scheduling with Mail Booking Pages, meetings can actually book themselves without",
+      "tavilyScore": 0.64131004,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 3,
+        "reason": "Superhuman feature promotion; adjacent scheduling pain but vendor content.",
+        "quote": "Stop that annoying inbox back and forth.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Product promotion for Superhuman Mail's competing booking feature, not a lead expressing a need.",
+        "quote": "Stop that annoying inbox back and forth.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/ai-sales-automation-ultimate-lead-to-customer-guide-teplinskiy-mewcc",
+      "title": "AI Sales Automation: The Ultimate Lead-to-Customer Guide",
+      "content": "Can AI really qualify leads better than humans? AI does not replace human judgment on qualification. It applies consistent, predefined business rules faster and more reliably than a person juggling twenty other tasks, which is a real advantage in speed and consistency, not in judgment.\n\nA rules-based AI lead qualification setup routes leads based on factors you define, such as:\n\n Service or product requested\n Geography or service territory\n Company size or account type\n Which salesperson owns that territory or account\n Urgency indicated in the message [...] ### Step 2: AI Reads and Organizes the Request\n\nOnce the record exists, AI can read the actual message and pull out the details that matter, even when a lead writes in plain, unstructured language instead of filling out clean form fields. AI is especially useful here because most inbound requests do not arrive as neat data. A lead might write “Hi, we need someone to look at our HVAC system at our Marietta location before it gets hot again, pretty urgent” instead of filling out five separate boxes.\n\nFrom a message like that, AI can identify:\n\n Company and contact information\n The service being requested\n Location\n Urgency level\n The general intent of the message\n Any other details worth flagging for the salesperson\n\n### Step 3: Qualify and Route the Lead Using AI Lead Qualification [...] AI sales process automation is a system of connected tools and rules that automatically captures, organizes, qualifies, routes, and tracks a lead from the moment it enters your business until a salesperson closes the deal. It combines automation, which follows consistent rules every time, with AI, which reads and interprets unstructured information like a form message or an email. Together, they remove manual steps without removing the person who actually sells.\n\nThink of it as four connected jobs happening automatically in the background while your team focuses on the conversation.\n\n### Step 1: Automatically Capture the Lead\n\nA lead can enter your business through several channels, and automation should catch every one of them the same way. Common sources include:",
+      "tavilyScore": 0.6064402,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 3,
+        "reason": "AI lead qualification guide; tangential to scheduling.",
+        "quote": "routes leads based on factors you define",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "An educational AI sales automation guide, not a person asking for scheduling or routing help.",
+        "quote": "AI Sales Automation: The Ultimate Lead-to-Customer Guide",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/benjamin-aaron-reed_companies-using-lead-routing-tools-take-3h-activity-7517955306019115011-1FKb",
+      "title": "Close Lead Response Gap with 7-Step RevOps Workflow | 🚀 Benjamin Reed posted on the topic | LinkedIn",
+      "content": "reaching out again. - What did they care about? - What problem were they trying to solve? - Who was involved? - What changed since the last conversation? 4/ Existing accounts → expand Map other teams, use cases, or products that could create upsell and cross-sell opportunities. - Which accounts are already active? - What other teams could benefit? - Are there unused products or use cases? - Which accounts show expansion potential? 5/ Inbound leads → prioritize Score and route leads using the data already available in your CRM. - Who fits the ICP? - Who is showing the strongest intent? - Which leads need a response now? - Who should each lead go to? — — — — — —  Then automate the repetitive work: Clean → enrich → analyze → identify → route!! That process can uncover opportunities hiding in",
+      "tavilyScore": 0.5672775,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 3,
+        "reason": "RevOps workflow content touching lead routing; only partially relevant.",
+        "quote": "Score and route leads using the data already available in your CRM.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "A RevOps workflow post with adjacent lead-routing relevance, but no explicit scheduling problem or buying intent.",
+        "quote": "Score and route leads using the data already available in your CRM.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Medium",
+      "url": "https://medium.com/@jainshubham0403/how-i-built-an-ai-powered-lead-qualification-routing-system-in-n8n-production-ready-695c974555e3",
+      "title": "Medium",
+      "content": "- Uses AI to understand intent, not just keywords\n- Scores leads safely without breaking downstream systems\n- Routes high‑intent leads instantly\n- Keeps humans in the loop where it matters\n\nAll of this is built inside n8n, using patterns I actually deploy for clients.\n\n## What This System Does (At a Glance) 🔎\n\nAt a high level, the workflow:\n\n1. Accepts inbound leads via a public webhook\n2. Validates and normalizes incoming data\n3. Uses AI to score and classify intent\n4. Applies strict guardrails to AI output\n5. Routes leads based on priority\n6. Integrates with CRM, Gmail, Slack, and Google Sheets\n\nLet’s dive deep into each of these nodes one by one! 😄\n\n## Step 1: Production‑Safe Webhook Intake [...] - The workflow assigns safe default values\n- The lead is routed for manual review\n- The automation continues without crashing\n\n## Step 5: Priority‑Based Lead Routing\n\nOnce a safe score exists, leads are routed into three clear paths.\n\n## High Priority Leads (Score ≥ 80) 🔥\n\nThese are strong buying‑intent leads. For these, the workflow:\n\n- Upserts the contact into HubSpot\n- Creates a deal automatically\n- Attaches AI‑generated intent, score, and summary\n- Sends an instant Slack notification to the team\n\nThis ensures sales teams act while intent is hot.\n\n## Medium Priority Leads (Score 40–79) 💪🏻\n\nThese leads need clarification, not automation arrogance.\n\nFor this path: [...] # How I Built an AI‑Powered Lead Qualification & Routing System in n8n (Production‑Ready)\n\n> This is Project 2 in my n8n + AI Automation portfolio. Like Project 1, the goal wasn’t just to make something work — it was to make it safe, observable, and client‑ready.\n\n## Why I Built This 🤔\n\nInbound lead handling is one of those things that looks simple on the surface, but quietly bleeds time and revenue when done poorly.\n\nIn most teams, I see the same problems again and again:\n\n- Every inbound form submission lands in the same inbox\n- Sales teams manually read and triage leads\n- CRMs get cluttered with low‑intent or irrelevant entries\n- Follow‑ups are either delayed, generic, or forgotten\n\nI wanted to build a realistic, production‑grade lead pipeline that:",
+      "tavilyScore": 0.56103444,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 3,
+        "reason": "n8n lead-routing build walkthrough; related automation, not scheduling.",
+        "quote": "Routes high‑intent leads instantly",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "A technical n8n lead-routing tutorial and services-adjacent content, not a prospect seeking a scheduling product.",
+        "quote": "All of this is built inside n8n, using patterns I actually deploy for clients.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/calendar-scheduling-software-compared-practical-playbook-picking-lwyse?trackingId=KiHoh1FiZAH%2BVLi2DEYWug%3D%3D",
+      "title": "Calendar Scheduling Software Compared: the practical playbook for picking the right tool",
+      "content": "Calendar scheduling software is a system that turns availability into confirmed meetings or appointments, with the right person, at the right time, with the right context.\n\nIn plain terms, it replaces these manual steps: Checking calendars back and forth Proposing times over email Chasing replies Creating events manually Sending reminders by hand Collecting intake details in separate forms Losing context in scattered threads\n\nA good scheduling tool does three jobs end to end:\n\n1. Availability management: live calendar sync, rules, buffers, time zones, limits\n2. Conversion: a booking experience people finish, on any device, without confusion\n3. Operations: reminders, reschedules, routing, reporting, and follow-up [...] Step 4: Add intake questions that reduce back-and-forth One question that qualifies One question that sets agenda One question that collects key context Keep it short so people finish the booking.\n\nStep 5: Configure reminders based on risk High no-show meetings benefit from reminders. Low-risk internal meetings can stay lighter.\n\nStep 6: Set up routing if you are a team Decide who gets what and why. Keep routing rules simple at first, then add nuance.\n\nStep 7: Integrate with your system of record CRM for sales ATS for recruiting Help desk for support Even one integration can remove a lot of manual work. [...] If a tool only does job 1, it saves some time. If it does all three, it changes how fast your team moves.\n\nWho needs calendar scheduling tools and what success looks like\n\nGrowing companies researching best appointment scheduling software for small business often compare automation workflows at scheduling software for small business.\n\nSales teams and founders Success looks like fewer missed demos, faster speed-to-lead, and clean handoffs. The win is routing and context, not just a meeting link.\n\nSmall teams should also read this guide to best appointment scheduling software for small business.\n\nRecruiting and HR Success looks like fewer scheduling emails, fewer no-shows, and faster time-to-interview. The win is multi-interviewer coordination and reschedule safety.",
+      "tavilyScore": 0.5529924,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 3,
+        "reason": "Comparison/playbook content about scheduling software; informative, not a lead.",
+        "quote": "Checking calendars back and forth Proposing times over email",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "A scheduling-software comparison playbook/listicle with no individual prospect expressing a need.",
+        "quote": "Calendar Scheduling Software Compared: the practical playbook for picking the right tool",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/khatab-wedaa-9aa10b210_mawaidi-schedule-meetings-without-the-back-and-forth-activity-7445812202575523840-dYWz",
+      "title": "Mawaidi - Schedule Meetings Without the Back-and-Forth | Khatab Wedatalla",
+      "content": "🚀 Excited to share Mawaidi.io — an open-source meeting scheduling platform I built from scratch!  Think Calendly… but bilingual (Arabic + English), open-source, and fully customizable.  --- 💡 What it does:   • Smart availability rules (working hours, buffers, session durations)   • Public booking page — share your link, let others pick a time   • Google Calendar + Google Meet integration (auto-create meetings with links)   • Guests can reschedule or cancel without back-and-forth emails   • Automated email reminders before meetings   • Analytics dashboard (weekly activity, completion rates, booking stats)  --- 🔥 What makes it different:   • Native Arabic + English support with proper RTL from day one   • OAuth-only authentication (Google & GitHub) — no passwords needed   • Fully [...] (Google & GitHub) — no passwords needed   • Fully timezone-aware experience   • Clean, modern dashboard with real-time status indicators  --- 🌐 Check it out:     Would love your feedback 🙌  #OpenSource #BuildInPublic #FullStack #NestJS #NextJS #React #TypeScript #SaaS #Scheduling #WebDevelopment [...] Mawaidi - Schedule Meetings Without the Back-and-Forth\n\nMawaidi - Schedule Meetings Without the Back-and-Forth   mawaidi.io\n\n   12\n\nLike   Comment\n\nTo view or add a comment, sign in\n\n995 followers\n\n 52 Posts\n\nView Profile   Follow\n\n## Explore related topics\n\n Scheduling Meetings Across Time Zones\n How to Schedule Sales Meetings With New Clients\n Scheduling Automation Solutions\n Scheduling Workflow Solutions\n Scheduling with AI and Machine Learning\n Scheduling Virtual Meetings That Actually Work\n Engineering Project Management Dashboards\n\n## Explore content categories\n\n Career\n Productivity\n Finance\n Soft Skills & Emotional Intelligence\n Project Management\n Education\n Technology\n Leadership\n Ecommerce\n User Experience\n\n## Sign in to view more content",
+      "tavilyScore": 0.78032786,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 2,
+        "reason": "Self-promotion of a competing open-source scheduling tool, not a lead for Cal.com.",
+        "quote": "an open-source meeting scheduling platform I built from scratch! Think Calendly",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Vendor self-promotion for a competing open-source scheduling platform, not a prospect seeking a solution.",
+        "quote": "Excited to share Mawaidi.io — an open-source meeting scheduling platform I built from scratch!",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/scheduling-tools-eliminate-back-and-forth-email-hell-silas-brighten-prh5f",
+      "title": "Scheduling Tools That Eliminate Back-and-Forth Email Hell",
+      "content": "Calendly's professional polish:\n\n- Buffer times prevent back-to-back meeting fatigue\n- Round robin distribution balances team workloads\n- Workflow automations trigger follow-up sequences\n- Payment collection handles consultation fees seamlessly\n- Analytics show which meeting types convert best\n\nPicktime's surprising depth:\n\n- Completely free for unlimited bookings\n- Multi-staff scheduling manages team availability\n- Class and workshop booking for group events\n- Custom branding maintains professional appearance\n- SMS reminders reduce no-show rates significantly\n\nAcuity's advanced capabilities: [...] Acuity's advanced capabilities:\n\n- Intake forms collect detailed information before meetings\n- Package booking sells multiple sessions upfront\n- Client portal provides ongoing relationship management\n- Advanced customization matches exact business needs\n- Certification and course scheduling for educational businesses\n\n### What I Can Do Now & How You Can Use This\n\nMy scheduling transformation results:\n\n- Eliminated 15+ scheduling emails weekly with automated booking\n- Set up qualification questions that filter serious prospects\n- Created different meeting types for different business needs\n- Implemented automatic payment collection for consultations\n\nFor individuals: [...] Picktime proves that free doesn't mean inferior. For small businesses, it offers enterprise-level features without the cost barrier.\n\nAcuity's client portal transforms one-time meetings into ongoing relationships. Clients can reschedule, access resources, and stay engaged between sessions.\n\nThe productivity mathematics: Spending 20 minutes setting up automated scheduling saves 2+ hours weekly on email coordination. That's 100+ hours annually.\n\nThe professional impression factor: A polished booking experience signals competence and efficiency. It's often the first real interaction prospects have with your business systems.",
+      "tavilyScore": 0.7577944,
+      "query": "looking for a tool to stop email back and forth scheduling meetings",
+      "a": {
+        "score": 2,
+        "reason": "Listicle comparing scheduling tools; content marketing, not a lead.",
+        "quote": "Scheduling Tools That Eliminate Back-and-Forth Email Hell",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "A listicle comparing scheduling tools with no identifiable person asking for help.",
+        "quote": "Scheduling Tools That Eliminate Back-and-Forth Email Hell",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/leadangel_salesforce-leaddistribution-leadrouting-activity-7505616657890021376-WRFf",
+      "title": "Salesforce Lead Routing Best Practices and Automation | LeadAngel posted on the topic | LinkedIn",
+      "content": "+ No alternative text description for this image\n\n    4\n\n  Like   Comment\n\n  To view or add a comment, sign in\n LeadAngel\n\n  8,924 followers\n\n  + Report this post\n\n  Every minute matters. 38% of inbound leads never get a response. And when the first follow-up is delayed beyond 5 minutes, the chances of qualifying that lead drop dramatically. The problem isn't always your sales team—it's often broken or manual lead routing. With LeadAngel's advanced Lead Routing, inbound leads are automatically matched and assigned to the right rep in real time, helping your team respond faster and capture more opportunities. Learn more:  #LeadAngel #LeadRouting #LeadManagement #SalesforceLeadRouting #RevOps #SalesOps #SalesAutomation #B2BSales #CRM #SpeedToLead [...] Is your Salesforce lead distribution process actually routing every lead to the right rep? Automating lead assignment is only the first step. As sales teams grow, routing often needs to account for more than lead ownership. Territory, account ownership, rep availability, workload, skills, lead score, and fallback logic can all affect where a lead should go. Our latest guide breaks down: → Round-robin, weighted, and criteria-based distribution → Salesforce Lead Assignment Rules and Flow → Best practices for building reliable routing logic → Common gaps in native Salesforce lead distribution → How LeadAngel supports more complex routing workflows If your team is managing high-volume or complex lead routing in Salesforce, this guide is worth a read. Read the full guide:  #Salesforce [...] 8,924 followers\n\n  + Report this post\n\n  Still using native Salesforce assignment rules? Does every new rule you add create more problems to solve? Your routing process is ready for an upgrade. If your team is constantly reassigning leads, adding more rules to patch old ones, and spending hours managing exceptions—it's a sign your assignment rules have hit their limit. Growing teams need smarter automation. LeadAngel intelligently routes leads based on territory, account ownership, and capacity in real-time. ✓ Automated Lead Routing ✓ Lead-to-Account Matching ✓ Ownership-Based Assignment ✓ Instant SDR Scheduling See how teams cut routing complexity in half → [ #LeadManagement #Salesforce #LeadRouting #CRMAutomation #SalesEnablement #LeadAngel #SalesforceLeadRouting\n\n    4",
+      "tavilyScore": 0.629433,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 2,
+        "reason": "LeadAngel vendor self-promotion about lead routing.",
+        "quote": "inbound leads are automatically matched and assigned to the right rep in real time",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "LeadAngel self-promotion for Salesforce lead routing, with no individual prospect seeking scheduling help.",
+        "quote": "With LeadAngel's advanced Lead Routing, inbound leads are automatically matched and assigned to the right rep in real time",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/solutionsconnecbiz_crosscompanyscheduling-timezonemanagement-activity-7508163446706814977-NHXH",
+      "title": "Avoid Time Zone Scheduling Delays with CalendarConnect - LinkedIn",
+      "content": "Often, the problem starts earlier: Availability was incomplete, a time zone was misunderstood, or an external calendar conflict surfaced too",
+      "tavilyScore": 0.6033477,
+      "query": "frustrated with scheduling across time zones and calendar conflicts",
+      "a": {
+        "score": 2,
+        "reason": "CalendarConnect vendor promo about timezone scheduling.",
+        "quote": "a time zone was misunderstood, or an external calendar conflict surfaced",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Promotional content for CalendarConnect about timezone and availability problems, not an organic prospect request.",
+        "quote": "Availability was incomplete, a time zone was misunderstood, or an external calendar conflict surfaced too",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/more-time-conflicts-guide-meeting-scheduling-john-rampton-te5we",
+      "title": "No More Time Conflicts: A Guide to Meeting Scheduling",
+      "content": "Here are a few tips to get you started:\n\n Become familiar with everyone’s time zones. When working with a distributed team, keep track of everyone’s time zone. After all, you don’t want to schedule a meeting when it’s inconvenient for others. With Calendar, teams can connect and collaborate across time zones.\n Determine work hours. The 9-to-5 schedule does not apply to everyone. Some people can start their day early, while others may work unconventional hours. By understanding each person’s working hours, you can avoid scheduling meetings at the wrong time.\n Take into account cultural and regional differences. Holidays, religious observances, and local practices that might affect availability should be considered. [...] If you want to avoid meeting fatigue, here are some tips:\n\n Spread out your meetings. Avoid scheduling meetings right after each other if possible.\n Keep time boundaries in mind. When scheduling meetings with participants in different time zones, avoid scheduling them outside of typical work hours.\n Don’t forget to add buffer time. To give participants time to wrap up discussions or take a quick break between meetings, leave a 15-minute buffer between meetings.\n\nWith these factors in mind, you can create a more balanced and healthier meeting schedule for everyone involved.\n\n## 6. Use asynchronous meetings as an alternative. [...] Through these tools, not only can you find the best time, but everyone’s availability will be respected without a flurry of emails.\n\n## 3. Offer a variety of options.\n\nRather than suggesting one meeting time, offer several options. By offering multiple time slots, you increase the chance that most, if not all, of your participants will be able to attend. When your team spans multiple time zones, it’s a good idea to offer morning, afternoon, and midday options.\n\nHere are some things to keep in mind when sending out meeting proposals:",
+      "tavilyScore": 0.5986056,
+      "query": "frustrated with scheduling across time zones and calendar conflicts",
+      "a": {
+        "score": 2,
+        "reason": "Generic scheduling guide content, not a person seeking help.",
+        "quote": "keep track of everyone’s time zone",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "A generic instructional guide to meeting scheduling with no identifiable person expressing a current need.",
+        "quote": "No More Time Conflicts: A Guide to Meeting Scheduling",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/smartlink-basics_a-demo-request-landed-friday-at-412-pm-activity-7506755185881489411-K7_G",
+      "title": "Automated Lead Routing for Inbound Sales Leads - LinkedIn",
+      "content": "Automated lead routing assigns every inbound lead to a named owner with a response clock,. Like Comment.",
+      "tavilyScore": 0.5428027,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 2,
+        "reason": "Brief vendor-style content on lead routing.",
+        "quote": "assigns every inbound lead to a named owner with a response clock",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "A terse promotional or informational statement about automated lead routing, with no person asking for help.",
+        "quote": "Automated lead routing assigns every inbound lead to a named owner with a response clock",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L18",
+      "text": "The back-and-forth usually stops once clients can book from your real availability instead of trading times over email. Calendly + Google Meet is hard to beat on cost for a few meetings, but it does leave the flow split. Disclosure: I work on Cal.com. It can handle booking, invites, reminders, and video calls in one flow, with a free tier worth checking against your needs.",
+      "usage": {
+        "in": 449,
+        "out": 88
+      },
+      "latencyMs": 1214
+    },
+    {
+      "leadId": "L5",
+      "text": "Getting the time zones wrong twice is exactly how most people learn this. Your UTC-first approach and separate calendar are solid fixes. One addition: use a scheduling tool that detects each guest’s time zone automatically, so nobody has to convert manually. Disclosure: I work on Cal.com, which handles that plus availability and reminders. Your point about trust is the real takeaway.",
+      "usage": {
+        "in": 476,
+        "out": 80
+      },
+      "latencyMs": 1277
+    },
+    {
+      "leadId": "L9",
+      "text": "The hybrid approach is smart. Curated times show you've thought about their schedule, while a backup link handles the cases where none of those work. \n\nOne thing worth adding: if you use a booking link, make sure it shows your real availability and lets them suggest alternatives. Some tools only offer fixed slots, which recreates the rigidity you're trying to avoid.\n\nDisclosure: I work on Cal.com. We've found that letting guests propose times alongside the available slots reduces friction for exactly this reason.",
+      "usage": {
+        "in": 489,
+        "out": 107
+      },
+      "latencyMs": 1511
+    },
+    {
+      "leadId": "L15",
+      "text": "You're right, a booking link takes the back and forth out of scheduling. Buffers and one intake question are the two settings I'd add too. One more worth checking: connect every calendar you use, so a personal appointment doesn't collide with a work booking. Disclosure: I work on Cal.com, where availability across multiple calendars and booking questions are core features. Whichever tool people use, your point about sending one link instead of three emails is the real win.",
+      "usage": {
+        "in": 455,
+        "out": 99
+      },
+      "latencyMs": 1691
+    },
+    {
+      "leadId": "L20",
+      "text": "You nailed it with \"creating a system that reduces unnecessary back-and-forth.\" That mindset shift from calendar management to system design is what separates good VAs from great ones. Consider adding buffer time between calls and setting booking limits per day to protect that focus time you mentioned. Disclosure: I work on Cal.com, where we see VAs use routing forms to qualify meetings before they even hit the calendar.",
+      "usage": {
+        "in": 420,
+        "out": 88
+      },
+      "latencyMs": 1305
+    }
+  ],
+  "companies": [
+    {
+      "company": "YourWeddingLists.com",
+      "signal": "launch",
+      "reason": "Launched a platform with availability calendars and scheduling tools for online booking.",
+      "url": "https://finance.yahoo.com/news/yourweddinglists-com-launches-connecting-couples-180000328.html",
+      "title": "YourWeddingLists.com Launches: Connecting Couples with Wedding Vendors for Seamless Online Booking"
+    },
+    {
+      "company": "Vayo",
+      "signal": "funding",
+      "reason": "Launched as an AI travel startup with a planned $100M investment from Booking Holdings.",
+      "url": "https://www.citybiz.co/article/918561/booking-holdings-launches-ai-travel-startup-vayo-with-planned-100m-investment",
+      "title": "Booking Holdings Launches AI Travel Startup Vayo with Planned $100M Investment | citybiz"
+    },
+    {
+      "company": "Tambourine",
+      "signal": "launch",
+      "reason": "Launched Tambourine One website and booking engine to remove booking friction.",
+      "url": "https://finance.yahoo.com/news/tambourine-launches-tambourine-one-website-190700946.html",
+      "title": "Tambourine Launches Tambourine One: Website & Booking Engine"
+    },
+    {
+      "company": "Monaco",
+      "signal": "funding",
+      "reason": "Raised $50 million in May 2026 as an AI sales agent startup.",
+      "url": "https://newmarketpitch.com/blogs/news/ai-sales-agents-top-startups-valuation",
+      "title": "Top AI Sales Agent Startups by Valuation (2026)\n – New Market Pitch"
+    },
+    {
+      "company": "Third Way Health",
+      "signal": "funding",
+      "reason": "Funding will scale sales and implementation teams and expand customer growth.",
+      "url": "https://www.fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-26",
+      "title": "Fierce Healthcare Fundraising Tracker '26: Abby Care secures $82M for family-led care; Allswell nabs $7M to expand LGBTQ therapy"
+    }
+  ],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3564,
+      "tokensOut": 1219,
+      "cost": 0.0011440999999999999,
+      "latencyMs": 6061,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3606,
+      "tokensOut": 1186,
+      "cost": 0.019072,
+      "latencyMs": 11206,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 0.95,
+      "top5Overlap": 4
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3035,
+      "out": 945,
+      "cost": 0.0020445,
+      "latencyMs": 2584
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3564,
+      "out": 1219,
+      "cost": 0.0011440999999999999,
+      "latencyMs": 6061
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3606,
+      "out": 1186,
+      "cost": 0.019072,
+      "latencyMs": 11206
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3059,
+      "out": 2912,
+      "cost": 0.0044120999999999995,
+      "latencyMs": 9599
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 2289,
+      "out": 462,
+      "cost": 0.009198,
+      "latencyMs": 1691
+    }
+  ],
+  "scorerError": null
+}

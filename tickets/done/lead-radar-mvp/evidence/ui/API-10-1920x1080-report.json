@@ -1,0 +1,291 @@
+{
+  "viewport": "1920x1080",
+  "chip": "https://cal.com",
+  "layout": {
+    "empty": {
+      "innerWidth": 1920,
+      "scrollWidth": 1920,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    },
+    "running": {
+      "innerWidth": 1920,
+      "scrollWidth": 1905,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/enterprise\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/blog/calcom-v7-0\""
+      ]
+    },
+    "results": {
+      "innerWidth": 1920,
+      "scrollWidth": 1905,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a.lead-title \"‎How many emails should it take to sched\"",
+        "a.lead-title \"How do you avoid all the back-and-forth \"",
+        "a.lead-title \"Choosing the Right Coordination Tool for\"",
+        "a.lead-title \"Double-Booking Prevention Tip for Meetin\"",
+        "a.lead-title \"‎How many emails should it take to sched\""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/enterprise\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/blog/calcom-v7-0\""
+      ]
+    },
+    "afterActions": {
+      "innerWidth": 1920,
+      "scrollWidth": 1905,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a.lead-title \"‎How many emails should it take to sched\"",
+        "a.lead-title \"How do you avoid all the back-and-forth \"",
+        "a.lead-title \"Choosing the Right Coordination Tool for\"",
+        "a.lead-title \"Double-Booking Prevention Tip for Meetin\"",
+        "a.lead-title \"‎How many emails should it take to sched\""
+      ],
+      "overlaps": [
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/enterprise\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/blog/calcom-v7-0\""
+      ]
+    },
+    "phone390": {
+      "innerWidth": 473,
+      "scrollWidth": 473,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\"",
+        "a.lead-title \"How do you avoid all the back-and-forth \"",
+        "a.lead-title \"I scheduled a founder’s launch week and \"",
+        "a.lead-title \"Choosing the Right Coordination Tool for\"",
+        "a.lead-title \"Double-Booking Prevention Tip for Meetin\"",
+        "a.lead-title \"‎How many emails should it take to sched\"",
+        "a.lead-title \"#manageditserviceslosangeles #losangeles\"",
+        "a.lead-title \"I used to think time zones were a schedu\"",
+        "a.lead-title \"Auto-Route Inbound Leads in Under 24 Hou\"",
+        "a.lead-title \"Schedule Meetings in Superhuman Mail - L\""
+      ],
+      "overlaps": [
+        "A.brand \"Lead Radar\" x DIV.score score-low \"3\"",
+        "A.brand \"Lead Radar\" x DIV.score-b \"Kimi 1\"",
+        "A.brand \"Lead Radar\" x SPAN.pill pill-platform \"LinkedIn\"",
+        "SPAN.pill pill-muted \"Nebius Token Factory · Ta\" x SPAN.pill pill-success \"✓ Verified in source\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x SPAN.muted \"Sources\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com/\"",
+        "SPAN.pill pill-muted \"looking for a tool to sto\" x A. \"cal.com\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/about\"",
+        "SPAN.pill pill-muted \"how do I share a booking \" x A. \"cal.com/blog/calcom-v7-0\"",
+        "SPAN.pill pill-muted \"frustrated with schedulin\" x A. \"cal.com/enterprise\""
+      ]
+    },
+    "error": {
+      "innerWidth": 1920,
+      "scrollWidth": 1920,
+      "hscroll": false,
+      "minFontPx": 14,
+      "clipped": [
+        "label.sr-only \"Company website\""
+      ],
+      "overlaps": []
+    }
+  },
+  "chipClicked": "cal.com",
+  "runningStepper": [
+    "step done: ✓Read site2.8 s",
+    "step done: ✓Understand product2.8 s",
+    "step active: Search the web",
+    "step pending: 4Score leads",
+    "step pending: 5Draft replies"
+  ],
+  "runSeconds": 29.263,
+  "progressTitle": "Done — review your leads and drafts below | total 28.6 s",
+  "errorShown": null,
+  "kpis": "20 Leads found 2 High-fit (score ≥ 7) 28.6 s Run time $0.0359 Total model cost",
+  "profile": {
+    "text": "Cal.com Product profile Cal.com is a scheduling app and meeting scheduling software that lets people share booking links while handling calendar syncing, timezone detection, reminders, video calls, r",
+    "sourceLinks": [
+      "https://cal.com/",
+      "https://cal.com/",
+      "https://cal.com/about",
+      "https://cal.com/blog/calcom-v7-0",
+      "https://cal.com/enterprise"
+    ]
+  },
+  "leads": {
+    "all": {
+      "cards": 7,
+      "withLink": 7,
+      "verified": 7,
+      "notVerbatim": 0,
+      "showMore": "Show 13 low-fit results",
+      "header": "Leads · 20 people and posts, ranked by GLM-5.3-Flash"
+    },
+    "afterShowLow": {
+      "cards": 20,
+      "withLink": 20,
+      "verified": 20,
+      "notVerbatim": 0,
+      "showMore": "Hide low-fit results",
+      "header": "Leads · 20 people and posts, ranked by GLM-5.3-Flash"
+    },
+    "sampleCard": "9 Kimi 10 Reddit ✓ Verified in source How do you avoid all the back-and-forth when scheduling client meeting? : r/smallbusinessesowners ↗ Small business owner explicitly asking for a scheduling tool that handles meetings and calls. “How do you avoid all the back-and-forth when scheduling client meet",
+    "tab_high": {
+      "cards": 2,
+      "selected": "High-fit"
+    },
+    "tab_draft": {
+      "cards": 5,
+      "selected": "With draft"
+    },
+    "tab_all": {
+      "cards": 20,
+      "selected": "All"
+    }
+  },
+  "undo": {
+    "afterReject": "draft rejected",
+    "afterUndo": {
+      "cls": "draft pending",
+      "buttons": [
+        "Approve",
+        "Edit",
+        "Reject"
+      ],
+      "counter": "2 approved · 0 rejected · 3 pending"
+    }
+  },
+  "drafts": [
+    {
+      "cls": "draft approved",
+      "badge": "Reddit",
+      "buttons": [
+        "Copy reply",
+        "Open post ↗",
+        "Undo"
+      ],
+      "tail": " tier worth checking against your needs."
+    },
+    {
+      "cls": "draft approved",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Copy reply",
+        "Open post ↗",
+        "Undo"
+      ],
+      "tail": "rust is the real takeaway. [API-10 edit]"
+    },
+    {
+      "cls": "draft rejected",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Undo"
+      ],
+      "tail": "educes friction for exactly this reason."
+    },
+    {
+      "cls": "draft pending",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Approve",
+        "Edit",
+        "Reject"
+      ],
+      "tail": "instead of three emails is the real win."
+    },
+    {
+      "cls": "draft pending",
+      "badge": "LinkedIn",
+      "buttons": [
+        "Approve",
+        "Edit",
+        "Reject"
+      ],
+      "tail": "tings before they even hit the calendar."
+    }
+  ],
+  "draftsCounter": "2 approved · 1 rejected · 2 pending",
+  "draft1HasEdit": true,
+  "copy": {
+    "toast": "Copied — paste it on the post yourself",
+    "clipboardChars": 375,
+    "draftContainsClipboard": true
+  },
+  "requestsDuringDraftActions": [],
+  "companies": {
+    "hidden": false,
+    "text": "Target companies · buying signals YourWeddingLists.com launch Launched a platform with availability calendars and scheduling tools for online booking. YourWeddingLists.com Launches: Connecting Couples with Wedding Vendors for Seamless Online Booking ↗ Vayo funding Launched as an AI travel startup",
+    "links": 5
+  },
+  "comparison": "Model comparison Same leads, scored by two Nebius models GLM-5.3-Flash was 16.7× cheaper and 1.8× faster than Kimi-K3.1-Pro, agreeing on 4 of the top 5 leads. Scorer Tokens in / out Cost Latency GLM-5.3-Flash primary 3,564 / 1,219 $0.0011 6.1 s Kimi-K3.1-Pro reference 3,606 / 1,186 $0.0191 11.2 s 0.95 Mean |score A − score B| on a 0–10 scale 4 / 5 Same leads in both top 5 20/20 · 20/20 Quotes verified in source (A · B) Every model call in this run (5)",
+  "models": "Which model does what & why Product profile DeepSeek-V4.1-Flash-1017 Fast, cheap and good at reading a web page into structured JSON. Lead scoring A (primary) GLM-5.3-Flash Very cheap and fast (with reasoning_effort low) — the model you would run on thousands of posts a day. Lead scoring B (reference) Kimi-K3.1-Pro Strongest model, run on the same leads as a quality reference to measure how much the cheap model loses. Reply drafts Kimi-K3.1-Pro Strongest writer: a human reads every draft, so ton",
+  "sections": [
+    "hero",
+    "progress",
+    "kpis",
+    "profile",
+    "leads",
+    "drafts",
+    "comparison",
+    "models",
+    "companies"
+  ],
+  "error": "! Something went wrong \"not a url\" is not a valid URL. Try again",
+  "afterTryAgain": {
+    "error": "! Something went wrong \"not a url\" is not a valid URL. Try again",
+    "newRunRequests": 2
+  },
+  "allRequests": [
+    "GET /",
+    "GET /style.css",
+    "GET /app.js",
+    "GET /api/config",
+    "POST /api/run",
+    "POST /api/run",
+    "POST /api/run"
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,11 @@
+# API-11 key check on IR-003 outputs — 2026-11-20T13:56:21Z; counts only
+API-10-run-posthog.com.json: nebius=0 tavily=0
+API-10-run-cal.com.json: nebius=0 tavily=0
+API-10-1280x720-report.json: nebius=0 tavily=0
+API-10-1920x1080-report.json: nebius=0 tavily=0
+lr-ir003-server.log: nebius=0 tavily=0
+app.js: nebius=0 tavily=0
+index.html: nebius=0 tavily=0
+style.css: nebius=0 tavily=0
+worktree incl. untracked (git grep): 0 files
+GET /api/config body keys: ["draftCount","missingKeys","models"]

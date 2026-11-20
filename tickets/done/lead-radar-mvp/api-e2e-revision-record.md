@@ -6,6 +6,7 @@
 | --- | --- | --- | --- | --- |
 | API-REV-001 | implementation_engineer / implementation-handoff.md / Round 1 | SR-001, IR-001 | N/A | Pass / 95% |
 | API-REV-002 | implementation_engineer / IR-002 / Round 2 | SR-002, IR-002 | Pass / 95% | Pass / 95% |
+| API-REV-003 | implementation_engineer / IR-003 / Round 3 | SR-003, IR-003 | Pass / 95% | Pass / 95% |
 
 ## Revision Entries
 
@@ -38,3 +39,12 @@ None.
 - Canonical artifacts updated: `api-e2e-execution-coverage-report.md` (Round 2 section)
 - Prior result: Pass / 95%. Current: Pass / 95%.
 - Remaining risks: a live Tavily outage during the companies step was not simulated (probe and replay only); an uncommitted, unvalidated `public/index.html` redesign in the shared worktree does not match `app.js`.
+
+### API-REV-003 — IR-003 UI polish (AC-012) on d0bfa5a
+
+- Trigger: implementation_engineer, IR-003 (branch ui-polish-sr003 at d0bfa5a), Round 3
+- Cases added: API-10 (live journeys at 1280×720 via the posthog.com chip and at 1920×1080 via the cal.com chip, each with a 390 px recheck), API-11 (key counts)
+- Prior failure resolution: FU-001's narrow-width table overflow is resolved by the new layout (API-10 390 px `hscroll` false); FU-001's Copy-failure feedback is resolved in code (`app.js` shows "Copy failed — select the text…" on a rejected write; the success path was proven live).
+- Canonical artifacts updated: `api-e2e-execution-coverage-report.md` (Round 3)
+- Prior result: Pass / 95%. Current: Pass / 95%.
+- Remaining risks: uncommitted SR-004 edits (src/steps/*, public/app.js) appeared in the shared worktree during this round and are not covered by this result; the stepper labels are tight at 390 px (cosmetic).

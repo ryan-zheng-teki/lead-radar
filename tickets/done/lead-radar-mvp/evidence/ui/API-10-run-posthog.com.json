@@ -1,0 +1,603 @@
+{
+  "url": "https://posthog.com/",
+  "at": "2026-11-20T13:54:26.329Z",
+  "totalMs": 43293,
+  "totalCost": 0.032583,
+  "profile": {
+    "name": "PostHog",
+    "summary": "PostHog is a product context layer that ingests and stores analytics, errors, replays, and business data so teams and AI agents can query and act on it.",
+    "problems": [
+      "Product and company data is scattered across analytics, errors, replays, business data, support tickets, and external tools.",
+      "AI agents lack product context and teams have to context-switch to a browser to query product data.",
+      "Teams need to investigate conversion drops and funnel issues across ads, payments, and code changes.",
+      "Session replays reveal dead clicks, quick backs, long stalls, checkout issues, and payment retries.",
+      "Error tracking is needed to group exceptions and stack traces, including mobile sign-in failures.",
+      "Teams need feature flags, experiments, no-code A/B testing, surveys, and feedback tools.",
+      "A data warehouse and CDP are needed to pipe in third-party data from many sources for a complete picture.",
+      "Self-driving inbox findings need to be clustered into prioritized reports and pull requests.",
+      "Teams need logs, tracing, AI observability, heatmaps, replay vision, and other built-in tools for agents.",
+      "Setup and querying should work from the terminal, editor, desktop, Slack, or web app without new UI."
+    ],
+    "ideal_customer": "Product, engineering, data, and AI-agent teams at software companies that need one place to ingest, query, and act on product and company data, from free-tier startups to teams scaling usage.",
+    "pain_phrases": [
+      "Our analytics, errors, replays, and business data are scattered across too many tools.",
+      "I can’t get my AI agent to answer questions about our product data without switching to a browser.",
+      "Signups are growing but paid conversions are falling and I don’t know where the drop starts.",
+      "Customers keep asking where to download invoices and our checkout errors are too generic.",
+      "Mobile users get a blank screen when sign-in fails and replays show them retrying the same card."
+    ],
+    "search_queries": [
+      "looking for a tool to unify product analytics session replay error tracking and business data",
+      "how do I give AI coding agents product context from analytics errors and replays",
+      "frustrated with scattered analytics errors replays and support tickets",
+      "how to debug falling paid conversions across Google Ads Stripe and GitHub changes",
+      "tool to query product data from my editor without switching to a browser",
+      "how to cluster session replay errors and support tickets into prioritized reports"
+    ],
+    "domain": "posthog.com",
+    "sources": [
+      "https://posthog.com/",
+      "https://posthog.com/products",
+      "https://posthog.com/pricing",
+      "https://posthog.com",
+      "https://posthog.com/blog/what-if-your-product-built-itself"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L18",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/analytics-has-changed-heres-what-do-posthog-afvzc",
+      "title": "Analytics has changed. Here's what to do about it",
+      "content": "- Use the wrong definition for a term like “sign ups” or “MRR.” We asked Claude, Cursor, and PostHog AI “what’s our MRR last month?” and got three different queries and answers.\n- Do their own math and mess up the calculation. An MCP-heavy user told us experiment numbers didn’t match the UI because the agent was writing its own query.\n- Use the wrong column or property. A question about AI crawler errors returned an 0% error rate because it used status\\_code rather than proxy\\_status\\_code (which shows a 1% error rate).\n\nYou, your agents, your colleagues, and their agents will assume they are right and there’s no gatekeepers (like a data team) to say they’re wrong. [...] - Tagging key events with an agent or human source. At PostHog, backend events like dashboard created or experiment created get a source property with values like web, mcp, slack, and cli. This is how we know 50% of dashboards and 18% of experiments are created using AI.\n- MCP Analytics. Our SDK captures every tool call as an $mcp\\_tool\\_call. It provides clients, error rates, latency, and intent. Through this we’ve found many missing capabilities as well as broken ones, like agents telling us they couldn’t resolve or archive error tracking issues. [...] - What are the events we actually care about? We have collected 14 events and 72 sign up related actions, but only two are “approved” through our semantic layer.\n- Are they accurate? Replay activation is an event we care about, and we saw it falling over the last four months, when we realized it didn’t account for MCP users, so it needed rewriting.\n- What does good look like? A scorecard says gross revenue retention above 80% is healthy for mature products and monthly logo churn below 2.5% is green.\n- Codifying definitions and gotchas.Skills and our semantic layer is how we do this. For example, our revenue analysis skill mentions that “upcoming” invoices are full-period projections, not settled revenue and credited startups read $0 until credits run out.",
+      "tavilyScore": 0.3644382,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 6,
+        "reason": "PostHog's own content about agents misquerying analytics; describes the exact problem PostHog solves, but vendor-authored.",
+        "quote": "We asked Claude, Cursor, and PostHog AI \"what's our MRR last month?\" and got three different queries and answers",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Discussion exposes concrete AI analytics consistency problems relevant to a product context layer, but appears to be vendor guidance.",
+        "quote": "We asked Claude, Cursor, and PostHog AI “what’s our MRR last month?” and got three different queries and answers.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/session-replay-sampling-bias-you-watching-wrong-customers-margub-alam-sotrf",
+      "title": "Fix Session Replay Sampling Bias",
+      "content": "The correct priority may be the issue with the smallest replay count.\n\nA useful replay program therefore asks two separate questions:\n\n1. How frequently does the issue occur in the relevant population?\n2. How much customer or revenue value is exposed when it occurs?\n\nA practical prioritization score can be expressed as:\n\nEstimated affected sessions × conversion opportunity × expected value × confidence\n\nThis is not accounting-grade attribution. It is a better decision model than sorting recordings by issue count.\n\n### Do not “fix” bias by recording everything\n\nIncreasing the recording rate can reduce random sampling error, but it does not automatically remove systematic bias. [...] Use a repeatable workflow:\n\n01. Select one decision and one customer population.\n02. Review the segment's replay coverage against analytics.\n03. Watch a random set before applying issue filters.\n04. Watch targeted sets for errors, abandonment, latency, and experiment exposure.\n05. Code observations using a consistent friction taxonomy.\n06. Estimate affected sessions using known sampling probabilities.\n07. Add conversion opportunity and value exposure.\n08. Validate the proposed cause with quantitative data.\n09. Release the fix with an experiment or measurable before-and-after design.\n10. Check whether the expected customer and revenue outcome changed.\n\nThis turns session replay from a video library into a decision system.\n\n### The metric that matters is not recordings watched [...] ### Analyst attention bias\n\nPeople prefer dramatic recordings. A chaotic session feels more informative than a quiet abandonment.\n\nBut the session with no clicks after the pricing page may be the commercially important one.\n\n### The revenue problem hidden inside raw replay counts\n\nSuppose a team finds these issues in its watched sessions:\n\n- 28 sessions contain repeated navigation clicks\n- 11 sessions contain a form validation error\n- 4 sessions contain a payment failure\n\nThe raw count makes navigation look like the priority.\n\nNow add business context:\n\n- The navigation issue affects content readers with no purchase intent\n- The validation issue affects demo requests worth an estimated $800 each\n- The payment issue affects carts averaging $1,200",
+      "tavilyScore": 0.52660143,
+      "query": "how to cluster session replay errors and support tickets into prioritized reports",
+      "a": {
+        "score": 5,
+        "reason": "Practitioner deeply working on session replay prioritization — related need, potential PostHog replay user.",
+        "quote": "A practical prioritization score can be expressed as",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Instructional article on replay prioritization and sampling bias, with no identifiable prospect requesting assistance.",
+        "quote": "A useful replay program therefore asks two separate questions",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/watch-losing-variant-what-session-replay-reveals-after-margub-alam-va1ef",
+      "title": "Session Replay After A/B Tests: Find Lost Revenue",
+      "content": "### Quantify the Behavioral Pattern Before Prioritizing It\n\nAfter replay reveals a pattern, define a trackable behavioral signature.\n\nFor example:\n\n- First validation error occurs after payment interaction\n- User returns from payment to order summary\n- More than one click occurs on the collapsed summary label\n- Purchase does not occur within the exposed session\n\nThen compare the rate of that signature between variants.\n\nAssume:\n\n- 10,000 users were exposed to each variant\n- 8% of Variant B sessions showed checkout backtracking\n- 3% of control sessions showed the same behavior\n- The conversion rate was 22% without the behavior and 9% with it\n- Average order value was $120\n\nVariant B produced 500 excess backtracking sessions:\n\n`10,000 × (8% − 3%) = 500 excess sessions` [...] Look for duplicate success events, thank-you page reloads, missing transaction confirmation, unexpected redirects, and variant tags that disagree with the visual treatment.\n\n### Use a Replay Coding Framework\n\nFor each reviewed session, record a small, consistent set of observations:\n\n- Experiment key and variant\n- Exposure confirmed: yes or no\n- Primary task attempted: yes or no\n- Outcome completed: yes or no\n- Friction category\n- Step where friction first appeared\n- Severity: low, medium, or high\n- Evidence timestamp or replay moment\n- Tracking mismatch: yes or no\n- Recommended action: ignore, investigate, fix, or retest\n\nTwo reviewers should independently code a subset of sessions. If they routinely disagree, the categories are too vague or the evidence is too weak. [...] Did the experience break rather than persuade poorly?\n\nLook for missing components, flicker, layout shift, unresponsive controls, validation loops, loading states that never resolve, and browser-specific defects.\n\n### 5. Trust failure\n\nDid the new design remove cues that made the original experience feel safe or familiar?\n\nLook for hesitation before payment, repeated review of totals, attempts to find security or return information, and exits immediately after a surprising fee appears.\n\n### 6. Measurement failure\n\nDid the user complete the desired action while analytics failed to record it, or did analytics record an outcome that the replay does not support?",
+      "tavilyScore": 0.3746763,
+      "query": "how to cluster session replay errors and support tickets into prioritized reports",
+      "a": {
+        "score": 5,
+        "reason": "Practitioner content on using session replay to diagnose checkout conversion loss — active in the exact problem space.",
+        "quote": "After replay reveals a pattern, define a trackable behavioral signature",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Prescriptive article about replay analysis after experiments, with no person expressing an unresolved need.",
+        "quote": "After replay reveals a pattern, define a trackable behavioral signature.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/pauliusztin_fail-me-once-shame-on-the-ai-agent-fail-activity-7513577210272927744-JeOs",
+      "title": "Fail me once, shame on the AI agent. Fail me twice, I need better regression tests... That's the rule I've started following while building Decode (the coding agent I'm building from… | Paul Iusztin | 40 comments",
+      "content": "Optiq Labs   3w \n\n Report this comment\n\nThe replay step is where most agent eval setups break down: recreating exact failure context gets painful precisely because the failure is what revealed the context was important. Recording the whole session turns the failure itself into the test fixture, so the regression suite grows with the product instead of lagging behind it.\n\nLike Reply  1 Reaction   2 Reactions\n\nOtelmo Borba   3w \n\n Report this comment\n\nThis is basically data quality testing for agents. Cohorts are your test fixtures, evaluators are your expectations, the replay is the CI run. Ranking by frequency x severity instead of chasing every failure is the right call. Same lesson we learned in pipelines.\n\nLike Reply  1 Reaction   2 Reactions\n\nEvalshift   3w \n\n Report this comment [...] 1-5 scores. A \"fail\" tells me something needs fixing. A \"3\" doesn't. 𝟯/ 𝗚𝗿𝗼𝘂𝗽 𝗳𝗮𝗶𝗹𝘂𝗿𝗲𝘀 𝗯𝘆 𝘁𝘆𝗽𝗲 Cluster similar failures together, then prioritize them based on frequency × severity. 𝟰/ 𝗙𝗶𝗻𝗱 𝘁𝗵𝗲 𝗿𝗼𝗼𝘁 𝗰𝗮𝘂𝘀𝗲 Trace each important failure back through the session to understand where things actually broke. 𝟱/ 𝗖𝗿𝗲𝗮𝘁𝗲 𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗼𝗿 Write one evaluator for each failure class that answers a simple question: Did this failure happen again? 𝟲/ 𝗙𝗶𝘅 → 𝗿𝗲𝗽𝗹𝗮𝘆 → 𝗰𝗼𝗺𝗽𝗮𝗿𝗲 This is where I've been using Kitaru by ZenML. Kitaru by ZenML records Decode runs as sessions, helps turn recurring failures into cohorts, and lets me replay those same sessions after changing the harness. The replay part is useful... Recreating the exact context that caused an agent to fail can be painful. Kitaru by ZenML can reuse [...] an agent to fail can be painful. Kitaru by ZenML can reuse recorded tool outputs when the same tool calls happen again, while changed calls can execute from scratch. So I can change a: • Prompt • Tool • Model • Skill • Piece of the harness ...then replay the same failure and see whether I fixed it. Over time, the regression suite grows from the mistakes Decode makes in the real world. So if Decode fools me once, I fix it. If it fools me the same way twice... That's on my evals. P.S. I break down the full error analysis + replay workflow using Kitaru in Lesson 8 of Building a Coding Agent From Scratch:",
+      "tavilyScore": 0.6688803,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 4,
+        "reason": "Discussion of agent replay/eval debugging; tangentially related to replay tooling but not product analytics buyers.",
+        "quote": "The replay step is where most agent eval setups break down",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "reason": "Practitioners discuss agent failure replay and regression testing, a related observability need, but not a buying request.",
+        "quote": "recreating exact failure context gets painful precisely because the failure is what revealed the context was important",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/george-yates_posthog-tutorial-from-analytics-to-self-fixing-activity-7492651705596112897-dWWm",
+      "title": "PostHog's Self-Driving Product for Code Review | George Yates posted on the topic | LinkedIn",
+      "content": "George Yates\n\n Report this post\n\nSpent this week digging into PostHog's self-driving product. It reads your error tracking, your session replays, dead clicks, support tickets, clusters all of that into reports, and then puts agents to work opening pull requests. You come in Monday and there are diffs sitting there waiting on you. My first reaction was that this sounds like a fantastic way to nuke a codebase. It's more careful than that. Agents run in a cloud sandbox nowhere near your repo, and a human still has to click merge, so your branch protections and CI aren't going anywhere. PostHog also runs it on their own product, which is the bit that made me take it seriously. Went through all of it here: \n\n### PostHog Tutorial: From Analytics to Self-Fixing Code\n\n#### \n\n    18   2 Comments",
+      "tavilyScore": 0.5446803,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 4,
+        "reason": "Third-party review of PostHog's self-driving product; engaged evaluator but skeptical, not an explicit buyer.",
+        "quote": "Spent this week digging into PostHog's self-driving product",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "A real user's review of PostHog's self-driving product shows relevance and adoption, not an unmet need.",
+        "quote": "Spent this week digging into PostHog's self-driving product.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/workos-inc_an-agent-watching-session-replays-found-an-activity-7519458045110689792-9C2e",
+      "title": "An agent watching session replays found an AI feature hidden behind a triple-dot menu that nobody had noticed. Amplitude is experimenting with giving agents the accessibility tree instead of replay… | WorkOS",
+      "content": "a common part of the product as well. And the other thing we're seeing and internally we are also super bullish about is actually leveraging the foundational models to make it easy. And help our customers iterate faster with the product. So we're actually investing a lot into being a company of choice to collect all the context that, yeah, it could need and use to help build a better product. And also building the hardness that could kind of help us automate the product, building things like. So normally in a product development context, in the product analytics, usually it goes by customers for our customers. So the companies first try to instrument every piece of the product to understand. And track all the data so, and then use those quantitative metrics to see how different surface [...] a common part of the product as well. And the other thing we're seeing and internally we are also super bullish about is actually leveraging the foundational models to make it easy. And help our customers iterate faster with the product. So we're actually investing a lot into being a company of choice to collect all the context that, yeah, it could need and use to help build a better product. And also building the hardness that could kind of help us automate the product, building things like. So normally in a product development context, in the product analytics, usually it goes by customers for our customers. So the companies first try to instrument every piece of the product to understand. And track all the data so, and then use those quantitative metrics to see how different surface [...] other signals that we could call it automatically, all the interactions that they're having. And what we are noticing is actually all this telemetry where you actually collect the Dom or accessibility tree. That's too much for a human to understand. So we actually need this like, oh, this thing is clicked. They clicked this checkout button. But whereas if you're actually giving it to the AI when you give your accessibility tree of your product and then. What's kind of going on? Yeah, it could make sense of it automatically. We're actually seeing that. Yeah, I could watch these replays and go through this changes in the accessibility as user interacts with the product and could actually make sense of what they were doing what, what is the areas of the product that they are interacting with",
+      "tavilyScore": 0.4934811,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 4,
+        "reason": "Discussion of agents using session replays for product context; related space but vendor/industry commentary.",
+        "quote": "An agent watching session replays found an AI feature hidden behind a triple-dot menu",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Industry discussion of agents using product context and replays, but it is promotional interview content rather than a help request.",
+        "quote": "we're actually investing a lot into being a company of choice to collect all the context",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "Medium",
+      "url": "https://medium.com/agoda-engineering/how-agoda-is-evolving-engineering-support-with-ai-agents-c907a54e236e",
+      "title": "How Agoda is evolving engineering support with AI agents",
+      "content": "The same BI Product team mentioned earlier also uses a pipeline that reviews recent negative feedback and proposes skill updates through an MR. A human reviews each change before it is merged.\n\n### Invest in error analysis\n\nUnderstanding an agent requires time and good observability. Traces show the path it followed, the tools it called, and where the investigation failed. Without them, explaining a “not useful” response would be difficult.\n\nError analysis also exposed limitations around the agent. When Slack was unavailable, we introduced FeedMCP to monitor its status feed and those of similar SaaS services.\n\nWhen a Tempo query returned a 12 MB response and exceeded the agent’s context window, we began experimenting with tool-side summarisation, code mode, and sub-agents. [...] Agent Eval replays the saved cases through the Agents Platform and records the answers and tool calls. For each case, teams define the behaviour they want to check. They might assess the answer, require a particular tool call, or verify selected tool arguments. Running the same dataset against the current and proposed versions makes it easier to see how a change affects the agent.\n\nWe are also working towards shadow evaluation. This sends the same live request to two agent versions in parallel. The current version answers the requester, while the candidate version is evaluated without its response being shown. Teams can then assess the candidate using real traffic before releasing it.\n\n## Where we go next",
+      "tavilyScore": 0.4269188,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 4,
+        "reason": "Engineering team discussing agent observability and error analysis; related need for tracing/observability tooling.",
+        "quote": "Understanding an agent requires time and good observability",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Engineering case study shows a real need for agent observability and error analysis, but Agoda already has internal solutions.",
+        "quote": "Understanding an agent requires time and good observability.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/grabnerandi_dynatrace-opentelemetry-observability-activity-7500447708646752257-axU8",
+      "title": "#dynatrace #opentelemetry #observability #sre #sessionreplay #realusermonitoring | Andreas (Andi) Grabner",
+      "content": "Your backend just failed. But did your users notice? Most SREs fly blind when they see HTTP 500 errors. They have no idea if one or thousands were impacted. That's why it's hard to prioritize those issues which often leads to alert fatigue as there are too many fires to fight. The power of OpenTelemetry and Dynatrace Session Replay change this! In the video I walk through a modern problem triage: From a 0.22% checkout failure rate, to the error logs to seeing the impact of users who couldn't complete their purchase through session replay. 👇 Leave a comment if you had a moment where this would have helped you! #Dynatrace #OpenTelemetry #Observability #SRE #SessionReplay #RealUserMonitoring\n\nLike Comment [...] And even with session replay, see all the details how the user in this case was filling out all the details and then the payment. And I guess this is where the whole session stopped, because this is where the problem came in. With all of these errors, the Http 500 that, did not allow that users to check out. So that's not a good thing. But be reminded. This is, session replay on top. On the bottom we have that issue with the traces. Everything is linked together. You can also do it the other way around. So if you select any of these requests, you always have the event details. You can then also always drill into the trace, the backend trace from there. So both directions are possible from the bottom up. There's a problem. How is the user impacted? Or you're analyzing an end user and then [...] And even with session replay, see all the details how the user in this case was filling out all the details and then the payment. And I guess this is where the whole session stopped, because this is where the problem came in. With all of these errors, the Http 500 that, did not allow that users to check out. So that's not a good thing. But be reminded. This is, session replay on top. On the bottom we have that issue with the traces. Everything is linked together. You can also do it the other way around. So if you select any of these requests, you always have the event details. You can then also always drill into the trace, the backend trace from there. So both directions are possible from the bottom up. There's a problem. How is the user impacted? Or you're analyzing an end user and then",
+      "tavilyScore": 0.3922786,
+      "query": "how to cluster session replay errors and support tickets into prioritized reports",
+      "a": {
+        "score": 4,
+        "reason": "Dynatrace advocate demoing session replay for error triage; audience of SREs with related needs, but vendor content.",
+        "quote": "From a 0.22% checkout failure rate, to the error logs to seeing the impact of users",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Dynatrace promotion highlights user-impact and checkout triage pain relevant to PostHog, though it is not an independent buying request.",
+        "quote": "Most SREs fly blind when they see HTTP 500 errors.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/gurp-parmar-7b01b63_guidely-product-analytics-in-app-guidance-activity-7519908073780715522-9bqo",
+      "title": "Guidely — Product analytics, in-app guides and feedback in one SDK | Gurp Parmar | 12 comments",
+      "content": "Most products need five tools to help users: one for onboarding, one for support chat, one for session replay, one for error tracking and one for feature flags. ⠀ That's five SDKs in your app, five contracts, five bills, and five vendors who each know a different slice of the same user. ⠀ We built Guidely so it's one: ⠀ → Product tours, checklists and surveys you build by clicking your own app → Scout, an AI messenger that answers from your help articles → Complaints routed to the right team → Step-by-step how-tos (and videos) recorded in one take → Feature flags and A/B tests → Native guides on iOS and Android → Session replay, heatmaps, funnels and error tracking ⠀ One SDK and one bill. It's free to start with no card, then pay as you go: guides are never metered, there's no per-seat [...] The biggest benefit of consolidating these tools may be less about having one bill and more about reducing the integration work between them. The key is whether teams can get that simplicity without losing the depth of analytics and control they rely on.\n\nFive SDKs for one user is the real cost — size, contracts, and five different pictures of the same session. One SDK is the pitch. Native iOS/Android guides is the part most of these tools still fake with a webview.\n\nfive vendors each owning a slice of the user journey is the hidden tax here. one sdk that covers tours, support and replay is the kind of consolidation teams actually feel week to week.",
+      "tavilyScore": 0.7003827,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 3,
+        "reason": "Vendor self-promotion for a competing all-in-one product, not a lead.",
+        "quote": "We built Guidely so it's one",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Vendor self-promotion for a competing all-in-one product, not a prospect asking for help.",
+        "quote": "We built Guidely so it's one",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "dev.to",
+      "url": "https://dev.to/zeeshanali0704/frontend-system-design-logging-analytics-feature-flags-37g5",
+      "title": "Frontend System Design: Logging, Analytics & Feature Flags - DEV Community",
+      "content": "### What Tool for What Job?\n\n| Need | Tool Category | Recommendations |\n --- \n| \"What are users doing?\" | Product Analytics | Amplitude, Mixpanel, PostHog |\n| \"Why is this page slow?\" | Performance Monitoring | Web Vitals + Sentry Perf / Datadog RUM |\n| \"What happened before the crash?\" | Error Tracking + Replay | Sentry (errors) + LogRocket/FullStory (replay) |\n| \"Where are users clicking?\" | Heatmaps | Hotjar, Microsoft Clarity (free) |\n| \"Is the new design better?\" | A/B Testing | LaunchDarkly, Statsig, PostHog |\n| \"Can I ship this safely?\" | Feature Flags | LaunchDarkly, Unleash, Flagsmith |\n| \"What's in the logs?\" | Log Management | ELK, Loki+Grafana, Datadog Logs |\n| \"User reported a bug\" | Session Replay | FullStory, LogRocket, Sentry Replay |\n\n### Startup vs Enterprise Stack [...] ### 4.4 Tools Compared\n\n| Tool | Session Replay | Heatmaps | Analytics | Error Tracking | Pricing |\n ---  ---  --- |\n| Hotjar | ✅ | ✅ Click, Scroll, Move | Basic | ❌ | Free tier / $$ |\n| FullStory | ✅ (best) | ✅ | ✅ | ✅ | $$$$ |\n| LogRocket | ✅ | ❌ | ✅ | ✅ (Redux, network) | $$$ |\n| PostHog | ✅ | ✅ | ✅ | ❌ | Free (self-host) / $$ |\n| Microsoft Clarity | ✅ | ✅ Click, Scroll | Basic | ❌ | Free |\n| Mouseflow | ✅ | ✅ Full suite | ✅ Funnels | ❌ | $$ |\n| Heap | ✅ | ❌ | ✅ (auto-capture) | ❌ | $$$ |\n\n💡 Microsoft Clarity is a great free option for session replay + heatmaps. It uses rrweb under the hood and integrates with Google Analytics.\n\n⬆ Back to Top\n\n## Frontend Error Tracking and Debugging\n\n### 5.1 Types of Frontend Errors [...] ⬆ Back to Top\n\n## Putting It All Together Unified Observability\n\nIn production, these systems are interconnected:\n\n`User Action\n│\n├──→ Analytics: track('product_added_to_cart', { ... })\n│\n├──→ Feature Flag: useFeatureFlag('new_cart_animation')\n│\n├──→ A/B Test: experiment exposure tracked\n│\n├──→ Logger: logger.info('cart_updated', { itemCount: 3 })\n│\n└──→ Error (if any): Sentry captures with breadcrumbs + replay\nAll connected by:\n• sessionId — groups all events from one visit\n• userId — groups all events from one user\n• traceId — connects frontend request to backend span\n• release — associates events with a specific deploy`\n\n### Unified SDK Example",
+      "tavilyScore": 0.62897736,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 3,
+        "reason": "Educational article listing tool categories including PostHog; readers may be buyers but no expressed need.",
+        "quote": "\"What are users doing?\" | Product Analytics | Amplitude, Mixpanel, PostHog",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Educational tool-selection article rather than a person expressing an active problem or purchase intent.",
+        "quote": "What Tool for What Job?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/best-product-analytics-tools-rajesh-kumar-nrqec",
+      "title": "Best Product Analytics Tools",
+      "content": "#3 — PostHog\n\nShort description: PostHog is a developer-first product OS that combines product analytics with session replay, feature flags, data warehouse features, and extensive SDK coverage. It is especially attractive to technical teams that want transparent pricing, self-hosting options, SQL access, and a fast-moving all-in-one platform approach.[^14]\n\nBest for\n\n·       Technical product teams, startups, and infrastructure-conscious buyers that want control and transparent usage-based pricing.\n\nWhy it stands out\n\n·       Transparent usage-based pricing with a generous free tier.\n\n·       Strong self-hosting and developer-first positioning.\n\n·       Very broad SDK and framework support.[^5] [...] #5 — Pendo\n\nShort description: Pendo is broader than a pure product analytics tool. It combines product analytics with in-app guides, session replay, sentiment and orchestration workflows, making it especially relevant for teams that care about adoption, onboarding, digital experience management, and internal governance alongside analytics.[^4]\n\nBest for\n\n·       Enterprise and scale-up software teams that want analytics plus in-app guidance and broader product experience workflows.[^4]\n\nWhy it stands out\n\n·       Strong product experience management positioning, not just reporting.[^4]\n\n·       Bundles analytics with guides, replay, orchestration, sentiment, and AI modules.[^4]\n\n·       Designed for configurability, governance, and enterprise scale.[^4] [...] #4 — Heap\n\nShort description: Heap is a long-established product analytics platform known for autocapture, retroactive analysis, and a strong emphasis on reducing instrumentation friction. It fits teams that want to minimize engineering dependency while still getting behavior-level insight into feature usage, journeys, and conversion issues.\n\nBest for\n\n·       Teams that value autocapture and retroactive analysis more than they value fully developer-centric control.\n\nWhy it stands out\n\n·       Strong category association with automatic capture of user behavior.[^2]\n\n·       Retroactive analysis is central to its value proposition.[^2]\n\n·       Combines analytics with session replay and other digital insight tools.",
+      "tavilyScore": 0.56985265,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 3,
+        "reason": "Listicle/review article about PostHog; informational, not a lead.",
+        "quote": "PostHog is a developer-first product OS",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Analytics-tools listicle describing PostHog, with no individual need or buying signal.",
+        "quote": "Best Product Analytics Tools",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/best-web-analytics-tools-rajesh-kumar-d89sc",
+      "title": "Best Web Analytics Tools",
+      "content": "### Key features\n\n- Product and web analytics\n- Session replay\n- Feature flags and experimentation\n- Surveys\n- Data warehouse and pipelines\n- Error tracking\n- APIs, HogQL and developer integrations\n\n### Pros\n\n- Strong value for teams using multiple product tools\n- Developer-friendly documentation and APIs\n- Generous cloud free allowances\n- Supports EU and US cloud regions\n\n### Cons\n\n- Broad interface can feel complex for nontechnical marketers\n- Self-hosted edition has limited vendor support\n- Open-source self-hosting does not include every commercial capability\n- Operating the self-hosted platform safely requires infrastructure expertise\n\n### Platforms / Deployment [...] ### #8 — PostHog\n\nShort description: PostHog is a developer-oriented product platform that combines product and web analytics with session replay, feature flags, experiments, surveys, data pipelines and related engineering capabilities. It offers a managed cloud service and an open-source self-hosted edition with important support and scalability caveats.\n\n### Best for\n\n- Technical product teams that want analytics, experimentation and feature delivery in an extensible platform\n\n### Why it stands out\n\n- Broad all-in-one product-engineering toolset\n- Transparent usage-based pricing model\n- SQL-like analysis and data-pipeline capabilities\n- Open-source self-hosted option for technically capable users\n\n### Key features [...] ### #6 — Amplitude\n\nShort description: Amplitude is a broad digital analytics platform combining product and web analytics with session replay, feature management, experimentation, guides, surveys, activation and AI capabilities. It is suited to organizations that want behavioral analysis to influence both product development and growth decisions.\n\n### Best for\n\n- Product, growth and experimentation teams seeking an integrated behavioral analytics platform\n\n### Why it stands out\n\n- Strong product analytics and lifecycle analysis\n- Integrated experimentation and feature management\n- Expanding AI and agent capabilities\n- Generous documented free-plan event allowance\n\n### Key features",
+      "tavilyScore": 0.5567009,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 3,
+        "reason": "Listicle of web analytics tools including PostHog; informational, not a lead.",
+        "quote": "Strong value for teams using multiple product tools",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "reason": "Web-analytics comparison content listing PostHog features and drawbacks, not a sales conversation.",
+        "quote": "Best Web Analytics Tools",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "Medium",
+      "url": "https://medium.com/@ThinkingLoop/replayable-agent-runs-the-debugging-trick-that-ships-f5460ebf390a",
+      "title": "Medium",
+      "content": "# Replayable Agent Runs: The Debugging Trick That Ships\n\n## How deterministic replays turn “it worked yesterday” agents into reliable products you can fix, audit, and trust.\n\nLearn how replaying agent runs enables deterministic debugging, safer tool calls, and shippable reliability with traces, snapshots, and step-by-step re-execution.\n\nLet’s be real: the first time you watch an agent fail in production, you stop thinking about prompts and start thinking about forensics.\n\nBecause the failure isn’t polite. It’s not a clean stack trace. It’s a messy mix of: a slightly different tool response, a flaky network call, a model choosing a different path, and your team staring at logs that read like modern poetry.\n\nAnd then someone asks the question that changes everything:\n\n> “Can we replay it?” [...] So your logs show:\n\n- partial prompts\n- scattered tool responses\n- missing context\n- no stable “state” you can step through\n\nThat’s why “just add more logging” rarely helps. What you need is the ability to reconstruct the run.\n\nReplaying is how you go from storytelling to evidence.\n\n## What “replaying an agent run” actually means\n\nA replay is the ability to re-execute an agent session step-by-step using the same inputs, the same tool responses (or controlled substitutions), and the same intermediate state — so you can reproduce what happened.\n\nThink of it like:\n\n- flight recorder (you capture what happened)\n- plus time machine (you can rerun it)\n- plus debugger (you can pause, inspect, change one variable, and continue)\n\n## Two types of replays you should support [...] In other words: replay is the bridge between “cool demo” and “real product.”\n\n## Conclusion: if you can’t replay it, you can’t ship it\n\nAgents are interactive systems with moving parts. Moving parts require reproducibility.\n\nStart small:\n\n- route all tools through a gateway\n- record tool requests and responses\n- add step IDs and run IDs\n- support deterministic replay in your dev environment\n\nThen build up to snapshots and diff-based experiments.\n\nIf you’re building agents right now, comment with your stack (LangGraph, custom Node runtime, OpenAI function calls, etc.) and what tools you’re calling. I’ll suggest a minimal replay architecture that fits your setup. Follow for more practical, production-grade agent patterns.",
+      "tavilyScore": 0.48893154,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 3,
+        "reason": "Medium article on agent run replay debugging; related concept but not product analytics need.",
+        "quote": "How deterministic replays turn \"it worked yesterday\" agents into reliable products",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Technical article describes a closely related agent-debugging pain, but offers its own replay guidance rather than seeking a product.",
+        "quote": "the first time you watch an agent fail in production, you stop thinking about prompts and start thinking about forensics",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/imukulmunjal_posthog-is-the-best-platform-i-have-ever-activity-7518998670826975232-GnFM",
+      "title": "PostHog: One Platform for All Analytics and Support Needs | Mukul Munjal posted on the topic | LinkedIn",
+      "content": "Mukul Munjal\n\n Report this post\n\nPostHog is the best platform I have ever used, and I don't say that lightly. At InterviewFlowAI we now run almost everything on it: product analytics, session replay, error tracking, logs, LLM analytics, in-app surveys, and as of today our customer support chat, which replaced Crisp across all our apps. Every support ticket arrives with the customer's session replay and errors already attached, so we see what went wrong instead of asking for screenshots. The part that impressed me most is the MCP integration. I set most of this up by talking to Claude, which worked inside PostHog through the MCP server. One platform, one SDK, and an MCP server that lets my tools do the setup for me. Thank you to the PostHog team for building it.\n\n   37   13 Comments",
+      "tavilyScore": 0.68257374,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 2,
+        "reason": "Praise post about PostHog from an existing user — already a customer, not a lead.",
+        "quote": "PostHog is the best platform I have ever used",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Enthusiastic existing PostHog customer testimonial, so strong product fit but no new sales need.",
+        "quote": "At InterviewFlowAI we now run almost everything on it",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/cypress.io_most-ai-agents-hand-you-code-theyve-never-activity-7510450772631937025--uii",
+      "title": "Most AI agents hand you code they've never run, against pages they can't see. Cypress turns your AI coding agent into a testing teammate instead. Watch how: https://lnkd.in/geUnYHBA | Cypress.io",
+      "content": "4\n\n  Like   Comment\n\n  To view or add a comment, sign in\n Cypress.io\n\n  59,152 followers\n\n  + Report this post\n\n  Cypress Cloud CLI turns a failed CI run into structured data your agent can act on. Here's the workflow. A test fails in CI. You point cy-cloud at that test and get its timeline back as JSON: the commands, network requests, and console logs captured around the moment it broke. The same context you'd read in a Test Replay, now in a form your agent can parse. Hand that data to your agent and let it find the likely cause. Or pipe it into a script and run it on every failure. The Cloud CLI puts the full failure context on the table. What you build with it is your call. Start with your last flaky test. Full details in the comments.\n\n    6   1 Comment\n\n  Like   Comment [...] 59,152 followers\n\n  + Report this post\n\n  Your AI agent can now read the same failure context you do. We're shipping Cypress Cloud CLI. It gives you and your AI agent structured, machine-readable access to Test Replays, including the command logs, network activity, and failure detail behind every CI run. You used to be the go-between who opened the replay, worked out what happened, and briefed your agent. Now your agent reads the replay itself, finds the likely cause, and drafts a fix for you to review. Cypress Cloud CLI is live today. Hand your agent a failed run and let it work. Full details in the comments 👇\n\n     64   1 Comment\n\n  Like   Comment\n\n  To view or add a comment, sign in\n Cypress.io\n\n  59,152 followers\n\n  + Report this post [...] Your test is flaky in CI. You need to find out why. Rerunning locally doesn't reproduce it. The logs give you a timestamp and an assertion failure. So you retry the pipeline, watch it pass, and move on, but the bug stays. The Cypress Cloud CLI skill changes that loop. Install it once via npx skills and your AI coding agent gets direct access to Test Replay data. Point it at a flaky test's Cloud URL and watch it work: in the demo, the culprit turned out to be a race condition. The test was registering as complete before it had actually waited on the reporter iframe. The agent caught that, wrote the fix, and dropped it into the code, no new tool require The agent reads what actually happened in that run, from real replay data, rather than reconstructing from whatever got pasted into the",
+      "tavilyScore": 0.59372705,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 2,
+        "reason": "Cypress vendor self-promotion for CI test replay, unrelated to product analytics.",
+        "quote": "Cypress Cloud CLI turns a failed CI run into structured data",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Cypress vendor promotion about agent-accessible test failure data, not a PostHog prospect seeking help.",
+        "quote": "Cypress Cloud CLI turns a failed CI run into structured data your agent can act on.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/thelosen_most-ai-analytics-pitches-are-written-for-activity-7517970526154199040-kjpy",
+      "title": "AI Analytics Pitches Focus on Search Engine Optimization | Lucas Thelosen posted on the topic | LinkedIn",
+      "content": "How many tabs did it take to answer your last “why did conversions drop?” question? First a dashboard. Then a funnel report. Then a few session replays. Then a Slack message to the one person who actually knows how the tool works… Sound familiar? We hear this story all the time. So today we’re happy to launch the 𝐀𝐢𝐫360 𝐌𝐂𝐏 𝐬𝐞𝐫𝐯𝐞𝐫!! You can now ask your AI assistant (like Claude) a question about your website, and get an answer pulled straight from your real website data. If you’ve already tried plugging your analytics into your AI, you’ve probably noticed the catch: it can only use the data you set up tracking for. That's where Air360 is different:  → Everything is captured automatically. Every page view, every click, every error that occurred.  → No tagging, no tracking plan, no",
+      "tavilyScore": 0.5545609,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 2,
+        "reason": "Competitor (Air360) vendor self-promotion; describes the pain but is a vendor post, not a lead.",
+        "quote": "How many tabs did it take to answer your last \"why did conversions drop?\" question?",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Competitor launch post directly names the conversion-investigation and context-switching pain, but the author is selling a solution.",
+        "quote": "How many tabs did it take to answer your last “why did conversions drop?” question?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/matthew-arbesfeld-04b5429b_today-im-excited-to-announce-ask-galileo-activity-7435346977799770113-F3EY",
+      "title": "Introducing Ask Galileo: AI-Powered Session Replay Analysis | Matthew Arbesfeld posted on the topic | LinkedIn",
+      "content": "Today, I'm excited to announce Ask Galileo! I genuinely believe this is the biggest thing we've shipped in LogRocket's history since our original session replay. Every team I talk to runs into the same problem. Someone asks why conversion dropped and suddenly you're spending hours digging through session replays, support tickets, customer calls, and GitHub PRs. Ask Galileo makes that entire process disappear. You just ask a question in plain English. Galileo watches the relevant sessions, looks for issues, reads customer feedback, analyzes product changes, and gives you an answer. Unlike other chat bots, Galileo is powered by all your session replays so it has real context about your users and app. Over the past year we’ve seen our accuracy improve from ~30% to >90% as our techniques and [...] accuracy improve from ~30% to >90% as our techniques and the underlying models improved. And you can ask from anywhere; in LogRocket, via MCP in tools like Claude or ChatGPT, or directly in Slack and Teams. Thousands of PMs and engineers at companies like Ramp, Rippling, Brex, and Engine are already using Galileo to understand their users at a scale that wasn't possible before. “You cannot take this away from me” said one early user. Eitan Dantzig, VP Product at Kaplan “can now have a conversation with their data. Galileo finds the issue, shows you what it looks like, and how to fix it.” The most powerful use cases I’ve seen though are when customers automate workflows using the MCP: triaging technical support tickets, monitoring sessions and issues post-release, and delivering customer [...] sessions and issues post-release, and delivering customer context in their CRM. We started LogRocket over 10 years ago with the vision that you could truly understand how every customer uses your product. Ask Galileo is the closest we've ever been to making that real. Learn more in our blog post in the comments.",
+      "tavilyScore": 0.43362167,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 2,
+        "reason": "LogRocket vendor launch announcement for a competing AI replay product.",
+        "quote": "Today, I'm excited to announce Ask Galileo!",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Competitor announcement articulates the exact cross-source conversion investigation problem, but is vendor promotion rather than a prospect.",
+        "quote": "Someone asks why conversion dropped and suddenly you're spending hours digging through session replays, support tickets, customer calls, and GitHub PRs.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "Medium",
+      "url": "https://medium.com/code-like-a-girl/deep-dive-into-context-engineering-for-ai-agents-584bf3e578df",
+      "title": "Deep dive into context engineering for AI agents",
+      "content": "For discrete tasks with clear inputs and outputs, agents should usually communicate through artefacts rather than raw traces. A web-search agent, for instance, does not need to pass along its entire browsing history. It only needs to surface the material that downstream agents can actually use.\n\nThis means that intermediate reasoning, failed attempts, and exploration traces stay private unless explicitly needed. What gets passed forward are distilled outputs: extracted facts, validated findings, or decisions that constrain the next step.\n\nFor more tightly coupled tasks, like a debugging agent where downstream reasoning genuinely depends on prior attempts, a limited form of trace sharing can be introduced. But this should be deliberate and scoped, not the default.\n\n### KV cache penalty [...] Image 5\n\nDrawn by author\n\nOnce you look at real agent systems this way, a lot of supposed “model failures” now look different. I’ve encountered many of such at work. These are actually harness failures: the agent forgot because nothing persisted the right state; it repeated work because the harness surfaced no durable artefact of prior failure; it chose the wrong tool because the harness overloaded the action space; and so on.\n\nA good harness is, in some sense, a deterministic shell wrapped around a stochastic core. It makes the context legible, stable, and recoverable enough that the model can spend its limited reasoning budget on the task rather than on reconstructing its own state from a messy trace.\n\n## Communication between agents [...] In practice, good context engineering usually comes down to four moves. You offload information to external systems (context offloading) so the model does not need to carry everything in-band. You retrieve information dynamically instead of front-loading all of it (context retrieval). You isolate context so one subtask does not contaminate another (context isolation). And you reduce history when needed, but only in ways that preserve what the agent will still need later (context reduction).\n\nA common failure mode on the other side is context pollution: the presence of too much unnecessary, conflicting or redundant information that it distracts the LLM.\n\n### Context rot",
+      "tavilyScore": 0.36409897,
+      "query": "how do I give AI coding agents product context from analytics errors and replays",
+      "a": {
+        "score": 2,
+        "reason": "Generic Medium article on context engineering for agents; unrelated to product analytics buying.",
+        "quote": "agents should usually communicate through artefacts rather than raw traces",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "General context-engineering article discusses trace sharing without expressing a product analytics or purchasing need.",
+        "quote": "agents should usually communicate through artefacts rather than raw traces",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/traded-venture-capital_traded-media-activity-7510372780115234816-TNUZ",
+      "title": "PostHog Product Analytics Platform Adoption Surges 15% YoY | Traded: Venture Capital posted on the topic | LinkedIn",
+      "content": "##### Traded Media\n\nView organization page for Traded: Venture Capital \n\nTraded: Venture Capital\n\n48,672 followers\n\n Report this post\n\nPostHog is a product analytics platform offering event tracking, session replay, feature flags and integrated data warehousing, with 41% adoption among businesses in its category as of September 2026, up 15 percentage points year over year. Ramp ranks PostHog No. 1 in product analytics/CDP/event infrastructure, with a 54% share of new adopters and 16% of current customers having switched from a competitor. FOUNDERS: 🦔 james hawkins & Timothée Polman HQ: San Francisco, California #VentureCapital #PostHog #JamesHawkins #TimothéePolman #TradedVC\n\n    38   4 Comments\n\nLike   Comment\n\nPostHog   1mo \n\n Report this comment",
+      "tavilyScore": 0.5215321,
+      "query": "looking for a tool to unify product analytics session replay error tracking and business data",
+      "a": {
+        "score": 1,
+        "reason": "VC/news post about PostHog adoption stats; not a lead.",
+        "quote": "41% adoption among businesses in its category",
+        "verified": true
+      },
+      "b": {
+        "score": 0,
+        "reason": "Venture-capital news and adoption statistics about PostHog, unrelated to a lead's active need.",
+        "quote": "PostHog Product Analytics Platform Adoption Surges 15% YoY",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "Medium",
+      "url": "https://medium.com/@ipcookproxy/how-to-scrape-data-from-a-website-3-different-ways-61d2e480a577",
+      "title": "Medium",
+      "content": "So you can see web scraping isn’t a “set it and forget it” task. It requires maintenance. You need to be prepared for the fact that websites change, and your code will need to adapt to keep the data flowing.\n\n## Method 1. The No-Code Route\n\nNot everyone is a Python wizard, and honestly, you don’t always need to be one to get data.\n\nIf writing code sounds intimidating, visual scraping platforms are a fantastic entry point. I often tell beginners to look into tools like Octoparse or ParseHub. The concept is simple: if you can browse the web, you can scrape it. It’s mostly a “point-and-click” experience where you highlight the data you want on the screen, and the software figures out the rest. [...] For even simpler tasks, like grabbing a table from a single webpage, browser extensions like Instant Data Scraper can work wonders. You just fire it up, and it detects the data structure instantly.\n\nBut here’s my honest take on the pros and cons:\n\n- The Good Stuff: The learning curve is practically non-existent. You can go from “I need data” to “I have a CSV file” in minutes without writing a single line of code. It’s a huge time-saver for testing ideas.\n- The Catch: While they are easy to use, they can feel a bit like bowling with bumpers. You lose flexibility. If you need to do something highly specific or complex, you might find yourself hitting the software’s limits. Also, keep an eye on your budget — while many offer free tiers, the costs can stack up quickly if you try to scale up. [...] ### Step 1. Import the Libraries\n\nFirst things first, we need to bring in our tools. We’ll need `requests` to actually visit the webpage and `BeautifulSoup` to parse the HTML so we can find the data we want. I also import `csv` so we can save our hard work later.\n\n`import requests from bs4 import BeautifulSoup import csv`\n\n### Step 2. Fetch and Parse the Page\n\nNow, let’s send a request to the target website. This is the digital equivalent of typing a URL into your browser and hitting Enter.\n\nOnce we get the response, we check if the status code is `200` (which means \"Success!\" in web-speak). If it is, we pass the raw HTML content to BeautifulSoup to make sense of it.",
+      "tavilyScore": 0.3555511,
+      "query": "tool to query product data from my editor without switching to a browser",
+      "a": {
+        "score": 1,
+        "reason": "Web scraping tutorial, unrelated to product analytics or PostHog.",
+        "quote": "visual scraping platforms are a fantastic entry point",
+        "verified": true
+      },
+      "b": {
+        "score": 0,
+        "reason": "Unrelated web-scraping tutorial with no product analytics, observability, or AI-agent context need.",
+        "quote": "web scraping isn’t a “set it and forget it” task",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L18",
+      "text": "Three different MRR answers is a good example of why definitions need to live in the data, not in each agent’s prompt. At PostHog, we’re working on making metrics, properties, and source context explicit so agents query the same thing people see in the UI. Disclosure: I work on PostHog. Curious whether you’ve found a good way to keep those definitions current as the product changes.",
+      "usage": {
+        "in": 475,
+        "out": 91
+      },
+      "latencyMs": 1623
+    },
+    {
+      "leadId": "L10",
+      "text": "I like that score because it separates diagnosis from prioritization. I’d add one guardrail: make confidence reflect replay coverage and sampling bias, not just certainty about the cause. Otherwise under-recorded segments get quietly deprioritized. Disclosure: I work on PostHog, and this maps well to pairing replay findings with funnels and revenue data before deciding what to fix.",
+      "usage": {
+        "in": 392,
+        "out": 82
+      },
+      "latencyMs": 1589
+    },
+    {
+      "leadId": "L17",
+      "text": "Defining a trackable behavioral signature is the right move. I'd add: validate it against a small set of hand-coded sessions before trusting the aggregate rates, especially the exposure-confirmed flag. If that flag is wrong, your excess-session math inherits the error. In PostHog, you can pair session replay with funnel breakdowns by variant to do exactly this comparison. Disclosure: I work on PostHog.",
+      "usage": {
+        "in": 441,
+        "out": 90
+      },
+      "latencyMs": 1676
+    }
+  ],
+  "companies": [
+    {
+      "company": "Potpie AI",
+      "signal": "funding",
+      "reason": "Raised a $2.2M pre-seed to unify context across engineering stacks and make AI agents useful in complex software environments.",
+      "url": "https://roboticsandautomationnews.com/2026/03/11/potpie-ai-raises-2-2-million-to-make-ai-agents-usable-inside-real-world-engineering-systems/99483/",
+      "title": "Potpie AI raises $2.2 million to make AI agents usable inside real-world engineering systems - Robotics & Automation News"
+    },
+    {
+      "company": "OpsMill",
+      "signal": "funding",
+      "reason": "Raised $14M Series A to expand its graph-based Infrahub infrastructure data management platform.",
+      "url": "https://letsdatascience.com/news/opsmill-raises-14m-to-expand-infrahub-platform-02e96952",
+      "title": "OpsMill raises $14M to expand Infrahub platform - Let's Data Science"
+    },
+    {
+      "company": "Discern Security",
+      "signal": "funding",
+      "reason": "Raised $13M Series A to accelerate its agentic platform that unifies environment data and combines AI.",
+      "url": "https://www.securityweek.com/discern-security-raises-13-million-in-series-a-funding/amp/",
+      "title": "Discern Security Raises $13 Million in Series A Funding - securityweek.com"
+    },
+    {
+      "company": "Jedify",
+      "signal": "funding",
+      "reason": "Raised $24M Series A for AI agents that need to learn business-specific nuances, with Snowflake as a strategic investor.",
+      "url": "https://zamin.uz/en/technology/206368-jedify-raises-24-million-for-ai-agents.html",
+      "title": "Jedify raises $24 million for AI agents - Zamin.uz"
+    },
+    {
+      "company": "Sycamore",
+      "signal": "funding",
+      "reason": "Raised a $65M seed for an enterprise AI agent startup focused on building, securing, and orchestrating AI agents.",
+      "url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+      "title": "Former Coatue partner raises huge $65M seed for enterprise AI agent startup - TechCrunch"
+    }
+  ],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 4022,
+      "tokensOut": 943,
+      "cost": 0.0010747999999999999,
+      "latencyMs": 5031,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 4014,
+      "tokensOut": 1169,
+      "cost": 0.019718,
+      "latencyMs": 16798,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 1.25,
+      "top5Overlap": 2
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3266,
+      "out": 1804,
+      "cost": 0.0031445999999999996,
+      "latencyMs": 9894
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 4022,
+      "out": 943,
+      "cost": 0.0010747999999999999,
+      "latencyMs": 5031
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 4014,
+      "out": 1169,
+      "cost": 0.019718,
+      "latencyMs": 16798
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3248,
+      "out": 2021,
+      "cost": 0.0033995999999999996,
+      "latencyMs": 11437
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 1308,
+      "out": 263,
+      "cost": 0.005246000000000001,
+      "latencyMs": 1676
+    }
+  ],
+  "scorerError": null
+}
