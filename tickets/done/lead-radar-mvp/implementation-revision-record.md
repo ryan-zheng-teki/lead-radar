@@ -7,6 +7,7 @@
 | IR-001 | Solution Designer / handoff.md / initial | N/A | `Initial Baseline` | SR-001 | Implemented; ready for direct API/E2E |
 | IR-002 | Solution Designer / SR-002 / round 2 | N/A | Requirement change (stretch) | SR-002 | Target companies implemented; validated and delivered |
 | IR-003 | Solution Designer / SR-003 / round 3 | N/A | Requirement change (page-only UI) | SR-003 | UI polish implemented; IMP-08 pass at 1280×720 and 1920×1080 |
+| IR-004 | Solution Designer / SR-004 (sr-004-lead-quality-fix.md) / round 4 | P1–P4 | Requirement change (lead quality) | SR-004 | Implemented; IMP-09: AC-013/014/016 pass, AC-015 judged pass (see entry) |
 
 ## Revision Entries
 
@@ -58,3 +59,21 @@
   - a favicon 404.
   Final pass: no horizontal scroll in any state, smallest text 14 px, no console errors.
 - Remaining limitations: in two of the screenshot runs, the Kimi reference scorer used about 11k input tokens (its JSON retry ran), which pushed the run cost to about $0.09. That is pipeline behavior, outside this page-only round. A narrow width (390 px) was not re-shot in this round; the CSS has 900 px and 640 px breakpoints.
+
+### IR-004 — Lead quality fix (SR-004: P1–P4, AC-013..016)
+
+- Triggering role, report path, and round: Solution Designer, `sr-004-lead-quality-fix.md`, round 4. User request ~14:55.
+- Triggering finding IDs: P1, P2, P3, P4.
+- Classification: Small + Low (prompt and filter changes in three existing owners, plus a small `kind` display).
+- Prior authoritative result: IR-003 (d0bfa5a on `ui-polish-sr003`, based on origin/main 1d859de).
+- Implementation delta:
+  - P1 + P3, `src/steps/leads.js`. For each query there are now two parallel searches. The discussion search covers reddit, HN, indiehackers, stackoverflow, quora, x and twitter, with max 8 results. The article search covers linkedin, dev.to and medium, with max 4 results. Up to 14 discussion candidates are kept by Tavily score, articles fill the rest, and discussion results back-fill if there are not enough articles. A candidate is dropped when its title or content mentions the product name (case-insensitive, lookaround word boundaries so that "Cal.com" works; skipped for names under 4 characters), or when its URL contains the domain.
+  - P2, `src/steps/score.js`. New rubric: 9–10 for asking or complaining about exactly this problem; 5–8 for a person's own related need; at most 4 for an article, tutorial, course, listicle or news; 0–2 for a competitor, vendor or unrelated post. The clause "or a discussion where such people are active" is removed. Each score now carries `kind` (asking | complaining | discussing | article | competitor), and an unknown value becomes `''`.
+  - P4, `src/steps/companies.js`. Buyer-side queries look for hiring (job posts), struggling, and internal rollouts (news). The prompt defines buyers and excludes sellers in the same category, job boards, recruiters, agencies, media and the product itself. It returns [] instead of padding, and a company is kept only if its signal is in {hiring, adopting, struggling, funding} and its URL is one of the results.
+  - `public/app.js`: a kind pill on each lead card (Asking / Complaining / Discussing / Article / Competitor), and an empty companies list shows "No clear buyer signals found in this run."
+- Local validation: IMP-09, real parallel runs on :3013 (`evidence/IMP-09-lead-quality-acs.log`, `IMP-09-runs/`).
+  - AC-013, autobyteus: 14/20 discussion-site leads (before: 0) and 0 leads mention AutoByteus → Pass.
+  - AC-014, autobyteus: all 7 posts tagged competitor are scored 1–2 by A and 1–2 by B → Pass. On cal.com, B timed out (see below); A tagged 8 posts competitor, each scored 1–2.
+  - AC-015, autobyteus: one company, Cosmic, signal adopting, source cosmicjs.com/blog "How to build an AI-native team". Cosmic sells a headless CMS, not an agent orchestration platform, so it is not a seller in this category → Pass, but it is a borderline case to check by hand. cal.com: [] → shows the "No clear buyer signals" message.
+  - AC-016, cal.com: 9 leads with A ≥ 5 and a run of 87.1 s → Pass, but close to the 90 s limit. The time is the Kimi reference scorer hitting its 75 s deadline while the two runs ran in parallel. Leads and drafts showed earlier.
+- Remaining limitations: Kimi reference latency under load (the 75 s cap holds). There is one near-duplicate article in the autobyteus run: the same title at two different URLs. A name-mention filter also drops genuine posts by people who already know the product.

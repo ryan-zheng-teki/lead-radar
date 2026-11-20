@@ -1,0 +1,474 @@
+{
+  "url": "https://cal.com/",
+  "at": "2026-11-20T13:57:10.467Z",
+  "totalMs": 87057,
+  "totalCost": 0.013754649999999998,
+  "profile": {
+    "name": "Cal.com",
+    "summary": "Cal.com is a scheduling and online booking platform that lets people share availability links, sync calendars, route team bookings, and automate reminders, video calls, payments, and integrations.",
+    "problems": [
+      "Back-and-forth emails to find a meeting time",
+      "Double bookings and calendar conflicts",
+      "Timezone confusion when scheduling across locations",
+      "Manual reminders and follow-ups that lead to no-shows",
+      "Routing inbound leads to the right person on the first try",
+      "Spreading team meetings fairly across members",
+      "Connecting bookings to calendars, video conferencing, CRM, Slack, and payments",
+      "Embedding booking pages in a company’s own site and design",
+      "Enterprise admin, security, and compliance controls",
+      "AI agents needing real availability and booking through an API",
+      "Managing event tickets, guest lists, and RSVPs"
+    ],
+    "ideal_customer": "Individuals, teams, small businesses, and larger organizations that schedule meetings, especially sales, support, ops, and inbound-focused teams; enterprises needing SSO, audit logs, and admin controls.",
+    "pain_phrases": [
+      "I’m tired of the back-and-forth emails just to find a time that works.",
+      "We keep double-booking because our calendars aren’t synced.",
+      "Our leads wait too long because no one knows who should get them first.",
+      "I need a booking link that works with my calendar, Zoom, and CRM without a big setup.",
+      "We’re frustrated by scheduling tools that limit free users and force an upgrade."
+    ],
+    "search_queries": [
+      "looking for a tool to schedule meetings without back and forth emails",
+      "how do I stop double bookings when sharing my calendar link",
+      "frustrated with scheduling software free plan limits",
+      "how to route inbound leads to the right salesperson automatically",
+      "need booking page embedded on my website with calendar and Zoom integration",
+      "how do I reduce meeting no-shows with automatic reminders"
+    ],
+    "domain": "cal.com",
+    "sources": [
+      "https://cal.com/",
+      "https://cal.com",
+      "https://cal.com/about",
+      "https://cal.com/blog/calcom-v7-0",
+      "https://cal.com/enterprise"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L3",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/uxwekn/what_is_the_best_tool_to_schedule_meetings_with",
+      "title": "What is the best tool to schedule meetings with remote teams? : r/remotework",
+      "content": "Title: What is the best tool to schedule meetings with remote teams? : r/remotework\n# What is the best tool to schedule meetings with remote teams? Skip to main contentWhat is the best tool to schedule meetings with remote teams? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Expand user menu Open settings menu. I am working with a remote team from literally all over the world and finding the best time and date that fits most the people is always a pain. Is there an easy tool to do the scheduling? (extra points if it integrates with slack :D). Image 1: u/capri_sun_official avatarcapri_sun_official•Promoted. The pouch has entered the electrolytes chat. Image 2: Clickable image which will reveal the video player: The pouch has entered the electrolytes chat. Depends on what other systems you use: email, other team meeting systems, etc. It doesn’t have an integrated calendar system? I know it works with Google. I’ve never used Slack but I’ve seen the plugins for those apps. In my experience, Clariti has made scheduling easy because it combines chat, email, and calendar in one platform. We simply create events inside Clariti itself, which automatically ties to the conversations we are having. It saves the back-and-forth you often face when using separate apps for meetings and communication. Basecamp.com offers remote business software that helps manage your teams and projects. It also looks like it has an availability timer so you can see when the team is available. I haven't used it personally, I happened to find it while job hunting and it looks pretty legit. i think google calender is a good solution. # People also ask about section. Best tools for managing remote teams. Best practices for managing remote employees. Tips for creating a productive home office. How to stay motivated when working from home. Impact of remote work on company culture. Anyone can view, post, and comment to this community. ## Top Posts. *   Reddit reReddit: Top posts of May 26, 2022 * * *. *   Best of Reddit in Portuguese. *   Best of Reddit in German. Join the most real place on the internet. By continuing, you agree to ourUser Agreementand acknowledge that you understand thePrivacy Policy.",
+      "tavilyScore": 0.7439129,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 9,
+        "kind": "asking",
+        "reason": "Direct ask for a scheduling tool for remote teams across timezones with Slack integration — exactly Cal.com's fit.",
+        "quote": "finding the best time and date that fits most the people is always a pain",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L7",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/smallbusinessesowners/comments/1u76s05/trying_to_organize_meetings_and_contacts_better",
+      "title": "Trying to organize meetings and contacts better, any good meeting scheduling tool? : r/smallbusinessesowners",
+      "content": "Title: Trying to organize meetings and contacts better, any good meeting scheduling tool? : r/smallbusinessesowners\n# Trying to organize meetings and contacts better, any good meeting scheduling tool? Skip to main contentTrying to organize meetings and contacts better, any good meeting scheduling tool? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Expand user menu Open settings menu. Image 1 Go to smallbusinessesowners. Lately I've realized I'm spending way too much time going back and forth on meeting times, digging through emails for old conversations, and trying to keep client contacts organized. As an SEO freelancer, it was manageable when I had a few clients, but now it's starting to get messy and I feel like my inbox is running my life. I'm looking for something that integrates directly with my email and calendar so everything stays in one place. Ideally, I want to schedule meetings, keep track of client conversations, and manage contacts without constantly switching between different apps. What tools or workflows are actually working for you? Image 2: u/Matrix-Games avatarMatrix-Games•Promoted. Modern Naval Warfare is the definitive tactical simulation that puts you inside the pressure hull of a Virginia-Class nuclear submarine. Image 3: Thumbnail image: Command the silent service. Image 4: u/BeeFromHoneyBook avatar. That feeling of your inbox running your life is a real signal that you've grown past what manual email management can handle on its own. It tends to happen faster than expected once your client load picks up. The scheduling piece is usually the quicker fix. A booking link that reflects your real availability and lets clients schedule directly cuts out most of that back-and-forth without requiring you to change much else. The trickier part, and honestly the more impactful one, is getting your conversations and contact history in the same place as everything else, including your schedule. Having them connected means you're not doing a ten-minute email archaeology project every time you need to remember what was discussed with a client. What's eating more of your time right now: scheduling or conversation tracking? How to build a strong brand identity. *   Best of Reddit in Portuguese. *   Best of Reddit in German. Join the most real place on the internet.",
+      "tavilyScore": 0.53919554,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 9,
+        "kind": "asking",
+        "reason": "Freelancer explicitly asking for a meeting scheduling tool, describing back-and-forth pain — ideal lead.",
+        "quote": "spending way too much time going back and forth on meeting times",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L5",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/woocommerce/comments/15nu32w/need_help_finding_a_booking_app_plugin_for",
+      "title": "Need help finding a booking app plugin for Woocommerce : r/woocommerce",
+      "content": "Title: Need help finding a booking app plugin for Woocommerce : r/woocommerce\n# Need help finding a booking app plugin for Woocommerce : r/woocommerce. Skip to main contentNeed help finding a booking app plugin for Woocommerce : r/woocommerce. # Need help finding a booking app plugin for Woocommerce. I run a training company that also sells physical items, and am in the process of building a new website for it using Elementor. I am wanting to use Woocommerce for the ecommerce solution. The trouble is, I need a booking solution that meets certain criteria and haven't had much luck finding it:. *   It has to exist within the Woocommerce environment, meaning it links directly to the Woocommerce products and uses Woo's cart and checkout. *   It needs to integrate with Zoom, so that when I schedule a class I have the option of creating a Zoom meeting for it (if it's say, and online class). *   It needs to be able to automatically send emails to the student with class information like the Zoom login link, curriculum PDF's, etc. *   It needs to have a calendar I can post on my website that displays the classes, then clicking on the class takes the observer to the product page for that class. I have tried using Amelia, but it mostly exists in it's own environment and has many drawbacks:. *   I haven't gotten Amelia to sink seamlessly to Woo, when clicking on an Amelia product, you are taken to the Amelia product page and not the Woo one. *   Amelia cannot support checking out multiple items at once, and is moving towards having it's own completely independent cart; further widening the gap between Amelia and Woo. I have also tried Booking & Appointment Plugin from Tyche Softwares, and at face value it seems to be the solution I have been looking for. I have been working with tech support on this, but after nearly a month and half it still doesn't work and they can't seem to find what is wrong. I also looked at the Woocommerce Bookings plugin, but it has terrible reviews. exists in it's own environment like Amelia, and isn't a true extension of Woocommerce.",
+      "tavilyScore": 0.6305712,
+      "query": "need booking page embedded on my website with calendar and Zoom integration",
+      "a": {
+        "score": 7,
+        "kind": "asking",
+        "reason": "Asking for a booking solution tied to WooCommerce payments; related booking need though WordPress-specific.",
+        "quote": "I need a booking solution that meets certain criteria and haven't had much luck finding it",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L10",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/healthIT/comments/1q11num/no_show_appointments_are_killing_our_workflow_how",
+      "title": "No show appointments are killing our workflow, how do you deal ...",
+      "content": "tie reminders to a required action (confirm/cancel via text). either double book or triple book their schedule knowing half the patients will",
+      "tavilyScore": 0.51850045,
+      "query": "how do I reduce meeting no-shows with automatic reminders",
+      "a": {
+        "score": 7,
+        "kind": "complaining",
+        "reason": "Describing no-show pain and workaround (overbooking) — real pain Cal.com reminders could address.",
+        "quote": "tie reminders to a required action (confirm/cancel via text)",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L14",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/web_design/comments/1pgfei8/creating_a_calender_and_booking_functionality",
+      "title": "Creating a calender and booking functionality : r/web_design - Reddit",
+      "content": "The simplest way is to use a booking widget or service that gives you an embed code you can drop into your HTML page. Something like Calendly,",
+      "tavilyScore": 0.47737145,
+      "query": "need booking page embedded on my website with calendar and Zoom integration",
+      "a": {
+        "score": 7,
+        "kind": "asking",
+        "reason": "Asking how to add calendar/booking embed to a site — Cal.com's embed feature fits, though answer already suggests Calendly.",
+        "quote": "use a booking widget or service that gives you an embed code",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L9",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1tz6m53/how_do_you_reduce_noshows_for_service",
+      "title": "How do you reduce no-shows for service appointments without ...",
+      "content": "Send a reminder 24 hours before. Send another one a few hours before. Make the message easy to answer with “confirm” or “need to reschedule.”",
+      "tavilyScore": 0.52561235,
+      "query": "how do I reduce meeting no-shows with automatic reminders",
+      "a": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Describing no-show reduction tactics via reminders — a core Cal.com use case, though advice-style.",
+        "quote": "Send a reminder 24 hours before. Send another one a few hours before.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L11",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/n8n/comments/1vy1csc/my_first_complex_automation_an_ai_agent_that",
+      "title": "an AI agent that scores inbound leads and auto-books calls for hot ones : r/n8n",
+      "content": "Title: an AI agent that scores inbound leads and auto-books calls for hot ones : r/n8n\nSkip to main contentMy first complex automation: an AI agent that scores inbound leads and auto-books calls for hot ones : r/n8n. Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to n8n. # My first complex automation: an AI agent that scores inbound leads and auto-books calls for hot ones. *   Image 2: r/n8n - My first complex automation: an AI agent that scores inbound leads and auto-books calls for hot onesImage 3: r/n8n - My first complex automation: an AI agent that scores inbound leads and auto-books calls for hot ones. Just finished my third \"real\" build and wanted to share since I learned more from this one than the first two combined. The idea: a lead fills out a form → AI reads the message and scores it Hot/Warm based on budget, urgency, and company size → depending on the score, it either creates a HubSpot deal and books a discovery call automatically, sends a nurture email, or just gets logged for later. Two things that bit me on a similar lead scorer, both only showed up after it went live. The same person fills the form twice — different capitalisation on the email, or a week apart — and you get two HubSpot contacts and two calendar invites. An LLM scoring 0-100 isn't stable — the same lead can come back 68 on one run and 74 on the next, and your threshold sits right in that band. Before I let a score route anything automatically, I open the top 10 by hand and check they're actually hot. If 3 or more are wrong, I fix the scoring, not the threshold. I'm focused on CRM integration and workflows for niche lead generation clients, but I'm struggling with testing, error handling, and understanding the lead generation business model. agree it in writing before you build anything, with one example of a lead that passes and one that doesnt. The **BANT Qualification Agent** does exactly your flow: form/webhook → AI scoring (budget/authority/need/timeline) → HubSpot deal + Calendly booking + nurture email — with confidence gate that queues for human review if score < threshold.",
+      "tavilyScore": 0.5167936,
+      "query": "how to route inbound leads to the right salesperson automatically",
+      "a": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Built AI agent for lead scoring and auto-booking calls — matches Cal.com's API/agent use case, but they built their own.",
+        "quote": "an AI agent that scores inbound leads and auto-books calls for hot ones",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L8",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/smallbusinessowner/comments/1u4cx01/best_scheduling_app_where_clients_can_view_your",
+      "title": "Best Scheduling App where clients can view your availability? - Reddit",
+      "content": "1/ Calendly · 2/ Koalendar · 3/ Acuity Scheduling · 4/ Google Calendar (online appointment scheduling).",
+      "tavilyScore": 0.53087497,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "List of scheduling apps; shows market awareness but reads like a roundup, not a personal ask.",
+        "quote": "1/ Calendly · 2/ Koalendar · 3/ Acuity Scheduling",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L13",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/therapists/comments/1ppzk4y/what_is_your_protocol_for_noshows",
+      "title": "What is your protocol for no-shows? : r/therapists - Reddit",
+      "content": "I'd tighten the frame: clear written policy, automated reminders, and same day follow up after the first no show ('I noticed we missed you",
+      "tavilyScore": 0.4817433,
+      "query": "how do I reduce meeting no-shows with automatic reminders",
+      "a": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "Therapist discussing no-show protocol with automated reminders — related need, advice context.",
+        "quote": "clear written policy, automated reminders, and same day follow up",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L12",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/ShortTermRentals/comments/1ruqf5o/how_are_you_managing_your_str_calendar_across",
+      "title": "How are you managing your STR calendar across ...",
+      "content": "Set it up once and double bookings basically disappear. For direct bookings I just block dates manually in each platform after confirming.",
+      "tavilyScore": 0.4825815,
+      "query": "how do I stop double bookings when sharing my calendar link",
+      "a": {
+        "score": 4,
+        "kind": "discussing",
+        "reason": "STR/vacation rental calendar management; double-booking pain is adjacent but different market.",
+        "quote": "Set it up once and double bookings basically disappear",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L16",
+      "platform": "Medium",
+      "url": "https://medium.com/@pranshu.sharma_85025/how-to-reduce-no-shows-using-automated-reminders-in-your-scheduling-crm-5669d7eec933",
+      "title": "How to Reduce No-Shows Using Automated Reminders in Your Scheduling CRM | by Pranshu Sharma | Medium",
+      "content": "Title: How to Reduce No-Shows Using Automated Reminders in Your Scheduling CRM | by Pranshu Sharma | Medium\n# How to Reduce No-Shows Using Automated Reminders in Your Scheduling CRM. Missed appointments cost appointment-based businesses an estimated $150 billion annually in the United States alone — and the majority of that loss is preventable. Research consistently identifies forgetting as the cause of 55% to 65% of all no-shows, making the problem not one of customer disrespect or disengagement but simply of human memory failing between the moment of booking and the moment of the appointment. The most direct intervention available to any appointment-based business is a systematic automated reminder program integrated within their scheduling infrastructure. Organizations that implement multi-touch, multi-channel automated reminder sequences consistently report no-show rate reductions of 29% to 36% — and those that add two-way confirmation capability with intelligent waitlist management recover the majority of revenue from cancellations that do occur. This article examines how automated reminders within an Appointment Scheduling CRM work, what specific strategies produce the greatest no-show reduction, and how businesses across healthcare, legal services, beauty and wellness, and SaaS can implement reminder systems that recover significant lost revenue without proportional increases in administrative labor. Research consistently identifies forgetting as the cause of 55–65% of missed appointments, making the majority of no-shows directly preventable through timely reminder communication that reconnects customers to their booking before it occurs. ## What Are Automated Reminders in a Scheduling CRM? Automated reminders in an Appointment Scheduling CRM are pre-configured, trigger-based communications that are automatically generated and delivered to customers at defined intervals before their scheduled appointment — without requiring any manual staff action — using customer contact data and appointment details stored in the CRM to personalize each reminder and route it to the customer’s preferred communication channel. It is appropriate as the booking confirmation channel (where comprehensive information delivery matters more than open rate urgency) and as a supplementary channel alongside SMS or WhatsApp. Voice calls — automated or human — remain the most effective channel for specific demographics: older patients in healthcare settings, customers with limited digital literacy, and appointments where the business needs to confirm genuine understanding of preparation requirements.",
+      "tavilyScore": 0.82290184,
+      "query": "how do I reduce meeting no-shows with automatic reminders",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Medium article on reducing no-shows with reminders; relevant topic but content marketing, not a lead.",
+        "quote": "Missed appointments cost appointment-based businesses an estimated $150 billion annually",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/scheduling-software-calendar-integration-lunacal-ovxjc",
+      "title": "Scheduling software with calendar integration",
+      "content": "Cons\n\n- Some features can feel buried because there are many settings.\n- Free plan users may find certain limits painful if they need multiple appointment lengths or more advanced booking logic.\n- Pricing depends heavily on calendar connections and booking page needs, so the right plan is not always obvious.\n- Advanced workflows, analytics, HubSpot, tracking pixels, and team controls are mainly useful once you move beyond basic scheduling.\n- It is a good booking tool, but people who only need a clean simple meeting link may find it heavier than necessary.\n\n### Pricing [...] • 2 way calendar sync is only available on the paid plan.\n\n• Some users report Google Calendar sync and scheduling flexibility issues in G2 reviews.\n\n• Larger teams may want a clearer master calendar experience.\n\n• SMS reminders need Pro, and delivery can vary by country.\n\n• Free plan has a 200 appointment monthly limit.\n\n### Pricing\n\n• Setmore Free costs $0 per user per month and supports up to 4 users, 200 appointments, payments, booking page, email reminders, and mobile apps.\n\n• Setmore Pro is listed at $12 per user per month, with annual pricing shown as $5 per user per month.\n\n• Pro adds unlimited appointments, SMS and email reminders, recurring appointments, 2 way calendar sync, branding removal, and priority support. [...] Cons\n\n- Timezone setup can cause confusion if the business, provider, and synced calendar are not aligned.\n- Calendar sync is a custom feature, so plan limits matter.\n- The custom feature model can feel restrictive on lower plans.\n- It may feel heavier than needed if someone only wants a simple one-on-one meeting link.\n- Booking limits on plans can become important as appointment volume grows.\n\n### Pricing",
+      "tavilyScore": 0.78481424,
+      "query": "frustrated with scheduling software free plan limits",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Review/listicle of scheduling software with pricing and cons; relevant but article content.",
+        "quote": "2 way calendar sync is only available on the paid plan",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L4",
+      "platform": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=24004265",
+      "title": "Show HN: Coffee Chats – Schedule virtual coffee chats without the back and forth | Hacker News",
+      "content": "Solution: So, I built Coffee Chats (), which is a free app that connects with your Google Calendar, determines when you're free based on calendars you sync, and then creates a profile for you to share with others so people can easily schedule a virtual coffee chat with you (no more wasting time trying to find availability). Chats are hosted over Google Meet which is also free and is automatically added to each coffee chat that is added to your calendar.\n\nSo far, people have been using Coffee Chats to schedule mentoring sessions, meetups with friends, and user testing sessions, and I just released an update based on user feedback to show a full weekly calendar view, which you can find mine here: [...] | |  |  |  |  ---  |  |  | chptung on July 31, 2020  (javascript:void(0))   Problem: I wanted to host virtual coffee chats to help others with their careers during this time but scheduling over emails / DMs is a huge pain and wastes a ton of time. Calendly is a good option but it felt too impersonal and lacked a calendar view to see all the events on my calendar. Solution: So, I built Coffee Chats (), which is a free app that connects with your Google Calendar, determines when you're free based on calendars you sync, and then creates a profile for you to share with others so people can easily schedule a virtual coffee chat with you (no more wasting time trying to find availability). Chats are hosted over Google Meet which is also free and is automatically added to each coffee chat that is [...] free and is automatically added to each coffee chat that is added to your calendar. So far, people have been using Coffee Chats to schedule mentoring sessions, meetups with friends, and user testing sessions, and I just released an update based on user feedback to show a full weekly calendar view, which you can find mine here:  Ask: I've been at this for a little over a month after seeing unemployment rate sky rocket and seeing so many posts on Linkedin offering help but realizing so much time was wasted on people trying to find a time that works. Now that it's shipped, I'd love more feedback. It's completely free to make a profile, and all I ask is that you 1) share your profile to schedule virtual coffee chats to connect/help people in need right now and 2) provide feedback on your",
+      "tavilyScore": 0.66050094,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Show HN promoting the author's own scheduling app, Coffee Chats — a competitor.",
+        "quote": "Schedule virtual coffee chats without the back and forth",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L6",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/buildinpublic/comments/1qw9b2l/we_built_a_scheduling_tool_to_find_the_best",
+      "title": "We built a scheduling tool to find the best meeting time for ...",
+      "content": "It's called WhenWeMeet. you create an event, share a link, and everyone marks when they're free. It works across time zones and on both web and mobile. No sign",
+      "tavilyScore": 0.5953161,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promoting their own scheduling tool WhenWeMeet — competitor self-promotion.",
+        "quote": "you create an event, share a link, and everyone marks when they're free",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L15",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/khatab-wedaa-9aa10b210_mawaidi-schedule-meetings-without-the-back-and-forth-activity-7445812202575523840-dYWz",
+      "title": "Mawaidi - Schedule Meetings Without the Back-and-Forth | Khatab Wedatalla",
+      "content": "🚀 Excited to share Mawaidi.io — an open-source meeting scheduling platform I built from scratch!  Think Calendly… but bilingual (Arabic + English), open-source, and fully customizable.  --- 💡 What it does:   • Smart availability rules (working hours, buffers, session durations)   • Public booking page — share your link, let others pick a time   • Google Calendar + Google Meet integration (auto-create meetings with links)   • Guests can reschedule or cancel without back-and-forth emails   • Automated email reminders before meetings   • Analytics dashboard (weekly activity, completion rates, booking stats)  --- 🔥 What makes it different:   • Native Arabic + English support with proper RTL from day one   • OAuth-only authentication (Google & GitHub) — no passwords needed   • Fully [...] (Google & GitHub) — no passwords needed   • Fully timezone-aware experience   • Clean, modern dashboard with real-time status indicators  --- 🌐 Check it out:     Would love your feedback 🙌  #OpenSource #BuildInPublic #FullStack #NestJS #NextJS #React #TypeScript #SaaS #Scheduling #WebDevelopment [...] Mawaidi - Schedule Meetings Without the Back-and-Forth\n\nMawaidi - Schedule Meetings Without the Back-and-Forth   mawaidi.io\n\n   12\n\nLike   Comment\n\nTo view or add a comment, sign in\n\n995 followers\n\n 52 Posts\n\nView Profile   Follow\n\n## Explore related topics\n\n Scheduling Meetings Across Time Zones\n How to Schedule Sales Meetings With New Clients\n Scheduling Automation Solutions\n Scheduling Workflow Solutions\n Scheduling with AI and Machine Learning\n Scheduling Virtual Meetings That Actually Work\n Engineering Project Management Dashboards\n\n## Explore content categories\n\n Career\n Productivity\n Finance\n Soft Skills & Emotional Intelligence\n Project Management\n Education\n Technology\n Leadership\n Ecommerce\n User Experience\n\n## Sign in to view more content",
+      "tavilyScore": 0.8653379,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promoting their own open-source scheduling platform Mawaidi — direct competitor.",
+        "quote": "an open-source meeting scheduling platform I built from scratch",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/erina-fischer_nothing-stings-like-a-no-show-marketing-activity-7497793242680147968-5g4d",
+      "title": "Reduce No-Shows by 30% with Automated Reminders | Erina Fischer posted on the topic | LinkedIn",
+      "content": "\"More than 1 in 10 qualified meetings ended in a no-show.\" That's demand you already paid for, gone before the demo even starts. Our partner Vidyard just showed a clean way to close that gap, and it works with Chili Piper. A prospect books a meeting through Chili Piper, gets routed to the right rep, and the booking logs straight to Salesforce and Marketo. That booking then triggers a personalized video from Vidyard: the rep's own face and voice, with the prospect's name, company, and meeting time built in. It lands in the prospect's inbox automatically, with no recording and no manual send from the rep. Running this play, Vidyard cut no-shows by 33%, and it held past the first month. That's more demos held and more pipeline out of demand you've already generated, without asking reps to [...] team started applying AI-powered video across moments where connection is fragile: a webinar registrant, cold outreach from an SDR, demo reminders, etc.. We use video as a medium and as infrastructure. 👉 When we replaced standard webinar reminders with short personalized videos, attendance increased by over 50 percent because people saw who they would be learning from.  👉 In prospecting, Vidyard's Video Agent handled the mechanics so reps could focus on preparing for the meeting, which led to better conversations. 👉 Our team sends automated meeting reminders, which reduced no-shows by 30% by helping prospects feel grounded in who they were about to speak with. If you’re leading a revenue team, think about where connection is quietly breaking down in your funnel. I’m not saying that video [...] Nothing stings like a no-show. Marketing spends weeks or months getting future customers to the first meeting: awareness, product education, and then finally, making a decision. A meeting is booked. The time to actual person to person connection is significantly longer as buyers (non technical, as much as technical) are now doing most of their homework in an LLM before they'll make the jump. The meeting finally gets on the AE's calendar and nobody shows up. It's one of the more costly parts of a leaky funnel. As long time customers of Chili Piper, we've created a workflow that has reduced no-shows by 30 percent. It goes: Chili Piper books the call, routed to the right rep, and then Zapier catches the trigger. We then use Vidyard's Video Agent to send a short automated video from the rep.",
+      "tavilyScore": 0.80821866,
+      "query": "how do I reduce meeting no-shows with automatic reminders",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promoting Chili Piper + Vidyard integration play — competitor ecosystem self-promotion.",
+        "quote": "Vidyard cut no-shows by 33%",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L18",
+      "platform": "Medium",
+      "url": "https://medium.com/the-observers-pen/this-ai-tool-is-quietly-redefining-sales-automation-how-revenue-hero-books-meetings-without-human-25aa53eda8cd",
+      "title": "This AI Tool Is Quietly Redefining Sales Automation: How Revenue Hero Books Meetings Without Human… | The Observer’s Pen",
+      "content": "## The Observer’s Pen. From politics to personal stories—a space for every voice. The Observer’s explores truth, emotion, and everything in between. # This AI Tool Is Quietly Redefining Sales Automation: How Revenue Hero Books Meetings Without Human Effort. ## The Smart Routing Logic That Works While Your Team Sleeps. In today’s online marketing world, being fast isn’t just a nice thing to have — it’s how you win. As soon as someone shows they might want to buy something, you’ve got to move. For a long time, companies have been using slow, **old-fashioned ways** to turn that interest into actual sales talks. That’s where RevenueHero comes in, quietly changing how businesses deal with people who might want to buy. RevenueHero is a platform that automates meeting schedules using AI, **designed for sales teams**. Instead of just giving out a calendar link like other tools, RevenueHero cleverly matches potential customers with the right salesperson and books meetings right away — no emails, waiting, or back-and-forth needed. Basically, RevenueHero fixes a problem that many in sales and marketing miss: how long it takes to respond to leads. Studies show that if you contact someone quickly, they’re much more likely to become a customer. RevenueHero closes the gap between when someone shows interest and when you act, letting them book meetings right after filling out a form…. ## Published in The Observer’s Pen. ·Last published Jan 9, 2026. From politics to personal stories—a space for every voice. The Observer’s explores truth, emotion, and everything in between. ## Written by The Observer’s Pen. A Writer who focuses on world news, geopolitics, life, real stories, growth & creativity—bringing fresh perspectives that inform, inspire. ## No responses yet.",
+      "tavilyScore": 0.80147004,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Article promoting Revenue Hero's meeting-booking/routing product — competitor.",
+        "quote": "How Revenue Hero Books Meetings Without Human Effort",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L19",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/razz-professional-services_manageditserviceslosangeles-losangelesmanagedserviceprovider-activity-7468694774196113408-o7Gw",
+      "title": "#manageditserviceslosangeles #losangelesmanagedserviceprovider #worksmarternotharder | Razz Professional Services, Inc.",
+      "content": "💡 Tech Tip Friday: Stop the Email Ping-Pong Let Clients Book Their Own Meetings! We've all been there: 6 emails back and forth just to schedule a 15-minute call. 😩 Here's a game-changer: Use Calendly, Appointment Core, Microsoft Bookings, or HubSpot Scheduling to let clients (and prospects) book time directly on your calendar — 24/7, no human required. ✅ Automatically syncs with Outlook/Google Calendar ✅ Buffers time between meetings ✅ Sends reminders to both parties ✅ Collects intake info before the call Think of how many hours your team spends each week just scheduling? This frees them up for actual work. 📅 Already using a scheduling tool? Drop a 👍 in the comments or let us know if you use one that wasn't mentioned above. 📩 Want help setting it up for your firm? DM us and we'd be happy",
+      "tavilyScore": 0.7849791,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "MSP promoting scheduling tools (Calendly etc.) as a tech tip — vendor-style content.",
+        "quote": "Stop the Email Ping-Pong Let Clients Book Their Own Meetings!",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L1",
+      "platform": "X",
+      "url": "https://x.com/NotionHQ/status/2027080676798030333",
+      "title": "Notion on X: \"Custom Agents can now use Mail and Calendar. That means: → Inbox sorted before you open it → Meetings booked without the back-and-forth → Context prepped before you walk into a meeting We've been testing a few of these agents internally…\" / X",
+      "content": "Title: Notion on X: \"Custom Agents can now use Mail and Calendar. That means: → Inbox sorted before you open it → Meetings booked without the back-and-forth → Context prepped before you walk into a meeting We've been testing a few of these agents internally…\" / X\n# Notion on X: \"Custom Agents can now use Mail and Calendar. That means: → Inbox sorted before you open it → Meetings booked without the back-and-forth → Context prepped before you walk into a meeting We've been testing a few of these agents internally…\". Custom Agents can now use Mail and Calendar. 5:57 PM · Feb 26, 2026·42.1K. 📩 Inbox Organizer: reads emails, applies labels, drafts replies, and routes messages to the right place. Template → notion.com/custom-agent-t…. 📆 Team Scheduler: monitors for scheduling requests, checks calendar availability, and proposes times. No more back-and-forth! One tip: custom agents work best when they do one thing. Rather than building and agent that handles all email and calendar tasks, we recommend: → One agent for triage → One agent for drafting replies → One agent for meeting prep It’ll make each agent easier to build,. Manage your inbox and calendar automatically with Custom AgentsFrom notion.com. I need this for my IMAP email on my own domain.",
+      "tavilyScore": 0.78133065,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Notion promoting its own agents with calendar booking; vendor self-promotion.",
+        "quote": "Meetings booked without the back-and-forth",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L2",
+      "platform": "X",
+      "url": "https://x.com/ZohoCliq/status/2095043372583186699/photo/2",
+      "title": "Zoho Cliq on X: \"Scheduling just got easier.\n\nSee everyone’s availability, find a time that works, and schedule meetings without the back-and-forth.\n\nMeet User & Slot Availability in Cliq.\n\nLess coordination. More time for what matters.\n\nNow available in Zoho Cliq 7.0. 🚀\n\n#ZohoCliq7\" / X",
+      "content": "## Post\n\n## Post\n\n# Zoho Cliq on X: \"Scheduling just got easier. See everyone’s availability, find a time that works, and schedule meetings without the back-and-forth. Meet User & Slot Availability in Cliq. Less coordination. More time for what matters. Now available in Zoho Cliq 7.0. 🚀 #ZohoCliq7\"\n\n## Conversation\n\n## Log in or sign up for X\n\nSee what’s happening and join the conversation\n\n## Relevant people\n\nAvatar\n\n## What’s happening\n\n@ZohoCliq",
+      "tavilyScore": 0.7728737,
+      "query": "looking for a tool to schedule meetings without back and forth emails",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Zoho Cliq promoting its own scheduling feature; direct competitor self-promotion.",
+        "quote": "schedule meetings without the back-and-forth",
+        "verified": true
+      },
+      "b": null
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L3",
+      "text": "Finding a time that fits most people across time zones is the hard part. A group poll works well for one-off meetings; for recurring bookings, use availability windows and automatic time-zone detection. Disclosure: I work on Cal.com. It supports team scheduling, collective availability, and round-robin booking, plus calendar and Slack integrations. I’d compare those options with a simple poll based on how often you meet.",
+      "usage": {
+        "in": 457,
+        "out": 89
+      },
+      "latencyMs": 1250
+    },
+    {
+      "leadId": "L7",
+      "text": "I’ve been there, and the back-and-forth on meeting times is usually the first thing worth fixing. A booking link connected to your calendar lets clients choose an available slot and handles confirmations automatically.\n\nDisclosure: I work on Cal.com. It can handle that scheduling side, but it won’t replace a CRM for organizing client conversations and contacts. For that, I’d pair it with a simple CRM or a consistently labeled email folder rather than expecting one tool to do everything.",
+      "usage": {
+        "in": 431,
+        "out": 103
+      },
+      "latencyMs": 1541
+    },
+    {
+      "leadId": "L5",
+      "text": "Finding a single plugin that handles WooCommerce checkout, Zoom, and class calendars is tough. Disclosure: I work on Cal.com. It handles Zoom and automated emails with attachments well, but it won’t use Woo’s native cart or checkout. You’d likely need to link your Elementor calendar to Cal.com for the booking, then handle physical products separately in Woo. It might not be the all-in-one fit you need, but it covers the scheduling side.",
+      "usage": {
+        "in": 440,
+        "out": 99
+      },
+      "latencyMs": 1559
+    },
+    {
+      "leadId": "L10",
+      "text": "Requiring a confirm/cancel action is smart, but double or triple booking can backfire when everyone shows up. I’d start with one confirmation deadline, then release unconfirmed slots or offer them to a waitlist. Keep the reminder short and make replying easy. Disclosure: I work on Cal.com; it supports automated reminders and confirmation workflows, but the policy matters more than the tool.",
+      "usage": {
+        "in": 207,
+        "out": 86
+      },
+      "latencyMs": 1461
+    },
+    {
+      "leadId": "L14",
+      "text": "That’s the right approach—an embed saves you from building availability logic, timezone handling, and calendar syncing yourself. Disclosure: I work on Cal.com. It offers embeddable booking widgets and an API if you need more control over the design. Whichever service you choose, check how the embed behaves on mobile and whether it loads asynchronously so it doesn’t slow down the rest of your page.",
+      "usage": {
+        "in": 212,
+        "out": 87
+      },
+      "latencyMs": 1422
+    }
+  ],
+  "companies": [],
+  "companiesError": null,
+  "comparison": null,
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3035,
+      "out": 1653,
+      "cost": 0.0028940999999999997,
+      "latencyMs": 6018
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3197,
+      "out": 1236,
+      "cost": 0.0010975499999999999,
+      "latencyMs": 5276
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3094,
+      "out": 584,
+      "cost": 0.001629,
+      "latencyMs": 2736
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 1747,
+      "out": 464,
+      "cost": 0.008133999999999999,
+      "latencyMs": 1559
+    }
+  ],
+  "scorerError": "Reference scorer moonshotai/Kimi-K3.1-Pro took longer than 75 s; skipped"
+}

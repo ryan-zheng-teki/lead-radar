@@ -1,0 +1,33 @@
+{
+  "viewport": "1280x720",
+  "company": "https://www.autobyteus.com",
+  "hscroll": {
+    "empty": false,
+    "running": false,
+    "results": false,
+    "after": false
+  },
+  "runSeconds": 28.179,
+  "draftsState": [
+    "approved:Approved",
+    "approved:Approved · edited",
+    "rejected:Rejected",
+    "pending:-",
+    "pending:-"
+  ],
+  "counter": "2 approved · 1 rejected · 2 pending",
+  "sections": [
+    "hero",
+    "progress",
+    "kpis",
+    "profile",
+    "leads",
+    "drafts",
+    "comparison",
+    "models",
+    "companies"
+  ],
+  "minFont": 14,
+  "errorText": "!\nSomething went wrong\n\"not a url\" is not a valid URL.\nTry again",
+  "consoleErrors": []
+}

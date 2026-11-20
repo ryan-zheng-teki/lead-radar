@@ -82,13 +82,16 @@ function renderProfile(p) {
 }
 
 /* ---------- Leads ---------- */
+const KIND_PILLS = { asking: ['Asking', 'pill-success'], complaining: ['Complaining', 'pill-success'], discussing: ['Discussing', 'pill-accent'], article: ['Article', 'pill-muted'], competitor: ['Competitor', 'pill-danger'] };
+const kindPill = (k) => (KIND_PILLS[k] ? `<span class="pill ${KIND_PILLS[k][1]}">${KIND_PILLS[k][0]}</span>` : '');
+
 function leadCard(l, scorerB) {
   const a = l.a || {};
   const verified = a.quote ? (a.verified ? '<span class="pill pill-success">✓ Verified in source</span>' : '<span class="pill pill-warning">⚠ Not verbatim</span>') : '';
   const b = l.b ? `${esc(short(scorerB).split('-')[0])} ${l.b.score}` : state.leadsEvent?.pendingB ? 'ref …' : '';
   return `<article class="lead">
     <div class="score-col"><div class="score ${scoreCls(a.score ?? 0)}" title="Score from ${esc(short(state.leadsEvent?.scorerA))}">${a.score ?? '–'}</div><div class="score-b" title="Reference score">${b}</div></div>
-    <div><div class="lead-top">${platformPill(l.platform)}<span class="lead-meta-right">${verified}</span></div>
+    <div><div class="lead-top">${platformPill(l.platform)}${kindPill(a.kind)}<span class="lead-meta-right">${verified}</span></div>
       ${link(l.url, `${esc(l.title || l.url)}&nbsp;↗`, 'lead-title')}
       <p class="lead-reason">${esc(a.reason)}</p>
       ${a.quote ? `<blockquote>“${esc(a.quote)}”</blockquote>` : ''}</div></article>`;
@@ -212,8 +215,9 @@ function renderModels(models) {
 function renderCompanies(ev) {
   const el = $('#companies');
   const head = '<div class="section-head"><h2>Target companies <span class="muted" style="font-weight:400">· buying signals</span></h2></div>';
-  if (ev.error || !ev.companies.length) { el.innerHTML = `${head}<p class="empty">Target companies unavailable${ev.error ? `: ${esc(ev.error)}` : ' for this run.'}</p>`; el.hidden = false; return; }
-  const sig = { hiring: 'pill-success', launch: 'pill-accent', funding: 'pill-warning' };
+  if (ev.error) { el.innerHTML = `${head}<p class="empty">Target companies unavailable: ${esc(ev.error)}</p>`; el.hidden = false; return; }
+  if (!ev.companies.length) { el.innerHTML = `${head}<p class="empty">No clear buyer signals found in this run.</p>`; el.hidden = false; return; }
+  const sig = { hiring: 'pill-success', adopting: 'pill-accent', struggling: 'pill-warning', funding: 'pill-muted' };
   el.innerHTML = `${head}<div class="lead-list">${ev.companies.map((c) => `<article class="lead" style="grid-template-columns:1fr"><div>
     <div class="lead-top"><span class="lead-title" style="margin:0">${esc(c.company)}</span><span class="pill ${sig[c.signal] || 'pill-muted'}">${esc(c.signal)}</span></div>
     <p class="lead-reason">${esc(c.reason)}</p>${link(c.url, `${esc(c.title || c.url)}&nbsp;↗`)}</div></article>`).join('')}</div>`;

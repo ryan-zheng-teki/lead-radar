@@ -1,0 +1,55 @@
+# IMP-09 SR-004 lead quality: AC-013..016 on real runs
+# Command: PORT=3013 node server.js; curl -X POST /api/run for https://www.autobyteus.com and https://cal.com in parallel; node acs.js <run files>
+# Commit: SR-004 working tree on ui-polish-sr003 (committed next) | Env: Linux, Node 22.23.3, live keys | Date: 2026-11-20
+
+== autobyteus.com (AutoByteus) totalMs 28150 cost 0.0363927 scorerError null
+discussion leads: 14/20; mentions product: 0; A>=5: 9; A>=7: 4
+  A8/asking B9/asking Reddit       Multi-agent orchestration without cloud dependency? : r/LocalLLaMA
+  A8/complaining B9/complaining Reddit       Getting tired of long-task multi-agent collaboration : r/AI_Agents
+  A7/asking B10/asking Reddit       Best Agent Orchestration platform + opensource Model combo? : r/LocalL
+  A7/discussing B8/discussing Hacker News  Ask HN: How do you manage skills files? | Hacker News
+  A6/discussing B7/discussing X            Agents Need Feedback Loops, Not Perfect Prompts | Petra Donka (@petrad
+  A6/asking B8/asking Reddit       Whats the best open weight model for orchestration? : r/LocalLLaMA
+  A6/discussing B4/article Medium       The 4-Step Protocol That Fixes Claude Code Agent’s Context Amnesia
+  A5/discussing B6/asking Reddit       How small can the orchestration model in an agent be? (separating it f
+  A5/discussing B3/article LinkedIn     Here is a simple trick that makes your AI agents much more useful: Sto
+  A4/article B4/article X            Somi on X: "Self-hosted Claude Managed Agents: who runs what, and what
+  A4/article B3/article X            How to Build a Team of AI Agents That Actually Work Together (Full Cou
+  A4/article B4/article Medium       Let’s Build a Self-Improving AI Agent That Learns From Your Feedback
+  A3/discussing B3/discussing Reddit       How do you keep up with what's happening across your repos?
+  A3/article B2/article dev.to       Build a Sales Follow-Up Agent With the Claude Agent SDK - DEV Communit
+  A2/competitor B1/competitor Reddit       Built a multi-agent orchestration framework in TypeScript, 3 deps, run
+  A2/competitor B1/competitor Reddit       Built a self-hosted AI workspace with multi-agent orchestration — look
+  A2/competitor B2/competitor Reddit       Whats the best orchestration framework? : r/AI_Agents
+  A2/competitor B2/article Medium       How to Keep AI Agent Context Across Sessions
+  A2/competitor B2/article Medium       How to Keep AI Agent Context Across Sessions
+  A1/competitor B1/competitor X            Huawei Cloud CodeArts Agent Now Available Globally, Bringing Agentic A
+companies (1) err=null:
+  Cosmic | adopting | Describes how Cosmic actually operates an AI-native team with clear roles, handoffs, and c | https://www.cosmicjs.com/blog/how-to-build-an-ai-native-team-practical-framework
+steps: profile 7.0s, scoring A 5.4s, scoring B 14.4s, target companies 5.5s, drafts 3.8s
+== cal.com (Cal.com) totalMs 87057 cost 0.013754649999999998 scorerError Reference scorer moonshotai/Kimi-K3.1-Pro took longer than 75 s; skipped
+discussion leads: 14/20; mentions product: 0; A>=5: 9; A>=7: 5
+  A9/asking B-/- Reddit       What is the best tool to schedule meetings with remote teams? : r/remo
+  A9/asking B-/- Reddit       Trying to organize meetings and contacts better, any good meeting sche
+  A7/asking B-/- Reddit       Need help finding a booking app plugin for Woocommerce : r/woocommerce
+  A7/complaining B-/- Reddit       No show appointments are killing our workflow, how do you deal ...
+  A7/asking B-/- Reddit       Creating a calender and booking functionality : r/web_design - Reddit
+  A6/discussing B-/- Reddit       How do you reduce no-shows for service appointments without ...
+  A6/discussing B-/- Reddit       an AI agent that scores inbound leads and auto-books calls for hot one
+  A5/discussing B-/- Reddit       Best Scheduling App where clients can view your availability? - Reddit
+  A5/discussing B-/- Reddit       What is your protocol for no-shows? : r/therapists - Reddit
+  A4/discussing B-/- Reddit       How are you managing your STR calendar across ...
+  A3/article B-/- Medium       How to Reduce No-Shows Using Automated Reminders in Your Scheduling CR
+  A3/article B-/- LinkedIn     Scheduling software with calendar integration
+  A2/competitor B-/- Hacker News  Show HN: Coffee Chats – Schedule virtual coffee chats without the back
+  A2/competitor B-/- Reddit       We built a scheduling tool to find the best meeting time for ...
+  A2/competitor B-/- LinkedIn     Mawaidi - Schedule Meetings Without the Back-and-Forth | Khatab Wedata
+  A2/competitor B-/- LinkedIn     Reduce No-Shows by 30% with Automated Reminders | Erina Fischer posted
+  A2/competitor B-/- Medium       This AI Tool Is Quietly Redefining Sales Automation: How Revenue Hero 
+  A2/competitor B-/- LinkedIn     #manageditserviceslosangeles #losangelesmanagedserviceprovider #worksm
+  A1/competitor B-/- X            Notion on X: "Custom Agents can now use Mail and Calendar. That means:
+  A1/competitor B-/- X            Zoho Cliq on X: "Scheduling just got easier.
+
+See everyone’s availabil
+companies (0) err=null:
+steps: profile 6.0s, scoring A 5.3s, target companies 2.7s, drafts 1.6s

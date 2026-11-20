@@ -1,0 +1,625 @@
+{
+  "url": "https://www.autobyteus.com/",
+  "at": "2026-11-20T13:56:11.579Z",
+  "totalMs": 28150,
+  "totalCost": 0.0363927,
+  "profile": {
+    "name": "AutoByteus",
+    "summary": "A local-first, human-guided agent team orchestration platform for building evaluation-driven teams that learn from user expertise and coordinate work through organizations, tasks, and handoff rules.",
+    "problems": [
+      "Agent teams are hard to organize into teams, organizations, tasks, and clear handoff rules.",
+      "Agent work does not naturally learn from user expertise or turn feedback into better skills.",
+      "Follow-up work can lose context instead of returning to the team that already has it.",
+      "Users need mixed runtime support and per-agent choice among local, self-hosted, Codex, Claude, and cloud providers.",
+      "Users need local-first control over privacy, cost, and capability while running specialist agent teams.",
+      "Building reusable specialist teams for serious work or custom AI applications is difficult."
+    ],
+    "ideal_customer": "Teams and organizations building serious agent teams or custom AI applications who need local-first orchestration, reusable specialist teams, and control over models and runtimes per role.",
+    "pain_phrases": [
+      "I keep re-explaining my expertise because my agents don’t turn feedback into better skills.",
+      "My multi-agent setup has no clear handoff rules or task ownership.",
+      "Follow-up work loses context instead of going back to the team that knows it.",
+      "I need local and cloud models per agent without giving up privacy or cost control.",
+      "I want reusable specialist agent teams for real engineering work, not ad hoc prompts."
+    ],
+    "search_queries": [
+      "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "how do I make agent teams learn from my feedback and improve skills without restart",
+      "frustrated with multi-agent handoff rules and task management",
+      "how to run agent teams locally with self-hosted models and cloud providers per role",
+      "looking for reusable software engineering agent team with requirement analysis design implementation validation",
+      "how do I keep follow-up work with the agent team that has context"
+    ],
+    "domain": "autobyteus.com",
+    "sources": [
+      "https://www.autobyteus.com/"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L5",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sly9zd/multiagent_orchestration_without_cloud_dependency",
+      "title": "Multi-agent orchestration without cloud dependency? : r/LocalLLaMA",
+      "content": "Title: Multi-agent orchestration without cloud dependency? : r/LocalLLaMA\n# Multi-agent orchestration without cloud dependency? Skip to main contentMulti-agent orchestration without cloud dependency? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Expand user menu Open settings menu. Image 1 Go to LocalLLaMA. Has anyone cracked reliable multi-agent coordination on local hardware? - Shared skill registry keeps agent state consistent across turns. - Deterministic skill routing prevents cascade failures as skill count grows. - Tool call schemas need version pinning or inference degrades unpredictably. M2.7's Agent Teams address the scaffolding problem, but the core issue is skill library management. Be the first to comment. Nobody's responded to this post yet. Add your thoughts and get the conversation going. # People also ask about section. Best practices for hosting LLaMA locally. Top tools for optimizing AI model performance. Unique applications of LLaMA in everyday life. Challenges faced when running LLaMA models. Comparing LLaMA with other AI models. Anyone can view, post, and comment to this community. *   Best of Reddit in Portuguese. *   Best of Reddit in German. Join the most real place on the internet. By continuing, you agree to ourUser Agreementand acknowledge that you understand thePrivacy Policy.",
+      "tavilyScore": 0.5551639,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 8,
+        "kind": "asking",
+        "reason": "Asks about reliable multi-agent coordination on local hardware — exactly local-first orchestration pain.",
+        "quote": "Has anyone cracked reliable multi-agent coordination on local hardware?",
+        "verified": true
+      },
+      "b": {
+        "score": 9,
+        "kind": "asking",
+        "reason": "User asks about reliable local multi-agent coordination and describes closely related orchestration challenges.",
+        "quote": "Has anyone cracked reliable multi-agent coordination on local hardware?",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1upoqag/getting_tired_of_longtask_multiagent_collaboration",
+      "title": "Getting tired of long-task multi-agent collaboration : r/AI_Agents",
+      "content": "long agent tasks fail because coordination state decays. the fix is usually fewer agents and more explicit handoff artifacts. who owns the next",
+      "tavilyScore": 0.5452555,
+      "query": "frustrated with multi-agent handoff rules and task management",
+      "a": {
+        "score": 8,
+        "kind": "complaining",
+        "reason": "Complains about multi-agent coordination state decay and handoff artifacts — core AutoByteus handoff problem.",
+        "quote": "long agent tasks fail because coordination state decays. the fix is usually fewer agents and more explicit handoff artifacts",
+        "verified": true
+      },
+      "b": {
+        "score": 9,
+        "kind": "complaining",
+        "reason": "User expresses frustration with long-running multi-agent collaboration, coordination decay, and handoffs.",
+        "quote": "long agent tasks fail because coordination state decays",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1shftes/best_agent_orchestration_platform_opensource",
+      "title": "Best Agent Orchestration platform + opensource Model combo? : r/LocalLLaMA",
+      "content": "Title: Best Agent Orchestration platform + opensource Model combo? : r/LocalLLaMA\nSkip to main contentBest Agent Orchestration platform + opensource Model combo? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. # Best Agent Orchestration platform + opensource Model combo? the title is the question, looking to hear opinions, recommendations,or even horror stories on orchestration platform/tool/library paired with a local model. I do have qwen3-coder-next and Gemma 4 on two separate nodes but overwhelmed on the barrage of agent orchestration tools and libraries coming out. Image 2: u/airbnb avatarairbnb•Ad. Split up the cost, not the crew. Image 3: Thumbnail image: Split up the cost, not the crew. Are you building something that runs agents sequentially across repos (like a CI/CD pipeline), or running multiple agents in parallel on a single problem? For opensource with local models: n8n is solid if you want a visual interface and don't mind the overhead. I've used Airflow, but not in agentic workflows, more on ETL like processes before - but that's probably 5 -6 years ago, might look at it again though thanks for the tip. If the real problem is agents on different repos stepping on each other's files, that's more of a git-worktree-per-agent problem than an orchestration-library problem, worth solving that layer first regardless of which framework you pick on top. (disclosure: I work on Unstoppable Code) it's not a swarm framework, and its local-model support is Ollama-on-loopback specifically, so it wouldn't cover your two-node setup as-is. The worktree-per-agent + plan-review model might be worth a look for the multi-repo piece specifically, if you end up wanting something more supervised than swarm-style, just flagging it doesn't solve the distributed-inference part of what you're asking. *   What's the best ai agent platform you actually settled on? Image 8 r/AI_Agents•6d ago    ### What's the best ai agent platform you actually settled on? *   If you run a multi-agent setup, what do you use as the orchestrator? Image 16 r/AI_Agents•2mo ago    ### If you run a multi-agent setup, what do you use as the orchestrator? Would love some brutal feedback.Image 18 r/AI_Agents•7mo ago    ### I spent 3 months building an open-source tool to orchestrate AI agents.",
+      "tavilyScore": 0.6351093,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 7,
+        "kind": "asking",
+        "reason": "Asking for orchestration platform + local model recommendations; matches local-first orchestration need but generic.",
+        "quote": "looking to hear opinions, recommendations,or even horror stories on orchestration platform/tool/library paired with a local model",
+        "verified": true
+      },
+      "b": {
+        "score": 10,
+        "kind": "asking",
+        "reason": "User directly seeks an agent orchestration platform for local open-source models and feels overwhelmed by choices.",
+        "quote": "overwhelmed on the barrage of agent orchestration tools and libraries coming out",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49589914",
+      "title": "Ask HN: How do you manage skills files? | Hacker News",
+      "content": "When I work on a new problem and the agent struggles with it, I will ask the agent to distill the knowledge and experiences it gained during the session into a skill file. Then I review and publish it depends on the assistant system. I find this is an effective way for the agents to learn new skills, both from its own discoveries but also from my steering and the mistakes it made.\n\nIf you work in a niche or on special problems, this template could be useful.\n\nWe have some company-managed skills, that help coding agents find the relationships between our repos, and our conventions, architecture, and other high-level decisions. These are supposed to be portable between agents, and so distributing them is currently awkward. [...] 2\\. For our product (which is mostly an internal tool, with minimial customer facing UI) - we have a skills factory that lets our employees create reusable instructions for our internal agent (fully custom built harness with routing). User describes the task and writes the instructions (can attach reference files, etc.). Custom skills and their versions are stored in postgres, with attachments in file storage. The assistant loads those instructions and references when it uses the skill. To update a shared skill, users edit a draft, test it, and submit it for review. Once approved, that version becomes live. Skills can learn or rewrite themselves from conversations (cuts a new draft and prompts the user if they want to update/improve the skill). [...] |  |  |  |\n---\n|  |  | I mostly prompt my own skills, and add a self-improvement directive (to those I think can use it). Usually if a skill isn't working (well) there will be extra tool calls. Actually that's usually the trigger to create a skill in the first place: multiple tool calls to do a repetitive task, where those tool calls can be reduced. But from comments on most AI-related posts, people are hardly-if-ever reading the agent transcripts (and the self improvement directive doesn't always get triggered) so their skills never improve. |",
+      "tavilyScore": 0.53348863,
+      "query": "how do I make agent teams learn from my feedback and improve skills without restart",
+      "a": {
+        "score": 7,
+        "kind": "discussing",
+        "reason": "Describes distilling agent learnings into skill files from user steering — matches learning-from-expertise need.",
+        "quote": "ask the agent to distill the knowledge and experiences it gained during the session into a skill file",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "kind": "discussing",
+        "reason": "User describes a hands-on process for converting agent experience and personal steering into reusable skills.",
+        "quote": "an effective way for the agents to learn new skills, both from its own discoveries but also from my steering",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "X",
+      "url": "https://x.com/petradonka/article/2054897826149101588",
+      "title": "Agents Need Feedback Loops, Not Perfect Prompts | Petra Donka (@petradonka) on X",
+      "content": "Buzz already posted each mention into a Slack channel with its recommendation and draft reply, so we made the feedback interface as small as possible: the team reacts with an emoji for what they actually did, and can optionally add a note in the thread. One click is enough signal; a thread is extra context.\n\nThen, once a day, Buzz collects the reactions and thread feedback, compares its recommendations to what the team actually did, extracts durable learnings, updates the relevant skill files, and opens a PR.\n\nThat small Slack loop is what made the system work in practice. The best way to get leverage from agents is not to turn everyone into prompt engineers. It is to design workflows where the team’s normal judgement and taste become a training signal for the systems around them. [...] The learning process is roughly:\n\n1. Identify what went wrong (or right) — start from specific feedback, be concrete\n2. Ask: why? — the failure is a symptom, find the underlying cause\n3. Zoom out to the pattern — would this apply beyond this one case?\n4. Check against existing principles — sharpen, edit, delete, or add?\n5. Write it as a principle, not a rule — describe how to think, not what to do\n6. Put it where it belongs — section matters for the agent to apply them right\n7. Edit and commit — update the skill file, keep it tight, merge overlapping principles [...] This got us to the next failure mode: the agent wanted to turn every correction back into a rule. For example, if I said a reply felt too marketing-y, it’d add a rule: “Never mention pricing in the first sentence.” The transferable principle is closer to: “If someone is venting, lead with empathy, not a pitch.” The agent needed to be taught how to learn from feedback.\n\nSo, we built a separate skill for that. It looks at the agent’s suggestion, what the human did instead, and the current instructions, then asks: what principle is missing or unclear to achieve the expected output?\n\n\n\nThe reply-learning skill on GitHub\n\nThe learning process is roughly:",
+      "tavilyScore": 0.615319,
+      "query": "how do I make agent teams learn from my feedback and improve skills without restart",
+      "a": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Describes turning team feedback into skill files — closely matches AutoByteus's learning-from-expertise value prop.",
+        "quote": "extracts durable learnings, updates the relevant skill files, and opens a PR",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "kind": "discussing",
+        "reason": "Author shares practical experience turning team feedback into durable agent learning and updated skills.",
+        "quote": "extracts durable learnings, updates the relevant skill files, and opens a PR",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1pu1whs/whats_the_best_open_weight_model_for_orchestration",
+      "title": "Whats the best open weight model for orchestration? : r/LocalLLaMA",
+      "content": "Title: Whats the best open weight model for orchestration? : r/LocalLLaMA\nSkip to main contentWhats the best open weight model for orchestration? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to LocalLLaMA. # Whats the best open weight model for orchestration? I’m exploring AI orchestration systems and I’m curious about what the community would use. What I was thinking is instead of relying on a single model for everything, I’m thinking in a multi agent system orchestrator: one central model coordinates multiple specialized agents like a developer agent, code review agent, web browsing agent, deep research agent, vision agent, etc. Does anyone know good open-weight models that work well as the central orchestrator? I've been thinking about gpt-oss models since they're good at reasoning and instruction following. Image 2: u/EASPORTSFC avatarEASPORTSFC•Ad. Dünyanın Oyunu'na hoş geldiniz. Image 3: Clickable image which will reveal the video player: Dünyanın Oyunu'na hoş geldiniz. Gemma 12B it, don't ask me when it was released or why I chose it, it just works for my usecase and is the smallest that passed my \"benchmark\" on that late sunday night. I use it for basic stuff, I use other models for more advanced \"agents\" usually mistral small (where mistral will be lacking is like interpreting statistical analysis etc but it will less fail on implied instructions). Honestly I've played with it, didn't considered it at the time but should be okay. I'll definitely try it :D. Don't know why you were being downvoted; I give another vote for this one. The best I think is K2 Thinking, it works quite well in Orchestration mode in Roo Code for example, so likely it will work in this capacity in other agentic workflows too. GPT-OSS 120B may work too but it degrades significantly beyond approximately 64K context length, so worth keeping that in mind if your orchestrator needs to iterate on many tasks. Best open weight models for AI orchestration. Best tools for local agent orchestration. Open source agent orchestration options. *   Reddit reReddit: Top posts of December 23, 2025 * * *. *   Reddit reReddit: Top posts of 2025 * * *. *   Best of Reddit in Portuguese. *   Best of Reddit in German.",
+      "tavilyScore": 0.51299757,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 6,
+        "kind": "asking",
+        "reason": "Asks about models for multi-agent orchestration with specialized agents; related but model-focused.",
+        "quote": "one central model coordinates multiple specialized agents like a developer agent, code review agent",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "kind": "asking",
+        "reason": "User is exploring an open-weight multi-agent orchestrator with specialist roles, though the immediate question focuses on model choice.",
+        "quote": "one central model coordinates multiple specialized agents like a developer agent, code review agent",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "Medium",
+      "url": "https://medium.com/@ilyas.ibrahim/the-4-step-protocol-that-fixes-claude-codes-context-amnesia-c3937385561c",
+      "title": "The 4-Step Protocol That Fixes Claude Code Agent’s Context Amnesia",
+      "content": "## Pre-Work Checklist  \n□ Check .claude/reports/_registry.md (date filter: last 3 days)  \n□ Identify relevant reports for current task □ Read reports to extract decisions, constraints, requirements  \n□ Synthesize context for agent task prompts  \n  \n## Handoff Protocol  \nWhen work creates follow-up tasks:  \n1. Create handoff report: `.claude/reports/handoff/handoff-[from]-to-[to]-[topic]-YYYYMMDD.md`  \n2. Use template from Report Template section  \n3. Update registry  \n4. Be specific: action items, success criteria\n## 2. Context Injection (The Handoff)\n\nThis is where my approach breaks from standard agent frameworks. I do not allow sub-agents to read the Registry or trace down any reports.\n\n## Get Ilyas Ibrahim Mohamed’s stories in your inbox [...] ## Core Principle  \n Build on existing work. Never recreate.   \nBefore invoking agents:  \n1. Check project registry for relevant prior work  \n2. Read relevant reports to extract context  \n3. Provide complete context to agents in task prompts  \n  \n## File Locations (Project-Based)  \n Registry:  `.claude/reports/_registry.md`  \n Report folders:   \n- `.claude/reports/analysis/` - Research, investigations  \n- `.claude/reports/arch/` - Architecture, specs, ADRs  \n- `.claude/reports/bugs/` - Bug reports, root cause analyses  \n- `.claude/reports/commits/` - Commit documentation  \n- `.claude/reports/design/` - UI/UX designs, design reviews  \n- `.claude/reports/exec/` - Executive summaries  \n- `.claude/reports/handoff/` - Agent coordination, task handoffs [...] At some point I stopped blaming the agents and started looking at the setup itself. They weren’t the issue. The way I was asking them to work was. So what I needed wasn’t sharper instructions or clever prompt tricks. I needed a place where the memory lived, separate from the agents doing the work. Something steady. Maybe boring. A file, basically (agent-coordination.md). I loaded it as a Claude Skill and the whole system finally had a place to refer to.\n\nThis protocol changed my workflow from a chaotic workflow into a functional engineering department. It also pushed my effective context window from twenty minutes to over two hours, while still keeping my agents well informed. Here is the architecture of the system that finally worked.\n\n## The Idea Is Keep The Main Agent as State Manager",
+      "tavilyScore": 0.6617043,
+      "query": "how do I keep follow-up work with the agent team that has context",
+      "a": {
+        "score": 6,
+        "kind": "discussing",
+        "reason": "Describes handoff protocol for agent context across tasks — matches handoff/context-loss pain.",
+        "quote": "When work creates follow-up tasks: 1. Create handoff report",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Tutorial presents a highly relevant handoff and context protocol but is instructional content rather than a lead.",
+        "quote": "When work creates follow-up tasks:",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1tkwuh2/how_small_can_the_orchestration_model_in_an_agent",
+      "title": "How small can the orchestration model in an agent be? (separating it from code-gen — that obviously wants a big model) : r/LocalLLM",
+      "content": "Title: How small can the orchestration model in an agent be? (separating it from code-gen — that obviously wants a big model) : r/LocalLLM\n# How small can the orchestration model in an agent be? (separating it from code-gen — that obviously wants a big model) : r/LocalLLM. Skip to main contentHow small can the orchestration model in an agent be? Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. (separating it from code-gen — that obviously wants a big model). I'm building a local-first agent — a plain ReAct loop (think, pick a tool, observe, repeat) on a llama.cpp backend — and I want to be precise about a question that usually just gets answered with \"it depends.\". That wants a big model, no argument. In my setup I route this to a dedicated coding model; I don't ask the loop model to do it. (b) The orchestration loop itself — read this, decide which tool, call it with the right arguments, look at the result, react. For (b): how small can that model get before the loop stops being trustworthy? My balance point right now is Qwen3.6-35B-A3B (MoE, ~3B active) — the lightest setup where the loop holds up, still fine on a 12GB card with 30 expert offload (running 40 t/s prompt gen). It's tool-call discipline. The model gets the intent right and then botches the call. *   calls `grep_search` with an `output_mode` arg that doesn't exist — it generalized it from a different tool. 1.   Exposing the exact tool signature in the system prompt — generated `tool_name(arg1, arg2, opt=default)` straight from the function, next to each tool, so the model sees the precise parameter list and, by omission, which parameters do NOT exist. *   For the orchestration role specifically — smallest model you actually trust in a loop? *   Is tool-call discipline the first thing that breaks for you too, or does something else go first? You can probably go smaller than people think — if you fix tool-call discipline instead of just reaching for a bigger model. Go for the win with new Bucks Loaded Edition scratch-offs and Digital Instants. *   **Fine-tune pre-trained models:** Training a model from scratch is brutal and expensive; instead, fine-tune an existing model to your specific needs. Are you planning to fine-tune an existing open-source model for your local LLM project?",
+      "tavilyScore": 0.50858223,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "Building local-first agent, interested in orchestration model sizing; related local-first need but narrow technical question.",
+        "quote": "I'm building a local-first agent — a plain ReAct loop",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "kind": "asking",
+        "reason": "User building a local-first agent asks about orchestration-model sizing, but not team orchestration or reusable specialist organizations.",
+        "quote": "I'm building a local-first agent — a plain ReAct loop",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/mmabrouk2_here-is-a-simple-trick-that-makes-your-ai-activity-7505962576711974912-8OOw",
+      "title": "Here is a simple trick that makes your AI agents much more useful: Stop thinking of skills as something fixed. Instead each time you use them: 1. Ask the agent to reflect and propose improvements… | Dr. Mahmoud Mabrouk",
+      "content": "Kamran Mohammad   1mo \n\n Report this comment\n\nThe key shift is treating every agent run as a feedback loop, not a one-off execution. When feedback becomes part of the skill itself, the agent compounds what it learns instead of repeating the same mistakes. That’s where agents start moving from automation to continuous improvement.\n\nLike Reply  1 Reaction\n\nMohamed Alaa   1mo \n\n Report this comment\n\nAgenta is becoming my main agent tool. It's on another level!\n\nLike Reply  1 Reaction   2 Reactions\n\n See more comments \n\nTo view or add a comment, sign in\n\n## More Relevant Posts\n\n Dr. Mahmoud Mabrouk\n\n  + Report this post [...] View profile for Dr. Mahmoud Mabrouk \n\nDr. Mahmoud Mabrouk\n\n Report this post\n\nHere is a simple trick that makes your AI agents much more useful: Stop thinking of skills as something fixed. Instead each time you use them: 1. Ask the agent to reflect and propose improvements to the skill so that the work next time is easier 2. Give the agent explicit feedback and ask it to incorporate it in the skill Just like a human-intern, the agent will get better at the task and become more useful.\n\n    16   6 Comments\n\nLike   Comment\n\nDr. Mahmoud Mabrouk   1mo \n\n Report this comment\n\nFull tutorial: \n\nLike Reply  1 Reaction   2 Reactions\n\nKamran Mohammad   1mo \n\n Report this comment [...] + Report this post\n\n  Agents will increase the gap between the top performing and the median team. The economics of this classic xkcd comic go out of the door. If agent can automate most tasks in ten minutes. Even small tasks become worth automating. The best teams will practice kaizen: small improvements every day. With AIthey will improve 1-2% everyday. This will compound to huge advantages very quickly. Small AI-native teams will have a major advantage. They can move faster with less bureaucracy. I expect them to disrupt many markets in the next few years.\n\n  + What is worth automating with AI\n\n      9\n\n  Like   Comment\n\n  To view or add a comment, sign in\n Dr. Mahmoud Mabrouk\n\n  + Report this post",
+      "tavilyScore": 0.6619229,
+      "query": "how do I make agent teams learn from my feedback and improve skills without restart",
+      "a": {
+        "score": 5,
+        "kind": "discussing",
+        "reason": "Discusses feedback loops improving agent skills; relevant to learning-from-feedback but generic LinkedIn advice.",
+        "quote": "treating every agent run as a feedback loop, not a one-off execution",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "LinkedIn advice post discusses feedback-driven skill improvement, with a commenter promoting Agenta.",
+        "quote": "The key shift is treating every agent run as a feedback loop, not a one-off execution.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "X",
+      "url": "https://x.com/somi_ai/status/2121122157111738658",
+      "title": "Somi on X: \"Self-hosted Claude Managed Agents: who runs what, and what you give up\" / X",
+      "content": "### 2. What you actually run\n\n  Self-hosting the service means you operate four things:\n\n  + A server, which serves the API and runs the agent loop\n  + A database: PostgreSQL 16 or later\n  + Workers, which run the agent's shell and file tools in your sandboxes\n  + Three kinds of credentials: one for your apps, one for the model provider, one per environment for workers\n\n  One detail worth knowing early. Without a database the server keeps everything in memory, and a restart erases it.\n\n  And the docs are blunt about the shell. The agent's bash tool is a real shell with the worker's permissions and network access. The worker doesn't isolate it. You do, by running each worker in a throwaway container or VM.\n\n  ### 3. What still leaves your network\n\n  This is the part I got wrong. [...] ### 6. Which one do you need\n\n  Anthropic's own docs say it plainly: if you only need tools to run on your infrastructure, use self-hosted sandboxes. Full self-hosting is for two cases. You must store sessions and history yourself, or your model calls must go through a specific provider or gateway.\n\n  That's a short list. \"Our security team prefers it\" isn't on it.\n\n  ### My take\n\n  Self-hosting the whole service is a real job. A server, a database, workers, upgrades, and a list of features that quietly aren't there. For a team with a hard rule about where session history lives, it's the answer they've been waiting for. [...] I haven't run it. It's a private beta and I don't have access. Everything below comes from Anthropic's announcement and docs, linked at the end.\n\n  By the end you'll know:\n\n  + Who runs each part in the three ways to use Managed Agents\n  + What still leaves your network when you self-host\n  + The features you lose, and the four things that fail quietly\n\n  ### 1. There are three options, not two\n\n  Managed Agents has two parts you can host. The sandboxes are where the agent runs commands and edits files. The service is the API, the agent loop, and the storage for sessions and their history.\n\n  That gives three setups.\n\n  The middle one, self-hosted sandboxes, already existed. What's new is the last row: you host the service too, and you pick where model calls go.",
+      "tavilyScore": 0.50786525,
+      "query": "how to run agent teams locally with self-hosted models and cloud providers per role",
+      "a": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Informational writeup on self-hosting Claude managed agents; relevant to self-hosted runtime interest but not a lead.",
+        "quote": "Self-hosting the service means you operate four things",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Technical article explains self-hosting Claude Managed Agents and its operational tradeoffs.",
+        "quote": "Self-hosting the service means you operate four things",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "X",
+      "url": "https://x.com/sairahul1/article/2079817450028519801",
+      "title": "How to Build a Team of AI Agents That Actually Work Together (Full Course) | Rahul (@sairahul1) on X",
+      "content": "Correct an agent once. It stays corrected.\n\nOver weeks, that compounds into something that looks like actual expertise.\n\n## What Raft gets right\n\nAfter a week of daily use, here is what stands out:\n\nAgent identity changes everything.\n\nWhen agents have names, roles, and memory — you stop treating them as tools and start treating them as colleagues. That shift changes how you design the work.\n\nShared context without you managing it.\n\nIn every other AI workflow I have used, I am the one passing context between prompts. In Raft, agents see each other's output in the channel. The context is already there.\n\nReview loops happen naturally. [...] Raft treats agents as team members.\n\nThe difference sounds philosophical until you live with it for a day.\n\nWhen Nova corrected a finding because Rex challenged it — I did not ask Nova to do that.\n\nRex @mentioned her.\n\nWhen Max sent Aria's hooks back with citations needed — I did not instruct Max to check accuracy.\n\nMax was watching the channel.\n\nWhen Kai challenged Rex's positioning — I never told Kai to be contrarian.\n\nThat's Kai's role. Kai owns it.\n\nThe agents are not waiting for you to prompt them.\n\nThey are watching the work. Picking up what belongs to their lane. Talking to each other.\n\nThis is what a \"seat\" means.\n\nNot a task you fire and forget.\n\nA persistent identity that shows up, remembers what happened yesterday, and gets better over time. [...] They all see #all. They all see each other's work.\n\nThe key insight: give each lane its own channel.\n\n→ #research for Nova → #planning for Rex\n\n→ #content for Aria → #review for Max and Kai\n\nAgents follow the channels they're in. Work routes naturally. You don't have to manage who talks to who.\n\n## Step 3: Run a real workflow\n\nI gave the team one prompt:\n\n\"Research competitors in the AI productivity space. Find the top 10 tools. Identify where they're weak. Find an opportunity a new product could own.\"\n\nThen I stepped back.\n\nHere is what happened — in order.\n\nNova (Research) in #research:\n\nReturned 10 competitors with actual data. User counts, pricing tiers, main complaints from App Store and Reddit reviews, and notable gaps. Not a summary. Evidence.\n\nRex (Planner) in #planning:",
+      "tavilyScore": 0.50618714,
+      "query": "how do I keep follow-up work with the agent team that has context",
+      "a": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Course/tutorial on building agent teams; relevant topic but article, and promotes Raft.",
+        "quote": "How to Build a Team of AI Agents That Actually Work Together (Full Course)",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Course-style promotional content reviews Raft's agent teams, memory, and shared context.",
+        "quote": "How to Build a Team of AI Agents That Actually Work Together (Full Course)",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "Medium",
+      "url": "https://medium.com/@nomannayeem/lets-build-a-self-improving-ai-agent-that-learns-from-your-feedback-722d2ce9c2d9",
+      "title": "Let’s Build a Self-Improving AI Agent That Learns From Your Feedback",
+      "content": "The skill library tracks which skills were used in each trajectory. When feedback comes in, those skills get updated. If the feedback is positive (task success > 0.7), the skill’s success rate increases. If the feedback is negative, it decreases.\n\nThis creates a natural selection process. Good skills get used more because they have higher success rates. Bad skills get used less because they have lower success rates. Over time, the agent’s skill set evolves toward better approaches.\n\nUsers can also create new skills manually. If a response is particularly good, they can check a box and describe what made it good. That becomes a new skill that the agent can use in the future.\n\nThe feedback endpoint in the API handles this: [...] Second, there’s the RL Trainer. This handles the learning. It stores trajectories, computes advantages, and updates the agent’s policy based on feedback. It uses a GRPO-style approach with prioritized experience replay.\n\nThird, there’s the RAG System. This provides knowledge retrieval. It uses LanceDB for vector storage, supports hybrid search (semantic plus keyword), and can do multi-hop retrieval for complex queries.\n\nFourth, there’s the Skill Library. This stores learned skills. When the agent does something well, that approach becomes a skill. Skills are ranked by success rate and reused for similar questions.\n\nFifth, there’s the Feedback Loop. Users rate responses. Those ratings become rewards. Rewards update skills. Skills improve the agent. The cycle continues. [...] Here’s how data flows through the system:\n\nPress enter or click to view image in full size\n\nImage 5\n\nA user asks a question. The frontend sends it to the FastAPI backend. The backend calls the agent core. The agent retrieves relevant skills from the skill library. It enhances the query with skill context. It searches the knowledge base if needed. It uses web search for current information. It generates a response.\n\nThe response streams back to the user in real time. The user rates it. The feedback goes to the RL trainer. The trainer computes a reward. The reward updates skill statistics. High-performing skills get boosted. The agent is recreated with updated skills.\n\nThat’s the complete loop. Query, response, feedback, learning, improvement.",
+      "tavilyScore": 0.6482437,
+      "query": "how do I make agent teams learn from my feedback and improve skills without restart",
+      "a": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Tutorial on building self-improving agent from feedback; relevant topic but article/tutorial.",
+        "quote": "Let’s Build a Self-Improving AI Agent That Learns From Your Feedback",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "kind": "article",
+        "reason": "Tutorial closely matches feedback-driven skill learning but remains instructional content.",
+        "quote": "When feedback comes in, those skills get updated.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L8",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/EngineeringManagers/comments/1rp4ici/how_do_you_keep_up_with_whats_happening_across",
+      "title": "How do you keep up with what's happening across your repos?",
+      "content": "And now, especially with AI, my team is pushing code faster than ever, and on top of that agents (Copilot, Cursor, Devin) creating PRs automatically. I ended up building a tool that summarizes merged PRs into a digest focused on what's changed and, more importantly, try to extract the why. Would a digest like this be useful for your team? text summaries live or die on whether someone is sitting at their desk; the digests that actually get consumed end up in formats people can pull asynchronously (audio on commute, a doc summary stapled to the friday review, a release notes page indexed by jira ticket). When you enforce that every PR has a one-liner on what user problem it addresses and what got left out, the downstream digest becomes much easier to generate and actually useful without interpretation. The challenge with agent-generated PRs is they tend to be good at describing code changes but have no context on the product reason, so that gap has to come from somewhere upstream. If it doesn't answer your questions, then you probably need better ticket breakdown and the team commenting on tickets. I built a tool called CodePulse (codepulsehq.com) specifically because I was tired of trying to read every PR to figure out who was actually doing the impactful work. Instead of a summary digest, we use passive metrics to track things like \"Review Influence\" (whose reviews actually lead to code changes) and \"Knowledge Silos\" (who is the only person touching a specific critical service). For engineering managers, I'd highly recommend looking into the \"Review Cycles\" metric too - it's the best way to see if your AI-generated code is actually speeding you up or just shifting the bottleneck to your senior reviewers. What stakeholders and PMs actually need is intent and context, not line counts. If every PR (including agent-generated ones) requires a linked ticket and a one-line why this change\" summary, your digest tool has much better raw material to work with and you spend less time inferring intent from code. Agents like Copilot and Devin can actually follow PR templates pretty well if you set them up right.",
+      "tavilyScore": 0.5436811,
+      "query": "how do I keep follow-up work with the agent team that has context",
+      "a": {
+        "score": 3,
+        "kind": "discussing",
+        "reason": "PR digest tool builder; tangential to orchestration, mostly self-promotion of own tool.",
+        "quote": "I ended up building a tool that summarizes merged PRs into a digest",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "kind": "discussing",
+        "reason": "Discussion concerns repository and pull-request digests rather than agent-team orchestration, and mentions a self-built tool.",
+        "quote": "I ended up building a tool that summarizes merged PRs into a digest",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "dev.to",
+      "url": "https://dev.to/kfuras/build-a-sales-follow-up-agent-with-the-claude-agent-sdk-37hh",
+      "title": "Build a Sales Follow-Up Agent With the Claude Agent SDK - DEV Community",
+      "content": "Title: Build a Sales Follow-Up Agent With the Claude Agent SDK - DEV Community\n# Build a Sales Follow-Up Agent With the Claude Agent SDK. So I'll show you how to build one yourself with the Claude Agent SDK — the same SDK I use to run Koda, my autonomous marketing agent. This is a working claude agent sdk tutorial you can fork today. ## What the agent actually does. A sales follow-up agent earns its keep by doing three boring things reliably:. Here's the shape of the agent loop:. Read the skill file first.\",. The intelligence lives in two places: the system prompt and a skill file. ## The system prompt is where the personality lives. Your agent needs to know who it is, what it's allowed to do, and what counts as done. `You are a sales follow-up agent for Acme Co. Your job: read leads from Airtable, identify who needs a follow-up today,. draft a message in my voice, and queue it as a Gmail draft for my review. The system prompt says what the agent is. The skill file says how to do today's task. I keep mine in `~/agent/skills/daily-followup.md` and reference it from the prompt. 4. If not replied, draft a follow-up using the lead's company context. The Claude Agent SDK speaks MCP (Model Context Protocol), which means any MCP server becomes a tool the agent can call. For sales follow-up, I wire in three:. This is the piece most tutorials skip, and it's the piece that makes the agent useful in production. An agent that only runs when you type a prompt is a chatbot. I use a simple JSON task file and a daemon that wakes the SDK at the scheduled time:. Flaaten's 1,000 conversions in three months suggests the team runs at least one outreach agent plus a qualification agent and a scheduler. No \"here's how we connect step 3 to step 7.\" The Claude Agent SDK is a function call with a system prompt and a toolbox. The intelligence is in the model, the rules are in a markdown file, and the data comes from MCP servers. The Claude Agent SDK is Claude-specific, but the pattern — system prompt, skill files, MCP tools, scheduled runs — works with any agent framework.",
+      "tavilyScore": 0.63476974,
+      "query": "how do I keep follow-up work with the agent team that has context",
+      "a": {
+        "score": 3,
+        "kind": "article",
+        "reason": "Tutorial using Claude Agent SDK for a sales agent; tangential to orchestration platform.",
+        "quote": "Build a Sales Follow-Up Agent With the Claude Agent SDK",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Tutorial builds a narrow sales follow-up agent and mentions the author's own marketing agent.",
+        "quote": "So I'll show you how to build one yourself with the Claude Agent SDK",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1sbdtkh/built_a_multiagent_orchestration_framework_in",
+      "title": "Built a multi-agent orchestration framework in TypeScript, 3 deps, runs local models via Ollama : r/selfhosted",
+      "content": "Title: Built a multi-agent orchestration framework in TypeScript, 3 deps, runs local models via Ollama : r/selfhosted\nSkip to main contentBuilt a multi-agent orchestration framework in TypeScript, 3 deps, runs local models via Ollama : r/selfhosted. Open menu Open navigationGo to Reddit Home. Sign UpSign up for RedditLog InLog in to Reddit. Expand user menu Open settings menu. Image 1 Go to selfhosted. # Built a multi-agent orchestration framework in TypeScript, 3 deps, runs local models via Ollama. Been working onopen-multi-agent, a TypeScript framework for multi-agent orchestration. One`runTeam()`call takes a natural language goal, decomposes it into a task DAG, runs agents in parallel where possible, and synthesizes the result. 3 runtime deps:`anthropic-ai/sdk`,`openai`,`zod`. Works in Express, Next.js, serverless, CLI, wherever Node runs. *   `runTeam(team, \"your goal\")`for auto-orchestration (model plans the tasks). *   `runTasks(team, tasks)`for explicit pipelines with dependency control. *   Built-in tools: bash, file_read, file_write, file_edit, grep. *   Structured output with Zod schema validation on agent results. *   Task retry with exponential backoff. *   `onTrace`callback for observability (LLM calls, tool calls, task spans). Claude, GPT, or local models via Ollama/vLLM/LM Studio using the OpenAI-compatible API. Just tested Gemma 4 E2B (2.3B effective params) as the coordinator and it handled JSON task decomposition + tool-calling on a laptop. npm install @open-multi-agent/core. Image 2: u/interservermike avatarinterservermike•Ad. VPS Hosting For Self Hosted AI Tools. Image 3: Thumbnail image: VPS Hosting For Self Hosted AI Tools. # Comments Section. The model routing problem matters a lot here. If your orchestration always routes to the same model, you're leaving latency on the table. My setup runs Gemma 4 E2B for classification (sub-2s), a mid-tier for compression, then cloud only when needed. Full routing setup on a 16GB Mac Mini: https://thoughts.jock.pl/p/local-llm-35b-mac-mini-gemma-swap-production-2026. # People also ask about section. Best practices for multi-agent systems. Key features of orchestration frameworks. Anyone can view, post, and comment to this community. ## Top Posts. *   Reddit reReddit: Top posts of April 3, 2026 * * *. *   Reddit reReddit: Top posts of 2026 * * *. *   Best of Reddit in Portuguese. *   Best of Reddit in German. Join the most real place on the internet. Continue with Google Continue with Google. By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy.",
+      "tavilyScore": 0.6329566,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Author promoting their own multi-agent orchestration framework; competitor.",
+        "quote": "a TypeScript framework for multi-agent orchestration",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Author promotes their own local multi-agent orchestration framework.",
+        "quote": "Been working onopen-multi-agent, a TypeScript framework for multi-agent orchestration.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/aiagents/comments/1si4dp5/built_a_selfhosted_ai_workspace_with_multiagent",
+      "title": "Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback : r/aiagents",
+      "content": "Title: Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback : r/aiagents\n# Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback : r/aiagents. Skip to main contentBuilt a self-hosted AI workspace with multi-agent orchestration — looking for feedback : r/aiagents. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to aiagents. # Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback. *   Image 2: r/aiagents - Built a self-hosted AI workspace with multi-agent orchestration — looking for feedbackImage 3: r/aiagents - Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback. I’ve been building TigrimOS, a self-hosted AI workspace for running chat, code execution, and multi-agent workflows in one place. Model-generated code and shell commands run inside a sandboxed Ubuntu environment rather than directly on the host, so the setup is aimed at people who want to experiment with tool use and agent orchestration more safely on their own machines. I just shipped v1.2.1, and this release is mostly about the multi-agent system. The biggest change is that the app can now analyze a task and generate an agent structure automatically instead of requiring you to wire the whole graph by hand. Another addition is a YAML-based agent config, so you can define a baseline setup declaratively and then let the runtime adapt it as needed. There’s also support for connecting a local orchestrator to remote agents, so heavier subtasks can be pushed to a separate machine and returned to the main workflow. On top of that, I added structured per-agent logs and reasoning traces because debugging multi-agent behavior without visibility was getting messy fast. how are you thinking about the tradeoff between isolation and giving agents access to the real host environment? For Linux VPS / remote machines, I’m more comfortable running agents outside the sandbox and using them as remote agents, because that environment is easier to isolate, monitor, and recover. In academia, I’m also interested in it as a research question: when does a well-designed multi-agent structure actually outperform a strong single agent, and when does it just add overhead? They usually care more about whether the system is useful, reliable, and easy to use than about how the agent architecture is arranged underneath.",
+      "tavilyScore": 0.5549529,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Builder promoting their own self-hosted multi-agent workspace; competitor seeking feedback.",
+        "quote": "Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Author promotes their own self-hosted multi-agent workspace while soliciting feedback.",
+        "quote": "Built a self-hosted AI workspace with multi-agent orchestration — looking for feedback",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1t6mg5u/whats_the_best_orchestration_framework",
+      "title": "Whats the best orchestration framework? : r/AI_Agents",
+      "content": "Crew44 is more of a local-first orchestrator for coding agents than a general agent framework. You create a small crew of specialists — planner, engineer,",
+      "tavilyScore": 0.5165802,
+      "query": "reddit looking for local-first multi-agent orchestration tool with per-agent model choice",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promotes Crew44, a local-first orchestrator for coding agents; direct competitor.",
+        "quote": "Crew44 is more of a local-first orchestrator for coding agents",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Post promotes Crew44, a competing local-first coding-agent orchestrator.",
+        "quote": "Crew44 is more of a local-first orchestrator for coding agents than a general agent framework.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "Medium",
+      "url": "https://medium.com/@vuongngo/how-to-keep-ai-agent-context-across-sessions-f4482021a0b1",
+      "title": "How to Keep AI Agent Context Across Sessions",
+      "content": "That is the useful distinction.\n\nInstead of asking the assistant to reconstruct the project from memory, you give it a live source of truth: tasks, notes, artifacts, and the current state of the work. The assistant can pick up the board, do the next step, and leave the next session a clean starting point.\n\nThat is why Agiflow exists as a project board rather than an agent. It connects external assistants to the board over MCP, and the board persists between sessions. The point is not to replace the assistant. The point is to keep the work legible after the assistant stops.\n\nAgiflow’sown guide to handing a task to your assistant is the clearest example of the loop. A task gets enough context, the assistant works on it, and the human still checks the result before calling it done. [...] The third is a shared board or workspace the assistant can read and update over MCP. MCP, as defined on the official spec site, is an open-source standard for connecting AI applications to external systems. In this pattern, the board becomes the thing that survives the session, not the chat transcript.\n\nMy view is simple: use the smallest pattern that solves the actual job.\n\nIf the task is short, keep it in the window.  \nIf the task is long but mostly sequential, compaction and notes are enough.  \nIf the work has to survive multiple sessions, multiple tools, or multiple assistants, the shared board is the cleaner shape.\n\nPress enter or click to view image in full size\n\nImage 5\n\nThe right answer depends on the length of the job and how many sessions it has to survive. [...] ### Conclusion\n\nThe most reliable way to keep an AI agent coherent across sessions is to stop treating the chat as the source of truth.\n\nKeep the important state somewhere the assistant can return to. Summarize when the task is short. Persist notes when the task is longer. Use a shared board when the work has to survive overnight, or when more than one assistant might touch it.\n\nThat is the practical middle ground between “just give it more context” and “hope it remembers.”\n\nArtificial Intelligence\n\nAI\n\nMachine Learning\n\nProductivity\n\nSoftware Engineering\n\n[](\n\n2\n\n[](\n\n2\n\n[](\n\n[](\n\nImage 7: Vuong Ngo\n\nImage 8: Vuong Ngo\n\nFollow\n\n## Written by Vuong Ngo\n\n183 followers\n\n·405 following\n\nFounder of Agiflow ( Fullstack - Data architect. Linkedin \n\nFollow\n\nHelp\n\nStatus\n\nAbout\n\nCareers\n\nPress",
+      "tavilyScore": 0.69035035,
+      "query": "how do I keep follow-up work with the agent team that has context",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Promotes Agiflow product for context persistence; competitor.",
+        "quote": "That is why Agiflow exists as a project board rather than an agent",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Article promotes Agiflow's competing persistent project-board approach to agent context.",
+        "quote": "That is why Agiflow exists as a project board rather than an agent.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "Medium",
+      "url": "https://medium.com/ai-native-publication/how-to-keep-ai-agent-context-across-sessions-16c82773cbdf",
+      "title": "How to Keep AI Agent Context Across Sessions",
+      "content": "That is the useful distinction.\n\nInstead of asking the assistant to reconstruct the project from memory, you give it a live source of truth: tasks, notes, artifacts, and the current state of the work. The assistant can pick up the board, do the next step, and leave the next session a clean starting point.\n\nThat is why Agiflow exists as a project board rather than an agent. It connects external assistants to the board over MCP, and the board persists between sessions. The point is not to replace the assistant. The point is to keep the work legible after the assistant stops.\n\nAgiflow’s own guide to handing a task to your assistant is the clearest example of the loop. A task gets enough context, the assistant works on it, and the human still checks the result before calling it done. [...] The third is a shared board or workspace the assistant can read and update over MCP. MCP, as defined on the official spec site, is an open-source standard for connecting AI applications to external systems. In this pattern, the board becomes the thing that survives the session, not the chat transcript.\n\nMy view is simple: use the smallest pattern that solves the actual job.\n\nIf the task is short, keep it in the window.  \nIf the task is long but mostly sequential, compaction and notes are enough.  \nIf the work has to survive multiple sessions, multiple tools, or multiple assistants, the shared board is the cleaner shape.\n\nPress enter or click to view image in full size\n\nImage 5\n\nThe right answer depends on the length of the job and how many sessions it has to survive. [...] ## Conclusion\n\nThe most reliable way to keep an AI agent coherent across sessions is to stop treating the chat as the source of truth.\n\nKeep the important state somewhere the assistant can return to. Summarize when the task is short. Persist notes when the task is longer. Use a shared board when the work has to survive overnight, or when more than one assistant might touch it.\n\nThat is the practical middle ground between “just give it more context” and “hope it remembers.”\n\nArtificial Intelligence\n\nAI\n\nMachine Learning\n\nProductivity\n\nSoftware Engineering\n\n[](\n\n--\n\n[](\n\n--\n\n[](\n\n--\n\n[](\n\nImage 7: Vuong Ngo\n\nImage 8: Vuong Ngo\n\n## Written by Vuong Ngo\n\n183 followers\n\n·405 following\n\nFounder of Agiflow ( Fullstack - Data architect. Linkedin \n\nImage 9: AI Native Publication",
+      "tavilyScore": 0.69014156,
+      "query": "how do I keep follow-up work with the agent team that has context",
+      "a": {
+        "score": 2,
+        "kind": "competitor",
+        "reason": "Duplicate Agiflow promotion; competitor.",
+        "quote": "Agiflow’s own guide to handing a task to your assistant is the clearest example of the loop",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "kind": "article",
+        "reason": "Duplicate article promotes Agiflow's own product for preserving agent work across sessions.",
+        "quote": "It connects external assistants to the board over MCP, and the board persists between sessions.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "X",
+      "url": "https://x.com/HuaweiCloud1/article/2092911815227494417?lang=ar-x-fm",
+      "title": "Huawei Cloud CodeArts Agent Now Available Globally, Bringing Agentic AI to Software Development | Huawei Cloud (@HuaweiCloud1) على X",
+      "content": "### Collaborative multi-agent development with Agent Team\n\nAgent Team includes 16 specialized agents covering the full software development lifecycle, including requirements analysis, architecture design, coding, testing, issue resolution, and code review. By simulating the collaboration of a professional engineering team, it can autonomously plan and execute complex, long-duration development tasks.\n\n### Enterprise-grade engineering intelligence powered by Huawei best practices\n\nBuilt on Huawei's years of software engineering experience, CodeArts Agent incorporates specification-driven development capabilities and more than 30 reusable Huawei engineering skills, transforming proven engineering practices into AI agent capabilities. [...] Combining large code models, IDE capabilities, and autonomous development workflows, CodeArts Agent provides an intelligent coding experience with capabilities such as code generation, software engineering Q&A, and automated unit test generation. Built for complex software projects and enterprise scenarios, CodeArts Agent is redefining AI-powered development and helping developers accelerate delivery with greater efficiency and confidence.\n\nFor complex development scenarios, CodeArts Agent provides several differentiated capabilities:\n\n### Collaborative multi-agent development with Agent Team [...] ### Deep code understanding for efficient incremental development\n\nCodeArts Agent can understand and retrieve code across tens of millions of lines, giving agents the project context they need to efficiently extend and update existing software systems.\n\nTo support diverse development environments, CodeArts Agent provides multiple access options, including AI-native IDEs, plugins, and CLI/TUI interfaces. It also offers enterprise-grade management and security capabilities, allowing organizations to integrate AI agents seamlesslyinto existing workflows while maintaining consistent experiences across different environments.",
+      "tavilyScore": 0.6436653,
+      "query": "looking for reusable software engineering agent team with requirement analysis design implementation validation",
+      "a": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Huawei promoting its own multi-agent product; direct competitor self-promotion.",
+        "quote": "Agent Team includes 16 specialized agents covering the full software development lifecycle",
+        "verified": true
+      },
+      "b": {
+        "score": 1,
+        "kind": "competitor",
+        "reason": "Huawei promotes its own competing multi-agent software development product.",
+        "quote": "Agent Team includes 16 specialized agents covering the full software development lifecycle",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L5",
+      "text": "I’m still working through the reliability side on local hardware, but the failure modes you listed are the right ones. What’s helped me is treating skills as versioned artifacts, keeping routing rules explicit, and logging every handoff so bad state is inspectable instead of mysterious.\n\nDisclosure: I work on AutoByteus, a local-first orchestration platform focused on tasks, handoffs, and evaluation. Curious whether your registry is file-based or backed by a local service.",
+      "usage": {
+        "in": 428,
+        "out": 103
+      },
+      "latencyMs": 1267
+    },
+    {
+      "leadId": "L7",
+      "text": "You're right that coordination state decay is the real killer, not agent capability. Explicit handoff artifacts work because they force state externalization instead of relying on context windows. The tricky part is defining what \"complete\" looks like for each handoff so the next agent can validate before proceeding. Disclosure: I work on AutoByteus, which structures handoffs this way. Curious what artifact format has worked best for you?",
+      "usage": {
+        "in": 223,
+        "out": 91
+      },
+      "latencyMs": 3642
+    },
+    {
+      "leadId": "L2",
+      "text": "If you’re overwhelmed, I’d start with a thin orchestration layer and keep the workflow explicit: one coordinator, a few specialist agents, clear handoffs, and logs you can inspect. Local models make tool-call validation and retries especially important. Horror stories usually involve agents looping or silently dropping context.\n\nDisclosure: I work on AutoByteus. It’s local-first and focused on human-guided teams, tasks, and handoff rules. Worth considering if that matches your setup; otherwise, a simple queue plus workers may be enough.",
+      "usage": {
+        "in": 468,
+        "out": 114
+      },
+      "latencyMs": 1419
+    },
+    {
+      "leadId": "L9",
+      "text": "I like the “distill after the session” step, especially capturing your steering and the agent’s mistakes. The hard part seems to be review and distribution: a skill can be useful in one repo but misleading elsewhere. I’d keep provenance, scope, and a small eval case beside each skill so changes can be checked. Disclosure: I work on AutoByteus, where we’re exploring similar evaluation-driven learning from user guidance.",
+      "usage": {
+        "in": 425,
+        "out": 94
+      },
+      "latencyMs": 3781
+    },
+    {
+      "leadId": "L4",
+      "text": "The PR step is key: durable learning stays reviewable, reversible, and separate from the original feedback. I’d keep each proposed skill edit tied to the examples and reactions that motivated it, so reviewers can distinguish a real pattern from one noisy case. Disclosure: I work on AutoByteus, and this human-reviewed learning loop is central to how we think about agent teams.",
+      "usage": {
+        "in": 451,
+        "out": 82
+      },
+      "latencyMs": 1685
+    }
+  ],
+  "companies": [
+    {
+      "company": "Cosmic",
+      "signal": "adopting",
+      "reason": "Describes how Cosmic actually operates an AI-native team with clear roles, handoffs, and checkpoints.",
+      "url": "https://www.cosmicjs.com/blog/how-to-build-an-ai-native-team-practical-framework",
+      "title": "How to Build an AI-Native Team: A Practical Framework for Working Alongside Agents"
+    }
+  ],
+  "companiesError": null,
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3780,
+      "tokensOut": 1266,
+      "cost": 0.0012000000000000001,
+      "latencyMs": 5407,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3786,
+      "tokensOut": 1373,
+      "cost": 0.021302,
+      "latencyMs": 14387,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 0.9,
+      "top5Overlap": 4
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 500,
+      "out": 1509,
+      "cost": 0.0019608,
+      "latencyMs": 7008
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3780,
+      "out": 1266,
+      "cost": 0.0012000000000000001,
+      "latencyMs": 5407
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3786,
+      "out": 1373,
+      "cost": 0.021302,
+      "latencyMs": 14387
+    },
+    {
+      "step": "target companies",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3305,
+      "out": 1757,
+      "cost": 0.0030999,
+      "latencyMs": 5550
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 1995,
+      "out": 484,
+      "cost": 0.008830000000000001,
+      "latencyMs": 3781
+    }
+  ],
+  "scorerError": null
+}

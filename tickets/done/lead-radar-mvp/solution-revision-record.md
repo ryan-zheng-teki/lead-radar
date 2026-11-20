@@ -41,3 +41,11 @@
 - Intended behavior changed: Yes (presentation only). Approval: the user's own request.
 - Classification unchanged: Medium / Low. Time box 15:20 Berlin.
 - Next action: implementation engineer (direct route).
+
+### SR-004 — Lead quality fix (discussion-first leads, competitor rule, own-content filter, buyer-side companies)
+
+- Trigger: the user reviewed the autobyteus.com run and asked: "Definitely find out why and fix it" (~14:55).
+- Root causes (Read + Measured): see `sr-004-lead-quality-fix.md` (P1–P4).
+- Changed: REQ-002, REQ-003, REQ-013 amended; AC-013..AC-016 added. Intended behavior changed: Yes. Approval: the user's own request.
+- Classification: Small / Low; time box 15:20 Berlin, otherwise dropped (published version stays).
+- Next action: implementation engineer (direct route), together with SR-003.

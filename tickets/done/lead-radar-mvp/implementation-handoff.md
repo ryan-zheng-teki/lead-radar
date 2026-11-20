@@ -167,3 +167,14 @@ Evidence folder: `/home/autobyteus/workspace/aibuilders-hackday-berlin-2026-11-2
 | Check ID | Command Or Steps | Commit Tested | Environment | Code It Exercises | Behavior / Criteria IDs | Result | Evidence Files | Look For |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | IMP-08 | `node IMP-08-probe-shoot.mjs http://localhost:3000 <company> <W> <H> <out> <port>`: a real run each on tavily.com at 1280×720 and cal.com at 1920×1080. It captures the empty, running, results top, leads, drafts (one approved, one edited and approved, one rejected), copy toast, comparison, full-page and error states | UI as committed on `ui-polish-sr003` (src identical to 1d859de) | headless Chromium via CDP, live keys | `public/*` | AC-012, AC-003, REQ-005/006/012 | Pass | `evidence/ui/IMP-08-*.png`, `IMP-08-<viewport>-report.json` | report `"hscroll"` all `false`, `"minFont": 14`, `"consoleErrors": []`, counter `2 approved · 1 rejected` |
+
+## Round 4 — SR-004 lead quality fix (IR-004)
+
+- Scope: `src/steps/leads.js`, `src/steps/score.js`, `src/steps/companies.js`, plus the `kind` pill and the empty-companies message in `public/app.js`. The Solution Designer's `sr-004-lead-quality-fix.md` and its revision-record edit are committed with this round. Classification: Small + Low, confirmed.
+- On branch `ui-polish-sr003`, on top of the SR-003 commit (based on origin/main 1d859de). Commit identity: no-reply address only.
+- AC-013 Pass, AC-014 Pass, AC-015 Pass (borderline: Cosmic, a CMS company adopting AI teams internally), AC-016 Pass (87 s, close to the limit, because the Kimi reference timed out under parallel load). Details are in IR-004.
+
+| Check ID | Command Or Steps | Commit Tested | Environment | Code It Exercises | Behavior / Criteria IDs | Result | Evidence Files | Look For |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| IMP-09 | Real parallel runs on autobyteus.com and cal.com through a server on :3013, then an AC script over the run files | SR-004 tree (the commit after d0bfa5a) | Linux, Node 22.23.3, live keys | `src/steps/{leads,score,companies}.js` | AC-013..016 | Pass | `evidence/IMP-09-lead-quality-acs.log`, `evidence/IMP-09-runs/*.json` | `discussion leads: 14/20; mentions product: 0`; `A2/competitor B1/competitor`; cal.com `A>=5: 9`, `totalMs 87057`, `companies (0)` |
+| IMP-10 | `IMP-08-probe-shoot.mjs` against :3013 for autobyteus.com at 1280×720 (kind pills) | same | headless Chromium | `public/app.js` | REQ-003 display | see `evidence/ui/IMP-10-*` | `evidence/ui/IMP-10-1280x720-04-leads.png` | pills "Asking", "Competitor" next to the platform pill |
