@@ -6,13 +6,13 @@ Spoken script for the live demo at the AI Builders × commIT Hack Day Berlin, 20
 
 **0:00, title page on screen**
 
-Hi, I'm Ryan, and this is Lead Radar.
+Hi, I'm Ryan. I built this today, at this hackathon, from my phone, with a team of AI agents doing the work. It's called Lead Radar.
 
-I'm a solo founder. Every day I scroll through X, LinkedIn and Reddit, looking for people who have the problem my product solves.
+Here's the problem. To find customers, you scroll through X, LinkedIn and Reddit, looking for people who have the problem your product solves.
 
-It takes a lot of time. At the end I have a list in my head, no sources, and tomorrow I start again.
+It takes a lot of time. At the end you have a list in your head, no sources, and tomorrow you start again.
 
-So I built Lead Radar. It does the scrolling. I keep the judgement.
+Lead Radar does the scrolling. You keep the judgement.
 
 ---
 
@@ -62,11 +62,11 @@ People asking for help score high. Articles, vendors and competitors score low.
 
 **1:40, the drafts**
 
-For the best leads, a stronger model, Kimi on Nebius, writes a short opener. It answers the person's own words, and it says openly that I work on the product.
+For the best leads, a stronger model, Kimi on Nebius, writes a short opener. It answers the person's own words, and it says openly that you work on the product.
 
 *(Click Approve on one. Edit one, Save. Reject one.)*
 
-And this is important: nothing is ever posted. I approve, edit or reject every message. The human stays in charge.
+And this is important: nothing is ever posted. You approve, edit or reject every message. The human stays in charge.
 
 ---
 
@@ -84,11 +84,9 @@ So the cheap model is good enough to filter, and the strong model is only used w
 
 The limits: it only sees public posts, and the scores are model judgement. That's why a human approves.
 
-What existed before today: the same find, score and approve idea in my AutoByteus agent teams. What I built today is this standalone app, on GitHub, with Nebius and Tavily.
+What existed before today: the same find, score and approve idea in my AutoByteus agent teams. What was built today is this standalone app, on GitHub, with Nebius and Tavily, by agents I steered from my phone.
 
-We're PocketSwarm: one founder, and a phone full of AI agents.
-
-Thank you!
+That's Lead Radar, from team PocketSwarm. Thank you!
 
 ---
 
