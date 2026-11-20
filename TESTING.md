@@ -22,7 +22,7 @@ There is no automated suite. Model and search output is non-deterministic, so as
 
 ## Fresh-Start Build
 
-There is no CI or release workflow. A fresh start is: `git clone`, `cp .env.example .env`, fill the keys, then `npm start`. Rerun it when any of these change: `package.json`, `server.js`, `src/config.js`, `.env.example`, `.gitignore`, the README "Run it" section.
+There is no CI or release workflow. A fresh start is: `git clone`, `cp .env.example .env`, fill the keys, then `npm start`. Rerun it when any of these change: `package.json`, `server.js`, `src/config.js`, `.env.example`, `.gitignore`, the README "Try it" section.
 
 ## Choosing The Layer
 

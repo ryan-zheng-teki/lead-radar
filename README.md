@@ -73,6 +73,12 @@ What the numbers say:
 - **Freshness:** searches are limited to the last year, but a post can still be old or already answered. Check the date when you open it.
 - **No posting, by design.** No account connections and no CRM export. Approvals live in the browser tab, and each run's data is saved to `runs/`.
 - A hack-day prototype: no automated test suite, a single user, run locally.
+- Built for a laptop screen. On a phone the leads and comparison tables are wider than the screen, so the page zooms out.
+
+## Next steps
+
+- **Target companies:** from the profile's ideal customer, search for companies showing buying signals (job posts, launches, funding news) and list them with a source link and a one-line reason, next to the people-level leads.
+- Make the page work on phones, and add an automated test of the pipeline with recorded API responses.
 
 ## What existed before today
 
