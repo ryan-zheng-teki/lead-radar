@@ -1,0 +1,11 @@
+# API-01 fresh clone + .env + npm start (AC-008) — 2026-11-20T13:30:55Z
+$ git clone --branch ticket/lead-radar-mvp <worktree> /tmp/lr-fresh
+HEAD: 8242b9d
+ls: DEMO.md DESIGN.md package.json public README.md scripts server.js src tickets 
+$ test -e node_modules -o -e .env -o -e runs/ ->
+  ls: cannot access 'node_modules': No such file or directory
+  ls: cannot access '.env': No such file or directory
+$ cp .env.example .env && <fill NEBIUS_API_KEY, TAVILY_API_KEY from team .env; values not printed>
+  .env keys set: NEBIUS len=236 TAVILY len=54
+$ git status --short (expect empty: .env ignored)
+  (end)

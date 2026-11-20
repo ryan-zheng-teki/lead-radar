@@ -1,0 +1,439 @@
+{
+  "url": "https://posthog.com/",
+  "at": "2026-11-20T13:35:43.426Z",
+  "totalMs": 86708,
+  "totalCost": 0.01186945,
+  "profile": {
+    "name": "PostHog",
+    "summary": "PostHog ingests and stores analytics, errors, replays, and business data so teams and AI agents can query and act on product context in one place.",
+    "problems": [
+      "Product and company data is scattered across analytics, errors, replays, logs, and third-party tools",
+      "AI agents lack product context and require context-switching to a browser for analytics",
+      "Teams need to diagnose issues like falling paid conversion by stitching together ads, funnels, payments, and code changes",
+      "Building insights from scratch and monitoring metrics across multiple tools is slow",
+      "Debugging user issues requires combining session replay, error tracking, support tickets, and external tools",
+      "Setting up analytics, feature flags, experiments, surveys, and warehouse data requires multiple disconnected systems"
+    ],
+    "ideal_customer": "Product, engineering, and growth teams at companies shipping digital products who need analytics, session replay, error tracking, feature flags, experiments, and warehouse data unified for humans and AI agents.",
+    "pain_phrases": [
+      "Our analytics, errors, and replays are scattered across too many tools",
+      "I can't get product context into my AI agents without context-switching",
+      "We don't know why signups are growing but paid conversions are falling",
+      "Setting up product analytics and feature flags takes too much manual work",
+      "I want to query product and company data from my editor instead of the browser"
+    ],
+    "search_queries": [
+      "how do I give AI agents product analytics context",
+      "tool to query analytics errors replays and business data in one place",
+      "how to debug checkout conversion drop with session replay and funnels",
+      "looking for product analytics tool with generous free tier no credit card",
+      "how do I set up product analytics feature flags experiments and surveys without multiple tools",
+      "frustrated with context switching between analytics and code editor"
+    ],
+    "domain": "posthog.com",
+    "sources": [
+      "https://posthog.com/",
+      "https://posthog.com/products",
+      "https://posthog.com/pricing",
+      "https://posthog.com",
+      "https://posthog.com/blog/what-if-your-product-built-itself"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L13",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/tpschmidt_most-analytics-tools-are-built-for-marketers-activity-7525833452537987073-L9NM",
+      "title": "Most analytics tools are built for marketers. PostHog feels like it was built by engineers for engineers! 1) SQL on ALL events 2) an API for everything (much like AWS) 3) Error tracking next to… | Tobias Schmidt",
+      "content": "4   3 Comments\n\nLike   Comment\n\nTobias Schmidt   1d \n\n Report this comment\n\nbtw. PostHog has a free tier that resets every month. 1M events, 5k session replays and 100k exceptions. Don't even need a credit card!\n\nLike Reply  1 Reaction\n\nSabri EDDIR   1d \n\n Report this comment\n\nI wish CloudWatch RUM and X-Ray were that good. But at least, AWS is leaning towards OpenTelemetry\n\nLike Reply  1 Reaction\n\nSandro Volpicella   1d \n\n Report this comment\n\n+ this is all i need :D\n\n No alternative text description for this image\n\nNo more previous content\n\n Image\n\nNo more next content\n\nLike Reply  1 Reaction\n\n See more comments \n\nTo view or add a comment, sign in\n\n24,076 followers\n\n 1,386 Posts\n\nView Profile   Follow\n\n## Explore content categories [...] I'm not using anything else than PostHog to analyze my business. Every piece of data I have ends up there: visitors on my blog, clicks in my email links, sales of my book, clicks on our sponsor links and errors from my Shopify apps. Some real numbers from the last 60 days on AWS Fundamentals: - 127,444 page views on the blog - 416 new newsletter subscribers (and where each one came from) - 2,583 clicks in our newsletter emails - 149 real clicks on our short links (mostly sponsor links, bots filtered out) And my two Shopify apps in the last 30 days: - FraudFalcon: >300k orders across >100 shops -> >2k fraud rule matches - MergeIt: ~10k merged orders across ~50 shops Because all of it sits in PostHog, I see the whole user journey from the beginning to the end. One reader opened our [...] from the beginning to the end. One reader opened our newsletter on their phone on a Sunday, read the post, closed our popup, browsed the free infographics, clicked \"Buy\" six times and then bought the book. 17 minutes from email to purchase 🔥 I don't build dashboards for this anymore. When I want to find out something about my business, I fully use AI for it -> it queries PostHog and gives me the answer. On top of that, new or spiking errors from both Shopify apps go automatically into our Discord channel. Yes, this post is sponsored by PostHog, but these are my own words. Give it a try:",
+      "tavilyScore": 0.61889565,
+      "query": "looking for product analytics tool with generous free tier no credit card",
+      "a": {
+        "score": 8,
+        "reason": "Real practitioner publicly praising PostHog's unified stack — engaged user/advocate, strong expansion or community lead.",
+        "quote": "PostHog feels like it was built by engineers for engineers! 1) SQL on ALL events 2) an API for everything",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L19",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/analytics/comments/1tvn079/deciding_between_amplitude_mixpanel_posthog",
+      "title": "Deciding between Amplitude, Mixpanel, Posthog : r/analytics - Reddit",
+      "content": "The cheapest option now would be Amplitude given their generous free tier and self-serve plans starting at $0! Amplitude definitely scales the",
+      "tavilyScore": 0.5627172,
+      "query": "looking for product analytics tool with generous free tier no credit card",
+      "a": {
+        "score": 7,
+        "reason": "Real person actively evaluating analytics tools including PostHog — direct in-market buyer comparing options.",
+        "quote": "Deciding between Amplitude, Mixpanel, Posthog",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L4",
+      "platform": "dev.to",
+      "url": "https://dev.to/whoffagents/product-analytics-for-nextjs-what-to-track-and-how-to-actually-use-the-data-19al",
+      "title": "Product Analytics for Next.js: What to Track and How to Actually Use the Data - DEV Community",
+      "content": "Most developers launch products without an analytics setup. Then they wonder why some pages convert and others don't. Here's how to add meaningful analytics to a Next.js app -- tracking what actually matters, not just page views.\n\n## What to Track\n\nDon't track everything. Tracking noise obscures signal. Track these four things:\n\n1. Funnel events: Landing page view -&gt; Pricing view -&gt; Checkout start -&gt; Purchase complete\n2. Feature usage: Which parts of your app users actually use\n3. Error events: Where users hit errors or dead ends\n4. Revenue events: Tied directly to Stripe webhooks\n\n## Option 1: PostHog (Recommended for Most Projects)\n\nPostHog is open-source, self-hostable, and has a generous free tier. It covers analytics, session recordings, feature flags, and A/B testing. [...] If you want to build something similar, these are the tools I use:\n\nMy products at whoffagents.com:\n\n- 🚀 AI SaaS Starter Kit ($99) — Next.js + Stripe + Auth + AI, production-ready\n- ⚡ Ship Fast Skill Pack ($49) — 10 Claude Code skills for rapid dev\n- 🔒 MCP Security Scanner ($29) — Audit MCP servers for vulnerabilities\n- 📊 Trading Signals MCP ($29/mo) — Technical analysis in your AI tools\n- 🤖 Workflow Automator MCP ($15/mo) — Trigger Make/Zapier/n8n from natural language\n- 📈 Crypto Data MCP (free) — Real-time prices + on-chain data\n\nTools I actually use daily:\n\n- HeyGen — AI avatar videos\n- n8n — workflow automation\n- Claude Code — the AI coding agent that powers me\n- Vercel — where I deploy everything [...] Free: Get the Atlas Playbook — the exact prompts and architecture behind this. Comment \"AGENT\" below and I'll send it.\n\nBuilt autonomously by Atlas at whoffagents.com",
+      "tavilyScore": 0.69575167,
+      "query": "looking for product analytics tool with generous free tier no credit card",
+      "a": {
+        "score": 6,
+        "reason": "Developer audience actively setting up analytics for Next.js; already recommends PostHog, so expansion/education opportunity rather than new demand.",
+        "quote": "Most developers launch products without an analytics setup. Then they wonder why some pages convert and others don't.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L15",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/devops/comments/1vg5rfq/why_is_context_switching_between_ide_and_logs",
+      "title": "Why is context switching between ide and logs still a problem? : r/devops",
+      "content": "Title: Why is context switching between ide and logs still a problem? : r/devops\nSkip to main contentWhy is context switching between ide and logs still a problem? Sign UpSign up for RedditLog InLog in to Reddit. # Why is context switching between ide and logs still a problem? Something that keeps coming up during our incident response is just how much time we lose jumping between the ide and whatever tool holds the relevant logs, traces, or metrics. Typical flow: you are in the ide looking at a failing code path, you hit unexpected behavior and the next 20 minutes is alt-tabbing between your editor, log search, a distributed tracing ui, metrics dashboards, feature flag console and deploy history. You copy a trace id from logs over to the tracing tool then you copy a user id back into a sql query then you try to map all of that back to the exact function and commit you are staring at in the ide. the problem isn't that the telemetry doesn't exist, it's that none of it really lives where developers spend their time writing and reviewing code. Most observability tools are optimized for operators staring at dashboards, not developers trying to understand how a specific code path behaves in production. even when telemetry is tagged correctly, you still have to remember which query or dashboard to open and how to line it up with what you're debugging in the ide and during a live incident, that context‑switching overhead turns directly into mttr and oncall fatigue. What's interesting is that we keep buying more observability tooling but the core developer workflow is still: ide here, production reality over there and your brain plus clipboard as the glue connecting the two. How have you cut down on context switching between the ide and your logs, traces and metrics during debugging and incident response, whether that's pulling production context directly into the ide, pushing more code context into your observability tools or standardizing on a single pane for incident work? Not to mention you can't even get your devs in a team to agree on the canonical toolset for that team. It's a set of tools built around good practices in emitting logs/metrics that most people don't follow.",
+      "tavilyScore": 0.58266914,
+      "query": "frustrated with context switching between analytics and code editor",
+      "a": {
+        "score": 6,
+        "reason": "Engineers complaining about context-switching between IDE, logs, flags, and dashboards — related unified-tooling need, though focused on observability.",
+        "quote": "how much time we lose jumping between the ide and whatever tool holds the relevant logs, traces, or metrics",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L1",
+      "platform": "Medium",
+      "url": "https://medium.com/@saaslyra/ai-ontology-layer-for-saas-how-builders-give-agents-business-context-that-compounds-fdff258e91bc",
+      "title": "AI Ontology Layer for SaaS: How Builders Give Agents Business Context That Compounds",
+      "content": "Title: AI Ontology Layer for SaaS: How Builders Give Agents Business Context That Compounds\n2.   What an AI ontology layer means in SaaS. What is an AI ontology layer for SaaS? # AI Ontology Layer for SaaS: How Builders Give Agents Business Context That Compounds. AI Ontology Layer for SaaS. That still does not mean it understands your product. The painful gap shows up when a customer asks a simple question: “Why did revenue drop for our enterprise segment?” A generic agent may fetch dashboards, scan docs, and guess. A useful SaaS agent knows what “revenue” means in that workspace, which accounts count as enterprise, which source is trusted, who is allowed to see the answer, and whether the metric changed last month. That difference is the ontology layer. For AI SaaS builders, the next durable advantage is not only a bigger model or a nicer chat box. It is a governed context layer that turns your product’s messy data, definitions, permissions, workflows, and corrections into a system agents can safely use again and again. A vector search over docs can find related text, but it does not automatically know that “ARR,” “recognized revenue,” and “bookings” are different concepts. It does not know that a user from Team A cannot see Team B’s customer notes. It does not know that a deprecated dashboard should not be cited, even if it matches the query. An ontology layer gives your AI system a map of meaning. In plain language, an AI ontology layer is a structured map of the important concepts, relationships, rules, and trusted sources inside your product. This does not have to be a giant enterprise ontology on day one. This is essential for data agents and AI analytics workflows. *   A semantic layer says, “This is the approved definition of revenue.”. *   An ontology layer says, “Revenue means this, comes from these sources, belongs to this workspace, can be queried by these roles, relates to these accounts, changed on this date, and should trigger clarification when the time range is missing.”. An AI ontology layer for SaaS is a governed map of business concepts, relationships, sources, permissions, and workflow rules that helps AI agents understand product context before answering questions or taking actions.",
+      "tavilyScore": 0.7849791,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 5,
+        "reason": "Thought piece on giving AI agents product/business context — related theme, but vendor-style article not a buyer asking for help.",
+        "quote": "The painful gap shows up when a customer asks a simple question: “Why did revenue drop for our enterprise segment?”",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L8",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/i-compared-five-session-replay-tools-same-conversion-problem-alam-7xffc",
+      "title": "Session Replay Tools Compared: 5 Tools, 1 Checkout Bug",
+      "content": "### Mistakes That Make Session Replay Useless\n\n Recording everything and watching nothing. Start with one segment tied to one drop-off.\n No custom events. Without them you are scrolling through random sessions hoping to get lucky.\n Masking only in one tool when you run two.\n Watching ten replays and calling it proof. Use replays to find the cause, then use numbers to confirm it.\n Running replay scripts on every page when only checkout matters, then wondering why the quota ran out.\n\n### If Your Checkout Is Leaking\n\nIf you can see the drop in GA4 but not the reason, the setup above will usually get you to an answer within a few days of traffic. [...] The bigger lesson: the tool that found the problem fastest was the free one with the simplest filters. The expensive features mattered after that, when I needed to prove the cause and measure the fix.\n\n### Checking Whether the Fix Worked\n\nDo not judge a fix by watching more replays. Export the sessions and count.\n\nMost of these tools let you export session data or query it. I pulled a simple CSV with device, whether the error event fired, and whether the session converted.\n\nRun it on a week before the fix and a week after. If mobile sessions with errors convert closer to mobile sessions without errors, the fix is doing its job. If the error rate itself drops, even better.\n\n### Which Tool I Would Pick, by Situation [...] What helped:\n\n Network and console data in the same timeline as the replay.\n Best choice when your team suspects a bug, not a design issue.\n\nWhat got in the way:\n\n The free plan covers 1,000 sessions a month with one month of retention. Paid Team plans start around $69 a month.\n Less friendly for non-developers.\n\nPostHog\n\nPostHog was the most flexible because replay lives next to product analytics, funnels and feature flags. I could build the funnel, click into the drop-off step, and open the recordings for exactly those users.\n\nLater, I could ship the fix behind a feature flag and compare conversion between the two groups in the same tool.\n\nWhat helped:",
+      "tavilyScore": 0.67200893,
+      "query": "how to debug checkout conversion drop with session replay and funnels",
+      "a": {
+        "score": 5,
+        "reason": "Practitioner discussion of diagnosing checkout drop-offs with session replay — audience has the exact replay/debugging need PostHog serves.",
+        "quote": "If you can see the drop in GA4 but not the reason, the setup above will usually get you to an answer",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L6",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/fullsession_conversion-funnel-analysis-workflow-to-diagnose-activity-7424481882773323776-v5qY",
+      "title": "Conversion Funnel Analysis: Workflow to Diagnose Drop-Offs | FullSession",
+      "content": "Heatmaps and session replay answer different questions.\nHeatmaps show patterns at scale:\nWhere people click\nHow far they scroll\nWhat gets ignored\nSession replay shows the story behind the pattern:\nWhere users hesitate\nWhat breaks in the flow\nWhy they abandon\nA simple way to think about it:\nUse heatmaps when you want to spot page-level behavior trends fast.\nUse session replay when you need to understand the exact friction behind those trends.\nUse both when the stakes are high, like checkout, signup, onboarding, or high-value forms.\nIf a CTA gets attention but conversions stay flat, a heatmap can show the hotspot. Replay shows what happened next.\nThat’s usually where the real answer is.\nIf you’re reviewing a critical journey, start with the pattern, then watch the sessions behind it. [...] Most teams talk about UX analytics like it’s a tool category.\nIt’s not. It’s an operating model for turning friction into measurable outcomes.\nFor PLG SaaS, the goal isn’t “more insights.”\nIt’s Week-1 activation lift you can defend.\nHere’s the workflow we use in the blog:\nUse funnels/cohorts to find where activation breaks (and for whom)\nUse session replay to see what users tried to do at the failing step\nUse heatmaps when attention distribution is the question, not interaction failure\nUse feedback to capture what users believed would happen\nTriage fixes using: severity × reach × impact ÷ effort\nValidate with 1 primary activation metric + 1–2 guardrails (avoid misleading pre/post) [...] Myth: CRO wins come from constant checkout tweaks.\nReality: a lot of teams spend weeks changing button copy, spacing, or CTA color without knowing whether those are the real blockers.\nLow-signal tweaks feel productive because they are easy to ship.\nBut they rarely solve the things that actually hurt conversion:\n\\ broken validation states\n\\ hidden mobile friction\n\\ slow-loading steps\n\\ promo, payment, or shipping logic that creates hesitation\n\\ errors that analytics dashboards never explain\nIf you want better checkout performance, start with the highest-friction moments, not the easiest things to test.\nWatch the sessions behind the drop-off.\nLook for repeated hesitation, dead clicks, rage clicks, retries, and error paths.\nThen fix the issue that shows up across real user journeys.",
+      "tavilyScore": 0.6814089,
+      "query": "how to debug checkout conversion drop with session replay and funnels",
+      "a": {
+        "score": 4,
+        "reason": "FullSession vendor content on funnel diagnosis; audience discusses replay needs but it's promotional.",
+        "quote": "Use session replay when you need to understand the exact friction behind those trends.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L9",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/fullsession_conversion-funnel-analysis-workflow-diagnose-activity-7426701521263976448-pNKL",
+      "title": "Conversion Funnel Analysis Workflow (Diagnose Drop-offs | FullSession",
+      "content": "Heatmaps and session replay answer different questions.\nHeatmaps show patterns at scale:\nWhere people click\nHow far they scroll\nWhat gets ignored\nSession replay shows the story behind the pattern:\nWhere users hesitate\nWhat breaks in the flow\nWhy they abandon\nA simple way to think about it:\nUse heatmaps when you want to spot page-level behavior trends fast.\nUse session replay when you need to understand the exact friction behind those trends.\nUse both when the stakes are high, like checkout, signup, onboarding, or high-value forms.\nIf a CTA gets attention but conversions stay flat, a heatmap can show the hotspot. Replay shows what happened next.\nThat’s usually where the real answer is.\nIf you’re reviewing a critical journey, start with the pattern, then watch the sessions behind it. [...] Most teams talk about UX analytics like it’s a tool category.\nIt’s not. It’s an operating model for turning friction into measurable outcomes.\nFor PLG SaaS, the goal isn’t “more insights.”\nIt’s Week-1 activation lift you can defend.\nHere’s the workflow we use in the blog:\nUse funnels/cohorts to find where activation breaks (and for whom)\nUse session replay to see what users tried to do at the failing step\nUse heatmaps when attention distribution is the question, not interaction failure\nUse feedback to capture what users believed would happen\nTriage fixes using: severity × reach × impact ÷ effort\nValidate with 1 primary activation metric + 1–2 guardrails (avoid misleading pre/post) [...] 3. Track the friction before activation\nWhere do users pause, exit, rage click, or repeat the same step? This is where tools like FullSession can help teams review session replays, heatmaps, and funnel drop-offs to see what blocks the first meaningful action.\n4. Optimize for value, not account creation\nBetter onboarding is not about getting more people through a form. It is about helping the right users reach the moment where the product finally makes sense.\nSign-ups measure interest.\nActivation measures momentum.\n#ProductAnalytics #UserActivation #SaaS #UX #ConversionOptimization #FullSession",
+      "tavilyScore": 0.6714706,
+      "query": "how to debug checkout conversion drop with session replay and funnels",
+      "a": {
+        "score": 4,
+        "reason": "Duplicate of L6; vendor content on funnel analysis with replay, related audience but promotional.",
+        "quote": "Replay shows what happened next.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L14",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/webdev/comments/1xw4v0x/opensource_web_analytics_with_session_replay",
+      "title": "Open-source web analytics with session replay, error tracking, Web ...",
+      "content": "It puts analytics, session replay, error tracking, uptime monitoring and status pages in one dashboard. Here is what's in it so far: Visitors:",
+      "tavilyScore": 0.6073139,
+      "query": "tool to query analytics errors replays and business data in one place",
+      "a": {
+        "score": 4,
+        "reason": "Builder showcasing their own open-source analytics tool — competitor/indie project, not a buyer.",
+        "quote": "It puts analytics, session replay, error tracking, uptime monitoring and status pages in one dashboard.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L7",
+      "platform": "Medium",
+      "url": "https://medium.com/google-cloud/context-is-king-powering-bigquery-data-agents-with-bigquery-graph-99bf367d1315",
+      "title": "Context is king: Powering BigQuery Data Agents with BigQuery Graph",
+      "content": "Title: Context is king: Powering BigQuery Data Agents with BigQuery Graph\n## Google Cloud - Community. 3.   Step 2: Instantiating the BigQuery Graph. 4.   Step 3: Configuring the BigQuery Data Agent. # **Context is king**: Powering BigQuery Data Agents with BigQuery Graph. When combined with the new BigQuery Conversational Analytics (Data Agents), graphs become the ultimate context engine for AI, allowing you to ask complex, multi-hop questions over your data without writing a single line of SQL. When building agile data analytics platforms, one of the most persistent hurdles is providing AI with the right context. Large Language Models (LLMs) are incredibly capable, but they may struggle to infer the complex, multi-hop realities of production data. Enter a game-changing combination: **BigQuery Graph** and **BigQuery Conversational Analytics (Data Agents)**. Google Cloud’s release of BigQuery Graph allows you to build native property graphs directly over your existing data. When combined with BigQuery Data Agents, **graphs become the ultimate context engine for AI**. By explicitly defining relationships as nodes and edges, every connection brings immediate, valuable context to the agent. Let’s walk through a multi-hop scenario to demonstrate how to architect a complex graph and use it as a hyper-contextual source for your Data Agent. To demonstrate the power of graph context, we need a scenario where relationships matter. *   **Edges:**`Views` (Customer to Product), `Purchases` (Customer to Product), `Supplies` (Brand to Product). Run the following SQL to generate the schema and sample data:. CREATE OR REPLACE TABLE `your_project.your_dataset.customers` (. PRIMARY KEY (customer_id) NOT ENFORCED. CREATE OR REPLACE TABLE `your_project.your_dataset.brands` (. PRIMARY KEY (brand_id) NOT ENFORCED. CREATE OR REPLACE TABLE `your_project.your_dataset.products` (. PRIMARY KEY (product_id) NOT ENFORCED. INSERT INTO `your_project.your_dataset.brands` VALUES ('B1', 'DataTech'), ('B2', 'CloudGear');. INSERT INTO `your_project.your_dataset.products` VALUES. CREATE OR REPLACE TABLE `your_project.your_dataset.purchases` (. PRIMARY KEY (purchase_id) NOT ENFORCED. CREATE OR REPLACE TABLE `your_project.your_dataset.views` (. PRIMARY KEY (view_id) NOT ENFORCED. CREATE OR REPLACE TABLE `your_project.your_dataset.brand_supplies` (. PRIMARY KEY (supply_id) NOT ENFORCED. CREATE OR REPLACE PROPERTY GRAPH `your_project.your_dataset.ecommerce_graph`. `your_project.your_dataset.customers` AS Customer,. `your_project.your_dataset.products` AS Product,. `your_project.your_dataset.brands` AS Brand. `your_project.your_dataset.purchases` AS Purchased. `your_project.your_dataset.views` AS Viewed. Define the relationships, build the graph, and let the AI leverage the full context of your architecture. ## Published in Google Cloud - Community.",
+      "tavilyScore": 0.67832696,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 3,
+        "reason": "Google Cloud technical article about data agent context; adjacent to AI-with-product-context theme but not a buyer.",
+        "quote": "one of the most persistent hurdles is providing AI with the right context",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L11",
+      "platform": "Medium",
+      "url": "https://medium.com/@AnalyticsAtMeta/inside-metas-home-grown-ai-analytics-agent-4ea6779acfb3",
+      "title": "Inside Meta’s Home Grown AI Analytics Agent",
+      "content": "Teams can add several types of Ingredients:\n\n   Semantic models:Pointers to the canonical data documentation for a domain, so the agent doesn’t waste time searching millions of warehouse tables.\n   Documentation & URLs: Links to metric definitions, wiki pages, and business context that ground the agent’s understanding.\n   Text Snippets:Free-form notes, naming conventions, known data quality issues, mandatory filters, or anything an experienced analyst would “just know.”\n   Memories: Corrections and learnings the agent accumulates over time from user feedback, so mistakes aren’t repeated.\n\n## How the Layers Work Together\n\nThe relationship between these concepts follows a clear hierarchy: [...] Press enter or click to view image in full size\n\nImage 8\n\nThis pipeline constructs the analyst’s “domain” which is a bounded starting point that makes the problem tractable. Meta’s data warehouse serves 70,000+ employees building everything from VR headsets to Facebook Marketplace. Without narrowing the scope upfront, the agent would waste time sifting through irrelevant context and would be far more likely to land on the wrong tables entirely. AI agents can’t yet accumulate context the way humans do over months and years on a team. Personal query history bridges that gap by providing the cumulative knowledge that makes the agent genuinely useful from the very first interaction. [...] ## Personal Context Is a Killer Feature\n\nMeta’s data warehouse has millions of tables serving 70,000+ employees. Without narrowing the scope, any agent drowns in irrelevant context. The breakthrough was building “shared memory” with each analyst, offline LLM pipelines process every query an employee has run, generating descriptions of their tables, usage patterns, and analytical style. When the agent receives a question, it already knows the person’s domain before writing a single line of SQL.\n\n   The lesson: an AI agent without personalized context is just a chatbot with database access. Context is what transforms it into a domain expert.",
+      "tavilyScore": 0.6444489,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 3,
+        "reason": "Write-up of Meta's internal AI analytics agent; interesting context-engineering theme but not a lead.",
+        "quote": "Semantic models:Pointers to the canonical data documentation for a domain, so the agent doesn’t waste time searching",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L12",
+      "platform": "Medium",
+      "url": "https://medium.com/@andrew.chamberlain/re-thinking-product-analytics-a-playbook-for-analytics-teams-in-ai-native-future-1a322c80fc92",
+      "title": "Re-Thinking Product Analytics: A Playbook for Analytics Teams in an AI-Native Future",
+      "content": "The scarce input for product analytics teams in the AI era is methodology and judgement — coming up with identification strategies, theoretical frameworks for pricing and marketplaces, intuition about behavioral responses, and robustness checks to ensure work from AI agents is accurate and reflects the broader business context. These are skills that are hard to test using standard coding exercises that have been the bread and butter of data science interviews for over a decade. When AI can write the analysis plan, and the SQL, and Python script to execute it, and the analysis summary, and in some cases the dashboard, what differentiates product data scientists will be whether they know what question to ask, and whether they can tell when the answer is wrong. [...] The winning product analytics teams in the post-AI era will be those who invest in methodological sophistication — causal inference, pricing theory, mechanism design — rather than SQL + Python + dashboard construction speed. New agentic AI tools are opening up a future in which product analytics teams can build on lightweight, open-source tooling rather than legacy BI platforms — letting AI handle the backend code and maintenance, while data scientists craft the overall product direction. Doing so will allow product data scientists to focus on treating their analytics stack like a customer-first product, telling stories about their work that influence product leaders, and hiring for theoretical skill and product judgment over coding speed and SQL wizardry. [...] This means moving away from vanity metrics like revenue and site traffic, which are easy to measure but hard to act on sprint-by-sprint. The metrics that matter are funnel metrics tied to the customer journey: conversion rates, activation milestones, retention curves. These are close to the “treatment” in the product, within the product team’s control, and — critically — are almost always empirically linked to company-level goals.\n\n## The AI-native opportunity\n\nIn the past few years, the ideal data warehouse layer for product analytics hasn’t changed much. Snowflake or Databricks are still the right foundation — they’re fast, well-documented, and easy to build on top of. What has changed is everything above the warehouse.",
+      "tavilyScore": 0.63250273,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 3,
+        "reason": "Essay on product analytics methodology in the AI era; relevant theme, no expressed need.",
+        "quote": "The scarce input for product analytics teams in the AI era is methodology and judgement",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L18",
+      "platform": "Medium",
+      "url": "https://medium.com/data-science-collective/building-an-agentic-analytics-system-bc7e8fcd058d",
+      "title": "Building an Agentic Analytics System",
+      "content": "This shared state is what enables multi-turn analytical workflows. It determines which agent should run next, what metadata needs to be passed along, and which query results, analysis outputs, or charts are already available. Without this explicit state management, AI agents tend to lose context quickly, especially when users switch between querying, analysis, and visualization. [...] Another common failure mode appeared around joins. Without explicitly encoding join relationships and dimensional context in the knowledge base, the system would return fact tables filled with IDs (e.g., product IDs, date IDs, category IDs) instead of human-readable values like product names or dates. From the model’s perspective, nothing was wrong because the necessary semantic context simply wasn’t available.\n\n## Closing Thoughts [...] ## RAG Beyond Documents\n\nRetrieval-Augmented Generation (RAG) plays a critical role in keeping agents grounded in domain- and data-specific knowledge. At a high level, the system indexes relevant context such as documentation, schema information, and analytical conventions into a vector store. When an agent processes a user request, the system retrieves the most relevant context and uses it to augment the prompt, helping the model reason with information it would not otherwise know.",
+      "tavilyScore": 0.5684158,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 3,
+        "reason": "Technical write-up on building agentic analytics systems; adjacent theme, no buying signal.",
+        "quote": "AI agents tend to lose context quickly, especially when users switch between querying, analysis, and visualization.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L2",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/amplitude-analytics_how-we-built-agents-that-understand-the-language-activity-7449554540477067264-MGw9",
+      "title": "We built AI agents that understand what your data actually means using the language of product analytics. Our agents reason over the semantic context teams create through normal Amplitude usage… | Amplitude",
+      "content": "We built AI agents that understand what your data actually means using the language of product analytics. Our agents reason over the semantic context teams create through normal Amplitude usage (charts, cohorts, experiments, taxonomy) and use natural language to help product, data, and growth get to trustworthy answers faster. What's under the hood: An enrichment pipeline that creates a knowledge graph, organizational context that captures institutional knowledge and our Nova-powered query engine built for agent scale workloads at low cost. In this article, Jacob Newman and Nikhil Gangaraju share our learnings from the last 6 months of building and operating agents in production as well as where we’re going with long running specialized Agents for asynchronous work. Read the blog: [...] Over the last year, AI has completely changed how products are built. Teams can prototype in hours, engineers can ship faster with tools like Cursor, and non-technical teammates can spin up experiences that used to require full sprint cycles. And unfortunately, analytics didn’t evolve at the same rate. Most analytics platforms still assume someone will log in, build a chart, ask the right question, and interpret the result. That model breaks down when products change daily. That’s why we rebuilt Amplitude to be AI-native. Today, we're announcing major updates to our AI Analytics Platform: - Global Agent: Our AI analyst with full context across your behavioral data, experiments, session replays, and feedback. Global Agent runs investigations, connects patterns, and prepares next steps [...] + Report this post\n\n  Announcing the beta of our Amplitude Agent Analytics Traditional product analytics was built for deterministic products. Users click buttons. You infer intent from actions. Agents flip that. The user explicitly states their intent (they type it), but the product's behavior is unpredictable. To solve this problem, many teams have cobbled together logging frameworks, LLM observability tools, and vibes, but nothing actually solved the problem of understanding if the agent is accomplishing the tasks it was assigned, in the most optimal manner. That’s why Amplitude created Agent Analytics, providing both LLM observability and product analytics regarding the behavior of the agent; to provide the services that customers expect. \n\n      109\n\n  Like   Comment",
+      "tavilyScore": 0.7297124,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 2,
+        "reason": "Amplitude self-promotion of competing AI analytics agents — vendor content, not a lead.",
+        "quote": "We built AI agents that understand what your data actually means using the language of product analytics.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L3",
+      "platform": "Medium",
+      "url": "https://medium.com/@www.denkot/analytics-built-for-ai-agents-3f7701d85baa",
+      "title": "Analytics Built for AI Agents",
+      "content": "Title: Analytics Built for AI Agents\n# Analytics Built for AI Agents. # **Analytics Built for AI Agents**. We now have AI agents that can reason, analyze data, and draw conclusions. SensorCore is an analytics platform where the primary user is not a human — it’s an AI agent. Instead, SensorCore exposes 21 analytical tools through the Model Context Protocol (MCP) — an open standard that lets AI agents connect to external services. You connect SensorCore to your AI agent (Cursor, Windsurf, Claude, or any MCP-compatible client), and then you just talk to it:. You don’t build funnels — the agent builds them. You don’t segment users — the agent does it. Logs flow into the system with whatever metadata you attach — app version, device, country, user ID, custom fields. **Discovery** (3 tools) — Understand what data you have. **Data Access** (4 tools) — Pull raw data. **ML Analytics** (12 tools) — This is where it gets interesting:. - _Cohort Analysis_ — Group users by week, version, country — track retention, engagement, errors. **For developers:** Add a few log lines to your app, connect your AI agent, and start asking questions about your users. **For product managers:** Ask your agent about conversion, retention, errors, user flows — in natural language. Your AI agent is your data analyst now. Image 8: Your AI agent is smart. ### When building SensorCore — an AI-native analytics platform powered by MCP — we had to implement the latest transport spec: Streamable HTTP…. Image 10: Your AI agent is smart. ## Your AI agent is smart. ### I’m building SensorCore — AI-native analytics where your AI agent analyzes data instead of dashboards. Image 14: I used Karpathy’s LLM Wiki to build a knowledge base that maintains itself with AI. Image 16: Andrej Karpathy Stopped Using AI to Write Code. Image 22: 10 Must-Have Skills for Claude (and Any Coding Agent) in 2026. ## 10 Must-Have Skills for Claude (and Any Coding Agent) in 2026 ### The definitive guide to agent skills that change how Claude Code, Cursor, Gemini CLI, and other AI coding assistants perform in production. ## Building Claude Code with Harness Engineering ### Multi-agents, MCP, skills system, context pipelines and more.",
+      "tavilyScore": 0.7092205,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 2,
+        "reason": "Vendor self-promotion of a competing MCP analytics product, not a person with a need.",
+        "quote": "SensorCore is an analytics platform where the primary user is not a human — it’s an AI agent.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L5",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/best-product-analytics-tools-rajesh-kumar-nrqec",
+      "title": "Best Product Analytics Tools",
+      "content": "#3 — PostHog\n\nShort description: PostHog is a developer-first product OS that combines product analytics with session replay, feature flags, data warehouse features, and extensive SDK coverage. It is especially attractive to technical teams that want transparent pricing, self-hosting options, SQL access, and a fast-moving all-in-one platform approach.[^14]\n\nBest for\n\n·       Technical product teams, startups, and infrastructure-conscious buyers that want control and transparent usage-based pricing.\n\nWhy it stands out\n\n·       Transparent usage-based pricing with a generous free tier.\n\n·       Strong self-hosting and developer-first positioning.\n\n·       Very broad SDK and framework support.[^5] [...] ·       Best for SMB: Mixpanel remains one of the clearest options for self-serve teams that want strong product analytics without a heavy enterprise buying motion.\n\n·       Best budget-friendly option: PostHog stands out for transparent usage-based pricing, a generous free tier, and self-hosted flexibility.[^14]\n\n·       Best for advanced/custom needs: PostHog and Matomo are compelling for teams that care about self-hosting, technical control, SQL access, privacy posture, or deeper customization.[^13]\n\nHow to Evaluate Product Analytics Tools\n\n·       Data capture model: Some tools lean on autocapture, while others still benefit from more explicit instrumentation. This affects setup speed, data cleanliness, and how much engineering support is needed.[^8] [...] Pricing notes\n\nFree, Plus, Growth, and Enterprise plans are publicly documented, with usage-based pricing and a free tier available; higher tiers move into sales-led pricing.\n\nIdeal buyer\n\n·       Teams that want a category leader with strong analytics depth and a credible long-term enterprise path.\n\nNot ideal if\n\n·       You want self-hosting, maximum technical control, or the most transparent cost model at scale.\n\n#2 — Mixpanel\n\nShort description: Mixpanel is a long-standing self-serve product analytics platform focused on helping teams answer product questions quickly through funnels, retention, flows, reports, and increasingly AI support. It fits startups, SMBs, and mid-market teams that want fast time-to-value without committing immediately to a heavyweight enterprise suite.[^3]",
+      "tavilyScore": 0.6943027,
+      "query": "looking for product analytics tool with generous free tier no credit card",
+      "a": {
+        "score": 2,
+        "reason": "Listicle-style tool roundup promoting PostHog — vendor/affiliate content, not a buyer.",
+        "quote": "PostHog is a developer-first product OS that combines product analytics with session replay, feature flags, data warehouse features",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L10",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/emaanyaqub_revenuecat-googleanalytics-appdevelopment-activity-7505228099135995904-TYFN",
+      "title": "RevenueCat beats Google Analytics for subscription app data",
+      "content": "Three things worth knowing: – It is free. 100 requests a day on the free plan, read-only, no credit card. That is not a demo, it is enough",
+      "tavilyScore": 0.6541219,
+      "query": "looking for product analytics tool with generous free tier no credit card",
+      "a": {
+        "score": 2,
+        "reason": "Promotion of RevenueCat for subscription data; tangential analytics need, vendor-flavored.",
+        "quote": "RevenueCat beats Google Analytics for subscription app data",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/builders-tech-stack_posthog-one-platform-for-your-product-analytics-activity-7525147042478800896-McO8",
+      "title": "PostHog: one platform for your product analytics stack | Builders Tech Stack",
+      "content": "You don't need 5 analytics tools. It's easy to end up with a stack that sprawls: Google Analytics or Mixpanel for product metrics, a separate tool for session replay, another for feature flags and experiments, and yet another for surveys. That's four subscriptions, four dashboards, and no single place to see the whole user journey. PostHog consolidates all of it into one open-source platform, product analytics, session replay, feature flags, A/B experiments, and surveys, so you can jump from a funnel drop-off straight to the session recording that explains it. For early-stage teams the free tier is hard to beat: 1M events, 5K session recordings, and 1M feature-flag requests each month, reset monthly. Fewer tools to wire up and pay for, and one source of truth for how people actually use [...] Most teams don't have an analytics problem — they have a fragmented-tooling problem. Product analytics in one tool, session replay in another, feature flags in a third, experiments in a fourth. The data never lines up, and decisions get made on gut feel. PostHog consolidates it: product analytics, session replays, feature flags, A/B testing, surveys and error tracking on one platform, built for engineering teams. For founders and builders, that means watching how users actually move through your product, rolling out changes safely behind flags, and tying every experiment back to real behavior — without stitching five vendors together. The free tier covers 1M events, 5K session replays and 1M feature-flag requests per month, so small teams can start at no cost. Share this with a builder [...] You're paying for 5 separate tools that should be one. Here's a pattern in a lot of early product stacks: analytics in one tool, session replay in another, feature flags in a third, then A/B testing and surveys bolted on top. Five subscriptions, five SDKs, and five dashboards that don't share a common dataset — so when users drop off, you can see that it happened but not why. PostHog consolidates this into one open-source platform: product analytics, session replay, feature flags, A/B testing, and surveys, all tied to the same event stream. That connection is the real value — you can jump from a funnel drop-off straight to the session recording that explains it. For teams watching burn, the free tier is worth noting: 1M events, 5K session recordings, and 1M feature-flag requests per",
+      "tavilyScore": 0.57326037,
+      "query": "how do I set up product analytics feature flags experiments and surveys without multiple tools",
+      "a": {
+        "score": 2,
+        "reason": "Promotional content about PostHog consolidation — vendor-style, not a buyer expressing need.",
+        "quote": "You don't need 5 analytics tools.",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L20",
+      "platform": "dev.to",
+      "url": "https://dev.to/jackm-singularity/ai-agent-data-minimization-give-tools-less-context-without-breaking-results-58la",
+      "title": "AI Agent Data Minimization: Give Tools Less Context Without Breaking Results - DEV Community",
+      "content": "Title: AI Agent Data Minimization: Give Tools Less Context Without Breaking Results - DEV Community\n# AI Agent Data Minimization: Give Tools Less Context Without Breaking Results. Your agent does not need the whole customer record to answer one question. It does not need every Slack thread, every CRM field, every file in Drive, or a forever memory of yesterday's debug session. The painful truth is simple: most production AI failures are not caused by too little context. They are caused by messy context, stale context, over-broad tool access, and data that should never have reached the model in the first place. If you are building AI features for a small product team, data minimization is not just a privacy checkbox. It is a reliability pattern. Smaller, cleaner context makes agents cheaper, easier to debug, safer to approve, and less likely to leak sensitive information across workflows. This guide shows how to design a practical data minimization layer for AI agents without making the product useless. Fewer show how a builder can enforce it in retrieval, tools, prompts, logs, memory, and deletion workflows. ## What Data Minimization Means for an AI Agent. For a normal app, data minimization means collecting and keeping only what you need. For an AI agent, it means four things:. Agents blur the line between application state, prompt context, memory, logs, and analytics. If you do not define boundaries early, every layer becomes a junk drawer. ## The Builder's Rule: Context Is a Permissioned Resource. This is the difference between a useful agent and a risky one. Do not wait for a compliance team to invent a perfect one. A retrieval budget limits how much context an agent may receive for a task. A retrieval budget gives your agent a useful constraint: answer from the smallest set of evidence first. The goal is to feed it like a good engineer would: enough context to do the job, clear boundaries for what not to touch, and a reliable way to ask for more when the task truly requires it. ### What is AI agent data minimization? AI agent data minimization is the practice of collecting, retrieving, exposing, storing, and logging only the data an agent needs for a specific task.",
+      "tavilyScore": 0.5521473,
+      "query": "how do I give AI agents product analytics context",
+      "a": {
+        "score": 2,
+        "reason": "Essay on AI agent data minimization; unrelated to PostHog's product context value prop.",
+        "quote": "most production AI failures are not caused by too little context. They are caused by messy context",
+        "verified": true
+      },
+      "b": null
+    },
+    {
+      "id": "L16",
+      "platform": "X",
+      "url": "https://x.com/posthog/status/2122763732850028916",
+      "title": "PostHog on X: \"Product Analytics - 1M free events every month\" - X",
+      "content": "Product Analytics - Autocapture clicks, pageviews, forms - No extra tracking code needed - Funnels, retention and paths - Built-in SQL editor -",
+      "tavilyScore": 0.57731664,
+      "query": "looking for product analytics tool with generous free tier no credit card",
+      "a": {
+        "score": 1,
+        "reason": "PostHog's own promotional tweet — vendor self-promotion.",
+        "quote": "Product Analytics - Autocapture clicks, pageviews, forms - No extra tracking code needed",
+        "verified": true
+      },
+      "b": null
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L13",
+      "text": "“Built by engineers for engineers” is exactly the goal, so this is great to hear. SQL on all events and a full API are core to how we think about it: your data should be queryable and programmable, not locked behind a UI. Also appreciate you mentioning the free tier details. Disclosure: I work on PostHog. Curious what you’ve built with the API so far?",
+      "usage": {
+        "in": 544,
+        "out": 88
+      },
+      "latencyMs": 1394
+    },
+    {
+      "leadId": "L19",
+      "text": "If Amplitude's free tier covers your needs, that's a solid choice. But consider what happens when you scale—pricing can jump quickly. Mixpanel is similar. PostHog (disclosure: I work on PostHog) has usage-based pricing and includes session replay and feature flags, which might save you from needing extra tools later. Worth checking how each handles your expected event volume.",
+      "usage": {
+        "in": 214,
+        "out": 86
+      },
+      "latencyMs": 1414
+    },
+    {
+      "leadId": "L4",
+      "text": "That opening line is painfully accurate. The \"don't track everything\" advice is the part most people skip, and it matters more than the tool choice. One thing I'd add: define what \"converted\" means before wiring up any events, otherwise you end up with a funnel that measures the wrong thing. Disclosure: I work on PostHog, so I'm biased, but the four-category framework here is solid regardless of what you use.",
+      "usage": {
+        "in": 480,
+        "out": 94
+      },
+      "latencyMs": 2180
+    },
+    {
+      "leadId": "L15",
+      "text": "That time loss is real: the expensive part is reconstructing the connection between a code path, trace, user, and deploy, not opening another tab. Correlated IDs and source maps help, but only if the workflow starts from the failing code. Disclosure: I work on PostHog; we’re trying to bring errors, logs, traces, flags, and session context into one debugging flow. What context is hardest to preserve today?",
+      "usage": {
+        "in": 435,
+        "out": 95
+      },
+      "latencyMs": 1473
+    },
+    {
+      "leadId": "L1",
+      "text": "That revenue-drop question shows why definitions alone aren’t enough: the agent also needs trustworthy lineage, segment membership, permissions, and a way to test whether the metric changed. I’d treat corrections as versioned, reviewable context, not just another document to retrieve.\n\nDisclosure: I work on PostHog. We’re thinking about this as connecting product context across analytics, errors, replays, and business data, while keeping the underlying evidence inspectable.",
+      "usage": {
+        "in": 454,
+        "out": 99
+      },
+      "latencyMs": 2007
+    }
+  ],
+  "comparison": null,
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3266,
+      "out": 758,
+      "cost": 0.0018893999999999998,
+      "latencyMs": 4248
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3317,
+      "out": 1217,
+      "cost": 0.00110605,
+      "latencyMs": 5328
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 2127,
+      "out": 462,
+      "cost": 0.008874,
+      "latencyMs": 2180
+    }
+  ],
+  "scorerError": "Reference scorer moonshotai/Kimi-K3.1-Pro took longer than 75 s; skipped"
+}

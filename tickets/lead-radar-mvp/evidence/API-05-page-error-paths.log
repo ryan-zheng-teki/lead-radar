@@ -1,0 +1,11 @@
+# API-05 readable errors entered on the page itself (AC-009) — 2026-11-20 ~13:36Z, browser tab on the fresh-clone app
+## Server with keys (PORT=3001, fresh clone). Typed into #url, clicked "Find leads", read #error:
+"not a url"                                     -> "\"not a url\" is not a valid URL."
+""                                              -> "Please enter a company website URL."
+"https://this-domain-does-not-exist-lr9431.com" -> "Could not read the site https://this-domain-does-not-exist-lr9431.com/: Tavily returned no page content and no search results for this-domain-does-not-exist-lr9431.com."
+Run button re-enabled after each error (btnDisabled=false).
+## Server without keys: env -u NEBIUS_API_KEY -u TAVILY_API_KEY LEAD_RADAR_ENV_FILE=/nonexistent PORT=3002 node /tmp/lr-fresh/server.js
+/api/config -> "missingKeys":["NEBIUS_API_KEY","TAVILY_API_KEY"]
+Page on load, #error -> "Missing NEBIUS_API_KEY and TAVILY_API_KEY: copy .env.example to .env, add the key(s) and restart."
+After clicking Find leads, #error -> "Missing NEBIUS_API_KEY and TAVILY_API_KEY: copy .env.example to .env and add your key(s), then restart."
+Screenshot: API-05-missing-keys-page.png

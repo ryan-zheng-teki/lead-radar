@@ -1,0 +1,6 @@
+# API-03 key leakage check (AC-006) — 2026-11-20T13:33:47Z. Counts only; key values never printed.
+cfg.json: NEBIUS value matches=0 TAVILY value matches=0 'tvly-' matches=0 'Bearer' matches=0 'api_key' matches=0
+API-02-calcom-run-stream.ndjson: NEBIUS value matches=0 TAVILY value matches=0 'tvly-' matches=0 'Bearer' matches=0 'api_key' matches=0
+lr-fresh-server.log: NEBIUS value matches=0 TAVILY value matches=0 'tvly-' matches=0 'Bearer' matches=0 'api_key' matches=0
+2026-11-20T13-31-40-725Z-cal.com.json: NEBIUS value matches=0 TAVILY value matches=0 'tvly-' matches=0 'Bearer' matches=0 'api_key' matches=0
+browser: page made exactly 1 network call besides /api/config at load: POST /api/run (window.fetch hook); approve/edit/reject/copy added 0 calls

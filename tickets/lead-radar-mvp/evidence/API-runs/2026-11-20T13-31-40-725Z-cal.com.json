@@ -1,0 +1,576 @@
+{
+  "url": "https://cal.com/",
+  "at": "2026-11-20T13:31:40.725Z",
+  "totalMs": 29595,
+  "totalCost": 0.0326239,
+  "profile": {
+    "name": "Cal.com",
+    "summary": "Cal.com is a scheduling app and online booking system that lets people share availability links, sync calendars, route meetings, automate workflows, and embed booking into websites.",
+    "problems": [
+      "Eliminating booking back-and-forth",
+      "Preventing double bookings and calendar conflicts",
+      "Handling timezone detection and coordination",
+      "Automating reminders and follow-ups",
+      "Scheduling across teams without one person getting all meetings",
+      "Routing inbound leads to the right person",
+      "Logging meetings in CRM and team tools",
+      "Taking payment when a slot is booked",
+      "Hosting events with tickets, guest lists, and RSVPs",
+      "Providing enterprise admin, security, and compliance controls",
+      "Connecting AI, voice, and chat agents to real availability"
+    ],
+    "ideal_customer": "Individuals, teams, small businesses, inbound-focused sales/support/ops teams, and larger organizations or enterprises that need scheduling links, team routing, workflows, and admin controls.",
+    "pain_phrases": [
+      "I’m tired of endless back-and-forth emails just to book a meeting.",
+      "We keep getting double-booked because calendars don’t sync.",
+      "Our leads sit around waiting to be routed to the right person.",
+      "I need people to book time with me without playing timezone Tetris.",
+      "We want booking on our own site without building a scheduling system."
+    ],
+    "search_queries": [
+      "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "how do I stop double bookings across team calendars",
+      "frustrated with scheduling across time zones and reminders",
+      "need lead routing form to send inbound leads to right salesperson",
+      "how to embed booking page on my own website without building it",
+      "looking for scheduling software with SSO audit log uptime SLA"
+    ],
+    "domain": "cal.com",
+    "sources": [
+      "https://cal.com/",
+      "https://cal.com",
+      "https://cal.com/about",
+      "https://cal.com/blog/calcom-v7-0",
+      "https://cal.com/enterprise"
+    ]
+  },
+  "leads": [
+    {
+      "id": "L8",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/recruiting/comments/1pygpqm/scheduling_interviews_across_time_zones_is",
+      "title": "Scheduling interviews across time zones is turning into calendar hell",
+      "content": "# Scheduling interviews across time zones is turning into calendar hell. We’re interviewing across time zones, which sounded fine, but in practice it’s just constant coordination. Someone can’t do the slot, then the next available time is two days out, then another person is “flexible” but only within a 90-minute window that somehow never overlaps with anyone else. The worst part is how much time it takes outside the interviews. I’ll spend 10 minutes getting a slot agreed on, another 10 confirming everyone got the invite, then I’m double-checking time zones like I’m about to launch a rocket. - The time zone math is the easy part honestly, it's the chain reaction when one person reschedules that kills you. When you say \"what works for you?\" with 4 interviewers across 3 time zones, you've just created a constraint satisfaction problem that no human should solve manually. Also: if your interviewers' calendars aren't accurate, that's not your problem to solve. Send one email to the hiring manager: \"I schedule based on what's in the calendar. - \"Calendar hell\" is the perfect term for it once you hit more than three time zones, the manual math becomes a major liability for human error. Technically, the fix isn't just a link; it's using a tool that handles real-time conflict checking across multiple calendars simultaneously so you aren't the one launching the \"rocket.\" We’ve seen that removing the \"double-checking\" phase can cut down the administrative load by nearly half, allowing you to focus on the candidate rather than the timezone math. We have a lot of interviewers at my company and trying to get them to stay on top of updating their calendars is hell. I do that and have specific times in my calendar when I take calls. The interviews themselves are fine - it’s the scheduling that drains you. Confirming slots, re-confirming, triple-checking time zones, then redoing everything because someone needs a last-minute change. This recruiter has a job and can’t even manage their calendar and takes time outta their day to post on Reddit about it.",
+      "tavilyScore": 0.6734065,
+      "query": "frustrated with scheduling across time zones and reminders",
+      "a": {
+        "score": 9,
+        "reason": "Real person explicitly complaining about cross-timezone interview scheduling pain — exactly what Cal.com solves.",
+        "quote": "Scheduling interviews across time zones is turning into calendar hell.",
+        "verified": true
+      },
+      "b": {
+        "score": 10,
+        "reason": "A real user explicitly describes severe interview coordination, timezone, confirmation, and rescheduling pain that Cal.com directly addresses.",
+        "quote": "We’re interviewing across time zones, which sounded fine, but in practice it’s just constant coordination.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L5",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/jaspinall_your-agent-will-double-book-you-activity-7517681532904505345-rFet",
+      "title": "Double-Booking Prevention Tip for Meeting Agents | John Aspinall ✱ posted on the topic | LinkedIn",
+      "content": "Your agent will double-book you And call it done I run two calendars, one for each part of my work life. If my booking agent could only see one of them, it would do exactly what I asked and still get it wrong. It would find an open slot, book the meeting, and report the task as done. Then I would find the clash when both meetings showed up. So I gave it a simple rule. Check the slot on both calendars before you create anything. If there is an overlap, flag it to me. Do not book it. Do not pick a winner. That one rule saves me from cleaning up after a booking that looked successful. If you use an agent to book meetings, steal this setup today. 1. Connect every calendar you live on, not just your main work one. 2. Tell the agent, in plain words, to check every calendar before it books. 3. [...] in plain words, to check every calendar before it books. 3. Tell it to flag an overlap and stop, not choose for you. 4. Test it with a fake clash. Put a hold on one calendar, ask for that same time, and see if it catches it. Do the fake test before a real client does it for you. If your agent books meetings for you, how many of your calendars can it actually see right now? [...] The meeting changed. Updating the calendar is only the first step. Strong Executive Concierge support looks beyond the calendar update and checks what else the change affects. → Rebook the meeting. → Notify everyone affected. → Update preparation and deadlines. → Resolve scheduling conflicts. → Confirm the new arrangements. → Close the loop. Before you call it handled, verify that the details are correct and communicate the final status. If something is still pending, make the owner, next action and follow-up clear. The calendar change is complete when the coordination around it is complete. That’s the difference between updating a task and owning the outcome. Save this workflow for the next schedule change. #ExecutiveConcierge #ExecutiveSupport #FollowThrough #ProactiveSupport",
+      "tavilyScore": 0.7292306,
+      "query": "how do I stop double bookings across team calendars",
+      "a": {
+        "score": 8,
+        "reason": "Real user describing double-booking problems with AI booking agents and calendar sync — directly Cal.com's conflict-prevention territory.",
+        "quote": "Your agent will double-book you And call it done",
+        "verified": true
+      },
+      "b": {
+        "score": 8,
+        "reason": "A real person describes double-booking risk from an agent that cannot see both calendars, closely matching Cal.com's multi-calendar and AI-agent capabilities.",
+        "quote": "I run two calendars, one for each part of my work life.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L10",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/elija-owino-8b7960278_virtualassistant-calendarmanagement-timezones-activity-7518603609857773569-f8rK",
+      "title": "I scheduled a founder’s launch week and got the time zones wrong. | Elija Owino",
+      "content": "I scheduled a founder’s launch week and got the time zones wrong. Twice.\nI’m in Nairobi. The founder in my practice project is in New York. Her partners were in London. Seven hours apart from her, four hours between her and London, and the clocks change on different days.\nWhat went wrong:\n-One-off meetings repeated every day because I left a “repeat” setting on\n-Times showed in my time zone instead of hers\n-Old events piled up on top of the new ones\nWhat fixed it:\n1️⃣ Write the time zone in every event title, like “11:00 AM ET”\n2️⃣ Build the schedule in one standard time (UTC) and let the calendar convert it\n3️⃣ Put the schedule in its own calendar, so a mistake is a single delete away\n4️⃣ Check the week view before you say “done” [...] 4️⃣ Check the week view before you say “done”\nA calendar isn’t just a list of times. When people work across time zones, a wrong time means a missed call, and a missed call costs trust.\nI’m taking on virtual assistant projects in inbox, calendar, CRM and automation work. If you work across time zones and your schedule feels messy, send me a message.\nWhat’s your best trick for scheduling across time zones? 👇\n#VirtualAssistant #CalendarManagement #TimeZones #Productivity #RemoteWork [...] table, calendar\n\nPutting the zone in every event title is the trick I'd steal first, and owning up to getting it wrong twice makes the list far more useful. My answer to your question is the same idea applied to messages: write the reminder whenever it suits you, then set it to arrive at the right hour for the person reading it. My wife and I built Bossenger to do that on WhatsApp, and it still sends if your phone is off. It's on the App Store.\n\nTo view or add a comment, sign in\n\n## More Relevant Posts",
+      "tavilyScore": 0.649912,
+      "query": "frustrated with scheduling across time zones and reminders",
+      "a": {
+        "score": 7,
+        "reason": "Real person recounting timezone scheduling mistakes and fixes; direct pain point Cal.com addresses, though they found workarounds.",
+        "quote": "I scheduled a founder’s launch week and got the time zones wrong. Twice.",
+        "verified": true
+      },
+      "b": {
+        "score": 7,
+        "reason": "A real person recounts concrete timezone and recurring-event scheduling failures, though the post focuses on manual fixes rather than seeking software.",
+        "quote": "I scheduled a founder’s launch week and got the time zones wrong. Twice.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L18",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/sirabhinav_revops-salesoperations-b2bsaas-activity-7508408895904657408-wP2U",
+      "title": "Boost Inbound Lead Response Rates with Instant Routing | Abhinav Raj posted on the topic | LinkedIn",
+      "content": "The most expensive minute in B2B sales is the one right after an inbound form gets submitted. Most SaaS teams spend $20,000+ a month on outbound campaigns and paid acquisition, only to let high-intent demo requests sit in a CRM lead queue for 47 minutes. Data proves that responding to an inbound lead within 5 minutes increases qualification rates by 391%. After 30 minutes, conversion drops off a cliff. Yet, when you audit scaling sales operations ($5M–$25M ARR), the inbound routing flow usually looks like this: • Form submitted on website. • CRM default sync runs (5 to 15-minute polling delay). • Native round-robin assigns lead to an Account Executive who is in a demo or offline. • The notification gets buried in email inbox clutter. • 47 minutes later, the rep finally emails the [...] the exact 3-step automation blueprint I install to secure immediate lead engagement: 1. Instant Webhook Capture: Route form fills and chat triggers directly through an API gateway rather than resting inside an inbox. 2. Automated Instant Routing: Instantly trigger an SMS or WhatsApp notification to the available account executive within 60 seconds of submission. 3. Dynamic CRM Logging: Auto-populate prospect data, timestamp the interaction, and initiate a fallback task if unanswered after 10 minutes. Common expensive mistake: Relying on manual human review to assign and notify reps of incoming leads. Every minute of delay hands a warm prospect directly to your faster competitors. At Brand's Child, I help founders and business operators replace sluggish manual workflows with lightning-fast [...] the exact 3-step automation blueprint I install to secure immediate lead engagement: 1. Instant Webhook Capture: Route form fills and chat triggers directly through an API gateway rather than resting inside an inbox. 2. Automated Instant Routing: Instantly trigger an SMS or WhatsApp notification to the available account executive within 60 seconds of submission. 3. Dynamic CRM Logging: Auto-populate prospect data, timestamp the interaction, and initiate a fallback task if unanswered after 10 minutes. Common expensive mistake: Relying on manual human review to assign and notify reps of incoming leads. Every minute of delay hands a warm prospect directly to your faster competitors. At Brand's Child, I help founders and business operators replace sluggish manual workflows with lightning-fast",
+      "tavilyScore": 0.5367075,
+      "query": "need lead routing form to send inbound leads to right salesperson",
+      "a": {
+        "score": 7,
+        "reason": "Detailed discussion of inbound lead routing speed problems — directly relevant to Cal.com's routing/round-robin features for sales teams.",
+        "quote": "let high-intent demo requests sit in a CRM lead queue for 47 minutes",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "Relevant discussion of slow inbound lead response and round-robin routing, but it is an expert promotional post rather than a prospect seeking scheduling help.",
+        "quote": "Native round-robin assigns lead to an Account Executive who is in a demo or offline.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L1",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/rita-ndubi_automation-productivity-timemanagement-activity-7402669323460292608-_SeZ",
+      "title": "#automation #productivity #timemanagement | Rita Ndubi",
+      "content": "The appointment booking back-and-forth is killing your productivity.\nYou know the dance:\n\"When are you free?\" \"How about Tuesday at 2pm?\" \"Can't do Tuesday, how about Wednesday?\" \"Morning or afternoon?\" \"Morning works. 10am?\" \"10:30 is better\" \"Okay, let me send a calendar invite\"\n8 emails. 2 days. One 30-minute meeting scheduled.\nHere's the automation that eliminates this:\n✅Self-Service Booking System\nTools you can use (all have free plans):\n1.Calendly\n2. Cal.com\n3. TidyCal\n4. Zoho Bookings\nSetup (15 minutes):\n1. Connect your calendar (Google/Outlook)\n2. Set your availability rules (e.g., Mon-Fri, 9am-5pm, no back-to-back meetings)\n3. Add buffer time between meetings\n4. Create meeting types (15min, 30min, 60min)\n5. Generate booking link\nHow it works:\n1. You share booking link [...] How it works:\n1. You share booking link\n2. They see your REAL available slots\n3. They pick what works for them\n4. Meeting automatically added to both calendars\n5. Automatic reminders sent\nWhat you get back:\n→ 10+ hours per month\n→ Zero scheduling friction\n→ Professional impression\n→ Fewer no-shows (automatic reminders)\n→ Time zone conflicts eliminated\nAdvanced move: Add this booking link to:\n🎯Email signature\n🎯Website\n🎯LinkedIn profile\n🎯Automated emails\nThe 8-email dance becomes one click.\nStop trading emails. Start booking meetings.\nAre you still scheduling meetings manually?\n#Automation #Productivity #TimeManagement [...] Your appointment/demo no-show rate isn't a respect problem. It's an automation problem.\nMost small businesses send 1-2 calendar invites and wonder why 23% of interested prospects never show up.\nHere's what changed everything for my clients:\n✅We stopped treating reminders as calendar notifications and started treating them as commitment builders.\nEach automated message asked for a small \"yes\"; confirming they're still excited, choosing what they want to discuss, or clicking to add it to their phone calendar.\nOne consulting client went from losing 2 out of 10 appointments (costing them $3,200/month in wasted pipeline) to only losing 1 in 25.\n❌The key isn't sending more reminders.\n🎯It's building automated micro-commitments that make people psychologically invested in showing up.",
+      "tavilyScore": 0.81873685,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 6,
+        "reason": "Listicle-style post about booking back-and-forth that explicitly recommends Cal.com; audience is scheduling-tool seekers, but it's vendor-ish content marketing.",
+        "quote": "The appointment booking back-and-forth is killing your productivity.",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Vendor-style educational post recommending scheduling tools, including Cal.com, rather than a prospect seeking help.",
+        "quote": "The appointment booking back-and-forth is killing your productivity.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L13",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/growthnow-in_calendarsync-productivityworkflow-timemanagement-activity-7520341172829986817-FBs_",
+      "title": "Avoid Double Booking with Real-Time Calendar Sync | Growthnow-in posted on the topic | LinkedIn",
+      "content": "You're juggling three calendars and hoping nothing breaks. Google Calendar syncs at 10am. Apple reminds you at 10:15. Microsoft sends a conflict notification at 10:30. By then, you've already double-booked a client call over your internal meeting. This isn't a rare mistake anymore — it's becoming the default for teams that refuse to consolidate. While your competitors are already operating with a single source of truth, you're still managing the mental overhead of three separate systems, each operating on its own refresh cycle. The cost isn't just the awkward cancellation email. It's the credibility damage, the rescheduled follow-ups, the client wondering if you actually have your act together. Youcanbookme solves this by keeping your Google, Apple, and Microsoft calendars talking to each [...] You're juggling three calendars and hoping nothing breaks.\n\n  Google Calendar syncs at 10am. Apple reminds you at 10:15. Microsoft sends a conflict notification at 10:30. By then, you've already double-booked a client call over your internal meeting.\n\n  This isn't a rare mistake anymore — it's becoming the default for teams that refuse to consolidate. While your competitors are already operating with a single source of truth, you're still managing the mental overhead of three separate systems, each operating on its own refresh cycle.\n\n  The cost isn't just the awkward cancellation email. It's the credibility damage, the rescheduled follow-ups, the client wondering if you actually have your act together. [...] the worst outcome is a rule that gets stopped. CalendarPipe is a programmable calendar sync service — it connects Google Calendar, Outlook and Apple Calendar through rules that filter, transform and route events between them. Free for 2 calendars, $4/month for unlimited.  #calendar #productivity",
+      "tavilyScore": 0.6286354,
+      "query": "how do I stop double bookings across team calendars",
+      "a": {
+        "score": 6,
+        "reason": "Content-marketing post on double-booking pain from multiple calendars; describes a real problem Cal.com solves, but promotional in tone.",
+        "quote": "you've already double-booked a client call over your internal meeting.",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Company-authored promotional post about calendar conflicts; the problem is relevant, but it is not a genuine individual lead.",
+        "quote": "By then, you've already double-booked a client call over your internal meeting.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L15",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/arnold-unson-113b711b4_lead-form-submission-conditional-workflow-activity-7440779854247243776-1i4M",
+      "title": "Conditional Lead Routing in GHL with Facebook Lead Forms | Arnold Unson posted on the topic | LinkedIn",
+      "content": "Lead Form Submission (Conditional Workflow in GHL) If your client is using multiple Facebook lead forms, you can create a conditional workflow in GoHighLevel (GHL) based on which form the customer submitted. This allows you to: • Automatically segment leads • Send the right follow-up message per offer/form • Assign contacts to the correct pipeline stage • Trigger specific automations depending on the customer’s interest Setup is simple using If/Else conditions inside your workflow just filter using the Facebook Form Name. From there, you can route each lead to the appropriate pipeline and stage, ensuring your sales process stays organized and targeted. Perfect for clients handling multiple offers or campaigns. If you encounter this type of request, this setup can save a lot of manual [...] The cheapest leads you'll ever work are the ones already sitting in your CRM, marked cold. You already paid to acquire them. They didn't say no, they just went quiet, and most teams treat \"quiet\" as \"dead.\" It isn't. It's un-worked. A reactivation flow fixes that without spending a dollar on new traffic: a short multi-channel re-engagement, then automatic routing, interested leads to a rep instantly, opt-outs suppressed, non-responders dropped into long-tail nurture. The whole point is that the system does the chasing and a human only steps in once there's a live signal. The reason it's rare isn't difficulty. It's that re-engaging old leads feels less exciting than chasing new ones, even though the math is usually better. When did you last work your cold list before buying more leads? [...] Your CRM is only as organized as your pipeline. One of the most overlooked features in GoHighLevel is the Opportunity Pipeline. A well-structured pipeline doesn't just show where your leads are—it gives your team a clear picture of what needs to happen next. ✅ Track every lead from first contact to closed deal. ✅ Never lose sight of follow-ups. ✅ Know which stage is converting and which needs improvement. ✅ Keep your sales process organized and your team accountable. When your pipeline is built correctly, you spend less time asking, \"What's the status of this lead?\" and more time closing deals. Whether you're managing 50 leads or 5,000, having a clear pipeline makes all the difference. A CRM isn't just about storing contacts—it's about creating a system that helps your business grow.",
+      "tavilyScore": 0.57128835,
+      "query": "need lead routing form to send inbound leads to right salesperson",
+      "a": {
+        "score": 6,
+        "reason": "Practitioner discussing lead routing workflows in GHL — related to Cal.com's routing/round-robin use case for inbound leads.",
+        "quote": "route each lead to the appropriate pipeline and stage",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "Discusses conditional lead routing in GoHighLevel, but focuses on CRM segmentation and pipelines rather than scheduling or meeting routing.",
+        "quote": "Assign contacts to the correct pipeline stage",
+        "verified": true
+      }
+    },
+    {
+      "id": "L2",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/best-appointment-booking-software-cut-no-shows-increase-revenue-c7qxc?trackingId=y72nU3TOFBI9nLKGawWU7g%3D%3D",
+      "title": "The Best Appointment Booking Software to Cut No-Shows and Increase Revenue",
+      "content": "Who usually chooses it Consultants, agencies, founders, creators, premium local services, and teams that treat the booking page as part of the buyer journey.\n\nSetup tip that saves time Build two booking types first: a fast intro call and a high-intent booking with intake. Measure conversion and show-up separately for each.\n\nTool 2: Calendly What it’s best for Fast scheduling for meetings, especially internal and external meetings where the main goal is eliminating back-and-forth.\n\nStrengths that matter in practice\n\n Familiar interface that many customers already trust\n Strong for simple meeting types, routing, basic reminders, and integrations\n Often adopted quickly by teams\n\nCommon limitations to watch [...] Published Mar 16, 2026\n\n+ Follow\n\nBest appointment booking software solves a simple problem: it turns interest into a confirmed appointment, with the right time, the right person, and the right details, without back-and-forth.\n\nIf you run a service business in the US, appointment booking software is also a policy engine. It quietly enforces your buffer times, deposits, cancellations, intake forms, reminders, and team assignments so your calendar stays predictable and your revenue stays protected.Growing teams researching best appointment scheduling software for small business often benchmark operational setups at scheduling software for small business. [...] 1. Pricing and ROI logic that holds up in real budgets\n\nA quotable ROI line: The ROI of appointment booking software comes from fewer no-shows, higher utilization, and fewer staff hours spent scheduling.\n\nUse a simple ROI model:\n\nStep 1: Calculate the cost of one no-show Average revenue per appointment × no-show rate × appointments per month\n\nExample structure: If an appointment is $150 and you lose 10 per month, that is $1,500 monthly loss before you even count wasted staff time.\n\nStep 2: Calculate the admin time savings Minutes spent scheduling per booking × bookings per month × hourly wage cost\n\nIf each booking takes 6 minutes of back-and-forth and you do 200 bookings, that is 1,200 minutes. That is 20 hours.",
+      "tavilyScore": 0.80654806,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 5,
+        "reason": "Vendor-style comparison content on booking software; readers are buyers of scheduling tools but no direct ask.",
+        "quote": "Fast scheduling for meetings, especially internal and external meetings where the main goal is eliminating back-and-forth.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Appointment-booking software comparison and advice, not an individual expressing a current purchasing need.",
+        "quote": "Fast scheduling for meetings, especially internal and external meetings where the main goal is eliminating back-and-forth.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L3",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/razz-professional-services_manageditserviceslosangeles-losangelesmanagedserviceprovider-activity-7468694774196113408-o7Gw",
+      "title": "#manageditserviceslosangeles #losangelesmanagedserviceprovider #worksmarternotharder | Razz Professional Services, Inc.",
+      "content": "💡 Tech Tip Friday: Stop the Email Ping-Pong\nLet Clients Book Their Own Meetings!\nWe've all been there: 6 emails back and forth just to schedule a 15-minute call. 😩\nHere's a game-changer: Use Calendly, Appointment Core, Microsoft Bookings, or HubSpot Scheduling to let clients (and prospects) book time directly on your calendar — 24/7, no human required.\n✅ Automatically syncs with Outlook/Google Calendar\n✅ Buffers time between meetings\n✅ Sends reminders to both parties\n✅ Collects intake info before the call\nThink of how many hours your team spends each week just scheduling? This frees them up for actual work.\n📅 Already using a scheduling tool? Drop a 👍 in the comments or let us know if you use one that wasn't mentioned above. [...] 💡 Tech Tip Friday - Already drowning in meetings and now fake calendar invites are pushing you over the edge? 📆🚨\nWe’re seeing a surge in phishing calendar invites that auto-add to calendars, won’t delete or keep reappearing across devices. These scams often warn about a fake “impending payment” and try to get you to call a number, join a meeting or click a link with one goal: your money or credentials.\nQuick ways to clean it up 👇\nDo this first:\n • ❌ Delete without interacting (don’t click links or open attachments)\n • 🚫 Report the invite as junk/phishing\n • ⚙️ Turn off auto-adding invites so events stay as emails until you accept\nFeeling buried and need help locking this down across your team? Contact us for a quick cleanup and prevention checklist. This way your calendar stays yours. [...] No alternative text description for this image\n\nTo view or add a comment, sign in\n\n## More Relevant Posts\n\n882 followers\n\nStop wasting hours on manual data entry, scheduling, and follow-ups.\nSmart automation isn't about replacing your team, it's about making them more capable.\nSmall businesses using business process automation are scaling faster, making better decisions with real-time data, and staying lean while maintaining growth.\nThe fastest-growing businesses know: automation = more time for meaningful work that moves the needle.\nReady to grow smarter?\nRead our latest article: \n#manageditserviceslosangeles #itsupportlosangeles #smartautomation\n\nSmart Automation Helps Small Businesses Grow Faster\n\nTo view or add a comment, sign in\n\n882 followers",
+      "tavilyScore": 0.76629364,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 5,
+        "reason": "MSP promoting scheduling tools to clients; related need and audience active on this problem, but self-promotional tip post.",
+        "quote": "6 emails back and forth just to schedule a 15-minute call.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Managed-service provider promotes competing scheduling tools in a general tech tip rather than seeking a solution.",
+        "quote": "We've all been there: 6 emails back and forth just to schedule a 15-minute call.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L7",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/benedictakuma_virtualassistant-businesssupport-productivity-activity-7492869983807496193-Ng1Y",
+      "title": "Preventing Double Bookings with Effective Calendar Management",
+      "content": "Update the calendar immediately after every confirmed meeting. 📌 Use one primary calendar as the single source of truth. 📌 Block out focus time",
+      "tavilyScore": 0.69035035,
+      "query": "how do I stop double bookings across team calendars",
+      "a": {
+        "score": 5,
+        "reason": "Short tips post on preventing double bookings; related need, likely practitioner audience, but thin content.",
+        "quote": "Use one primary calendar as the single source of truth.",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Short generic calendar-management advice with no clear individual need or buying intent.",
+        "quote": "Use one primary calendar as the single source of truth.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L16",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/moraesmarcos_i-used-to-think-time-zones-were-a-scheduling-activity-7510381951636205568-XuuX",
+      "title": "I used to think time zones were a scheduling problem. | Marcos Moraes",
+      "content": "I used to think time zones were a scheduling problem. They're not. They're a focus problem.\nSince Madrid became one of my bases, the thing that actually costs hours isn't travel, it's how little overlap there is with teams spread across Brazil, Colombia, Peru and, now, Mexico. By the time some of them are just getting into the day, mine in Europe is already winding down. Meetings get pushed, answers wait, and a day that should be one conversation ends up stretched across five clocks.\nFor a while I tried to fix that by being available all the time: early calls, late messages, answering whenever something came in. Felt disciplined. Wasn't. It just meant I was reachable everywhere and useful nowhere in particular. [...] What actually worked was different: most decisions don't need me online, they need me clear. If the team has the context, they don't need my presence, they need a sharp answer whenever I show up. That's a different skill than being always on, and it's the one that's freed up real attention for SigmaCX lately.\nTurns out the real cost of working across time zones was never the hours lost. It was mistaking being online for being useful. [...] This tracks with leading regional teams. What actually breaks things isnt the time zone, its mistaking constant presence for clarity. A team with the right context doesnt need you online, it needs a sharp answer whenever you show up.\n\nGreat insight, Marcos Moraes!\nI couldn't agree more. Working with a multi-location team right now, I'm seeing this too. What really saves the day for us is having strong organization in our communication and project management 👏\n\nTo view or add a comment, sign in\n\n## More Relevant Posts",
+      "tavilyScore": 0.5481898,
+      "query": "frustrated with scheduling across time zones and reminders",
+      "a": {
+        "score": 5,
+        "reason": "Reflection on timezone overlap problems across distributed teams; related scheduling pain but more essay than need.",
+        "quote": "how little overlap there is with teams spread across Brazil, Colombia, Peru",
+        "verified": true
+      },
+      "b": {
+        "score": 6,
+        "reason": "A real person describes distributed-team timezone and meeting-overlap pain, although he frames the solution as focus and availability rather than booking software.",
+        "quote": "Meetings get pushed, answers wait, and a day that should be one conversation ends up stretched across five clocks.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L17",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/advice/0/how-do-you-schedule-meetings-across-time-zones",
+      "title": "Tips for Scheduling Meetings Across Time Zones",
+      "content": "# How do you schedule meetings across time zones for global projects? Managing global projects can be challenging, especially when you have to coordinate meetings across different time zones. Here are some tips to help you schedule meetings across time zones for global projects. Before you plan any meeting, you need to know when your team members are available and when they prefer to work. You can use tools like Google Calendar, Doodle, or World Time Buddy to see the time differences and overlaps between your locations. You can also create a shared spreadsheet or document where everyone can indicate their working hours, preferred meeting times, and any exceptions or constraints. This will help you avoid scheduling meetings at inconvenient or inappropriate times, such as late at night, early in the morning, or during holidays or weekends. There is no good time in global teams. ## 2 Rotate meeting times. Even if you find a common time slot that works for everyone, you should not always schedule meetings at the same time. To avoid this, you should rotate meeting times so that everyone gets a chance to attend meetings at their preferred or optimal time. You can ask your team members to volunteer or negotiate for attending meetings at less favorable times, and offer them some incentives or compensations, such as flexible hours, shorter meetings, or recording options. You can use tools like Zoom, Slack, or Google Meet to facilitate communication and collaboration before, during, and after meetings. When scheduling our global meetings, make sure we're on top of time zones—knowing where everyone's at helps us nail down those core meeting times. Finally, you need to use the right tools and techniques to facilitate your meetings across time zones. If you think something in this article goes against our Professional Community Policies, please let us know. ## More articles on Global Delivery. * How do you use past projects to improve global delivery? How do you schedule effective meetings for your executive and avoid wasting time? How can you avoid time management issues that disrupt meetings? How do you respect and accommodate different time zones and schedules when planning video meetings?",
+      "tavilyScore": 0.54146945,
+      "query": "frustrated with scheduling across time zones and reminders",
+      "a": {
+        "score": 5,
+        "reason": "Generic tips on cross-timezone meeting coordination; audience with the need, but listicle format.",
+        "quote": "coordinate meetings across different time zones",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Generic educational advice about global meeting scheduling, with no firsthand complaint or active purchase intent.",
+        "quote": "Managing global projects can be challenging, especially when you have to coordinate meetings across different time zones.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L19",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/slixta_the-right-lead-to-the-right-team-automatically-activity-7505109354388336640-birV",
+      "title": "Automate Lead Routing to the Right Sales Team - LinkedIn",
+      "content": "If your Meta Ads are generating lots of leads but your sales team hates them, look at your Instant Form. Fewer but well qualified leads with",
+      "tavilyScore": 0.5361004,
+      "query": "need lead routing form to send inbound leads to right salesperson",
+      "a": {
+        "score": 5,
+        "reason": "Lead routing/qualification discussion for Meta Ads; adjacent to Cal.com routing but focused on ad forms.",
+        "quote": "If your Meta Ads are generating lots of leads but your sales team hates them",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Brief promotional advice about Meta lead quality and routing, without a specific scheduling problem or identifiable buyer need.",
+        "quote": "If your Meta Ads are generating lots of leads but your sales team hates them, look at your Instant Form.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L20",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/revealtechnology_how-many-emails-does-your-team-send-just-activity-7520515641162825728-TSkK",
+      "title": "How many emails does your team send just to schedule a meeting? \"Does Tuesday work?\" \"How about 2 PM?\" For client-facing businesses, this back-and-forth can eat hours every week. Online booking… | Reveal Technology, LLC",
+      "content": "Come closer fam😊 let's talk about calendar management, Imagine having three meetings scheduled for the same time, a is client waiting for confirmation, and another appointment you completely forgot about. Sounds stressful, right? This is why appointment scheduling is more than just picking a date and time. As a Virtual Assistant, I understand that proper appointment scheduling helps businesses stay organised, avoid double bookings, respect clients' time, and ensure that important meetings are never missed.Checking availability before booking, Sending appointment confirmations, Setting reminders ahead of meetings, Rescheduling when necessary, Keeping calendars updated. A properly organized calendar means fewer missed appointments, less confusion, and more time to focus on growing the [...] Who Says You Don't Have Enough Time!!! You simply don't have a proper system for managing it I must say. Imagine having a calendar that: Keep all your appointments organised. Prevents double bookings. Sends automatic meeting reminders. Allows clients to book available time slots. Keeps track of deadlines and important events. Gives you a clear picture of your day before it begins. Now, instead of constantly checking messages to remember your next appointments, you have a system working behind the scenes to keep you focused on maximizing time. That's the power of effective calendar management. As a Virtual Assistant using the right tools and systems can help businesses save time, reduce scheduling errors, and focus on what matters most. Tools like Google Calendar, Calendl, can make [...] A disorganized schedule can cost a business more than just time. ⏰ Imagine a business owner who has three meetings scheduled around the same time, an important appointment they forgot, and several deadlines approaching. Without proper calendar management, things can quickly become overwhelming. This is where a Virtual Assistant can make a difference. Calendar management is more than booking appointments. It's about helping clients take control of their time. Here are 6 ways a VA can help: 📅 Schedule Appointments: Arrange meetings based on the client's availability. ⏰ Set Reminders: Keep important meetings, deadlines, and activities visible. 🔄 Prevent Scheduling Conflicts: Check for overlapping appointments and double bookings. 📌 Prioritize Activities: Help clients allocate time to",
+      "tavilyScore": 0.53552353,
+      "query": "how do I stop double bookings across team calendars",
+      "a": {
+        "score": 5,
+        "reason": "Virtual assistant discussing scheduling pain and double bookings; real practitioner with related need, though promotional framing.",
+        "quote": "avoid double bookings, respect clients' time, and ensure that important meetings are never missed",
+        "verified": true
+      },
+      "b": {
+        "score": 4,
+        "reason": "A virtual assistant describes double-booking and scheduling pain, but the post is promotional calendar-management advice rather than a request for a booking product.",
+        "quote": "Imagine having three meetings scheduled for the same time, a is client waiting for confirmation, and another appointment you completely forgot about.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L4",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/appointlet-alternative-scheduling-software-playbook-2026-lunacal-eaubc",
+      "title": "Appointlet Alternative Scheduling Software Playbook for 2026",
+      "content": "A scheduling tool replaces five messy manual steps:\n\n1. Back and forth emails\n2. Guessing time zones\n3. Forgetting to send reminders\n4. Collecting the same info again on the call\n5. Losing track of who owns the lead\n\nA modern scheduling system usually includes: Availability rules and buffers A booking page that works on mobile Calendar sync with Google and Microsoft Automated confirmations and reminders Optional intake questions, files, and payments Team assignment rules when more than one person is involved\n\nA useful definition you can quote: Appointlet alternative scheduling software is a booking workflow that turns a visitors available time into a confirmed meeting, with rules, reminders, and data captured upfront. [...] When it tends to win: When you want a clean booking page and your process around the meeting happens elsewhere.\n\nTool 3: Calendly Best for: fast scheduling with broad integrations and strong familiarity Typical use cases: sales, recruiting, customer success, general business scheduling\n\nWhat it does well: Very widely adopted, so prospects often already know how it works Solid integrations ecosystem and calendar sync Good for common business scheduling patterns\n\nTradeoffs to consider: Branding and booking page experience can feel generic depending on your needs Advanced routing and customization can add complexity and cost\n\nWhen it tends to win: When familiarity and integration breadth are primary. [...] Availability rules that match reality Working hours by day Buffers before and after meetings Minimum notice and maximum booking window Time zone handling that prevents mistakes\n\nCalendar sync you can trust Two way sync with Google and Microsoft calendars Conflict checking that blocks booked time reliably Support for multiple calendars when you separate personal and work\n\nBooking page experience Loads fast on mobile Clear meeting details, duration, and location Branding that looks credible Rescheduling and cancellation flow that respects your policies\n\nNotifications and reminders Instant confirmation Email reminders that reduce no shows SMS reminders when your audience responds to SMS Custom messages per meeting type",
+      "tavilyScore": 0.76611876,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 4,
+        "reason": "SEO-style playbook article about scheduling software alternatives; no real person asking for help.",
+        "quote": "A scheduling tool replaces five messy manual steps",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Generic scheduling-software playbook with no identifiable person asking for help or describing their own problem.",
+        "quote": "Losing track of who owns the lead",
+        "verified": true
+      }
+    },
+    {
+      "id": "L6",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/pulse/calendar-scheduling-software-compared-practical-playbook-picking-lwyse?trackingId=KiHoh1FiZAH%2BVLi2DEYWug%3D%3D",
+      "title": "Calendar Scheduling Software Compared: the practical playbook for picking the right tool",
+      "content": "Calendar scheduling software is a system that turns availability into confirmed meetings or appointments, with the right person, at the right time, with the right context.\n\nIn plain terms, it replaces these manual steps: Checking calendars back and forth Proposing times over email Chasing replies Creating events manually Sending reminders by hand Collecting intake details in separate forms Losing context in scattered threads\n\nA good scheduling tool does three jobs end to end:\n\n1. Availability management: live calendar sync, rules, buffers, time zones, limits\n2. Conversion: a booking experience people finish, on any device, without confusion\n3. Operations: reminders, reschedules, routing, reporting, and follow-up [...] Step 4: Add intake questions that reduce back-and-forth One question that qualifies One question that sets agenda One question that collects key context Keep it short so people finish the booking.\n\nStep 5: Configure reminders based on risk High no-show meetings benefit from reminders. Low-risk internal meetings can stay lighter.\n\nStep 6: Set up routing if you are a team Decide who gets what and why. Keep routing rules simple at first, then add nuance.\n\nStep 7: Integrate with your system of record CRM for sales ATS for recruiting Help desk for support Even one integration can remove a lot of manual work. [...] Availability and rules Real-time calendar sync with Google and Microsoft Time zone handling that works automatically for bookers Buffer time before and after meetings Daily and weekly limits to protect energy and avoid burnout Minimum notice and booking windows Multiple schedules for different meeting types Override rules for travel weeks or special days\n\nBooking experience Fast booking flow on mobile Clear confirmation screen with next steps Reschedule and cancellation links that work without admin intervention Custom questions for intake, with sensible formatting Calendar invites that include the right details and links Branding options that keep the experience consistent",
+      "tavilyScore": 0.7222333,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 4,
+        "reason": "Generic vendor-style explainer on scheduling software; no individual need expressed.",
+        "quote": "it replaces these manual steps: Checking calendars back and forth",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "A broad software-selection playbook rather than a firsthand request or complaint from a potential buyer.",
+        "quote": "Checking calendars back and forth Proposing times over email Chasing replies",
+        "verified": true
+      }
+    },
+    {
+      "id": "L11",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/getschedly_efficient-appointment-scheduling-tricks-activity-7421057005110312960-jex6",
+      "title": "Efficient Appointment Scheduling: Tricks For Busy Schedules | Schedly",
+      "content": "6) Add 10–30 minute buffers between appointments so you can wrap up notes, transition, and absorb meetings that run long.\n7) Automate reminders and confirmations and require prepayment or card‑on‑file to increase commitment and lower no‑show rates.\n8) Provide a 24/7 branded online booking page that shows real‑time availability in the client's time zone to eliminate back‑and‑forth.\n9) Integrate payment processing (Stripe, PayPal) into booking so clients pay at checkout and bookings trigger instant confirmations.\n10) Ensure your scheduling software syncs bi‑directionally with Google Calendar, Outlook, or other systems so availability stays accurate and conflicts are prevented. [...] [Sent with Free Plan] Time Saving Scheduling: Quick Wins to Cut Admin Time\n1) Administrative work consumes roughly 40% of a manager's week — reclaiming even a few hours lets teams focus on revenue-generating activity.\n2) Solo B2B founders spend only about 28% of their time selling; at $50/hour, manual admin can cost roughly $14,400 per year.\n3) Manual scheduling often takes up to 30 minutes per meeting from back-and-forth emails — use booking pages to cut scheduling to seconds.\n4) Drafting prospecting emails can consume 1.5–2.5 hours daily; implement templates and email automation to save 1–2 hours per rep each day.\n5) For larger teams, manual CRM updates create six-figure annual costs — automate note capture and deal-stage updates to reduce wasted hours. [...] [Sent with Free Plan] How to Eliminate Schedule Conflicts That Frustrate Clients\n1) Use a centralized scheduling system that instantly prevents double bookings by blocking staff and room time slots across your operation.\n2) Enable two-way Google Calendar sync so personal events, vacations, and internal meetings automatically remove client-facing availability.\n3) Configure mandatory buffer times between appointments (for example, 15–20 minutes) to absorb delays, cleanup, and transitions.\n4) Activate automatic conflict detection that checks availability, travel time, and resource constraints before confirming bookings.\n5) Consolidate all calendars and booking channels into a single source of truth so conflicts surface in real time, not at client arrival.",
+      "tavilyScore": 0.6467949,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 4,
+        "reason": "Vendor (Schedly) tips listicle promoting its own booking features.",
+        "quote": "Provide a 24/7 branded online booking page that shows real‑time availability",
+        "verified": true
+      },
+      "b": {
+        "score": 3,
+        "reason": "Vendor-branded appointment-scheduling advice promoting software capabilities rather than expressing a prospect's own need.",
+        "quote": "Provide a 24/7 branded online booking page that shows real‑time availability in the client's time zone to eliminate back‑and‑forth.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L9",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/bushrakamran_there-are-two-kinds-of-scheduling-tools-activity-7480569453269753857-6-Y_",
+      "title": "Kalendra: Automated Meeting Coordination Tool | Bushra Kamran ...",
+      "content": "Kalendra reads your calendars, runs the back-and-forth in email or chat, and books the meeting. The other person never has to visit anything.",
+      "tavilyScore": 0.66006285,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 3,
+        "reason": "Vendor self-promotion for a competing meeting-coordination tool.",
+        "quote": "Kalendra reads your calendars, runs the back-and-forth in email or chat, and books the meeting.",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Promotional description of a competing automated meeting-coordination product, not a sales prospect.",
+        "quote": "Kalendra reads your calendars, runs the back-and-forth in email or chat, and books the meeting.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L12",
+      "platform": "Medium",
+      "url": "https://medium.com/@calendar-scheduling/best-appointment-booking-software-from-someone-whos-had-to-live-with-the-consequences-c14544ee1577",
+      "title": "Best Appointment Booking Software, From Someone Who's Had to ...",
+      "content": "Lunacal Best for: booking pages that also explain who you are, build trust, and reduce back-and-forth before the meeting.",
+      "tavilyScore": 0.6460137,
+      "query": "looking for a tool to eliminate back-and-forth meeting scheduling",
+      "a": {
+        "score": 3,
+        "reason": "Vendor listicle promoting Lunacal booking software.",
+        "quote": "booking pages that also explain who you are, build trust, and reduce back-and-forth",
+        "verified": true
+      },
+      "b": {
+        "score": 2,
+        "reason": "Software recommendation article highlighting another booking product, with no direct buyer request.",
+        "quote": "booking pages that also explain who you are, build trust, and reduce back-and-forth before the meeting.",
+        "verified": true
+      }
+    },
+    {
+      "id": "L14",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/ios/comments/ei341i/ios_reminderscalendar_across_time_zones",
+      "title": "iOS reminders/calendar across time zones ? : r/ios",
+      "content": "Title: iOS reminders/calendar across time zones ? : r/ios\nSkip to main contentiOS reminders/calendar across time zones ? Image 1 Go to ios. # iOS reminders/calendar across time zones ? I use iOS Reminders/calendar and am currently traveling. All my reminders have switched time zones and are all at the wrong times. I wanted them to stay at the same time regardless of timezone. *   _**Time Zone Override**_ (try configuring it by opening settings > Calendar > Time Zone Override) would make your 9AM appointment stay at 9AM UK time no matter where you are (so, if there is an event happening in London, you might want to know when it's happening, not to receive a warning 9AM LA time). You can use iCloud.com or your MAC's Calendar app set an event to be floating and so, if you want to receive a reminder every Friday 11AM to get your travel expenses claim paperwork done, you'd get the notification at 11AM, no matter whether you're GMT-0 or GMT-8. I'll try to have both things on, so to get my events 'stuck' in GMT+1 (my 'home' time zone), get some reminders in \"floating\" time zone and make sure that I create events in the right time zone (for such thing, you need to enable the time zone support) when traveling. *   iOS showing wrong timezone here in BC.Image 9 r/britishcolumbia•7d ago    ### iOS showing wrong timezone here in BC. Image 10: r/britishcolumbia - iOS showing wrong timezone here in BC. *   iOS showing wrong timezone here in BC, Canada.Image 13 r/ios•7d ago    ### iOS showing wrong timezone here in BC, Canada. Image 14: r/ios - iOS showing wrong timezone here in BC, Canada. *   iOS showing wrong timezone here in BC.Image 15 r/vancouvercanada•7d ago    ### iOS showing wrong timezone here in BC. *   Why is my iPhone putting me in the wrong time zone? Image 20 r/ios•10mo ago    ### Why is my iPhone putting me in the wrong time zone? *   Reminders and Time ZonesImage 23 r/ios•5mo ago    ### Reminders and Time Zones    2 upvotes ·11 comments. Image 34 r/ios•10mo ago    ### How to get this calendar view back in iOS 26.2? Image 35: r/ios - How to get this calendar view back in iOS 26.2?",
+      "tavilyScore": 0.5971969,
+      "query": "frustrated with scheduling across time zones and reminders",
+      "a": {
+        "score": 3,
+        "reason": "iOS Reminders timezone question; adjacent timezone pain but about device settings, not meeting scheduling.",
+        "quote": "All my reminders have switched time zones and are all at the wrong times.",
+        "verified": true
+      },
+      "b": {
+        "score": 5,
+        "reason": "A real user has a timezone-related calendar problem, but it concerns iOS reminder behavior while traveling rather than meeting booking.",
+        "quote": "All my reminders have switched time zones and are all at the wrong times.",
+        "verified": true
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "L8",
+      "text": "“Calendar hell” is right—the reschedule chain reaction is the real pain. For 4 interviewers, stop asking “what works?” and offer slots from synced calendars, with one collective booking link and automatic reschedule updates. Disclosure: I work on Cal.com; it can handle pooled availability and time zones. Either way, make calendar accuracy an interviewer requirement, not your cleanup job.",
+      "usage": {
+        "in": 425,
+        "out": 83
+      },
+      "latencyMs": 1344
+    },
+    {
+      "leadId": "L5",
+      "text": "And call it done\" is the real failure mode. A booking that reports success while creating a conflict is worse than one that fails loudly.\n\nYour stop-and-flag rule is the right call. Agents shouldn't resolve conflicts autonomously.\n\nDisclosure: I work on Cal.com. We built conflict checks across all connected calendars for exactly this reason. Your fake-clash test is the part most people skip, and it's the only way to know the check actually runs.",
+      "usage": {
+        "in": 474,
+        "out": 100
+      },
+      "latencyMs": 3588
+    },
+    {
+      "leadId": "L10",
+      "text": "Getting the time zones wrong twice is painful, but your fixes are solid. One addition: avoid putting converted times in titles, since they can become stale after clock changes. Keep the event anchored to the attendee’s zone and confirm the week view from their perspective. Disclosure: I work on Cal.com; we try to handle that conversion automatically so coordinators do not have to calculate it manually.",
+      "usage": {
+        "in": 477,
+        "out": 84
+      },
+      "latencyMs": 1120
+    },
+    {
+      "leadId": "L18",
+      "text": "The 47-minute queue is often a scheduling gap, not just a notification gap. If the form response ends with “we’ll email you,” speed-to-lead still depends on inbox triage. I’d route by territory and live availability, then offer an immediate booking option while logging the outcome in the CRM. Disclosure: I work on Cal.com, which supports routing forms and availability-based assignment. Keep instant SMS as the fallback for leads who don’t book.",
+      "usage": {
+        "in": 449,
+        "out": 100
+      },
+      "latencyMs": 4958
+    },
+    {
+      "leadId": "L1",
+      "text": "That back-and-forth is such a time drain, and your step-by-step breakdown makes the fix feel very doable. One thing I'd add: consider setting a daily meeting cap alongside your buffer times, so a fully booked day doesn't quietly wipe out your focus time. Disclosure: I work on Cal.com.",
+      "usage": {
+        "in": 493,
+        "out": 68
+      },
+      "latencyMs": 1049
+    }
+  ],
+  "comparison": {
+    "a": {
+      "model": "zai-org/GLM-5.3-Flash",
+      "tokensIn": 3340,
+      "tokensOut": 1136,
+      "cost": 0.0010689999999999999,
+      "latencyMs": 6791,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "b": {
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "tokensIn": 3350,
+      "tokensOut": 1369,
+      "cost": 0.02039,
+      "latencyMs": 12161,
+      "scored": 20,
+      "verifiedQuotes": 20
+    },
+    "agreement": {
+      "comparedLeads": 20,
+      "meanAbsDiff": 1.55,
+      "top5Overlap": 3
+    }
+  },
+  "steps": [
+    {
+      "step": "profile",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "in": 3035,
+      "out": 1057,
+      "cost": 0.0021789,
+      "latencyMs": 7169
+    },
+    {
+      "step": "scoring A",
+      "model": "zai-org/GLM-5.3-Flash",
+      "in": 3340,
+      "out": 1136,
+      "cost": 0.0010689999999999999,
+      "latencyMs": 6791
+    },
+    {
+      "step": "scoring B",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 3350,
+      "out": 1369,
+      "cost": 0.02039,
+      "latencyMs": 12161
+    },
+    {
+      "step": "drafts",
+      "model": "moonshotai/Kimi-K3.1-Pro",
+      "in": 2318,
+      "out": 435,
+      "cost": 0.008986000000000001,
+      "latencyMs": 4958
+    }
+  ],
+  "scorerError": null
+}

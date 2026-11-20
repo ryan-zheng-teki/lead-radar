@@ -1,0 +1,82 @@
+# API-04 narrow viewport (390x844, headless Chromium via CDP) + Copy to clipboard with granted permission, live run on https://posthog.com — 2026-11-20T13:34:12Z
+$ node /tmp/lr-probe/narrow-clipboard.mjs http://localhost:3001/ https://posthog.com API-04-narrow-390px.png
+{
+  "company": "https://posthog.com",
+  "viewport": "390x844 mobile",
+  "runSeconds": 87.169,
+  "error": null,
+  "lastStage": "Done — sourced leads and drafts ready for your reviewtotal 86.7 s",
+  "leads": 20,
+  "drafts": 5,
+  "layout": {
+    "innerWidth": 665,
+    "docScrollWidth": 665,
+    "bodyOverflowX": false,
+    "wideElements": [],
+    "tablesScrollable": [
+      {
+        "w": 387,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      },
+      {
+        "w": 620,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      },
+      {
+        "w": 585,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      }
+    ]
+  },
+  "copy": {},
+  "networkCallsAfterRun": 1
+}
+
+# Rerun with the saved cal.com stream replayed into the real page (UI only, no live calls) to get the Copy result — 2026-11-20T13:36:22Z
+$ node /tmp/lr-probe/narrow-clipboard.mjs http://localhost:3001/ https://cal.com API-04-narrow-390px-calcom-replay.png API-02-calcom-run-stream.ndjson
+{
+  "company": "https://cal.com",
+  "viewport": "390x844 mobile",
+  "runSeconds": 1.109,
+  "error": null,
+  "lastStage": "Done — sourced leads and drafts ready for your reviewtotal 29.6 s",
+  "leads": 20,
+  "drafts": 5,
+  "layout": {
+    "innerWidth": 827,
+    "docScrollWidth": 827,
+    "bodyOverflowX": false,
+    "wideElements": [],
+    "tablesScrollable": [
+      {
+        "w": 387,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      },
+      {
+        "w": 782,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      },
+      {
+        "w": 654,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      },
+      {
+        "w": 585,
+        "parentOverflowX": "visible",
+        "parentW": 342
+      }
+    ]
+  },
+  "copy": {
+    "buttonText": "Copied",
+    "clipboardEqualsDraft": true,
+    "clipboardChars": 390
+  },
+  "networkCallsAfterRun": 1
+}
