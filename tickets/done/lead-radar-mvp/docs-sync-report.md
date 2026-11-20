@@ -52,3 +52,9 @@ None. This is the first build.
 - `README.md`: updated by the implementation engineer (IR-002) and reviewed by delivery against the validated code: a "Target companies" paragraph under step 5, the Next steps bullet reworded to cover deeper enrichment (the feature now exists), and `companies` added to the `src/steps` line. All of it matches b28dd34 and the API-07 evidence.
 - `DESIGN.md`: no change. The new step follows the existing rule: one concern per file under `src/steps/`, with Tavily and Nebius reached only through their clients.
 - `TESTING.md`, `RELEASE.md`, `DEMO.md`: no change. DEMO.md does not mention companies, and the 3-minute script still holds without them.
+
+## Round 3 (DR-003)
+
+- `README.md`: removed the phone-width limitation and the "make it work on phones" next step, because SR-003 fixed both (API-10 phone390).
+- `DEMO.md`: the screen names in both tables now match the redesigned page: stepper, KPI strip, leads list with "Show N low-fit results", "Model comparison" card. The spoken lines are unchanged.
+- `DESIGN.md`, `TESTING.md`, `RELEASE.md`: no change. The page is still one static vanilla-JS page with no network calls on draft actions. TESTING.md's layers (browser journey, 390 px check) already cover it.

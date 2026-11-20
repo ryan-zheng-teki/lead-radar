@@ -74,12 +74,11 @@ What the numbers say:
 - **Freshness:** searches are limited to the last year, but a post can still be old or already answered. Check the date when you open it.
 - **No posting, by design.** No account connections and no CRM export. Approvals live in the browser tab, and each run's data is saved to `runs/`.
 - A hack-day prototype: no automated test suite, a single user, run locally.
-- Built for a laptop screen. On a phone the leads and comparison tables are wider than the screen, so the page zooms out.
 
 ## Next steps
 
 - **Target companies:** go beyond the 5 news-based signals: check each company's careers page and enrich it with a contact role. Today's list is only as good as the news results Tavily returns.
-- Make the page work on phones, and add an automated test of the pipeline with recorded API responses.
+- Add an automated test of the pipeline with recorded API responses.
 
 ## What existed before today
 

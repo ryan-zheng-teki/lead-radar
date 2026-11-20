@@ -131,3 +131,23 @@ During delivery the ticket worktree held uncommitted, unvalidated changes from t
 - Release decision: `No release` (RELEASE.md default; push only).
 - Finalization: recorded in the commit that adds this section; `git log origin/main` shows the round-2 commit. The user's checkout is fast-forwarded with `git merge --ff-only origin/main`.
 - Cleanup: temporary clone `/tmp/de-r2` removed after the push. Ticket worktree and branch kept: the SR-003 UI round is active there.
+
+## Round 3 (DR-003): SR-003 UI polish
+
+- Trigger: API/E2E Pass, round 3 (95%, test-code review not required), on d0bfa5a; reports and evidence in e9255f4.
+- Verification, judged from the evidence: `Sufficient`.
+
+| AC | Files Checked | What You Saw | Judgement |
+| --- | --- | --- | --- |
+| AC-012 UI quality | evidence/ui/API-10-1280x720-report.json, API-10-1920x1080-report.json, API-10-1280x720-03-results-top.png | No horizontal scroll in any state, also at 390 px; minimum font 14 px; no console errors. Stepper, KPI strip and profile render. Leads: 7 → 20 after "Show 13 low-fit results", 20/20 verified. Drafts: approve, edit, reject and undo, with the counter. Copy toast, and the clipboard matches the draft. 0 requests during draft actions. The error card's Try again sends a new POST. The screenshot shows a clean layout. | Proven |
+| AC-001..006, 009, 011 still hold | the same reports | live runs on posthog.com (43.3 s) and cal.com (28.6 s): 20 leads, profile sources, 5 companies, comparison, models | Proven |
+| AC-006 keys | API-11-key-check.log | 0 everywhere, and `/api/config` returns only draftCount, missingKeys and models | Proven |
+
+- Noted, not blocking: the posthog.com run had 0 high-fit leads (score ≥ 7). That is lead quality, not the UI, and SR-004 is working on it separately.
+- User check needed: `No`.
+- Integration: `origin/main` was still 1d859de, the base of `ui-polish-sr003`. Fast-forward; no re-integration needed.
+- Post-integration check DE-03: passed (see delivery-revision-record.md DR-003).
+- Checks before pushing (RELEASE.md): secret pattern 0; key values 0; private email 0 in files and commits; file names OK.
+- Release decision: `No release` (push only).
+- Finalization: `main` = e9255f4 plus the delivery docs commit, pushed fast-forward. The user's checkout is fast-forwarded with `--ff-only`.
+- Cleanup: temporary clone removed. The worktree and its branches are kept, because uncommitted SR-004 work is active there.
